@@ -32,7 +32,7 @@ Set of snippets, packages, files and best practices.
   + option create backbone collection
 
 - Sublime Packages
-  + -
+  + ToDo list. Use this list for the presentation. 
   + -
   + -
   + -
@@ -40,6 +40,9 @@ Set of snippets, packages, files and best practices.
 - How to share sublime packages
 
 - Sublime snippets
+  + prefix all snippets with +
+  + Scope snippets: use ctrl+alt+shift+p in desired file to se the scope key in bottom line. 
+  + Get overview of all properties with tab-index or use html comment to pressent them. 
   + bv: backbone view
   + bm: backbone model
   + bc: backbone collection
@@ -74,6 +77,21 @@ Set of snippets, packages, files and best practices.
   + html
   + css
   
+- styleguides alternative
+
+- google inspector
+  + source map
+  + blackboxing
+  + color coded console
+  + all tips from blogs. 
+  
+
+- git
+  + rebase: git rebase origin/master
+  + mtool: git mergetool
+
+
+
 
 
 
