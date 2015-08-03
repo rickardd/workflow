@@ -3,6 +3,12 @@ Set of snippets, packages, files and best practices.
 
 ## Presentation
 
+### Intro
+  How mush time should I spend on work flow. 3h on your workflow may save you and others month of work. 
+### What we will cover
+  
+### Checklist
+
 - bash_shell start up script
   + cd to dir
   + git status
