@@ -90,6 +90,7 @@ Set of snippets, packages, files and best practices.
   + blackboxing
   + color coded console
   + all tips from blogs. 
+  + PUT/GET/POST with firefox
   
 
 - git
@@ -97,7 +98,8 @@ Set of snippets, packages, files and best practices.
   + mtool: git mergetool
 
 
-
+- How to not break css
+  + visual comparison tool. what views have changed. 
 
 
 
