@@ -96,6 +96,7 @@ Set of snippets, packages, files and best practices.
 - git
   + rebase: git rebase origin/master
   + mtool: git mergetool
+  + sublime-package: blame, changes, logs, diff...
 
 
 - How to not break css
