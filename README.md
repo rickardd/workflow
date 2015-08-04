@@ -102,6 +102,7 @@ Set of snippets, packages, files and best practices.
 - How to not break css
   + visual comparison tool. what views have changed. 
 
-
+- Best practice
+  + css: mark 'ToDo' on things that need to be done, Styleguid or refactor. 
 
 
