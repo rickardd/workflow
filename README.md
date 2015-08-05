@@ -96,11 +96,13 @@ Set of snippets, packages, files and best practices.
 - git
   + rebase: git rebase origin/master
   + mtool: git mergetool
+  + sublime-package: blame, changes, logs, diff...
 
 
 - How to not break css
   + visual comparison tool. what views have changed. 
 
-
+- Best practice
+  + css: mark 'ToDo' on things that need to be done, Styleguid or refactor. 
 
 
