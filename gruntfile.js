@@ -58,7 +58,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'stylesheets/screen.css': 'sass/screen.scss'
+          'style/main.css': 'sass/main.scss'
         }
       }
     },
@@ -79,44 +79,44 @@ module.exports = function (grunt) {
       },
       css: {
         files: ['sass/**/*.scss'],
-        tasks: ['sass'],
+        tasks: ['sass', 'kss'],
         options: {
           livereload: 35729
         }
       }
     },
-    tinypng: {
-      options: {
-          apiKey: "YOUR API KEY HERE",
-          checkSigs: true,
-          sigFile: 'dest/file_sigs.json',
-          summarize: true,
-          showProgress: true,
-          stopOnImageError: true
-      },
-      compress: {
-          files: {
-            'dest/foo.min.png': 'src/foo.png'
-          }
-      },
-      compress2: {
-          expand: true, 
-          src: 'src/{foo,bar,baz}.png', 
-          dest: 'dest/',
-          ext: '.min.png'
-      },
-      compress3: {
-          src: ['{foo,bar,baz}.png', '!*.min.png'],
-          cwd: 'src/',
-          dest: 'dest/',
-          expand: true,
-          rename: function(dest, src) { 
-              var parts = src.split('/'),
-              fname = path.basename(parts.pop(), ".png");
-              return path.join(dest, fname + '.min.png');
-          }
-      }
-    },
+    // tinypng: {
+    //   options: {
+    //       apiKey: "YOUR API KEY HERE",
+    //       checkSigs: true,
+    //       sigFile: 'dest/file_sigs.json',
+    //       summarize: true,
+    //       showProgress: true,
+    //       stopOnImageError: true
+    //   },
+    //   compress: {
+    //       files: {
+    //         'dest/foo.min.png': 'src/foo.png'
+    //       }
+    //   },
+    //   compress2: {
+    //       expand: true, 
+    //       src: 'src/{foo,bar,baz}.png', 
+    //       dest: 'dest/',
+    //       ext: '.min.png'
+    //   },
+    //   compress3: {
+    //       src: ['{foo,bar,baz}.png', '!*.min.png'],
+    //       cwd: 'src/',
+    //       dest: 'dest/',
+    //       expand: true,
+    //       rename: function(dest, src) { 
+    //           var parts = src.split('/'),
+    //           fname = path.basename(parts.pop(), ".png");
+    //           return path.join(dest, fname + '.min.png');
+    //       }
+    //   }
+    // },
     pagespeed: {
       options: {
         nokey: true,
@@ -161,27 +161,33 @@ module.exports = function (grunt) {
           }
         ]
       }
+    },
+    kss: {
+       // options: {
+       //  //css: '/style/style.css',
+       //  includeType: 'css, sass, style'
+       // },
+      dist: {
+        files: {
+          'styleguide': 'sass'
+        }
+      }
     }
 
   });
 
-  // These plugins provide necessary tasks.
+
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  //require('load-grunt-tasks')(grunt);
   grunt.loadNpmTasks('grunt-sass');
-
   grunt.loadNpmTasks('grunt-tinypng');
   grunt.loadNpmTasks('grunt-pagespeed');
-
-  // Default task.
-
+  grunt.loadNpmTasks('grunt-kss');
   //grunt.registerTask('tinypng', ['gunt-tinypng']);
   //grunt.registerTask('pagespeed', ['pagespeed']);
-
   grunt.loadNpmTasks('grunt-yslow');
 
   grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('styleguide', ['kss']);
 
 };
