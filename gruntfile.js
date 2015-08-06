@@ -170,7 +170,7 @@ module.exports = function (grunt) {
        },
       dist: {
         files: {
-          'styleguide': 'sass'
+          'styleguide': ['sass', 'styleguide/sitemap']
         }
       }
     }
