@@ -58,7 +58,8 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'style/main.css': 'sass/main.scss'
+          'style/main.css': 'sass/main.scss',
+          'styleguide/style.css': 'sass/styleguide.scss'
         }
       }
     },
@@ -163,10 +164,10 @@ module.exports = function (grunt) {
       }
     },
     kss: {
-       // options: {
-       //  //css: '/style/style.css',
-       //  includeType: 'css, sass, style'
-       // },
+       options: {
+        css: 'style.css',
+        //includeType: 'css, sass, style'
+       },
       dist: {
         files: {
           'styleguide': 'sass'

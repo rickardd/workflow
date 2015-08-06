@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"sourceRoot": "/",
+	"file": "styleguide.css",
+	"sources": [
+		"../sass/styleguide.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAAA,IAAI,CAAA;EACH,gBAAgB,EAAE,MAAO,GADrB",
+	"names": []
+}
