@@ -106,3 +106,6 @@ Set of snippets, packages, files and best practices.
   + css: mark 'ToDo' on things that need to be done, Styleguid or refactor. 
 
 
+## Summary
+
+  - Snippets and autocreated files helps the naming convension. 
