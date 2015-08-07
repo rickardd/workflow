@@ -40,7 +40,7 @@ Set of snippets, packages, files and best practices.
 
 - Sublime Packages
   + ToDo list. Use this list for the presentation. 
-  + -
+  + DockBlocker macro
   + -
   + -
 
