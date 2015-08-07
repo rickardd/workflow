@@ -5,6 +5,16 @@ Set of snippets, packages, files and best practices.
 
 ### Intro
   How mush time should I spend on work flow. 3h on your workflow may save you and others month of work. 
+
+### Front end deveoper - The hard part
+  
+  Everything is global so... 
+  - How do I know my code doesnt break any of the 200 urls with different options?
+  - What classes can I use?
+  - What classes should I use?
+  - How are the classes related?
+  - How to name things so it makes sense?
+
 ### What we will cover
   
 ### Checklist
@@ -26,6 +36,7 @@ Set of snippets, packages, files and best practices.
   + watch
   + build
   + more cool packages
+  + auto comment js code
 
 - live_reload:
   + plain css vs compiled sass
@@ -39,7 +50,7 @@ Set of snippets, packages, files and best practices.
 
 - Sublime Packages
   + ToDo list. Use this list for the presentation. 
-  + -
+  + DockBlocker macro
   + -
   + -
 
