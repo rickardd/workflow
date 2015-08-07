@@ -26,6 +26,7 @@ Set of snippets, packages, files and best practices.
   + watch
   + build
   + more cool packages
+  + auto comment js code
 
 - live_reload:
   + plain css vs compiled sass
