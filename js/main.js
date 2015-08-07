@@ -1,16 +1,4 @@
-hello
-
-
-lsdf
-
-
-sdfsdfdsf
-
-
-sdlfjsdlf
-sdfsdfdsf
-
-sdfsdfdsf
+sublime test
 
 
 
