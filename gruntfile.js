@@ -5,16 +5,15 @@
 module.exports = function (grunt) {
   'use strict';
 
-  // Project configuration.
   grunt.initConfig({
-    //Task configuration.
     jshint: {
       options: {
         curly: true,
         eqeqeq: true,
         immed: true,
         latedef: true,
-        newcap: true        noarg: true,
+        newcap: true,
+        noarg: true,
         sub: true,
         undef: true,
         unused: true,
@@ -62,6 +61,14 @@ module.exports = function (grunt) {
           livereload: 35729
         }
       },
+      scripts: {
+        files: ['js/**/*.js'],
+        tasks: [],
+        options: {
+          spawn: false,
+          livereload: 35729
+        }
+      },
       css: {
         files: ['sass/**/*.scss'],
         tasks: ['sass', 'kss'],
@@ -85,8 +92,8 @@ module.exports = function (grunt) {
     //       }
     //   },
     //   compress2: {
-    //       expand: true, 
-    //       src: 'src/{foo,bar,baz}.png', 
+    //       expand: true,
+    //       src: 'src/{foo,bar,baz}.png',
     //       dest: 'dest/',
     //       ext: '.min.png'
     //   },
@@ -95,7 +102,7 @@ module.exports = function (grunt) {
     //       cwd: 'src/',
     //       dest: 'dest/',
     //       expand: true,
-    //       rename: function(dest, src) { 
+    //       rename: function(dest, src) {
     //           var parts = src.split('/'),
     //           fname = path.basename(parts.pop(), ".png");
     //           return path.join(dest, fname + '.min.png');
@@ -135,39 +142,37 @@ module.exports = function (grunt) {
       },
       pages: {
         files: [
-          {
-            src: 'http://google.com'
-          },
-          {
-            src: 'http://www.google.co.uk',
-            thresholds: {
-              weight: 100
-            }
+        {
+          src: 'http://google.com'
+        },
+        {
+          src: 'http://www.google.co.uk',
+          thresholds: {
+            weight: 100
           }
+        }
         ]
       }
     },
     kss: {
-       options: {
-        css: 'style.css',
+     options: {
+      css: 'style.css'
         //includeType: 'css, sass, style'
-       },
+      },
       dist: {
         files: {
           'styleguide': ['sass', 'styleguide/sitemap']
         }
       }
     }
-
   });
 
-
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-tinypng');
-  grunt.loadNpmTasks('grunt-pagespeed');
-  grunt.loadNpmTasks('grunt-kss');
+grunt.loadNpmTasks('grunt-contrib-jshint');
+grunt.loadNpmTasks('grunt-contrib-watch');
+grunt.loadNpmTasks('grunt-sass');
+grunt.loadNpmTasks('grunt-tinypng');
+grunt.loadNpmTasks('grunt-pagespeed');
+grunt.loadNpmTasks('grunt-kss');
   //grunt.registerTask('tinypng', ['gunt-tinypng']);
   //grunt.registerTask('pagespeed', ['pagespeed']);
   grunt.loadNpmTasks('grunt-yslow');
