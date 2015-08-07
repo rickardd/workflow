@@ -1,0 +1,668 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"grunt",
+				"gruntfile	(gruntfile.js)"
+			],
+			[
+				"mar",
+				"mark_style	(SublimeLinter.sublime-settings)"
+			],
+			[
+				"mari",
+				"Marionette.Application"
+			],
+			[
+				"mario",
+				"Marionette.Commands"
+			],
+			[
+				"sn",
+				"sn-marionette-layout-view	sn-marionette-layout-view"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sass/main.scss",
+			"settings":
+			{
+				"buffer_size": 551,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "styleguide/index.html",
+			"settings":
+			{
+				"buffer_size": 2361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "TodoReview",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "tod",
+		"selected_items":
+		[
+			[
+				"tod",
+				"TodoReview: Project Files"
+			],
+			[
+				"todo",
+				"TodoReview: Open Files"
+			],
+			[
+				"set",
+				"Set Syntax: Sass"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"task ne",
+				"Tasks: New"
+			],
+			[
+				"task",
+				"Tasks: New"
+			],
+			[
+				"task ",
+				"Tasks: New document"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Markdown Slideshow"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"set use",
+				"Preferences: Settings - User"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"set sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"beu",
+				"SassBeautify: Convert from CSS to current type"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"List stylesheet variables"
+			],
+			[
+				"style",
+				"List stylesheet variables"
+			],
+			[
+				"emme",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"grun",
+				"Grunt"
+			],
+			[
+				"gru",
+				"Grunt"
+			],
+			[
+				"gti push",
+				"Git: Push"
+			],
+			[
+				"git ",
+				"Git: Quick Commit"
+			],
+			[
+				"git status",
+				"Git: Quick Status"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"sett use",
+				"Preferences: Settings - User"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"setti use",
+				"Preferences: Settings - User"
+			],
+			[
+				"defaul",
+				"Preferences: Settings - Default"
+			],
+			[
+				"git diff",
+				"Git: Diff"
+			],
+			[
+				"mario",
+				"Snippet: Backbone.Marionette ItemView"
+			],
+			[
+				"listPack",
+				"Package Control: List Packages"
+			],
+			[
+				"subliemlin use",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"packa",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"gitgutt",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"gitk",
+				"Gitk"
+			],
+			[
+				"gi",
+				"Git: Quick Commit"
+			],
+			[
+				"git",
+				"Git: Show"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"inste",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimelin",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"sublimelinte",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pack remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublie linter set",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"listpa",
+				"Package Control: List Packages"
+			],
+			[
+				"snippe",
+				"Snippet: Backbone.Marionette Application"
+			],
+			[
+				"marione",
+				"Snippet: Backbone.Marionette ItemView"
+			],
+			[
+				"set sy scs",
+				"Set Syntax: CSS"
+			],
+			[
+				"comment",
+				"Toggle Block Comment"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"dock",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"",
+				"Changelog"
+			],
+			[
+				"sublimerep",
+				"Build With: sublimerepl_build_system_hack"
+			],
+			[
+				"set sy html",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set synt ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 241.0,
+		"history":
+		[
+			"echo 's'",
+			"arg",
+			"hello",
+			"echo $PATH",
+			"$PATH",
+			"ls",
+			"cd /",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rickarddahlstrom/workflow",
+		"/Users/rickarddahlstrom/workflow/html",
+		"/Users/rickarddahlstrom/workflow/sass",
+		"/Users/rickarddahlstrom/workflow/sass/sitemap",
+		"/Users/rickarddahlstrom/workflow/styleguide",
+		"/Users/rickarddahlstrom/workflow/styleguide/public",
+		"/Users/rickarddahlstrom/workflow/styleguide-templates"
+	],
+	"file_history":
+	[
+		"/Users/rickarddahlstrom/workflow/todo/workflow.TODO",
+		"/Users/rickarddahlstrom/workflow/html/test.html",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/rickarddahlstrom/workflow/sass/sitemap.scss",
+		"/Users/rickarddahlstrom/workflow/sass/naming-convension.scss",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/Grunt/SublimeGrunt.sublime-settings",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/SublimeGrunt.sublime-settings",
+		"/Users/rickarddahlstrom/workflow/gruntfile.js",
+		"/Users/rickarddahlstrom/workflow/js/main.js",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/rickarddahlstrom/workflow/test.html",
+		"/Users/rickarddahlstrom/workflow/sass/styleguide.scss",
+		"/Users/rickarddahlstrom/workflow/sass/main.scss",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/rickarddahlstrom/workflow/sass/sitemap/sitemap.css",
+		"/Users/rickarddahlstrom/workflow/styleguide/./sitemap/sitemap.css",
+		"/Users/rickarddahlstrom/workflow/styleguide/markup/../../test.html",
+		"/Users/rickarddahlstrom/workflow/styleguide/sitemap/sitemap.css",
+		"/Users/rickarddahlstrom/workflow/style/styleguide.css",
+		"/Users/rickarddahlstrom/workflow/.gitignore",
+		"/Users/rickarddahlstrom/workflow/css/main.scss",
+		"/Users/rickarddahlstrom/workflow/styleguide/index.html",
+		"/Users/rickarddahlstrom/workflow/style/main.css",
+		"/Users/rickarddahlstrom/workflow/node_modules/grunt-cli/Gruntfile.js",
+		"/Users/rickarddahlstrom/Desktop/test.js",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/sn-marionette-view.sublime-snippet",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/sn-marionette-layout-view.sublime-snippet"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fff",
+			"add",
+			"session[:scored_translation_ids]",
+			"false",
+			"element",
+			"${6",
+			"${7",
+			"${6:",
+			"${7:}",
+			"${6:}",
+			"6:",
+			":}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sass/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								515,
+								515
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 105.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "styleguide/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								513,
+								513
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"line_padding_bottom": 2,
+							"line_padding_top": 2,
+							"review_args":
+							{
+								"open_files": true,
+								"open_files_only": true,
+								"settings":
+								{
+								}
+							},
+							"review_results":
+							{
+								"68,103":
+								{
+									"file": "/Users/rickarddahlstrom/workflow/sass/main.scss",
+									"line": 40,
+									"note": "Change code",
+									"patt": "todo",
+									"priority": 100
+								}
+							},
+							"syntax": "Packages/TodoReview/TodoReview.hidden-tmLanguage",
+							"todo_results": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 194.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 112.0
+	},
+	"output.git-push":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "",
+	"project": "workflow-project.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"todo",
+				"todo/workflow.TODO"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

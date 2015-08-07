@@ -1,36 +1,34 @@
-
-
 // Sitemap
 //
-// Collection of all urls for the site. 
+// Collection of all urls for the site.
 // This should always be updated when url are added or deleted to/from the project.
-// Eveyry url should be accessable from the master account. 
+// Eveyry url should be accessable from the master account.
 //
 // Styleguide 1
 
 // Index
 //
-// / 							-	No login required
+// /              - No login required
 //
 // Styleguide 1.1
 
-
 // About
 //
-// .about 						-	No login required
+// .about             - No login required
 //
 // Markup: <a href="/{{modifier_class}}">/{{modifier_class}}</a>
 //
 // Styleguide 1.2
 
-
 // Contact
 //
-// contact/CEO 					-	No login required
-// contact/Employees 			-	No login required
+// contact/CEO          - No login required
+// contact/Employees      - No login required
 //
 // Markup: <a href="/{{modifier_class}}">/{{modifier_class}}</a>
 //
 // Styleguide 1.3
 
-
+.hello {
+    color: red;
+}

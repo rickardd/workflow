@@ -42,7 +42,7 @@ module.exports = function (grunt) {
       dist: {
         files: {
           'style/main.css': 'sass/main.scss',
-          'styleguide/style.css': 'sass/styleguide.scss'
+          'styleguide/styleguide.css': 'sass/styleguide.scss'
         }
       }
     },
@@ -156,8 +156,8 @@ module.exports = function (grunt) {
     },
     kss: {
      options: {
-      css: 'style.css'
-        //includeType: 'css, sass, style'
+        css: 'styleguide.css',
+        template: 'styleguide/template'
       },
       dist: {
         files: {
@@ -181,7 +181,6 @@ grunt.loadNpmTasks('grunt-kss');
   grunt.registerTask('styleguide', ['kss']);
 
 };
-
 
 
 

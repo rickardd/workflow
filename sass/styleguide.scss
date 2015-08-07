@@ -1,5 +1,31 @@
-.kss-main{
-	background-color: #f1f1f1;
+$color-dark: #333;
+$color-middle: #555;
+$color-bright-white: #eee;
+$color-white: #fff;
+
+$theme-color-1: #850000;
+$theme-color-2: #618d19;
+$theme-color-3: red;
+
+.kss-main {
+    background-color: $color-bright-white;
+}
+
+.kss-sidebar {
+    background-color: $color-white;
+    color: $color-white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.kss-style h1,
+.kss-style h2,
+.kss-style h3,
+.kss-style h4 {
+    color: $color-dark;
 }
 
 .kss-style h1 {
@@ -17,3 +43,24 @@
 .kss-style h4 {
     font-size: 16px;
 }
+
+.kss-doc-title,
+.kss-nav,
+.kss-nav__menu,
+#kss-node .kss-nav__ref,
+.kss-nav__name,
+.kss-nav__menu-item {
+    color: $color-dark;
+}
+
+.kss-nav__menu-item {
+    font-size: 12px;
+    a{
+      display: block;
+      padding: 4px;
+      &:hover{
+        background-color: $color-bright-white;
+      }
+    }
+}
+
