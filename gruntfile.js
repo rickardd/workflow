@@ -26,29 +26,14 @@ module.exports = function (grunt) {
         globals: {
           jQuery: true,
           Backbone: true,
-          _: true,
-          Raygun: true,
-          api: true,
-          Markdown: true,
-          toastr: true,
-          moment: true,
-          prettyPrint: true,
-          Hogan: true,
-          d3: true,
-          echarts: true,
-          Dropzone: true,
-          Mousetrap: true,
-          Prism: true,
-          Formatting: true,
-          EmojiConvertor: true,
-          RaygunAutocomplete: true
+          _: true
         }
       },
       gruntfile: {
-        src: 'Gruntfile.js'
+        src: 'gruntfile.js'
       },
       lib_test: {
-        src: ['Scripts/raygun/**/*.js', 'Scripts/pages/**/*.js', 'Scripts/*.js']
+        src: ['js/**/*.js']
       }
     },
     sass: {
@@ -192,3 +177,7 @@ module.exports = function (grunt) {
   grunt.registerTask('styleguide', ['kss']);
 
 };
+
+
+
+
