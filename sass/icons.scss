@@ -1,0 +1,67 @@
+// Icons
+//
+// Some stuff about icons
+//
+// .icon             - Needs --size and --color properties
+//
+// Styleguide 5
+
+.icon{
+ padding: 4px;
+ width: 16px;
+ height: 16px;
+ background-color: #aaa;
+}
+
+
+// Icon sizes
+//
+// .icon--16         - Description
+// .icon--24        - Description
+// .icon--32       - Description
+//
+// Markup:
+// <div class="icon {{modifier_class}} icon--blue">x</div>
+//
+// Styleguide 5.1
+//
+//
+.icon--16{
+ width: 16px;
+ height: 16px;
+}
+.icon--24{
+ width: 24px;
+ height: 24px;
+}
+.icon--32{
+ width: 32px;
+ height: 32px;
+}
+
+
+
+
+
+// Icon colors
+//
+// .icon--red         - Description
+// .icon--blue        - Description
+// .icon--green       - Description
+//
+// Markup:
+// <div class="icon {{modifier_class}} icon--16">x</div>
+//
+// Styleguide 5.2
+
+
+.icon--green{
+ background-color: green;
+}
+.icon--red{
+  background-color: red;
+}
+.icon--blue{
+ background-color: blue;
+}
+

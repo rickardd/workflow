@@ -1,0 +1,68 @@
+// Button
+//
+// asdklfsljflasdf alskfjlasfjlasdjf
+//
+// .button             - Needs --size and --color properties
+//
+// Styleguide 4
+
+.button{
+ padding: 8px;
+ display: inline-block;
+}
+
+
+// Button sizes
+//
+// .button--16         - Description
+// .button--24        - Description
+// .button--32       - Description
+//
+// Markup:
+// <div class="button {{modifier_class}} button--blue">Button</div>
+//
+// Styleguide 4.1
+
+
+
+.button--16{
+ font-size: 14px;
+ line-height: 14px;
+}
+.button--24{
+ font-size: 14px;
+ line-height: 14px;
+ padding: 16px;
+}
+.button--32{
+ font-size: 14px;
+ line-height: 14px;
+ padding: 20px;
+}
+
+
+
+
+
+// Button colors
+//
+// .button--red         - Description
+// .button--blue        - Description
+// .button--green       - Description
+//
+// Markup:
+// <div class="button {{modifier_class}} button--16">button</div>
+//
+// Styleguide 4.2
+
+
+.button--green{
+ background-color: green;
+}
+.button--red{
+  background-color: red;
+}
+
+.button--blue{
+ background-color: blue;
+}
