@@ -26,10 +26,15 @@ $theme-color-3: red;
 .kss-style h3,
 .kss-style h4 {
     color: $color-dark;
+    display: block;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .kss-style h1 {
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 22px;
 }
 
 .kss-style h2 {
@@ -64,3 +69,31 @@ $theme-color-3: red;
     }
 }
 
+
+
+#kss-node .kss-modifier__wrapper {
+    border: none;
+    padding: 0;
+}
+
+#kss-node .kss-modifier__heading {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+
+#kss-node .kss-markup {
+    margin: 24px 0 24px 0;
+    border: none;
+}
+
+
+#kss-node .kss-title__ref{
+  &:before{
+    content: '';
+    display: none;
+  }
+}

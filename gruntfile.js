@@ -42,7 +42,7 @@ module.exports = function (grunt) {
       dist: {
         files: {
           'style/main.css': 'sass/main.scss',
-          'styleguide/styleguide.css': 'sass/styleguide.scss'
+          'styleguide/styleguide.css': 'sass/styleguide.scss' // TODO: duplicateds css file
         }
       }
     },
@@ -56,7 +56,11 @@ module.exports = function (grunt) {
         tasks: ['jshint:lib_test']
       },
       markup: {
-        files: ['templates/**/*.mustache', 'views/**/*.cshtml', 'areas/**/*.cshtml'],
+        files: [
+          'html/**/*.html',
+          'styleguide/template/index.html'
+          ],
+          tasks: ['kss'],
         options: {
           livereload: 35729
         }
@@ -161,7 +165,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'styleguide': ['sass', 'styleguide/sitemap']
+          'styleguide': ['sass', 'js']
         }
       }
     }

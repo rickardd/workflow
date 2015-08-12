@@ -10,13 +10,15 @@
 //
 // /              - No login required
 //
+// Markup: <a href="{{modifier_class}}">{{modifier_class}}</a>
+//
 // Styleguide 1.1
 
 // About
 //
-// .about             - No login required
+// about             - No login required
 //
-// Markup: <a href="/{{modifier_class}}">/{{modifier_class}}</a>
+// Markup: <a href="{{modifier_class}}">{{modifier_class}}</a>
 //
 // Styleguide 1.2
 
@@ -25,10 +27,6 @@
 // contact/CEO          - No login required
 // contact/Employees      - No login required
 //
-// Markup: <a href="/{{modifier_class}}">/{{modifier_class}}</a>
+// Markup: <a href="{{modifier_class}}">{{modifier_class}}</a>
 //
 // Styleguide 1.3
-
-.hello {
-    color: red;
-}

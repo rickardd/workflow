@@ -1,37 +1,7 @@
+@import 'button';
+@import 'icons';
+@import 'properties';
 
-// Button
-//
-// :hover             - Even more on hover
-//
-// Styleguide 2
-
-a.button.star{
-  color: red;
-}
-
-// Icons
-//
-// Markup: test.html
-//
-// Deprecated: Styling for legacy wikis. We'll drop support for these wikis on
-// July 13, 2007.
-//
-// Styleguide 3
-
-a.button-2{
-  color: red;
-}
-
-
-// Text and Icon
-//
-// Deprecated: Styling for legacy wikis. We'll drop support for these wikis on
-// July 13, 2007.
-//
-// Styleguide 3.1
-a.button-2{
-  color: red;
-}
 
 // NOTE: This (1) is a note (0)
 $hello: #fff;

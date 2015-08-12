@@ -1,10 +1,55 @@
-a.button.star {
-  color: red; }
+.button {
+  padding: 8px;
+  display: inline-block; }
 
-a.button-2 {
-  color: red; }
+.button--16 {
+  font-size: 14px;
+  line-height: 14px; }
 
-a.button-2 {
-  color: red; }
+.button--24 {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 16px; }
+
+.button--32 {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 20px; }
+
+.button--green {
+  background-color: green; }
+
+.button--red {
+  background-color: red; }
+
+.button--blue {
+  background-color: blue; }
+
+.icon {
+  padding: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: #aaa; }
+
+.icon--16 {
+  width: 16px;
+  height: 16px; }
+
+.icon--24 {
+  width: 24px;
+  height: 24px; }
+
+.icon--32 {
+  width: 32px;
+  height: 32px; }
+
+.icon--green {
+  background-color: green; }
+
+.icon--red {
+  background-color: red; }
+
+.icon--blue {
+  background-color: blue; }
 
 /*# sourceMappingURL=main.css.map */
