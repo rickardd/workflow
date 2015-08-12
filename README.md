@@ -37,6 +37,8 @@ Set of snippets, packages, files and best practices.
   + build
   + more cool packages
   + auto comment js code
+  + javascript documentations: https://github.com/krampstudio/grunt-jsdoc
+  + living styleguide. kss. 
 
 - live_reload:
   + plain css vs compiled sass
