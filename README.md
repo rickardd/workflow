@@ -90,7 +90,7 @@ Set of snippets, packages, files and best practices.
   + -
 
 - Sublime: Tips and triks
-  + 
+  + macros
   
 - Emmet
   + html
