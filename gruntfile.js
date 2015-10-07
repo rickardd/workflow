@@ -168,6 +168,14 @@ module.exports = function (grunt) {
           'styleguide': ['sass', 'js']
         }
       }
+    },
+    jsdoc : {
+        dist : {
+            src: ['js/*.js'],
+            options: {
+                destination: 'styleguide-js'
+            }
+        }
     }
   });
 
@@ -177,12 +185,17 @@ grunt.loadNpmTasks('grunt-sass');
 grunt.loadNpmTasks('grunt-tinypng');
 grunt.loadNpmTasks('grunt-pagespeed');
 grunt.loadNpmTasks('grunt-kss');
+grunt.loadNpmTasks('grunt-jsdoc');
   //grunt.registerTask('tinypng', ['gunt-tinypng']);
   //grunt.registerTask('pagespeed', ['pagespeed']);
   grunt.loadNpmTasks('grunt-yslow');
 
   grunt.registerTask('default', ['jshint']);
   grunt.registerTask('styleguide', ['kss']);
+
+  // Grunt doesn't like repetition of names. ('jsdoc', ['jsdoc']) doesn't work
+  //grunt.registerTask('jsdocs', ['jsdoc']);
+
 
 };
 

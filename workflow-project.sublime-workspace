@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"templ",
+				"template"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"ove",
+				"overflow-y"
+			],
+			[
+				"style",
+				"styleguide"
+			],
+			[
 				"grunt",
 				"gruntfile	(gruntfile.js)"
 			],
@@ -27,32 +51,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "sass/main.scss",
-			"settings":
-			{
-				"buffer_size": 551,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "styleguide/index.html",
-			"settings":
-			{
-				"buffer_size": 2361,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix",
-				"name": "TodoReview",
-				"scratch": true
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -62,31 +60,95 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "tod",
+		"last_filter": "settig",
 		"selected_items":
 		[
 			[
-				"tod",
-				"TodoReview: Project Files"
+				"settig",
+				"Preferences: Settings - User"
 			],
 			[
-				"todo",
-				"TodoReview: Open Files"
+				"dock",
+				"DocBlockr: Decorate line comment"
 			],
 			[
-				"set",
-				"Set Syntax: Sass"
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git puhs",
+				"Git: Push"
+			],
+			[
+				"git quick",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"git pul",
+				"Git: Pull"
+			],
+			[
+				"git qui",
+				"Git: Quick Status"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"task",
+				"Tasks: New"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"task ne",
-				"Tasks: New"
+				"git pu",
+				"Git: Push"
 			],
 			[
-				"task",
+				"git di",
+				"Git: Diff"
+			],
+			[
+				"sett",
+				"Preferences: Settings - User"
+			],
+			[
+				"tod",
+				"TodoReview: Open Files"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"package sett",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"set",
+				"Set Syntax: Sass"
+			],
+			[
+				"task ne",
 				"Tasks: New"
 			],
 			[
@@ -102,20 +164,12 @@
 				"Markdown Slideshow"
 			],
 			[
-				"git qui",
-				"Git: Quick Commit"
-			],
-			[
 				"git sta",
 				"Git: Status"
 			],
 			[
 				"set use",
 				"Preferences: Settings - User"
-			],
-			[
-				"git stat",
-				"Git: Status"
 			],
 			[
 				"set sass",
@@ -136,10 +190,6 @@
 			[
 				"beu",
 				"SassBeautify: Convert from CSS to current type"
-			],
-			[
-				"sass",
-				"SassBeautify"
 			],
 			[
 				"instal",
@@ -178,24 +228,12 @@
 				"Git: Quick Commit"
 			],
 			[
-				"git status",
-				"Git: Quick Status"
-			],
-			[
-				"git pu",
-				"Git: Push"
-			],
-			[
 				"git commi",
 				"Git: Commit"
 			],
 			[
 				"sett use",
 				"Preferences: Settings - User"
-			],
-			[
-				"git di",
-				"Git: Diff Current File"
 			],
 			[
 				"setti use",
@@ -228,14 +266,6 @@
 			[
 				"gitgutt",
 				"GitGutter: Compare Against Commit"
-			],
-			[
-				"git push",
-				"Git: Push"
-			],
-			[
-				"git add",
-				"Git: Quick Add"
 			],
 			[
 				"gitk",
@@ -306,10 +336,6 @@
 				"Set Syntax: CSS"
 			],
 			[
-				"dock",
-				"DocBlockr: Decorate line comment"
-			],
-			[
 				"",
 				"Changelog"
 			],
@@ -338,7 +364,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 467.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -367,31 +393,48 @@
 	"expanded_folders":
 	[
 		"/Users/rickarddahlstrom/workflow",
-		"/Users/rickarddahlstrom/workflow/html",
+		"/Users/rickarddahlstrom/workflow/js",
 		"/Users/rickarddahlstrom/workflow/sass",
 		"/Users/rickarddahlstrom/workflow/sass/sitemap",
+		"/Users/rickarddahlstrom/workflow/style",
 		"/Users/rickarddahlstrom/workflow/styleguide",
-		"/Users/rickarddahlstrom/workflow/styleguide/public",
-		"/Users/rickarddahlstrom/workflow/styleguide-templates"
+		"/Users/rickarddahlstrom/workflow/styleguide/template",
+		"/Users/rickarddahlstrom/workflow/styleguide/template/public",
+		"/Users/rickarddahlstrom/workflow/styleguide/template2"
 	],
 	"file_history":
 	[
-		"/Users/rickarddahlstrom/workflow/todo/workflow.TODO",
-		"/Users/rickarddahlstrom/workflow/html/test.html",
 		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/rickarddahlstrom/workflow/sass/sitemap.scss",
+		"/Users/rickarddahlstrom/workflow/js/a-file.js",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/Users/rickarddahlstrom/workflow/style/main.css",
+		"/Users/rickarddahlstrom/workflow/sass/button.scss",
 		"/Users/rickarddahlstrom/workflow/sass/naming-convension.scss",
-		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/Grunt/SublimeGrunt.sublime-settings",
-		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/SublimeGrunt.sublime-settings",
+		"/Users/rickarddahlstrom/workflow/sass/icons.scss",
+		"/Users/rickarddahlstrom/workflow/sass/main.scss",
+		"/Users/rickarddahlstrom/workflow/sass/properties.scss",
+		"/Users/rickarddahlstrom/workflow/sass/sitemap.scss",
 		"/Users/rickarddahlstrom/workflow/gruntfile.js",
 		"/Users/rickarddahlstrom/workflow/js/main.js",
+		"/Users/rickarddahlstrom/workflow/sass/Form.scss",
+		"/Users/rickarddahlstrom/workflow/sass/Icon.scss",
+		"/Users/rickarddahlstrom/workflow/sass/styleguide.scss",
+		"/Users/rickarddahlstrom/workflow/styleguide/template/index.html",
+		"/Users/rickarddahlstrom/workflow/node_modules/grunt-kss/node_modules/kss/generator/handlebars/helpers.js",
+		"/Users/rickarddahlstrom/workflow/styleguide/index.html",
+		"/Users/rickarddahlstrom/workflow/todo/workflow.TODO",
+		"/Users/rickarddahlstrom/workflow/node_modules/grunt-kss/node_modules/kss/test/fixtures-styles/with-include/style.scss",
+		"/Users/rickarddahlstrom/workflow/node_modules/grunt-kss/node_modules/kss/generator/index.js",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/TodoReview.sublime-settings",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/rickarddahlstrom/workflow/styleguide/public/prettify.js",
+		"/Users/rickarddahlstrom/workflow/html/test.html",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/Grunt/SublimeGrunt.sublime-settings",
+		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/SublimeGrunt.sublime-settings",
 		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/Users/rickarddahlstrom/workflow/test.html",
-		"/Users/rickarddahlstrom/workflow/sass/styleguide.scss",
-		"/Users/rickarddahlstrom/workflow/sass/main.scss",
 		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/Users/rickarddahlstrom/workflow/sass/sitemap/sitemap.css",
 		"/Users/rickarddahlstrom/workflow/styleguide/./sitemap/sitemap.css",
@@ -400,8 +443,6 @@
 		"/Users/rickarddahlstrom/workflow/style/styleguide.css",
 		"/Users/rickarddahlstrom/workflow/.gitignore",
 		"/Users/rickarddahlstrom/workflow/css/main.scss",
-		"/Users/rickarddahlstrom/workflow/styleguide/index.html",
-		"/Users/rickarddahlstrom/workflow/style/main.css",
 		"/Users/rickarddahlstrom/workflow/node_modules/grunt-cli/Gruntfile.js",
 		"/Users/rickarddahlstrom/Desktop/test.js",
 		"/Users/rickarddahlstrom/Library/Application Support/Sublime Text 3/Packages/User/sn-marionette-view.sublime-snippet",
@@ -416,6 +457,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -423,6 +465,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"9",
+			"16",
+			"font-size",
+			"button",
+			"Button",
+			"button",
+			"line-height: 14px;",
+			"14;",
+			"14",
+			"red",
+			"No login required",
+			"ton",
+			"kss-title",
+			"__ref",
+			"<!---->",
+			"#permali",
+			"permalink",
+			"section",
+			"kss-title__ref",
+			"    color: $color-white;",
+			"background",
+			"kss",
+			"{",
 			"fff",
 			"add",
 			"session[:scored_translation_ids]",
@@ -452,117 +517,13 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "sass/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 551,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								515,
-								515
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 105.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "styleguide/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2361,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								513,
-								513
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"line_padding_bottom": 2,
-							"line_padding_top": 2,
-							"review_args":
-							{
-								"open_files": true,
-								"open_files_only": true,
-								"settings":
-								{
-								}
-							},
-							"review_results":
-							{
-								"68,103":
-								{
-									"file": "/Users/rickarddahlstrom/workflow/sass/main.scss",
-									"line": 40,
-									"note": "Change code",
-									"patt": "todo",
-									"priority": 100
-								}
-							},
-							"syntax": "Packages/TodoReview/TodoReview.hidden-tmLanguage",
-							"todo_results": true,
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -583,11 +544,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.655240957594,
 			1.0
 		],
 		"rows":
@@ -609,6 +577,10 @@
 	{
 		"height": 112.0
 	},
+	"output.git-pull":
+	{
+		"height": 112.0
+	},
 	"output.git-push":
 	{
 		"height": 112.0
@@ -627,8 +599,24 @@
 		"selected_items":
 		[
 			[
+				"grunt",
+				"gruntfile.js"
+			],
+			[
+				"naming",
+				"sass/naming-convension.scss"
+			],
+			[
+				"scsss",
+				"node_modules/grunt-kss/node_modules/kss/test/fixtures-styles/with-include/style.scss"
+			],
+			[
 				"todo",
 				"todo/workflow.TODO"
+			],
+			[
+				"mainsc",
+				"sass/main.scss"
 			]
 		],
 		"width": 0.0
