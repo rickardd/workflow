@@ -5,7 +5,8 @@ Set of snippets, packages, files and best practices.
 
 ### Intro
   How mush time should I spend on work flow. 3h on your workflow may save you and others month of work. 
-
+  When and what should I improve?
+  
 ### Front end deveoper - The hard part
   
   Everything is global so... 
@@ -16,6 +17,9 @@ Set of snippets, packages, files and best practices.
   - How to name things so it makes sense?
 
 ### What we will cover
+  
+  
+  
   
 ### Checklist
 

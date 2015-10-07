@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** This is a description of the foo function. */
 var fn = function(x){
 	return x;
@@ -47,3 +48,25 @@ var fn = function(x){
 		 }
 		};
 
+=======
+// JavaScript
+//
+// .fn             function
+//
+// Styleguide 5
+
+
+
+
+
+var x = 1,
+    y = '2',
+    z = 3;
+
+var fn = function(){
+  return x + y;
+};
+
+
+console.log( fn() );
+>>>>>>> 1691f4f0205ef78bf4bc8de71d6a5c2cd4f0f189
