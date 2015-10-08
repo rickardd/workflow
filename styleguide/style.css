@@ -1,0 +1,26 @@
+.kss-main {
+  background-color: #fff #f1f1f1; }
+
+.kss-sidebar {
+  background-color: #444 #f1f1f1;
+  color: #fff; }
+
+.kss-style h1,
+.kss-style h2,
+.kss-style h3,
+.kss-style h4 {
+  color: #444; }
+
+.kss-style h1 {
+  font-size: 24px; }
+
+.kss-style h2 {
+  font-size: 20px; }
+
+.kss-style h3 {
+  font-size: 18px; }
+
+.kss-style h4 {
+  font-size: 16px; }
+
+/*# sourceMappingURL=style.css.map */

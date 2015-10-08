@@ -1,0 +1,71 @@
+.kss-main {
+  background-color: #eee; }
+
+.kss-sidebar {
+  background-color: #fff;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll; }
+
+.kss-style h1,
+.kss-style h2,
+.kss-style h3,
+.kss-style h4 {
+  color: #333;
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-size: 22px;
+  font-weight: bold; }
+
+.kss-style h1 {
+  font-size: 22px;
+  line-height: 22px; }
+
+.kss-style h2 {
+  font-size: 20px; }
+
+.kss-style h3 {
+  font-size: 18px; }
+
+.kss-style h4 {
+  font-size: 16px; }
+
+.kss-doc-title,
+.kss-nav,
+.kss-nav__menu,
+#kss-node .kss-nav__ref,
+.kss-nav__name,
+.kss-nav__menu-item {
+  color: #333; }
+
+.kss-nav__menu-item {
+  font-size: 12px; }
+  .kss-nav__menu-item a {
+    display: block;
+    padding: 4px; }
+    .kss-nav__menu-item a:hover {
+      background-color: #eee; }
+
+#kss-node .kss-modifier__wrapper {
+  border: none;
+  padding: 0; }
+
+#kss-node .kss-modifier__heading {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  font-weight: bold; }
+
+#kss-node .kss-markup {
+  margin: 24px 0 24px 0;
+  border: none; }
+
+#kss-node .kss-title__ref:before {
+  content: '';
+  display: none; }
+
+/*# sourceMappingURL=styleguide.css.map */
