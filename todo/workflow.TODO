@@ -1,22 +1,54 @@
+INTRO
+  - Why?
+  - When? e.g - lib_sass for raygun
+  - What we will cover
 
-Sublime
+SUBLIME
+ ☐ Tasks
+ ☐ Emmet html
+ ☐ Emmet css
+ ☐ Snippets
+ ☐ Quick comment javascript blocks
+ ☐ Lining
+ ☐ Git
+ ☐ Magic find files and functions
+ ☐ Show hex code in color
+ ☐ List and pick sass variables.
+ ☐ auto prefixer
+ ☐ View ToDo list for entire project
+
+SUBLIME
  ☐ creat todos from code comments
  ☐ KSS styleguide
  ☐ Global sass variable auto complete
  ☐ Learn slides
  ☐ run/test javascript console values in editor
 
- Grunt
- ☐ Build
 
- Presentation
+GRUNT and MPN
+ ☐ Live reload - Responsive example
+ ☐ Css source map - Edit sass in browser
+ ☐ Living styleguid
+ ☐ Automatic JavaScript documentation
+
+
+  Presentation
   -  What is the things Raygun can improve? (quality, automatisations)
   - creat my own npm... snippet styleguide generator? Tips.
   - wordflow idea. always when you creat a new path or options l(ike a setup page) you creat acces with a sudo user and add the new url to the stylde guide. That will make it super easy to find broken pages.
 
 
+WORKFLOW WITHIN A WORKFLOW
+ ☐ Terminal
+   ☐ Alias - Quick jump between projects and folders
+   ☐ Shell script - Quick open all tools needed in the morning.
+
+ ☐ Git repro for your text editor
+   ☐ Settitings
+   ☐ Snippets
 
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ Emmet html @done (15-10-08 10:35)
  ✔ and this @done (15-08-08 08:29
