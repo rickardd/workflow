@@ -1,0 +1,207 @@
+// Button
+//
+// Some generic button info
+//
+// .button             - Requires --size and --color properties
+// :hover             - Subtle hover highlight.
+//
+// Markup:
+// <div class="button {{modifier_class}} button-green">Div</div>
+// <a class="button {{modifier_class}} button-green">Link</a>
+// <button class="button {{modifier_class}} button-green">Button</button>
+// <input type="submit" class="button {{modifier_class}} button-green">Input[submit]</input>
+//
+// Styleguide 4
+
+// Button Creation
+.button {
+  @include noSelect;
+  @include font-size(1.4);
+  font-weight: bold;
+  font-family: $font-family;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
+  line-height: 16px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  outline: none;
+  max-width: 100%;
+  text-decoration: none!important;
+  @extend nowrap;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+
+.button-before,
+.button-after {
+  position: relative;
+  .icon-before,
+  .icon-after {
+    position: absolute;
+  }
+}
+
+// Button sizes
+//
+// .button-16       - Description
+// .button-24       - Description
+// .button-32       - Description
+// .button-36       - Description
+// .button-40       - Description
+// .button-48       - Description
+//
+// Markup:
+// <div class="button {{modifier_class}} button-green">Button</div>
+//
+// Styleguide 4.1
+
+.button-16 {
+  height: 16px;
+  min-width: 16px;
+}
+
+// TODO: Add to style guide
+// 24px
+.button-24 {
+  height: 24px;
+  min-width: 24px;
+  padding: 3px 8px;
+  @include font-size(1.2);
+
+  &.button-before {padding-left: 23px;}
+  &.button-after {padding-right: 23px;}
+
+  .icon-before.icon-16 {
+    top: 3px;
+    left: 3px;
+  }
+  .icon-after.icon-16 {
+    top: 3px;
+    right: 7px;
+  }
+}
+
+// 32px
+.button-32 {
+  height: 32px;
+  min-width: 32px;
+  padding: 7px 11px;
+  @include font-size(1.2);
+
+  &.button-before {padding-left: 34px;}
+  &.button-after {padding-right: 34px;}
+
+  .icon-before.icon-16 {
+    top: 7px;
+    left: 11px;
+  }
+  .icon-after.icon-16 {
+    top: 7px;
+    right: 11px;
+  }
+}
+
+// 36px
+.button-36 {
+  height: 36px;
+  min-width: 36px;
+  padding: 9px 11px;
+  @include font-size($fontsize-standard);
+  &.button-before {padding-left: 39px;}
+  &.button-after {padding-right: 39px;}
+
+  .icon-before.icon-16,
+  .icon-before.avatar-16 {
+    top: 9px;
+    left: 11px;
+  }
+  .icon-after.icon-16,
+  .icon-after.avatar-16 {
+    top: 9px;
+    right: 11px;
+  }
+  .icon-before.avatar-24 {
+    top: 5px;
+    left: 7px;
+  }
+  .icon-after.avatar-24 {
+    top: 5px;
+    right: 7px;
+  }
+}
+
+// 40px
+.button-40 {
+  height: 40px;
+  min-width: 40px;
+  padding: 11px;
+  @include font-size($fontsize-standard);
+  &.button-before {padding-left: 39px;}
+  &.button-after {padding-right: 39px;}
+
+  .icon-before.icon-16,
+  .icon-before.avatar-16 {
+    top: 11px;
+    left: 11px;
+  }
+  .icon-after.icon-16,
+  .icon-after.avatar-16 {
+    top: 11px;
+    right: 11px;
+  }
+  .icon-before.avatar-24 {
+    top: 7px;
+    left: 7px;
+  }
+  .icon-after.avatar-24 {
+    top: 7px;
+    right: 7px;
+  }
+}
+
+
+// 48px
+.button-48 {
+  height: 48px;
+  min-width: 48px;
+  padding: 15px;
+  @include font-size($fontsize-standard);
+
+  &.button-before {padding-left: 47px;}
+  &.button-after {padding-right: 47px;}
+
+  .icon-before.icon-16 {
+    left: 15px;
+    top: 15px;
+  }
+  .icon-after.icon-16 {
+    right: 15px;
+    top: 15px;
+  }
+  .icon-before.avatar-24 {
+    left: 11px;
+    top: 11px;
+  }
+  .icon-after.avatar-24 {
+    right: 11px;
+    top: 11px;
+  }
+}
+
+// centering a solo icon in a button
+.button {
+  .icon-16.icon-center {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+

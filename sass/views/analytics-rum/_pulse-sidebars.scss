@@ -1,0 +1,118 @@
+.graph-block-number__value {
+  @include font-size(2.2);
+  font-weight: bold;
+  color: $text-black;
+}
+
+.graph-block-number__value--margin {
+  margin-bottom: 4px;
+}
+
+.graph-block-number__label {
+  font-weight: bold;
+}
+
+.graph-block-number__label--margin {
+  margin-bottom: 4px;
+}
+
+.graph-block-chart {
+  height: 64px;
+}
+
+.graph-block-chart__x-axis {
+  border-top: 1px solid $color-grey-light;
+
+  .chart-tags li:last-child {
+    float: right;
+  }
+}
+
+
+.graph-block-list {
+  position: relative;
+  padding-left:72px;
+  height: 16px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+.graph-block-list__speed {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.graph-block-list__item--tag {
+  width: 12px;
+}
+
+.graph-block-list__item--country {
+  margin-right: 0;
+  line-height: 16px;
+}
+
+@include screen-med {
+  .graph-block-list__item--country {
+    max-width: 154px;
+  }
+}
+
+.graph-block-list__item--value {
+  width: 55px;
+}
+
+.graph-block-tag {
+  width: 16px;
+  height: 16px;
+  display: block;
+  padding: 4px;
+  &:before {
+    display: block;
+    content: '';
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    background: $color-grey;
+  }
+}
+
+.graph-block-tag--purple-1:before {
+  background-color: $color-byzantine-light;
+}
+
+.graph-block-tag--purple-2:before {
+  background-color: #8347C0;
+}
+
+.graph-block-tag--purple-3:before {
+  background-color: #7D41B9;
+}
+
+.graph-block-tag--purple-4:before {
+  background-color: #773CB3;
+}
+
+.graph-block-tag--purple-5:before {
+  background-color: #7036AC;
+}
+
+.graph-block-tag--purple-6:before {
+  background-color: #6A30A6;
+}
+
+.graph-block-tag--purple-7:before {
+  background-color: #642B9F;
+}
+
+.graph-block-tag--purple-8:before {
+  background-color: #5D2599;
+}
+
+.graph-block-tag--purple-9:before {
+  background-color: #571F92;
+}
+
+.graph-block-tag--purple-10:before {
+  background-color: $color-byzantine-dark;
+}

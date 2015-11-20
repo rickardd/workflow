@@ -1,0 +1,80 @@
+// Typography Stylesheet
+// Typography Block, add to content parent.
+
+.typography {
+  @include font-size(1.4);
+  line-height: 1.4;
+  a {
+    color: $color-azure;
+    text-decoration: underline;
+    &:hover,
+    &:active {
+      color: $color-ember-dark;
+    }
+  }
+  p {
+    margin: 4px 0 12px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  ol {
+    list-style: decimal;
+  }
+  ul {
+    list-style: disc;
+  }
+
+  ul, ol {
+    margin: 4px 0 16px;
+    padding: 0 0 0 20px;
+  }
+
+  h1 {margin: 32px 0 16px;}
+  h2 {margin: 24px 0 8px;}
+  h3 {margin: 24px 0 8px;}
+  h4 {margin: 24px 0 8px;}
+  h5 {margin: 16px 0 0;}
+  h6 {margin: 16px 0 0;}
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  pre,
+  pre code {
+    padding: 12px;
+    display: block;
+  }
+  pre {
+    margin: 4px 0 16px;
+  }
+
+  code {
+    display: inline-block;
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-family: $font-family-mono;
+    background: $background-color;
+    border: 1px solid $color-grey-lightest;
+    @include font-size(1.2);
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.typography p:last-child,
+.typography a:last-child,
+.typography h4:last-child,
+.typography ul:last-child,
+.typography ol:last-child {
+  margin: 0;
+}

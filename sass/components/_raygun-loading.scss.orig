@@ -1,0 +1,237 @@
+.raygun-loading {
+  opacity: 0;
+  width: 180px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+  background-size: 180px 160px;
+  background-image: url(/content/images/raygun-loading/raygun-loading.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  @include transition;
+}
+
+.raygun-is-loading {
+  opacity: 1;
+}
+
+.raygun-spinner {
+  width: 18px;
+  height: 45px;
+  margin: 0 auto;
+  position: absolute;
+  top: 49px;
+  left: 75px;
+  background-size: 18px 45px;
+  background-image: url(/content/images/raygun-loading/raygun-spinner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation: rotation 2s infinite linear;
+  -moz-animation: rotation 2s infinite linear;
+  -o-animation: rotation 2s infinite linear;
+  animation: rotation 2s infinite linear;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 3/2),
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+
+  .raygun-loading {
+    background-image: url(/content/images/raygun-loading/raygun-loading@2x.png);
+  }
+  .raygun-spinner {
+    background-image: url(/content/images/raygun-loading/raygun-spinner@2x.png);
+  }
+}
+
+
+
+.loading-raygun {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 162px;
+  height: 126px;
+  background-image: url(/content/images/raygun-loading/loading-gun.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  &:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 45px;
+    margin: 0 auto;
+    position: absolute;
+    top: 32px;
+    left: 68px;
+    background-size: 20px 40px;
+    background-image: url(/content/images/raygun-loading/loading-spinner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+  }
+}
+
+html.svg{
+  .loading-raygun {
+    background-image: url(/content/images/raygun-loading/loading-gun.svg);
+    &:before {
+      background-image: url(/content/images/raygun-loading/loading-spinner.svg);
+    }
+<<<<<<< HEAD
+  }  
+}
+
+
+
+
+// once refactored delete everything below this line
+
+// BACKGROUND
+$raygun-css-loading-icon-top: 20px;
+$raygun-css-spinner-diameter: 18px;
+
+.raygun-css-loading {
+  overflow: hidden;
+  height: auto;
+  width: auto;
+  min-height: 210px;
+  position: relative;
+
+
+  &.is-loading:before,
+  &.is-loading:after {
+    display: block;
+  }
+
+  &:before,
+  &:after {
+    content: ' ';
+    display: none;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  // RAYGUN AND BACKGROUND
+  &:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 180px 160px;
+    background-image: url(/content/images/raygun-loading/raygun-loading.png);
+    background-position: center $raygun-css-loading-icon-top;
+
+    background-color: $background-color;
+    border: 1px solid $color-grey-lightest;
+  }
+  // SPINNER
+  &:after {
+    top: 50%;
+    left: 50%;
+    background-size: 180px 160px;
+    width: 18px;
+    height: 45px;
+    top: $raygun-css-loading-icon-top + 49px;
+    left: 50%;
+    margin-left: -14px;
+    background-size: $raygun-css-spinner-diameter 45px;
+    background-image: url(/content/images/raygun-loading/raygun-spinner.png);
+    background-position: center;
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+  }
+
+  &.is-black:before {
+    background-color: $black;
+    border: 1px solid $black;
+  }
+
+  &.is-white:before {
+    background-color: $white;
+    border: 1px solid $color-grey-lightest;
+  }
+
+  &.is-grey:before {
+    background-color: $background-color;
+    border: 1px solid $color-grey-lightest;
+  }
+
+  &.is-medium-grey:before {
+    background-color: $color-grey-lightest;
+    border: 1px solid $color-grey-lighter;
+  }
+
+  &.is-dark:before {
+    background-color: $color-stealth;
+    border: 1px solid $black;
+  }
+
+
+  &.is-full-screen {
+    position: fixed;
+    z-index: 100;
+    background-position: center center;
+  }
+
+  &.is-full-screen-box {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 100;
+    display: none;
+
+    &.is-loading{
+      display: block;
+    }
+    &:before {
+      background-position: center center;  
+      margin-top: -130px;
+      margin-left: -130px;
+      width: 260px;
+      height: 260px;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+     
+    }
+    // FULL SCREEN SPINNER
+    &:after {
+      top: 50%;
+      left: 50%;
+      margin-top: -31px;
+    }
+  }
+
+  // IS THIS IN USE?
+  // FULL SCREEN
+  &.is-full-screen {
+    z-index: 100;
+    
+
+    // FULL SCREEN RAYGUN
+    &:before {
+      background-position: center center;
+      position: fixed;
+    }
+    // FULL SCREEN SPINNER
+    &:after {
+      margin: -30px -13px;
+      top: 50%;
+      position: fixed;
+    }
+=======
+>>>>>>> Removed unused loading spinner
+  }
+}

@@ -1,0 +1,66 @@
+// variables to remove 
+$stats-width: 240px;
+// screen-widths 
+$screen-tablet: 960px;
+$screen-mobile: 640px;
+
+$breakpoint-1: 1200px;
+
+
+// Screen Breakpoints
+$pre-sidebar: 200px;
+$scrollbar-width: 20px;
+
+$screen-max: 1400px;
+$screen-med: 960px  +$scrollbar-width + $pre-sidebar;
+$screen-min: 840px  +$scrollbar-width + $pre-sidebar;
+$screen-mob: 640px; 
+
+
+// Medium Screens
+@mixin screen-med {
+  @media screen and (max-width:$screen-med) {
+    @content;
+  }
+}
+
+
+// max width
+@mixin screen-max {
+  @media screen and (max-width:$screen-max) {
+    @content;
+  }
+}
+
+// Small Screens
+@mixin screen-min {
+    @media (max-width: $screen-min) {
+        @content;
+    }
+}
+@mixin mw-screen-min {
+  @media screen and (min-width:$screen-min) {
+    @content;
+  }
+}
+
+// Med Screens
+@mixin screen-med {
+    @media (max-width: $screen-med) {
+        @content;
+    }
+}
+
+// Tiny Screens
+@mixin screen-mob {
+    @media (max-width: $screen-mob) {
+        @content;
+    }
+}
+
+// Tiny Screens
+@mixin mw-screen-mob {
+    @media (min-width: $screen-mob) {
+        @content;
+    }
+}

@@ -1,0 +1,83 @@
+$parchment-background: #fbf8e6;
+$parchment-border:#d5cdaa;
+$parchment-inset: #f1eccf;
+
+
+// invite existing account
+.invite-existing-account {
+  margin: 0 0 40px;
+}
+
+.input-checkbox.is-parchment {
+  background: $parchment-inset;
+  &:active {
+    background: $parchment-border;
+  }
+}
+
+
+// parchment form changes 
+.parchment {
+  .header-auth,
+  .login-oauth {
+    border-color: $parchment-inset;
+  }
+}
+
+
+// parchment container
+.parchment-container {
+  position: relative;
+  padding: 0 0 8px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 8px;
+    right: 8px;
+    bottom: 0;
+    height: 16px;
+
+    border-radius: 3px;
+    background: $parchment-inset;
+    border: 1px solid $parchment-border;
+    box-shadow: 0 4px 2px rgba(0,0,0,0.05);
+  }
+}
+
+.parchment {
+  position: relative;
+  z-index: 1;
+  padding: 40px 80px;
+
+  border-radius: 3px;
+  background: $parchment-background;
+  border: 1px solid $parchment-border;
+  box-shadow: inset 0 0 0 4px $parchment-inset, 0 4px 2px rgba(0,0,0,0.05);
+
+  @media screen and (max-width:$screen-min) {
+    padding: 40px;
+  }
+  @media screen and (max-width:$screen-mob) {
+    padding: 24px;
+  }
+}
+
+
+
+// vertical lines
+.parchment-line {
+  width: 2px;
+  position: absolute;
+  display: block;
+  background: $parchment-inset;
+  top: 0;
+  bottom: 0;
+  @media screen and (max-width:$screen-min) {
+    display: none;
+  }
+}
+
+.parchment-1 {left: 24px}
+.parchment-2 {left: 32px;}

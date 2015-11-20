@@ -1,0 +1,62 @@
+
+.date-picker-container {
+  position: relative;
+}
+
+
+.date-picker-input {
+  border: none;
+  background-color: $color-azure;
+  padding: 8px;
+  color: $white;
+  border-radius: 3px;
+  text-align: center;
+}
+
+
+.bootstrap-datetimepicker-widget th.picker-switch {
+  font-weight: bold;
+}
+
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  @include font-size($fontsize-standard);
+}
+
+
+.bootstrap-datetimepicker-widget th.picker-switch {
+  padding: 8px;
+}
+
+.bootstrap-datetimepicker-widget td.day {
+  padding: 4px;
+}
+
+.dropdown-menu {
+  border: 1px solid $color-grey-lightest;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+
+  .flat-icon {
+    color: $color-azure;
+  }
+}
+
+.bootstrap-datetimepicker-widget td span.active,
+.bootstrap-datetimepicker-widget td.active,
+.bootstrap-datetimepicker-widget td.active:hover {
+  background-color: $color-azure;
+}
+
+.bootstrap-datetimepicker-widget td.today:before {
+  border-bottom-color: $color-azure !important;
+}
+
+.bootstrap-datetimepicker-widget td.disabled, 
+.bootstrap-datetimepicker-widget td.disabled:hover{
+  color: $text-3;
+}
+
+.bootstrap-datetimepicker-widget td.old, 
+.bootstrap-datetimepicker-widget td.new{
+  color: $text-3;
+}

@@ -1,0 +1,61 @@
+// merge errors modal
+
+.overview-merge-errors {
+  margin: 24px 0;
+  padding: 0 24px;
+  h4 {
+    margin: 0 0 8px;
+  }
+}
+
+.overview-merge-error {
+  @extend nowrap;
+  padding: 12px;
+  line-height: 16px;
+  background: $background-color;
+  border-radius: 3px;
+}
+
+.overview-merge-swap {
+  padding: 24px 0;
+  .button {
+    margin: 0 auto;
+    display: block;
+    width: 40px;
+  }
+}
+
+.merge-selected-errors {
+  margin: 0 0 24px;
+}
+
+.merge-error {
+  position: relative;
+  padding: 12px 40px 12px 12px;
+  line-height: 16px;
+  height: 40px;
+  background: $background-color;
+  margin: 0 0 2px;
+  border-radius: 3px;
+  overflow: hidden;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.merge-remove {
+  position: absolute;
+  display: block;
+  padding: 11px;
+  top: 0;
+  right: 0;
+  color: $color-grey-light;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: $text-1;
+  }
+  &:active {
+    background: $color-grey-lightest;
+  }
+}

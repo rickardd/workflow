@@ -1,0 +1,23 @@
+// centering method
+.center  {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+// centering sizes
+.center-full {max-width: none;}
+.center-max {max-width: 1400px;}
+
+// centering specific
+.center-1240 {max-width: 1300px;}
+.center-1120 {max-width: 1120px;}
+.center-960 {max-width: 960px;}
+.center-640 {max-width: 640px;}
+.center-480 {max-width: 480px;}
+
+// !what is this don't use please
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

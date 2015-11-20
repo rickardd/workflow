@@ -1,0 +1,75 @@
+// Todo form style
+// - built special form-actions file for basic solid actions.
+
+.form-group {
+  margin: 0 0 16px;
+  @media screen and (max-width:$screen-min) {
+    margin: 0 0 12px;
+  }
+
+
+  &:last-child { // Todo: Remove last-child and replace wirth class instead. All form-groups behabes like last-child if they exist in e.g .element-split-container
+    margin: 0;
+  }
+
+}
+
+// generic label
+.input-label {
+  display: block;
+  line-height: 16px;
+  padding: 0 0 4px;
+  @include font-size(1.4);
+}
+
+// form-group label
+.form-group__label {
+  display: block;
+  line-height: 16px;
+  padding: 0 0 4px;
+  @include font-size(1.4);
+}
+
+// inline state for a form-group
+.form-group.is-inline {
+  max-width: 520px;
+  .input-wrapper {
+    margin: 0 0 0 200px;
+  }
+  .input-label {
+    float: left;
+    max-width: 200px;
+  }
+
+  @media screen and (max-width:720px) {
+    .input-wrapper {
+      margin-left: 0;
+    }
+    .input-label {
+      float: none;
+    }
+  }
+}
+
+// class thats used on INPUT LABEL
+.input-label.is-align {
+  padding: 12px 0;
+  @media screen and (max-width:720px) {
+    padding: 0 0 12px;
+  }
+}
+
+
+// checkbox / radio container
+ul.form-list {
+  li {
+    margin: 8px 0;
+  }
+}
+
+ul.form-list.is-inline {
+  li {
+    margin: 8px 12px 0 0;
+    float: left;
+  }
+}

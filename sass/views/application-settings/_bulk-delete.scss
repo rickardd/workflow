@@ -1,0 +1,38 @@
+// bulk delete section
+
+.bulk-delete {
+  li {
+    position: relative;
+    padding: 4px 160px 4px 0px;;
+    border-bottom: 1px solid $background-color;
+    /*&:last-child {
+      border-bottom: 1px solid $background-color;
+    }*/
+  }
+  p {
+    line-height: 40px;
+  }
+  .button-wrapper {
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+  .button {
+    display: block;
+    min-width: 160px;
+  }
+}
+
+
+// responsive
+
+.bulk-delete {
+  @media screen and (max-width:$screen-mob) {
+    li {
+      padding: 12px 0;
+    }
+    .button-wrapper {
+      position: static;
+    }
+  }
+}

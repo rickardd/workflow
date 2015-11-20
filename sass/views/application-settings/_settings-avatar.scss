@@ -1,0 +1,50 @@
+
+.avatar-upload-block {
+  .dropzone {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+
+
+.avatar-selection {
+  margin: -16px;
+  padding-bottom: 58px;
+}
+
+.avatar-option {
+  float: left;
+  padding: 16px;
+
+  img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border: none;
+    background: $background-color;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    padding: 2px;
+    transition: border-color .2s e/ase;
+  }
+
+  img:hover {
+    cursor: pointer;
+    border-color: $color-grey-lighter;
+    transition: border-color .2s ease;
+  }
+
+  img:active {
+    border-color: $color-azure;
+  }
+
+  &.selected img {
+    border-color: $color-azure;
+  }
+}
+
+.avatar-file-restrictions {
+  margin-bottom: 0;
+}

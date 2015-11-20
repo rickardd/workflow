@@ -1,0 +1,42 @@
+// sidebar search
+.sidebar-search {
+  margin: 0 0 24px;
+}
+
+// selected state (pretty hacky)
+.sidebar-search .selected {
+  box-shadow: inset 4px 0 0 $color-azure;
+}
+
+.search-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 16px;
+
+  .search-icon {
+    pointer-events: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    color: #ADAEAE;
+  }
+}
+
+input.search-input {
+  background: $color-stealth-darkest;
+  border: none;
+  padding: 0 12px 0 40px;
+  height: 40px;
+  width: 100%;
+  color: $color-grey-lighter;
+  border-radius: 4px;
+
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: rgba($color-grey-lighter,0.8);
+    opacity: 1;
+  }
+}

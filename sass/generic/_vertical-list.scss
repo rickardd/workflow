@@ -1,0 +1,56 @@
+// vertical list style
+.vertical-list {
+  @extend noselect;
+  li {
+    border-bottom: 1px solid $background-color;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.vl-link {
+  display: block;
+  position: relative;
+  padding: 12px 24px;
+  cursor: pointer;
+  &,
+  &:hover,
+  &:active {
+    color: $text-1;
+  }
+  h4 {
+    margin: 0 0 8px;
+  }
+
+  &:hover{
+    background: $background-color;
+  }
+  &:active {
+    background: $color-grey-lightest;
+  }
+}
+
+.vl-link.has-before {
+  padding-left: 56px;
+}
+.vl-link.has-after {
+  padding-right: 56px;
+} 
+
+.vl-after,
+.vl-before {
+  display: block;
+  position: absolute;
+}
+
+.vl-before {
+  top: 12px;
+  left: 24px;
+}
+
+.vl-after {
+  top: 12px;
+  right: 24px;
+  color: $color-grey-light;
+}

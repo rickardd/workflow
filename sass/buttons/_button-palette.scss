@@ -1,0 +1,288 @@
+//-- Button Colors
+
+
+//  !button color format
+//  -------------------------------------------
+//  $button-<name>-color:font-color;
+//  $button-<name>-icon:icon-color;
+//  $button-<name>-border:border-color;
+//  $button-<name>-shadow:standard,hover,active;
+//  $button-<name>-gradient:top,bottom;
+//  $button-<name>-gradient-hover:top,button;
+//  $button-<name>-gradient-active:top,bottom;
+
+
+// -- default colors
+// plain
+$button-plain-color: $text-1;
+$button-plain-icon: $text-1;
+$button-plain-border: $color-border-dark;
+$button-plain-gradient: $color-grey-lightest $color-grey-lighter;
+$button-plain-gradient-hover: #fcfcfc #f4f6fa;
+$button-plain-gradient-active: #e7eaf1 #eeeff3;
+
+// -- primary colors
+// blue
+$button-blue-color: #fff;
+$button-blue-icon: #fff;
+$button-blue-border: #1a76bf;
+$button-blue-gradient: #239bf6 #148fef;
+$button-blue-gradient-hover: #25a1f7 #1695f1;
+$button-blue-gradient-active: $color-azure-dark #219af5;
+
+// purple
+$button-purple-color: #fff;
+$button-purple-icon: #fff;
+$button-purple-border: #511a8c;
+$button-purple-gradient: #A15CE6 $color-byzantine;
+$button-purple-gradient-hover:  #8A5EB7 #784CA8;
+$button-purple-gradient-active: #6E409F #8A4DC7;
+
+
+// yellow
+$button-yellow-color: #fff;
+$button-yellow-icon: #fff;
+$button-yellow-border: #dc8a28;
+$button-yellow-gradient: #f2b443 #f7a037;
+$button-yellow-gradient-hover: #f2b443 #ee9a34;
+$button-yellow-gradient-active: #ee9a34 #f7a037;
+
+// red
+$button-red-color: #fff;
+$button-red-icon: #fff;
+$button-red-border: #b93c3d;
+$button-red-gradient: #ed5a59 #e0504f;
+$button-red-gradient-hover: #ed5a59 #d84443;
+$button-red-gradient-active: #cf4847 #e0504f;
+
+// green
+$button-green-color: #fff;
+$button-green-icon: #fff;
+$button-green-border: #2fa844;
+$button-green-gradient: #41cc3c #3dc038;
+$button-green-gradient-hover: #4cd647 #49cc43;
+$button-green-gradient-active: $color-forest-dark #3ec139;
+
+
+//-- special buttons
+//-- Social Media button colors
+
+// github
+$button-github-color: #fff;
+$button-github-icon: #fff;
+$button-github-border: #000000;
+$button-github-gradient: #3c3c3c #353535;
+$button-github-gradient-hover: #3c3c3c #2f2f2f;
+$button-github-gradient-active: #2f2f2f #353535;
+
+// google
+$button-google-color: #fff;
+$button-google-icon: #fff;
+$button-google-border: #b73420;
+$button-google-gradient: #da4f2e #d34529;
+$button-google-gradient-hover: #da4f2e #c13b27;
+$button-google-gradient-active: #c13b27 #da4f2e;
+
+// twitter
+$button-twitter-color: #fff;
+$button-twitter-icon: #fff;
+$button-twitter-border: #1498c9;
+$button-twitter-gradient: #10b8f8 #18aee7;
+$button-twitter-gradient-hover: #1eb9f4 #14a3d9;
+$button-twitter-gradient-active: #14a3d9 #1eb5ee;
+
+// facebook
+$button-facebook-color: #fff;
+$button-facebook-icon: #fff;
+$button-facebook-border: #345290;
+$button-facebook-gradient: #3f60a5 #3b5998;
+$button-facebook-gradient-hover: #3f60a5 #35508a;
+$button-facebook-gradient-active: #35508a #3b5998;
+
+// intercom
+$button-intercom-color: #fff;
+$button-intercom-icon: #fff;
+$button-intercom-border: #0073b0;
+$button-intercom-gradient: #0073b0 #0073b0;
+$button-intercom-gradient-hover: #003f61 #003f61;
+$button-intercom-gradient-active: #073650 #073650;
+
+//-- button color mixin
+@mixin button-color($button-color: $button-plain-color, $button-icon: $button-plain-icon, $button-border: $button-plain-border, $button-gradient: $button-plain-gradient, $button-gradient-hover: $button-plain-gradient-hover, $button-gradient-active: $button-plain-gradient-active) {
+  // returns a plain button if no colors are specified
+  //~ all states
+
+  border: 1px solid $button-border;
+  color: $button-color!important;
+  //~ standard
+  @include verticalGradient(nth($button-gradient,1),nth($button-gradient,2));
+  &:hover,
+  &.is-hover,
+  &.is-active {
+    @include verticalGradient(nth($button-gradient-hover,1),nth($button-gradient-hover,2));
+  }
+  //~ active || pressed
+  &:active,
+  &.is-active,
+  &.is-pressed {  // !todo remove, duplication with active state for .button-blue
+    background: nth($button-gradient-active,1);
+  }
+}
+
+
+
+
+
+// Button colors
+//
+// .button-plain               - Description
+// .button-blue                - Description
+// .button-purple              - Description
+// .button-yellow              - Description
+// .button-red                 - Description
+// .button-green               - Description
+// .button-twitter             - Description
+// .button-googleplus          - Description
+// .button-facebook            - Description
+// .button-github              - Description
+// .button-intercom            - Description
+// .button-white               - Description
+// .button-grey                - Description
+// .button-subtle              - Description
+//
+// Markup:
+// <div class="button {{modifier_class}} button-32">button</div>
+//
+// Styleguide 4.2
+
+
+
+
+// -- Button Creation
+// -- Default colors
+// plain
+.button-plain {
+  @include button-color;
+}
+
+// Sorry about these two, the pagination control is a PITA to put custom classes on.
+.pagination .disabled .button,
+.pagination .active .button,
+.button.is-disabled,
+.button--disabled {
+  color: #b8b9ba!important;
+  border-color: #e4e4e4!important;
+  background: #e4e4e4!important;
+}
+
+
+// -- Primary Colors
+
+// blue
+.button-blue {
+  @include button-color( $button-blue-color, $button-blue-icon, $button-blue-border, $button-blue-gradient, $button-blue-gradient-hover, $button-blue-gradient-active );
+}
+
+// purple
+.button-purple {
+  @include button-color( $button-purple-color, $button-purple-icon, $button-purple-border, $button-purple-gradient, $button-purple-gradient-hover, $button-purple-gradient-active );
+}
+
+// yellow
+.button-yellow {
+  @include button-color( $button-yellow-color, $button-yellow-icon, $button-yellow-border, $button-yellow-gradient, $button-yellow-gradient-hover, $button-yellow-gradient-active );
+}
+
+// red
+.button-red {
+  @include button-color( $button-red-color, $button-red-icon, $button-red-border, $button-red-gradient, $button-red-gradient-hover, $button-red-gradient-active );
+}
+
+
+// green
+.button-green {
+  @include button-color( $button-green-color, $button-green-icon, $button-green-border, $button-green-gradient, $button-green-gradient-hover, $button-green-gradient-active );
+}
+
+//-- integration buttons
+// twitter
+.button-twitter {
+  @include button-color( $button-twitter-color, $button-twitter-icon, $button-twitter-border, $button-twitter-gradient, $button-twitter-gradient-hover, $button-twitter-gradient-active );
+}
+// google
+.button-googleplus {
+  @include button-color( $button-google-color, $button-google-icon, $button-google-border, $button-google-gradient, $button-google-gradient-hover, $button-google-gradient-active );
+}
+
+// facebook
+.button-facebook {
+  @include button-color( $button-facebook-color, $button-facebook-icon, $button-facebook-border, $button-facebook-gradient, $button-facebook-gradient-hover, $button-facebook-gradient-active );
+}
+
+// github
+.button-github {
+  @include button-color( $button-github-color, $button-github-icon, $button-github-border, $button-github-gradient, $button-github-gradient-hover, $button-github-gradient-active );
+}
+
+//intercom
+.button-intercom {
+  @include button-color( $button-intercom-color, $button-intercom-icon, $button-intercom-border, $button-intercom-gradient, $button-intercom-gradient-hover, $button-intercom-gradient-active );
+}
+
+
+
+// white button
+.button-white {
+  background: $white;
+  color: $text-1;
+  border-color: $color-border;
+  &:hover,
+  &.is-hover {
+    color: $text-1;
+    border-color: $color-border-dark;
+  }
+
+  &:active,
+  &.is-active {
+    color: $text-1;
+    border-color: $color-azure;
+  }
+}
+
+
+// grey button
+.button-grey {
+  background: $color-grey-lighter;
+  color: $text-1;
+  border-color: $color-grey-lighter;
+  &:hover,
+  &:button--hover,
+  &.is-hover {
+    color: $text-1;
+    background: $color-grey-lightest;
+    border-color: $color-grey-lightest;
+  }
+  &:active,
+  &:button--active,
+  &.is-active {
+    color: $text-1;
+    background: $color-grey-light;
+    border-color: $color-grey-light;
+  }
+}
+
+// subtle button
+.button-subtle {
+  background: none;
+  border-color: transparent;
+  color: $text-grey;
+  &:hover {
+    color: $text-1;
+    background: $color-grey-lighter;
+  }
+  &:button--active,
+  &:active {
+    color: $text-1;
+    background: $color-grey-light;
+  }
+}

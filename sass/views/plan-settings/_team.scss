@@ -1,0 +1,153 @@
+//-- teams / team view
+
+// team grid
+ul.team-grid {
+  li {
+    float: left;
+    width: 50%;
+    padding: 0 16px 0 0;
+    margin: 0 0 16px;
+    &:nth-child(odd) {padding: 0 8px 0 0;}
+    &:nth-child(even) {padding: 0 0 0 8px;}
+  
+    @include screen-min {
+      padding: 0 !important;
+      float: none;
+      width: auto;
+    }
+  }
+
+  a.team-container {
+    display: block;
+    padding: 16px;
+    border-radius: 2px;
+    background: $color-grey-lighter;
+    &:hover {
+      background: $color-grey-light;
+    }
+    &:active {
+      background: $color-grey;
+    }
+  }
+}
+
+// heading spacing
+.team-heading {
+  margin: 0 0 12px;
+}
+.pending-invitations {
+  margin-top: 24px;
+}
+
+
+.add-item {
+  padding: 0 0 16px;
+  border-bottom: 1px solid $color-border;
+  margin: 0 0 24px;
+}
+.add-item__label {
+  display: block;
+  margin: 0 0 4px;
+}
+.add-item-control {
+  position: relative;
+  padding-right: 80px;
+}
+.add-item-control__input {}
+.add-item-control__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  padding-left: 8px;
+}
+
+
+
+
+// buttons being dicks 
+// box-sizing cross browser (ff uses the border / chrome doesnt)
+.member-item,
+.application-item {
+  .button {
+    display: block;
+  }
+}
+
+// Application item
+.application-list {}
+.application-list__item {
+  margin: 0 0 2px;
+  &:last-child {
+    margin: 0;
+  }
+}
+.application-item {
+  position: relative;
+  padding: 8px 56px;
+  background: $color-grey-lighter;
+}
+.application-item__avatar {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+.application-item__name {
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  height: 32px;
+}
+.application-item__remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+// Member Item
+.member-list {}
+.member-list__item {
+  margin: 0 0 2px;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.member-item {
+  position: relative;
+  padding: 8px 64px;
+  min-height: 64px;
+  background: $color-grey-lighter;
+}
+.member-item__avatar {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.member-item__name {
+  margin: 0 0 4px;
+  font-weight: bold;
+}
+.member-item__email {}
+.member-item__remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.member-avatar {
+  position: relative;
+}
+.member-avatar__tfa {
+  position: absolute;
+  z-index: 1;
+  bottom: -4px;
+  right: -4px;
+  background: $white;
+  border-radius: 50%;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+

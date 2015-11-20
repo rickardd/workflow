@@ -1,0 +1,37 @@
+// filter ui, uses mostly styles from _popup.scss
+
+
+.errorlist-filter {
+  //margin: 0 0 16px;
+  padding: 0 0 20px;
+}
+
+// autocomplete form element
+
+.autocomplete-wrapper {
+  position: relative;
+}
+
+.autocomplete-list {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 39px;
+  max-height: 400px;
+  overflow: hidden;
+  background: $white;
+  border: 1px solid $color-azure;
+
+  li {
+    padding: 6px;
+    line-height: 1.4;
+    &:hover {
+      background: $background-color;
+      background: $color-azure;
+      color: $white;
+    }
+  }
+  
+  &.is-hidden {display:none;}
+  &.is-active {display:block;}
+}

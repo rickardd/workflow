@@ -1,0 +1,58 @@
+// checkbox control
+.checkbox-control {
+  padding: 0 0 0 24px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  line-height: 16px;
+
+  &:hover .checkbox-icon {
+    color: $text-1 !important;
+  }
+  .solo-checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &.is-disabled{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+// checkbox control
+.solo-checkbox {
+  width: 16px;
+  height: 16px;
+  display: block;
+  cursor: pointer;
+  @include noselect;
+
+  &:hover .checkbox-icon {
+    color: $text-1 !important;
+  }
+  input[type=checkbox] {
+    display: none;
+    & ~ .checkbox-icon {
+      color: $color-grey-darker;
+    }
+    &:checked ~ .checkbox-icon {
+      color: $text-1;
+    }
+    & ~ .checkbox-icon:before {
+      content: '\e648';
+    }
+    &:checked ~ .checkbox-icon:before {
+      content: '\e649';
+    }
+  }
+}
+
+.disabled-checkbox {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: $color-grey;
+  border-radius: 2px;
+}
+

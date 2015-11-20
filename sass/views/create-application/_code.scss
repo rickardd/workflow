@@ -1,0 +1,36 @@
+.code-editor {
+	margin: 12px 0 24px;
+  width: 100%; 
+  text-align: left;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #272822;
+
+  // important used to overwrite vendor/_prisim.scss
+  pre {
+    margin: 0!important;
+    border-radius: 0!important;
+    padding: 1em 1.5em!important;
+    max-height: 500px;
+    overflow: auto;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.code-header {
+  position: relative;
+  padding: 12px 12px 12px 48px;
+  color: $white;
+  background-color: $black;
+  h4 {
+    line-height: 16px;
+    @include font-size($fontsize-standard);
+  }
+  .icon-16 {
+    position: absolute;
+    left: 16px;
+    height: 12px;
+  }
+}

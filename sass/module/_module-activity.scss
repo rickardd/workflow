@@ -1,0 +1,63 @@
+//-- module activity block
+.module-activity {
+  position: relative;
+  padding: 12px 24px 12px 72px;
+  border-bottom: 1px solid $color-border-light;
+  //states
+  &.is-grey {
+    background: $color-grey-lightest;
+  }
+}
+// responsive
+.module-activity {
+  padding: 12px 16px 12px 64px;
+  @include screen-min {
+    padding: 12px 12px 12px 60px;
+  }
+}
+
+//-- module activity bars
+.ma-bar {
+  display: block;
+  width: 3px;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  // states
+  &.is-left {left: -1px;}
+  &.is-right {right: -1px;}
+  // color
+  &.is-red {background:$color-ember;}
+  &.is-grey {background:$color-grey-lightest;}
+  &.is-blue {background:$color-azure;}
+  &.is-green {background:$color-forest;}
+  &.is-yellow {background:$color-lightning;}
+}
+
+
+//-- module activity children
+.ma-avatar {
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  @media screen and (max-width:$screen-med) {
+    top: 16px;
+    left: 16px;
+  }
+  @media screen and (max-width:$screen-min) {
+    top: 12px;
+    left: 12px;
+  }
+}
+
+.ma-content {}
+
+ul.ma-detail {
+  margin: 8px 0 0;
+  color: $text-grey;
+  @include font-size(1.2);
+  li {
+    padding: 0 16px 0 0;
+    float: left;
+  }
+}

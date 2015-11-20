@@ -1,0 +1,75 @@
+// Plan Details Section
+
+
+.plan-form {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid $color-grey-lightest;
+}
+.plan-form__header {
+  margin-bottom: 12px;
+}
+.plan-form__form {}
+
+
+
+// billing details
+.billing-table {
+  table-layout: fixed;
+  min-width: 440px;
+  td {
+    padding: 4px 0;
+  }
+  @include screen-mob {
+    &,td,tr {
+      display: block;
+    }
+    td {
+      padding: 0;
+      margin: 0 0 2px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    tr {
+      margin: 0 0 12px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.billing-table__label {
+  width: 200px;
+}
+
+
+
+.plan-section {
+  position: relative;
+  padding: 24px 0;
+  margin: 0 24px;
+  &:first-child {
+    border: none;
+  }
+}
+
+.plan-section--border {
+  border-top: 1px solid $color-grey-lightest;
+}
+
+.plan-section__heading {
+  margin: 0 0 12px;
+}
+
+.plan-section__edit {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 140px;
+  @include screen-mob {
+    margin: 16px 0 0;
+    position: static;
+  }
+}

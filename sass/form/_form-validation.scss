@@ -1,0 +1,22 @@
+// form validation styles
+
+.validation-summary-errors {
+  margin: 0 0 24px;
+  li {
+    background: $background-color;
+    color: $color-ember;
+    padding: 8px;
+    border-radius: 3px;
+  }
+}
+
+.field-validation-error {
+  clear: both;
+  display: block;
+  margin: 16px 0;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid $color-grey-lightest;
+  background: $white;
+  color: $color-ember;
+}

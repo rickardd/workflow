@@ -1,0 +1,57 @@
+// simple progress indicator.
+// add width from 0 - 100% to the .progress-bar
+
+.progress-indicator {
+  position: relative;
+}
+
+.progress-title {
+  display: block;
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
+.progress-container {
+  position: relative;
+}
+
+// progress container
+.progress-bar {
+  position: relative;
+  background: $color-grey-lightest;
+  height: 12px;
+  padding: 2px;
+  margin: 2px 0;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+// inner bar
+.progress-percentage {
+  border-radius: 2px;
+  content: '';
+  display: block;
+  background: $color-azure;
+  height: 8px;
+
+  -webkit-animation: progress-bar 2s;
+
+  // progress bar-colors
+  &.is-blue {background:$color-azure;}
+  &.is-red {background:$color-ember;}
+  &.is-green {background:$color-forest;}
+  &.is-white {background:$white;}
+  &.is-yellow {background:$color-lightning;}
+}
+
+// progress number
+.progress-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@-webkit-keyframes progress-bar {
+   0% { width: 0; }
+}
+

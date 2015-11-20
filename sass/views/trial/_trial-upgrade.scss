@@ -1,0 +1,139 @@
+// upgrade banner
+
+.trial-banner {
+  &.upgrade-banner {
+    padding: 0;
+    border: 1px solid $color-grey-lightest;
+    box-shadow: $box-shadow;
+    background-color: $white;
+    color: $text-1;
+    &.failure-view{
+      background-color:#d7e0e9;
+      box-shadow:none;
+      padding: 24px 160px 8px 160px;
+    }
+  }
+}
+
+
+.banner-footer {
+  position: relative;
+  margin: 24px 0 0;
+  padding:  0 0 0 56px;
+  .banner-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .typography {
+    min-height: 32px;
+  }
+}
+
+.banner-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.banner-image-container,
+.banner-text-container,
+.banner-action-container {
+  min-height: 203px;
+  padding: 24px;
+}
+
+.banner-action-container,
+.banner-image-container {
+  position: absolute;
+  top: 0;
+}
+
+.banner-image-container {
+  width: 130px;
+  left: 0;
+}
+
+.banner-text-container {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 222px;
+}
+
+.banner-action-container {
+  background-color: white;
+  padding: 26px;
+  width: 210px;
+  right: 0;
+
+  .button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.banner-text {
+}
+
+.banner-price-before,
+.banner-price-now {
+  @include font-size(2.2);
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $color-grey-lightest;
+  overflow: hidden;
+}
+
+
+.banner-price-before {
+
+  .banner-price-item {
+    text-decoration: line-through;
+  }
+}
+
+.banner-price-now {
+  margin-bottom: 24px;
+}
+
+
+.banner-price-property,
+.banner-price-item {
+  width: 50%;
+  display: inline-block;
+}
+
+.banner-price-property {
+  vertical-align: baseline;
+  text-align: left;
+  @include font-size($fontsize-standard);
+}
+
+.banner-price-item {
+  text-align: right;
+}
+
+.upgrade-banner .banner-hello-user {
+  display: block;
+  margin-bottom: 12px;
+  width: 100%;
+  @include font-size(2.4);
+}
+
+.banner-button.container{
+  float: right;
+}
+
+.trial-banner-headline,
+.trial-banner-days{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.trial-banner-days{
+  margin-left:10px;
+}
+

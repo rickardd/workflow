@@ -1,0 +1,50 @@
+.dropzone {
+  padding: 40px !important;
+  margin: 16px;
+  border-radius: 3px;
+  border: 2px solid $white !important;
+  background: $color-grey-lightest !important;
+
+  &.dz-drag-hover {
+    border-color: $color-azure !important;
+  }
+
+  .button {
+    text-align: center;
+  }
+}
+
+
+
+.upload-instruction {
+  display: block;
+  margin: 0 auto 40px;
+
+  strong {
+    display: block;
+    text-align: center;
+  }
+
+  &:before {
+    font-family: 'flaticons';
+    content: '\e431';
+    display: block;
+    margin: 0 0 16px;
+    color: $color-grey-lightest;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+  }
+}
+
+.uploading:before {
+  content: '\e4f1';
+}
+
+.upload-message {
+  
+  p{
+    color: $color-ember;
+    margin-bottom: 16px;
+  }
+}

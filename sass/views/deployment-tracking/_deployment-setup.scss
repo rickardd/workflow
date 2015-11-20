@@ -1,0 +1,141 @@
+.dep-track-integration-headline {
+  margin-bottom: 24px;
+}
+
+.dep-track-integration-list {
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.dep-track-integration-list-item {
+  margin-bottom: 12px;
+}
+
+
+.dep-track-integration-list-item-content {
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: $background-color;
+  padding: 8px;
+}
+
+.dep-track-integration-list-item-button {
+  float: right;
+}
+
+.dep-track-integration-icon,
+.dep-track-integration-icon-label {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.dep-track-integration-icon {
+  margin-right: 8px;
+}
+
+
+.dep-track-integration-icon-label {
+  font-weight: bold;
+}
+
+
+
+.dep-track-step-article {
+  position: relative;
+  padding: 0 0 12px 48px;
+  overflow: hidden;
+}
+
+
+
+//--
+.dep-track-step-header {
+  margin-bottom: 12px;
+}
+
+.dep-track-step-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: $color-grey-lightest;
+  border-radius: 3px;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  width: 32px;
+  line-height: 32px;
+}
+
+.dep-track-illustration {
+  background-image: url(/Content/Images/deployment-tracking/graph-promote.png);
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 238px;
+  background-size: contain;
+  position: relative;
+  margin-top: 40px;
+
+  @media screen and (max-width: $screen-mob) {
+    background-image: url(/Content/Images/deployment-tracking/graph-promote-small.png);
+    width: 230px;
+    height: 209px;
+  }
+}
+
+html.svg .dep-track-illustration {
+  background-image: url(/Content/Images/deployment-tracking/graph-promote.svg);
+}
+
+.dep-track-illustration-text {
+  font-weight: bold;
+  @include font-size(1.8);
+  margin-left: 67px;
+  display: block;
+  line-height: 1.1em;
+  top: -40px;
+  text-align: center;
+  position: absolute;
+}
+
+
+@media screen and (max-width: $screen-min) {
+  .dep-track-column-1,
+  .dep-track-column-2 {
+    float: none;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .dep-track-integration {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .dep-track-illustration {
+    margin: 40px auto 0;
+  }
+
+  .dep-track-integration-headline {
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: $screen-mob) {
+  .dep-track-step-icon {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    margin-left: -20px;
+  }
+
+  .dep-track-step-list {
+    overflow: visible;
+  }
+
+  .dep-track-step-article {
+    margin-left: 0px;
+    margin-bottom: 32px;
+  }
+}

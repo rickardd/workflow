@@ -1,0 +1,93 @@
+// Page Setup
+//
+// Fundamental blocks to set up a page.
+//
+// .page-container             - Description
+//
+// Styleguide 6
+
+.page-container {
+  padding: 24px;
+
+  @media screen and (max-width:$screen-min) {
+    padding: 16px;
+  }
+
+  @media screen and (max-width:$screen-mob) {
+    padding: 12px;
+  }
+}
+
+
+// Module
+//
+// Some generic button info
+//
+// .module             - White boxes
+//
+// Styleguide 7
+
+.module {
+  position: relative;
+}
+
+.module--margin {
+  margin-bottom: 24px;
+}
+
+.module--white {
+  border: 1px solid $color-border;
+  background: #fff;
+  box-shadow: $box-shadow;
+}
+
+.module--grey {
+  background: $color-grey-lighter;
+}
+
+.module__header {
+  position: relative;
+  border-bottom: 1px solid $color-border;
+  padding: 12px 24px;
+  @include screen-min {
+    padding: 12px 16px;
+  }
+}
+
+.module__header--grey {
+  background-color: $color-grey-lightest;
+}
+
+
+// ToDo: remove style from module body. Add module-conent instead
+.module-body {
+  padding: 24px;
+  @include screen-min {
+    padding: 16px;
+  }
+  @include screen-mob {
+    padding: 12px;
+  }
+}
+
+.module__body{}
+
+.module__footer {
+  padding: 24px;
+  @include screen-min{
+    padding: 16px;
+  }
+  @include screen-mob{
+    padding: 12px;
+  }
+}
+
+
+.module__footer--border{
+  border-top: 1px solid $color-border-light;
+}
+
+.module__footer--tight {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

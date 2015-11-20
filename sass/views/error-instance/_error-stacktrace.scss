@@ -1,0 +1,149 @@
+//-- expandable stacktrace design
+
+// stacktrace header
+.st-header {
+  position: relative;
+  min-height: 40px;
+  margin: 16px 0;
+  padding: 12px 140px 12px 12px;
+  background: $color-grey-lightest;
+
+  &:first-child {
+    margin: 0 0 16px;
+  }
+
+  p {
+    line-height: 16px;
+  }
+}
+
+.st-controls {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.st-collapse {
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+  float: left;
+}
+
+.st-uncollapse {
+  border-radius: 0 3px 3px 0;
+  float: left;
+}
+
+.st-stacktrace {}
+
+
+// interactable stacktrace line
+.st-container.is-expandable {
+  // interaction state
+  &:hover,
+  &:active,
+  &.is-open {
+    .st-expand {
+      color: $text-grey;
+    }
+  }
+
+  &:active,
+  &.is-open {
+    background: $background-color;
+  }
+
+  // open state
+  &.is-open {
+    margin: 8px 0;
+    .st-variables {
+      display: block;
+    }
+    .st-expand .icon-16 {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .js-stackframe-expandable-container {
+    .st-line {
+      cursor: pointer;
+    }
+  }
+}
+
+// stacktrace line
+.st-container {
+  position: relative;
+  background: $white;
+  width: 100%;
+  border-radius: 3px;
+  @include transition(margin 80ms ease-out);
+}
+
+.st-expand {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  padding: 4px 8px;
+  color: $color-grey-lightest;
+  .icon-16 {
+    @include transition(transform 80ms ease-in-out);
+  }
+}
+
+.st-line {
+  overflow: hidden;
+  line-height: 16px;
+  padding: 4px 32px 4px 12px;
+}
+
+.st-variables {
+  border-top: 1px solid $color-grey-lightest;
+  display: none;
+  line-height: 16px;
+  padding: 8px 24px;
+  overflow: auto;
+  background: $background-color;
+}
+
+.st-variables-heading {
+  @include font-size($fontsize-code);
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+.st-variables-pre {
+  padding: 0 0 0 24px;
+  border-left: 2px solid $color-azure;
+}
+
+.st-text {
+  
+  @extend break-word;
+
+  .st-text-function {
+    color: $color-lime-dark;
+  }
+
+  .st-text-file {
+    color: $color-alpine-dark;
+  }
+
+  .st-text-type {
+    color: $color-ember-dark;
+  }
+
+  .st-text-object {
+    color: $color-azure-darker;
+  }
+
+  .st-text-number {
+    color: $color-flame-dark;
+  }
+
+  .st-text-namespace {
+    color: $text-grey;
+  }
+}

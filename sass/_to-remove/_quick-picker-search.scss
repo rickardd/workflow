@@ -1,0 +1,14 @@
+  /* This is overideing the default quick-picker that occures on a search. 
+  The dashboard view should be refactored and then this style should be removed. */
+
+  .error-list-title{
+  	.quick-picker{
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+
+	    input[type="text"].date-input{
+		    border: 1px solid #C0CCD7;
+		  }
+	  }
+  }

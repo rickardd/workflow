@@ -1,0 +1,17 @@
+.page-heading-controls{
+  top: -12px;
+  right: 0;
+  position: absolute;
+}
+
+.page-heading-control{
+  margin-left: 12px;
+  float: left;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+
+
+
+

@@ -1,0 +1,129 @@
+// new dropdown
+.dropdown2 {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown2__button {
+}
+
+.dropdown2__content {
+  overflow: hidden;
+  display: none;
+  margin-top: -1px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background-color: $white;
+  border: 1px solid $color-border-transparent;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  box-shadow: $dropdown-shadow;
+  transform-origin: 50% 0;
+
+  -webkit-animation: dropdown-anim 80ms linear;
+  animation: dropdown-anim 80ms linear;
+  
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.dropdown2__content--open {
+  display: block;
+}
+
+.dropdown2__content--dock-left {
+  left: 0;
+  right: auto;
+  transform-origin: 0 0;
+}
+
+.dropdown2__content--dock-right {
+  right: 0;
+  left: auto;
+  transform-origin: 100% 0;
+}
+
+.dropdown2-section {
+  padding: 6px 0;
+  border-bottom: 1px solid $color-border-light;
+  &:last-child {
+    border: none;
+  }
+}
+
+.dropdown2-section__title {
+  font-weight: bold;
+  line-height: 16px;
+  white-space: nowrap;
+  padding: 4px 0;
+  margin: 0 12px;
+  @include font-size(1.4);
+}
+
+.dropdown2-section__option {
+  @include noselect;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  min-width: 180px;
+  max-width: 100%;
+  line-height: 16px;
+  padding: 10px 16px 10px 9px;
+  border-left: 3px solid transparent;
+
+  &:hover,
+  &:active {
+    border-color: $color-border-dark;
+    background: $color-grey-lighter;
+  }
+}
+
+
+// dropdown option states
+.dropdown2-section__option--blue {
+  &:hover,
+  &:active {
+    border-color: $color-azure;
+  }
+}
+
+.dropdown2-section__option--yellow {
+  &:hover,
+  &:active {
+    border-color: $color-lightning;
+  }
+}
+
+.dropdown2-section__option--red {
+  &:hover,
+  &:active {
+    border-color: $color-ember;
+  }
+}
+
+.dropdown2-section__option--green {
+  &:hover,
+  &:active {
+    border-color: $color-forest;
+  }
+}
+
+.dropdown2-section__option--orange {
+  &:hover,
+  &:active {
+    border-color: $color-flame;
+  }
+}
+
+.dropdown2-section__option--purple {
+  &:hover,
+  &:active {
+    border-color: $color-byzantine;
+  }
+}

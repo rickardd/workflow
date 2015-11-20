@@ -1,129 +1,63 @@
 <!DOCTYPE html>
-<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
-<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>KSS Style Guide</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>kss-node Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="styleguide.css">
 
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
-  <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="style.css">
-
-</head>
-<body id="kss-node">
-
-<div class="kss-sidebar kss-style">
-  <header class="kss-header">
-    <h1 class="kss-doc-title">KSS Style Guide</h1>
-  </header>
-  <nav class="kss-nav">
-    <ul class="kss-nav__menu">
-      <li class="kss-nav__menu-item">
-        <a href="./">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">Overview</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-0.html">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">Rick</span>
-        </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-0.html#kssref-0-1">
-                <span class="kss-nav__ref">0.1</span
-                ><span class="kss-nav__name">URL</span>
-              </a>
-            </li>
-        </ul>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-1.html">
-          <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Button</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-2.html">
-          <span class="kss-nav__ref">2</span
-          ><span class="kss-nav__name">hello</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
-<article role="main" class="kss-main">
-
-      <div     id="kssref-0" class="kss-section kss-section--depth-1">
-
-    <div class="kss-style">
-      <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-0">
-          <span class="kss-title__ref">
-              0
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          Rick
-        </a>
-      </h1>
-
-      <ul class="kss-parameters">
-        <li class="kss-parameters__item">
-          <code class="kss-parameters__name">:hover</code>
-          <div class="kss-parameters__description">Even more on hover</div>
-        </li>
-      </ul>
-
-    </div>
-
-
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="0">
+              <li class="kss-menu-item"><a href="section-0.html"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Sitemap</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Naming Convension</span></a></li>
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Button</span></a></li>
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Icons</span></a></li>
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Page Setup</span></a></li>
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Module</span></a></li>
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">Test</span></a></li>
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">Test 2</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+            </ul>
+          </nav>
+        </div>
       </div>
-      <section id="kssref-0-1" class="kss-section kss-section--depth-2">
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-0" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">0</span> Overview</h1>
+            <div class="kss-description">
+              <p>...</p>
 
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-0-1">
-          <span class="kss-title__ref">
-              0.1
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          URL
-        </a>
-      </h2>
-
-      <ul class="kss-parameters">
-        <li class="kss-parameters__item">
-          <code class="kss-parameters__name">:www.google.com</code>
-          <div class="kss-parameters__description">No login required</div>
-        </li>
-      </ul>
-
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/kss-node/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
     </div>
-
-
-      </section>
-</article>
-
-<!-- SCRIPTS -->
-<script src="public/kss.js"></script>
-<script src="public/prettify.js"></script>
-<script>
-  prettyPrint();
-</script>
-
-
-
-<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
-</body>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/highlight.pack.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+    
+  </body>
 </html>

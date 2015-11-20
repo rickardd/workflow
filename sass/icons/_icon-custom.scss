@@ -1,0 +1,155 @@
+﻿// Code Language icons
+//-------------------------------
+// font-family
+@font-face {
+  font-family: 'kyles-code-icons';
+  src: url('../fonts/custom-icons/icomoon.eot');
+  src: url('../fonts/custom-icons/icomoon.eot?#iefix') format("embedded-opentype"),
+       url('../fonts/custom-icons/icomoon.ttf') format('truetype'),
+       url('../fonts/custom-icons/icomoon.svg#icomoon') format('svg');
+
+	// Better Font Rendering ===========
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.custom-icon {
+  font-family: 'kyles-code-icons';
+  font-weight: normal!important;
+  font-style: normal!important;
+}
+
+// language icons
+.adobeair-icon:before{content:'\e608';}
+.angular-icon:before{content:'\e609';}
+.backbone-icon:before{content:'\e60a';}
+.cakephp-icon:before{content:'\e60b';}
+.coldfusion-icon:before{content:'\e60c';}
+.django-icon:before{content:'\e60d';}
+.dotnet-icon:before{content:'\e60e';}
+.drupal-icon:before{content:'\e60f';}
+.ember-icon:before{content:'\e610';}
+.go-icon:before{content:'\e611';}
+.googleappengine-icon:before{content:'\e612';}
+.java-icon:before{content:'\e613';}
+.javascript-icon:before{content:'\e614';}
+.laravel-icon:before{content:'\e615';}
+.nodejs-icon:before{content:'\e616';}
+.php-icon:before{content:'\e617';}
+.play2-icon:before{content:'\e618';}
+.python-icon:before{content:'\e619';}
+.scala-icon:before{content:'\e61a';}
+.unity3d-icon:before{content:'\e61b';}
+.windowsstore-icon:before{content:'\e61c';}
+.wordpress-icon:before{content:'\e61d';}
+.xamarin-icon:before{content:'\e61e';}
+.windows8-icon:before{content:'\e620';}
+.windows-icon:before{content:'\e621';}
+.ios-icon:before{content:'\e625';}
+.android-icon:before{content:'\e626';}
+.rails-icon:before{content:'\e62c';}
+.aspnet-icon:before {content:'\e62e';}
+.aspnet2-icon:before {content:'\e630';}
+.nancy-icon:before {content:'\e631';}
+.unknown-icon:before {content: '\e62f';}
+
+// -- form icons
+.radiounchecked-icon:before{content:'\e600';}
+.radiochecked-icon:before{content:'\e607';}
+
+// -- star icons
+.solidstar-icon:before {content:'\e635';}
+.strokestar-icon:before {content:'\e634';}
+
+.custom-icon {
+//-- social media
+  &.twitter-icon:before{content:'\e623';}
+  &.dribbble-icon:before{content:'\e624';}
+  &.facebook-icon:before{content:'\e627';}
+  &.linkedin-icon:before{content:'\e622';}
+  &.github-icon:before {content:'\e61f';}
+  &.googleplus-icon:before {content:'\e633';}
+  //-- integration
+  // custom for bitbucket as there are two
+  &.bitbucket-icon:before {content:'\e632';}
+}
+
+//-- other
+.filter-icon:before{content:'\e605';}
+
+//-- browser icons
+.safari-icon:before {content:'\e604';}
+.opera-icon:before {content:'\e628';}
+.ie-icon:before {content:'\e629';}
+.ie8-icon:before {content:'\e621';}
+.firefox-icon:before {content:'\e62a';}
+.chrome-icon:before {content:'\e62b';}
+
+
+//-- custom 16px icons
+.collapse-icon:before {content:'\e637';}
+.expand2-icon:before {content:'\e636';}
+
+
+.icon-integration:before {content:'\e63a';}
+.icon-last:before {content:'\e63c';}
+.icon-first:before {content:'\e63b';}
+
+.icon-new-window:before{content:'\e645';}
+.icon-view-session:before{content:'\e459';}
+
+//-- RUM (real user monitoring) icons
+.icon-pulse:before {content:'\e642';}
+.icon-sessions:before {content:'\e652';}
+.icon-users:before {content:'\e644';}
+.icon-browsers:before {content:'\e63e';}
+.icon-platforms:before {content:'\e641';}
+.icon-globe:before {content:'\e63f';}
+
+
+
+// new icons
+.icon-emoji-sad:before {content:'\e601';}
+.icon-emoji-average:before {content:'\e602';}
+.icon-emoji-happy:before {content:'\e603';}
+.icon-warning:before {content:'\e657';}
+.icon-bug:before {content:'\e640';}
+.icon-beacon:before {content:'\e63d';}
+.icon-performance-poor:before {content:'\e651';}
+.icon-performance-average:before {content:'\e64f';}
+.icon-performance-good:before {content:'\e650';}
+.icon-video:before {content:'\e655';}
+.icon-audio:before {content:'\e62d';}
+.icon-file:before {content:'\e64b';}
+.icon-document:before {content:'\e64a';}
+.icon-timeline:before {content:'\e654';}
+.icon-source-code:before {content:'\e653';}
+.icon-font:before {content:'\e656';}
+.icon-flash:before {content:'\e64c';}
+.icon-installer:before {content:'\e64e';}
+.icon-image:before {content:'\e64d';}
+.icon-television:before{content:'\e658';}
+// --
+.icon-checkbox-unchecked:before {content:'\e648';}
+.icon-checkbox-checked:before {content:'\e649';}
+.unchecked-icon:before{content:'\e648';}
+.checked-icon:before{content:'\e649';}
+.icon-box-cross:before {content:'\e647';}
+.icon-box-plus:before {content:'\e643';}
+.icon-loading:before {content:'\e646';}
+
+// Unlock screen feature icons
+.icon-error-data:before {content:'\e659';}
+.icon-every-platform:before {content:'\e65a';}
+.icon-real-time:before {content:'\e65b';}
+.icon-smart-notifications:before {content:'\e65c';}
+
+
+
+// 56 pixels optimized
+.icon-graph:before {content:'\e900';}
+.icon-globe-2:before {content:'\e901';}
+.icon-health:before {content:'\e902';}
+.icon-users-2:before {content:'\e905';}
+.icon-monitors:before {content:'\e904';}
+.icon-happy:before {content:'\e903';}

@@ -1,0 +1,42 @@
+.empty-table{
+	margin: 0 auto;
+  position: relative;
+}
+.empty-table__icon{
+	width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.empty-table__text{
+    display: table;
+    height: 100px; // behaves like min-height on with display:table;
+    padding-left: 120px;
+    width: 100%;
+}
+.empty-table__text__content{
+    display: table-cell;
+    vertical-align: middle;
+}
+.empty-table__text__headline,
+.empty-table__text__link{
+	line-height: 32px;
+}
+
+.empty-table__text__headline{
+	@include font-size(1.4);
+	font-weight: bold;
+}
+.empty-table__text__description{
+	color: $text-grey;
+  line-height: 18px;
+}
+
+
+// screens bigger than mob
+@include mw-screen-mob {
+  .empty-table{
+    width: 400px;
+  }
+}

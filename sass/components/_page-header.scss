@@ -1,0 +1,191 @@
+// Master name: page-header
+
+// container
+.page-header {
+  position: relative;
+  z-index: 5;
+  padding: 8px 24px;
+  background-color: $white;
+  border-bottom: 1px solid $color-border;
+
+  @include screen-min {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include screen-mob {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.page-header--navigation {
+  padding-bottom: 0;
+}
+
+.page-header__title {
+  line-height: 32px;
+}
+
+.page-header__container {
+  position: relative;
+}
+
+// page header section
+.page-header__section {}
+.page-header__section--margin {
+  margin-bottom: 4px;
+}
+
+// datepicker layout
+.page-header__section--datepicker {
+  position: relative;
+  padding-right: 320px;
+
+  @include screen-mob {
+    padding: 0;
+  }
+
+  .header-section__datepicker {
+    position: absolute;
+    width: 320px;
+    right: 0;
+    top: 0;
+
+    @include screen-mob {
+      position: static;
+      margin: 0 0 12px;
+    }
+  }
+}
+
+
+.page-header__section--pulse {
+  position: relative;
+  padding-right: 366px;
+
+  @include screen-mob {
+    padding: 0;
+  }
+
+  .header-section__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header-section__datepicker {
+    position: absolute;
+    width: 320px;
+    right: 40px;
+    top: 0;
+
+    @include screen-mob {
+      width: auto;
+      position: static;
+    }
+  }
+}
+
+// single button right layout (settings and stuff)
+.page-header__section--button {
+  position: relative;
+  padding-right: 40px;
+}
+
+.header-section__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+// Subnavigation / breadcrumb
+.subnavigation {
+  position: relative;
+  z-index: 0;
+  background-color: $white;
+  padding: 12px 24px;
+  border-bottom: 1px solid $color-border;
+
+  @include screen-min {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+html.cssanimations.csstransitions {
+  .subnavigation {
+    will-change: transform;
+    transform: translate3D(0,-100%,0);
+    @include transition(transform 160ms ease);
+  }
+
+  .subnavigation--animate-in {
+    transform: translate3D(0,0,0);
+  }
+}
+
+
+
+
+// !toremove !todo
+.p-h-headline {
+  line-height: 32px;
+}
+
+.p-h-context {
+  @include font-size( 1.2 );
+  color: $text-2;
+  line-height: 14px;
+  font-weight: bold;
+}
+
+.padding-right-200 {
+  padding-right: 200px;
+}
+
+.ellipsis-space-250 {
+  padding-right: 250px;
+}
+
+.ellipsis-space-350 {
+  padding-right: 350px;
+}
+
+.ellipsis-space-610 {
+  padding-right: 610px;
+}
+
+.p-h-bottom-section {
+  padding-bottom: 0;
+}
+
+.p-h-controls {
+  @extend clearfix;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.p-h-control {
+  margin-left: 12px;
+  float: left;
+  line-height: 32px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.p-h-control-icon {
+  margin-top: 4px;
+}
+
+
+.page-header__section {
+  .quick-picker {
+    float: none;
+  }
+}

@@ -1,0 +1,252 @@
+// date picker control
+
+//-- reigons
+.date-picker {
+  position: relative;
+}
+
+.date-picker__input {
+  width: 320px;
+}
+
+.date-picker__dropdown {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  right: 0;
+  width: 500px;
+  @include screen-med {
+    right: auto;
+    left: 0;
+  }
+}
+
+.date-picker__dropdown--right {
+  //right: 0;
+}
+
+.date-picker__dropdown--left {
+  left: 0;
+}
+
+//-input
+.date-input {
+  position: relative;
+  height: 32px;
+}
+
+.date-input__icon {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  color: $text-grey;
+}
+
+.date-input__input {
+  width: 100%;
+  height: 32px;
+  padding: 0 8px 0 32px;
+  border: none;
+  border-radius: 3px;
+  background: $color-border-light;
+  @include font-size(1.3);
+
+  &:hover,
+  &:active {
+    background: $color-border;
+  }
+
+  &:focus {
+    background: $color-grey-light;
+  }
+}
+
+//- datepicker dropdown
+.date-dropdown {
+  display: none;
+  border: 1px solid $color-border-transparent;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  box-shadow: $dropdown-shadow;
+  background: $white;
+}
+
+.date-dropdown--expand {
+  display: block;
+  animation: dateDropdown 160ms forwards linear;
+}
+//-datepicker animations
+html.cssanimations {
+  .date-dropdown--expand {
+    animation: dateDropdown 160ms forwards linear;
+  }
+}
+
+@keyframes dateDropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+// datepicker navigation
+.date-dropdown__navigation {
+}
+
+.date-navigation {
+  display: block;
+  padding: 12px 10px;
+}
+
+.date-navigation__item {
+  float: left;
+  width: 20%;
+  padding: 0 2px;
+}
+
+.date-button {
+  @extend nowrap;
+  @include font-size(1.2);
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  line-height: 16px;
+  position: relative;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  background: $color-grey-lighter;
+  color: $text-1 !important;
+
+  &:hover {
+    background: $color-grey-light;
+  }
+
+  &:active {
+    background: $color-grey;
+  }
+}
+
+.date-button--active {
+  color: $white !important;
+  background-color: $color-azure !important;
+}
+// custom button active state
+.date-button--custom {
+  padding-right: 32px;
+
+  .dropdown-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+// date picker
+.date-dropdown__picker {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition(height 160ms ease-in-out);
+}
+
+.date-dropdown__picker.date-dropdown__picker--expand {
+  height: 288px;
+  border-top: 1px solid $color-border-light;
+}
+
+.date-split {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 288px;
+  width: 100%;
+}
+
+.date-split__item {
+  height: 288px;
+  width: 50%;
+  float: left;
+  padding: 12px;
+}
+
+.date-split__item--border {
+  border-right: 1px solid $color-border-light;
+}
+
+
+// Bootstrap overrides.
+.quick-picker {
+  .bootstrap-datetimepicker-widget {
+    float: left;
+    width: 50%;
+  }
+
+  .bootstrap-datetimepicker-widget td span {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+
+  ul.list-unstyled {
+    min-height: 255px;
+  }
+
+  .expand-content {
+    & > div {
+      .bootstrap-datetimepicker-widget {
+        padding: 0 12px;
+      }
+    }
+
+    & > div:first-child {
+      .bootstrap-datetimepicker-widget {
+        padding: 0 12px;
+        border-right: 1px solid $color-border-light;
+      }
+    }
+  }
+}
+
+
+
+@include screen-mob {
+  .date-picker__dropdown {
+    width: 100%;
+  }
+
+  .date-dropdown__picker.date-dropdown__picker--expand {
+    height: 570px;
+  }
+
+  .date-split__item {
+    float: none;
+    width: 100%;
+    height: 288px;
+  }
+
+  .date-split {
+    height: inherit;
+  }
+
+  .date-navigation__item {
+    width: 50%;
+    margin-bottom: 4px;
+
+    &:last-child {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+}

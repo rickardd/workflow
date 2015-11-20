@@ -1,0 +1,58 @@
+//-- Modal SCSS
+
+
+// modal layout
+$modal-sidebar-width: 240px;
+
+
+.text-light {color: $color-grey-lighter;font-weight:normal;}
+
+//-- POSITIONING
+
+//-- desktop 
+.modal-container {
+  @extend clearfix;
+  margin: 40px 0;
+  background: $white;
+  border: 1px solid $color-grey-lightest;
+}
+.modal-sidebar {
+  @extend noselect;
+  float: left;
+  width: $modal-sidebar-width;
+  padding: 0 0 12px;
+  background: $color-grey-lightest;
+}
+.modal-sidebar-mobile {
+  display: none;
+}
+
+//-- fluid
+@media screen and ( max-width: 1200px) {
+  .modal-container {
+    margin: 20px 0; 
+  }
+  .modal-sidebar {
+    float: none;
+    width: auto;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  .modal-sidebar-mobile {
+    display: block;
+  } 
+  .modal-sidebar-content {
+    display: none;
+  }
+  .sidebar-show .modal-sidebar-content {
+    display: block;
+  }
+}
+
+//------
+.modal-center {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 960px;
+  @media screen and ( max-width: 1200px) {padding: 0 20px;}
+}

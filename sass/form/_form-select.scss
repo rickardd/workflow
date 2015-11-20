@@ -1,0 +1,51 @@
+// teams / add-application
+.select-control {
+  position: relative;
+}
+.select-control__icon {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 12px;
+  height: 40px;
+  width: 40px;
+}
+
+// use on input-wrapper for select icon poisitioning !should be select-wrapper but class is taken.
+.is-select {
+  position: relative;
+  .icon-16 {
+    pointer-events: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+.select-style {
+  height: 40px;
+  width: 100%;
+  padding: 0 39px 0 11px;
+  border-radius: 2px;
+  border: 1px solid $color-border;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &:hover {
+    border-color: $color-border-dark;
+  }
+  &:focus {
+    border-color: $color-azure;
+  }
+}
+
+.select-32 {
+  .select-style {
+    height: 32px;
+    padding-left: 4px;
+  }
+
+  .icon-16 {
+    top: 9px;
+  }
+}

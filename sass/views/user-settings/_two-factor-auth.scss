@@ -1,0 +1,33 @@
+// authenticator store links
+
+.authenticator-store {
+  position: relative;
+  padding: 0 0 0 48px;
+  margin: 0 0 24px;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.authenticator-store-heading {
+  margin: 0 0 8px;
+}
+.authenticator-store-list {
+  li {
+    padding: 4px 0;
+  }
+}
+
+.authenticator-store-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// qr code positioning
+.qr-code {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 40px;
+}

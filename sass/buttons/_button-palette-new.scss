@@ -1,0 +1,51 @@
+// DO NOT USE - THIS IS JUST A TEST
+
+
+// -- blue
+.button-blue {
+  color: $white!important;
+  background-color: $color-azure;
+  &:hover {
+    background-color: $color-azure-light;
+  }
+  &:active {
+    background-color: $color-azure-dark;
+  }
+}
+
+// -- red
+.button-red {
+  color: $white!important;
+  background-color: $color-ember;
+  &:hover {
+    background-color: $color-ember-light;
+  }
+  &:active {
+    background-color: $color-ember-dark;
+  }
+}
+
+// -- orange
+.button-orange {
+  color: $white!important;
+  background-color: $color-flame;
+  &:hover {
+    background-color: $color-flame-light;
+  }
+  &:active {
+    background-color: $color-flame-dark;
+  }
+}
+
+
+// -- grey
+.button-grey {
+  color: $text-1!important;
+  background-color: $color-grey-dark;
+  &:hover {
+    background-color: $color-grey;
+  }
+  &:active {
+    background-color: $color-grey-darker;
+  }
+}

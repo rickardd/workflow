@@ -1,0 +1,132 @@
+// select product
+
+// product list
+.product-select-list {}
+.product-select-list__item {
+  margin: 4px 0;
+}
+
+
+.product-select-item {
+  @include noselect;
+  border: 2px solid $color-grey-lighter;
+  border-radius: 3px;
+}
+.product-select-item--open {
+  .product-select-item__notifications {
+    display: block;
+  }
+  .product-select-item__product {
+    background: $color-grey-lightest;
+  }
+  .select-product__added {display: block;}
+  .select-product__add {display: none;}
+}
+.product-select-item--static {
+  .product-select-item__product {
+    cursor: auto;
+    &:hover {
+      background: $color-grey-lightest;
+    }
+    &:active {
+      background: $color-grey-lightest;
+    }
+  }
+}
+.product-select-item--disabled {
+  border: 2px solid $color-grey-lightest;
+  .product-select-item__product {
+    cursor: auto;
+    &:hover {
+      background: $white;
+    }
+    &:active {
+      background: $white;
+    }
+  }
+  .product-icon {background-color: $color-grey-lighter;}
+  .product-add {
+    background: $color-grey-lighter;
+  }
+  .select-product__name {
+    color: $color-grey-lighter;
+  }
+  .select-product__info {
+    color: $color-grey-lighter;
+  }
+}
+
+.product-select-item__product {
+  cursor: pointer;
+  padding: 16px 24px;
+  &:hover {
+    background: $color-grey-lightest;
+  }
+  &:active {
+    background: $color-grey-lighter;
+  }
+}
+.product-select-item__notifications {
+  padding: 24px;
+  display: none;
+}
+
+
+.product-add {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  color: $white;
+  background: $color-stealth;
+}
+
+.product-added {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  color: $white;
+  background: $color-forest;
+}
+
+.product-already-added {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  line-height: 36px;
+}
+
+// product box
+.select-product {
+  position: relative;
+  padding: 0 48px;
+}
+.select-product__add {
+  position: absolute;
+  padding: 6px;
+  top: 0px;
+  right: 0;
+}
+.select-product__added {
+  position: absolute;
+  padding: 6px;
+  top: 0px;
+  right: 0;
+  display: none;
+}
+.select-product__avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.select-product__name {
+  line-height: 36px;
+  font-weight: bold;
+  display: inline-block;
+  @include font-size(1.6);
+}
+.select-product__info {
+  margin-left: 6px;
+  display: inline-block;
+}

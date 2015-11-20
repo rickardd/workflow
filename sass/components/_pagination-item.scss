@@ -1,0 +1,44 @@
+
+
+.pagination-item{
+  border-radius: 2px;
+  float: left;
+  margin-left: 2px;
+  line-height: 24px;
+  height: 24px;
+  min-width: 24px;
+  @include font-size(1.4);
+  color: $color-azure;
+  display: block;
+  text-align: center;
+  padding: 0 4px;
+
+  &:first-child{
+    margin-left: 0;
+  }
+
+  .icon-16{
+    margin: 0 auto;
+    &:before{
+      line-height: 24px;
+    }
+  }
+
+  &:hover{
+    background-color: $color-azure-light;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.pagination-item--disabled{
+  color: #b8b9ba!important;
+  border-color: #e4e4e4!important;
+  background: #e4e4e4!important;
+}
+
+
+.pagination-item--active {
+  background-color: $color-azure!important;
+  color: $white!important;
+}

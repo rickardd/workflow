@@ -1,0 +1,43 @@
+// Sign in Sign up azure page
+
+ul.azure-signin-options {
+  margin: 0 0 40px;
+  li {
+    margin: 0 0 16px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+
+// azure layout
+.layout-2column {
+  position: relative;
+  padding: 0 0 0 540px;
+  @media screen and (max-width:$screen-min) {
+    padding: 0;
+  }
+}
+
+.layout-2column-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 40px 0 0;
+  width: 540px;
+  @media screen and (max-width:$screen-min) {
+    display: none;
+  }
+}
+
+.layout-2column-right {
+  padding: 0 0 0 40px;
+  border-left: 1px solid $color-border;
+  @media screen and (max-width:$screen-min) {
+    padding: 0;
+    border: none;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

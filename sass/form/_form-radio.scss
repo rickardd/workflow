@@ -1,0 +1,45 @@
+// radio control
+label.radio-control {
+  padding: 0 0 0 24px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  line-height: 16px;
+
+  &:hover .radio2-icon {
+    color: $text-1 !important;
+  }
+  .solo-radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+// radio control
+.solo-radio {
+  width: 16px;
+  height: 16px;
+  display: block;
+  cursor: pointer;
+  @include noselect;
+
+  &:hover .radio2-icon {
+    color: $text-1 !important;
+  }
+  input[type=radio] {
+    display: none;
+    & + .radio2-icon {
+      color: $text-grey-light;
+    }
+    &:checked + .radio2-icon {
+      color: $text-1;
+    }
+    & + .radio2-icon:before {
+      content: '\e600';
+    }
+    &:checked + .radio2-icon:before {
+      content: '\e607';
+    }
+  }
+}

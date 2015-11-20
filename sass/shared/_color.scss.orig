@@ -1,0 +1,154 @@
+//---------------------------------------------------------------
+// Raygun Color Variables
+//---------------------------------------------------------------
+
+// text-colors
+$text-1:#333;
+$text-2:#666;
+$text-3:#999;
+$text-blue:#4285f4;
+$text-red:#db4437;
+$text-green:#8bc34a;
+$text-yellow:#a97b53;
+$text-purple:#8A4DC7;
+
+$tab-background: #e8edf3;
+
+// primary
+$white: #fff;
+$black: #000;
+$red: #e9696e;//#e45c75;
+$blue: #158fef;
+$green: #9aca40; //#8aba56;
+$yellow: #ffbb42;
+$orange: #fe5723;
+$mustard: #ffe291;
+
+$amber: #ffc107;
+$pink: #E91E63;
+
+// backgrounds
+$background-1: #f0f3f8; // light background
+$background-2: #364760; // dark background
+$background-overlay: rgba(0,0,0,0.4);
+
+// greys
+$grey-1: #d7e0e9;
+$grey-2: #c0ccd7;
+$grey-3: #a8b6c5;
+$grey-4: #88929E;
+$grey-5: #f8f8f8;
+
+// borders
+// standard border is: $grey-1
+$border-transparent: rgba(0,0,0,0.2);
+
+//----
+// Questionable Colors !todo remove all below this line
+//----
+
+// warning - tied to .robbie-message
+$warning-text: #a67c52;
+$warning-border: #d9b751;
+$warning-background: #ffe490;
+
+// These colors are used in messages @rick
+// light
+$green-light: #8fc63f;
+$blue-light: #4188c7;
+$red-light: #e45c75;
+$yellow-light: #fdba41;
+$orange-light: #f3762c;
+
+// dark
+$green-dark: #539642;
+$blue-dark: #2b6db5;
+$red-dark: #a1495e;
+$yellow-dark: #c09137;
+$orange-dark: #bf6434;
+
+
+
+
+//---- everything below this line is new and SHOULD BE USED
+
+$grey-light: #f7f7f7; // should be grey lightest
+
+
+$box-shadow: 0 1px 2px rgba($black,0.1);
+$shadow-1: 0 1px 2px rgba(0,0,0,.05);
+$modal-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+$dropdown-shadow: 0 2px 8px rgba(0,0,0,0.1);
+$header-shadow: 0 2px 1px rgba($black,0.15);
+
+
+
+// Primary Raygun Greys (use $color-grey-darkest // Jet DK instead of Black)
+$color-grey-darkest: #343434; // Jet DK
+$color-grey-darker: #5a5a58; // Jet MD
+$color-grey-dark: #848482; // Battleship
+$color-grey: #b6b6b4; // Silver DK
+$color-grey-light: #cfcfcd; // Silver MD
+$color-grey-lighter: #D2D2D2; // Silver LT
+$color-grey-lightest: #f1f1f1; // Silver LT -- should be background-1
+
+
+// Primary Raygun Dark Blue
+$color-stealth-darkest: #262d3a;
+$color-stealth: #303847 ;
+$color-stealth-dark: #80848d ;
+$color-stealth-light: #5A606B ;
+$color-stealth-lightest: #D8D8D7 ;
+
+// Unassigned
+$color-alpine-dark: #1499a6  ;
+$color-alpine: #1CB6C0  ;
+$color-alpine-light: #62ccd4  ;
+
+// General link color
+$color-azure-dark: #0369d2  ;
+$color-azure: #158FEF  ;
+$color-azure-light: #5eb2f4  ;
+
+// Real User Monitoring Purple
+$color-byzantine-dark: #511a8c;
+$color-byzantine: #6E409F;
+$color-byzantine-light: #8A4DC7;//#855eae;
+
+// Error Reporting & Error/Alert Red
+$color-ember-dark: #dc280a  ;
+$color-ember: #F73415  ;
+$color-ember-light: #fa5028  ;
+
+// Unassigned
+$color-flame-dark: #fa610b  ;
+$color-flame: #FB7A31  ;
+$color-flame-light: #fb8c4c  ;
+
+// Logo Yellow
+$color-lightning-dark: #f4e216  ;
+$color-lightning: #F4E216  ;
+$color-lightning-light: #f4e216  ;
+
+// Call to Action Green
+$color-forest-dark: #00ad09  ;
+$color-forest: #1CC526  ;
+$color-forest-light: #46d04e  ;
+
+// Stacktrace line object
+$color-lime-dark: #609407  ;
+$color-azure-darker: #0256AD;
+
+// Used for RUM tags
+$color-gold: #FFD700;
+$color-opera-red: #CC0F16;
+<<<<<<< HEAD
+$color-dns-green: #006600;
+$color-server-green: #00BB00;
+=======
+
+
+
+// ToDo: bar chart color: keep or replace? Used in bar-charts.
+$color-graph-blue: #3E88C7;
+>>>>>>> User traffic color and margin updates.

@@ -1,0 +1,12 @@
+// trial banner
+
+.trial-banner {
+  @include clearfix;
+  padding: 16px 24px;
+  background-color: #d0e5f3;
+  position: relative; // new
+
+  .button {
+    float: right;
+  }
+}

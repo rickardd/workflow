@@ -1,0 +1,269 @@
+@import "_reset";
+
+/*
+  SCSS RULES
+  -----------------------------------
+  - nest no more than 2 levels deep -- only!
+  - Keep everything tidy!
+  - modular scss when possible
+  - re-use code!
+  - state--classes limit to 3
+  - ALWAYS try and ADD styles, AVOID using classes to REMOVE styles
+*/
+
+// apply box layout model to all elements
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+// color guide
+@import "shared/_color";
+
+// shared
+@import "shared/_responsive-breakpoints";
+@import "shared/_mixin";
+@import "shared/_useful";
+@import "shared/_center";
+@import "shared/_avatar";
+@import "shared/_grid";
+@import "shared/_type";
+
+// typography
+@import "typography/_typography";
+@import "typography/_codeblock";  // !--  used where?
+
+// icons
+@import "icons/_icon";
+@import "icons/_icon-svg";
+@import "icons/_icon-stroke";
+@import "icons/_icon-loading";
+@import "icons/_icon-action";
+@import "icons/_icon-custom";       // !custom iconfont
+@import "icons/_icon-products";
+
+// buttons
+@import "buttons/_button";
+//@import "buttons/_button-palette-new";
+@import "buttons/_button-palette";
+@import "buttons/_button-extra";
+@import "buttons/_button-patterns";
+
+// dropdown control
+@import "dropdown/_dropdown";
+@import "dropdown/_dropdown-old";
+//@import "dropdown/_dropdown-animation";
+
+
+// templates
+@import "generic/_table-standard";
+@import "generic/_vertical-list";
+@import "templates/_empty-table";
+
+// Stuff to be removed
+@import "_to-remove/_form";                 //!todo replace all forms with new form style (once finished)
+@import "_to-remove/_resolved-in-version";  //!todo replace with new generic form styles (used on overview + instance)
+@import "_to-remove/_quick-picker-search"; // !todo remove when search is refactored. Appears when search in sidebar is made.
+
+// application integrations <- move this into module format
+@import "_to-remove/integrations/_modal";
+@import "_to-remove/integrations/_modal-content";
+@import "_to-remove/integrations/_modal-plugin";
+@import "_to-remove/integrations/_modal-form";
+
+// Form 2015
+// this needs work but will replace generic form.
+@import "form/_form-base";
+@import "form/_form-inputs";
+@import "form/_form-radio";
+@import "form/_form-checkbox";
+@import "form/_form-textarea";
+@import "form/_form-structure";
+@import "form/_form-select-filter";
+@import "form/_form-validation";
+@import "form/_form-select";
+@import "_to-remove/_form-old";
+
+// Modal || sometimes referenced as "popup"
+@import "modal/_modal";
+@import "modal/_modal-overlay";
+@import "modal/_modal-animation";
+
+// Module Class
+@import "module/_module";
+@import "module/_module-content";
+@import "module/_module-tabs";
+@import "module/_module-activity";
+@import "module/_module-sidebar";
+@import "module/_module-headers"; // module header control templates
+@import "module/_module-message";
+
+
+// components
+@import "_to-remove/_page-heading";
+@import "_to-remove/_page-heading-controls";
+
+@import "components/_page-header";
+@import "components/_page-header-navigation";
+
+@import "components/_pagination";
+@import "components/_pagination-item"; // new rum style
+@import "components/_breadcrumbs";
+@import "components/_filter";
+@import "components/_progress";
+@import "components/_messages";
+@import "components/_unmask-password";
+@import "components/_raygun-loading";
+@import "components/_date-picker";
+@import "components/_loading-region";
+@import "components/_autocomplete";
+
+
+
+// -- layout objects || CHROME
+
+// layout
+@import "chrome/_layout";
+
+// partials
+@import "chrome/_application-header";   // <-- raygun blue bar header
+@import "chrome/_application-footer";
+@import "chrome/_application-sidebar";
+@import "chrome/_application-switcher";
+@import "chrome/_user-dropdown";
+
+// sidebar
+@import "chrome/_sidebar-application";
+@import "chrome/_sidebar-list";
+@import "chrome/_sidebar-search";
+@import "chrome/_sidebar-icons";
+
+// extra
+@import "chrome/_layout-heroku";
+
+
+
+// -- page views ------------------
+
+// sign in / signup
+@import "views/auth/_auth";
+@import "views/auth/_auth-form";
+@import "views/auth/_auth-signup";
+@import "views/auth/_auth-invite";
+@import "views/auth/_auth-azure";
+
+
+// Application Setup
+@import "views/create-application/_code";
+@import "views/create-application/_wizard";
+@import "views/create-application/_progress";
+@import "views/create-application/_languages";
+@import "views/create-application/_steps";
+@import "views/create-application/_product-select";
+
+
+// Application Unlock
+@import "views/unlock-application/_unlock-application";
+@import "views/unlock-application/_unlock-lock";
+
+
+// Application settings
+@import "views/application-settings/_bulk-delete";
+@import "views/application-settings/_settings-avatar";
+@import "views/application-settings/_settings-integrations";
+@import "views/application-settings/_settings-reassign";
+@import "views/application-settings/_settings-invite";
+@import "views/application-settings/_settings-dsym";
+@import "views/application-settings/_settings-js-source-map";
+@import "views/application-settings/_settings"; // !todo    - setting sections
+
+// Application Dashboard
+@import "views/application-dashboard/_application-dashboard";
+
+// User settings
+@import "views/user-settings/_my-settings";
+@import "views/user-settings/_plan-details";
+@import "views/user-settings/_two-factor-auth";
+@import "views/user-settings/_notifications";
+
+
+// Plan settings
+@import "views/plan-settings/_plan-products";
+@import "views/plan-settings/_plan-details";
+@import "views/plan-settings/_plan-organization";
+@import "views/plan-settings/_plan-modals";
+
+@import "views/plan-settings/_pricing-navigation";
+@import "views/plan-settings/_pricing-summary";
+@import "views/plan-settings/_pricing-accordion";
+
+@import "views/plan-settings/_billing-form";
+@import "views/plan-settings/_billing-success";
+@import "views/plan-settings/_request-cancellation";
+
+
+// audit log
+@import "views/audit/_audit";
+@import "views/audit/_audit-item";
+@import "views/audit/_audit-sidebar";
+
+
+// application overview
+@import "views/application-overview/_overview"; // contains overview filter and heading
+@import "views/application-overview/_overview-new";
+@import "views/application-overview/_overview-merge";
+@import "views/application-overview/_overview-nodata";
+
+// trial
+@import "views/trial/_trial-expired";
+@import "views/trial/_trial-banner";
+@import "views/trial/_trial-upgrade";
+
+
+// analytics
+@import "views/analytics-rum/_analytics-rum";
+@import "views/analytics-rum/_rum-tabs";  // <-- stats
+@import "views/analytics-rum/_pulse-live";
+@import "views/analytics-rum/_pulse-sidebars"; // <-- refactor required
+@import "views/analytics-rum/_set-up";
+@import "views/analytics-rum/_pulse-most-recent-requests";
+@import "views/analytics-rum/_network";
+@import "views/analytics-rum/_network-tool-tip";
+@import "views/analytics-rum/_meter-list";
+@import "views/analytics-rum/_bars";
+@import "views/analytics-rum/_rum-timeline";
+
+// users tracking
+@import "views/users/_users-tracking";
+@import "views/users/_users-generic";
+@import "views/users/_users-search";
+@import "views/users/_users-table";
+@import "views/users/_users-profile";
+
+
+// Error instance
+@import "views/error-instance/_error-stacktrace";
+@import "views/error-instance/_error-data";
+
+@import "views/error-instance/_ei-refactor";
+@import "views/error-instance/_ei-layout";
+@import "views/error-instance/_ei-header";
+@import "views/error-instance/_ei-content";
+@import "views/error-instance/_ei-banners";
+@import "views/error-instance/_ei-sidebar";
+
+
+// global dashboard
+@import "views/global-dashboard/_sidebar-activities"; // Cant't be moved. Cascading problems.
+@import "views/global-dashboard/_global-dashboard";
+@import "views/global-dashboard/_global-dashboard-heading";
+@import "views/global-dashboard/_global-dashboard-activity";
+@import "views/global-dashboard/_global-dashboard-modal";
+
+
+// Deployment tracking
+@import "views/deployment-tracking/_deployment-tracking";
+@import "views/deployment-tracking/_deployment-setup";
+@import "views/deployment-tracking/_deployment-header";
+
+// 404 / 500
+@import "views/_error-screen";                  // !todo    - 404/500 page

@@ -1,0 +1,134 @@
+// layout application switcher
+
+.layout__applications {
+  @include touch-scroll;
+  @include transition(left 200ms ease-in-out);
+  
+  position: fixed;
+  z-index: 200;
+  left: -100%;
+  top: $header-height;
+  bottom: 0;
+  width: 960px;
+  overflow-y: auto;
+  background: $color-stealth;
+
+  @include screen-min {
+    display: none;
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    @include transition(none);
+    margin: 0 0 24px;
+  }
+}
+
+
+// hack to move header above overlay for app switcher
+body.show-applications {
+  .layout__header {
+    z-index: 200;
+  }
+  .layout__applications {
+    left: 0;
+  }
+  @include screen-min {
+    .layout__applications {
+      display: block;
+    }
+  }
+}
+
+
+
+
+// --- old styles
+
+.application-tray {
+  padding-bottom: 40px;
+}
+
+$appswitcher-padding: 24px;
+
+.appswitcher-controls {
+  padding: $appswitcher-padding;
+  .search-wrapper {
+    margin: 0;
+    max-width: 400px;
+  }
+}
+
+// application switcher application group (by plan)
+.appswitcher-group {
+  border-top: 1px solid $color-stealth-darkest;
+  padding: $appswitcher-padding;
+}
+.appswitcher-group-heading {
+  margin: 0 0 12px;
+  color: $white;
+}
+
+
+// application list
+.appswitcher-application-list {
+  margin: -2px;
+  li {
+    padding: 2px;
+    float: left;
+    width: (100%/3);
+    @media all and (max-width: $screen-med) {
+      width: (100%/2);
+    }
+    @media all and (max-width: $screen-mob) {
+      width: (100%/1);
+    }
+  }
+}
+
+.appswitcher-application {
+  display: block;
+  padding: 0 0 0 64px;
+  position: relative;
+  min-height: 56px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: $color-grey-lighter;
+  border: 2px solid $color-stealth-darkest;
+  @include font-size(1.3);
+  &:hover {
+    color: $white;
+    border: 2px solid $color-azure;
+  }
+  &:active {
+    color: $white;
+    background: $color-stealth-darkest;
+    border: 2px solid $color-azure;
+  }
+
+  &.is-active {
+    color: $white;
+    background: $color-stealth-darkest;
+    border: 2px solid $color-azure;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border: 2px solid $color-azure;
+  }
+
+  .avatar {
+    position: absolute;
+    left: 16px;
+    top: 12px;
+  }
+}
+
+.appswitcher-appname {
+  display: block;
+  line-height: 16px;
+  padding: 20px 16px 20px 0;
+  height: 56px;
+  width: 100%;
+  @extend nowrap;
+}

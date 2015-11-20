@@ -1,0 +1,80 @@
+
+.module-content__header{
+    padding: 8px 0;
+    border-bottom: 1px solid $color-border;
+    margin-bottom: 8px;
+}
+
+$module-padding: 24px;
+$module-padding-tight: 12px;
+$module-padding-min: 16px;
+$module-padding-mob: 12px;
+
+@mixin module-padding( $type, $property){
+  .module-content--padding-#{$type}{
+      #{$property}: $module-padding;
+      @include screen-min {#{$property}: $module-padding-min;}
+      @include screen-mob {#{$property}: $module-padding-mob;}
+  }
+  .module-content--padding-#{$type}-tight{
+      #{$property}: $module-padding-tight;
+      @include screen-min {#{$property}: $module-padding-min;}
+      @include screen-mob {#{$property}: $module-padding-mob;}
+  }
+}
+
+@include module-padding( all, padding);
+@include module-padding( top, padding-top);
+@include module-padding( right, padding-right);
+@include module-padding( bottom, padding-bottom);
+@include module-padding( left, padding-left);
+
+
+.module-content--padding-vertical{
+  padding-top: $module-padding;
+  padding-bottom: $module-padding;
+  @include screen-min {
+    padding-top: $module-padding-min;
+    padding-bottom: $module-padding-min;
+  }
+  @include screen-mob {
+    padding-top: $module-padding-mob;
+    padding-bottom: $module-padding-mob;
+  }
+}
+.module-content--padding-vertical-tight{
+  padding-top: $module-padding-tight;
+  padding-bottom: $module-padding-tight;
+  @include screen-min {
+    padding-top: $module-padding-min;
+    padding-bottom: $module-padding-min;
+  }
+  @include screen-mob {
+    padding-top: $module-padding-mob;
+    padding-bottom: $module-padding-mob;
+  }
+}
+.module-content--padding-horizontal{
+  padding-left: $module-padding;
+  padding-right: $module-padding;
+  @include screen-min {
+    padding-left: $module-padding-min;
+    padding-right: $module-padding-min;
+  }
+  @include screen-mob {
+    padding-left: $module-padding-mob;
+    padding-right: $module-padding-mob;
+  }
+}
+.module-content--padding-horizontal-tight{
+  padding-left: $module-padding-tight;
+  padding-right: $module-padding-tight;
+  @include screen-min {
+    padding-left: $module-padding-min;
+    padding-right: $module-padding-min;
+  }
+  @include screen-mob {
+    padding-left: $module-padding-mob;
+    padding-right: $module-padding-mob;
+  }
+}

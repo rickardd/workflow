@@ -1,0 +1,81 @@
+.form-submit,
+.form-button {
+  &.right {
+    text-align: right;
+  }
+
+  &.block {
+    .button, .button-48 {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &.block-right,
+  &.block-left {
+    .button, .button-48 {
+      display: block;
+      min-width: 50%;
+      text-align: center;
+    }
+  }
+
+  &.block-right {
+    .button, .button-48 {
+      float: right;
+    }
+  }
+
+  @include clearfix;
+}
+
+// Todo: remove when we have a new spinner in inputs. exist in app-settings/js-sourcemap
+.input-icon-container{
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 40px;
+  input{
+    position: absolute;
+    width: 100%;
+    display: block;
+    padding-right: 32px !important;
+    border-radius: 0;
+    outline: none;
+    font-size: 1.6rem;
+    -webkit-appearance: none;
+    border: 1px solid #c0ccd7;
+    line-height: 1;
+    padding: 0 10px;
+    height: 40px;
+    &.invalid{
+      border: 1px solid $color-ember !important;
+    }
+    &.valid{
+      border: 1px solid $color-forest !important;
+    }
+  }
+  
+  .loading-icon{
+    background-image: url('/cassette.axd/file/content/images/icons/rgLoader.gif') !important;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  .flat-icon{
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    right: 4px;
+    right: 8px;
+  }
+  .flat-icon:before{
+    content: " " !important;
+  }
+  &.loading{
+    .loading-icon{
+      display: block;
+    }
+  }
+}
+  

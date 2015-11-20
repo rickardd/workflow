@@ -1,0 +1,478 @@
+
+//      AUDIT LOG: SIDEBAR
+// -----------------------------
+
+.audit-sidebar-item {
+  border: 1px solid $color-border;
+  background-color: $white;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.audit-heading {
+  overflow: hidden;
+  margin: 16px;
+  min-height: 36px;
+}
+
+.audit-action-icon,
+.audit-related-to-container {
+  float: left;
+}
+
+.audit-sidebar-related-to-container {
+  position: static;
+  padding-left: 49px;
+  padding-right: 48px;
+}
+
+.audit-sidebar-user-container,
+.audit-sidebar-application-container {
+  white-space: nowrap;
+}
+
+.audit-sidebar-user-container {
+  display: inline-block;
+}
+
+.audit-sidebar-user-name,
+.audit-sidebar-application-name {
+  white-space: nowrap;
+}
+
+
+.audit-sidebar-avatar {
+  position: static;
+  display: inline-block;
+  background-color: #808080;
+}
+
+.audit-sidebar-user-name {
+  vertical-align: middle;
+  line-height: 1.2em;
+  white-space: normal;
+  float: none !important;
+  display: inline;
+}
+
+.audit-application-name {
+  color: $color-azure;
+  font-weight: bold;
+}
+
+// Time
+.audit-sidebar-item .audit-sidebar-time-container {
+  margin: 0;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: auto;
+}
+
+.audit-icon-time {
+  vertical-align: middle;
+  margin-top: 1px; // Makes sure IE doesn't cut the top edge of the icon.
+}
+
+.audit-time {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.audit-body {
+  margin: 0 16px 16px 16px;
+}
+
+.audit-body-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.audit-log-row,
+.audit-comment {
+  margin-bottom: 4px;
+}
+
+
+.audit-log-row {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.audit-comment {
+  border-left: 8px solid $background-color;
+  margin-top: 12px;
+  padding: 12px 0 12px 12px;
+}
+
+.audit-expand {
+  color: $color-azure;
+  background-color: $background-color;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  transition: all .3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(232, 236, 243, 1);
+    padding-bottom: 17px;
+    transition: all .3s ease;
+  }
+
+  .audit-icon {
+    vertical-align: middle;
+  }
+}
+
+.audit-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.audit-new-user-block {
+  background-color: $background-color;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.audit-new-user-avatar,
+.audit-new-user-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.audit-new-user-avatar {
+  margin-right: 12px;
+}
+
+.audit-new-user-name {
+  font-weight: bold;
+}
+
+
+.audit-sidebar-item {
+  .action-icon {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+}
+
+
+
+//      AUDIT LOG: CONTENT
+// --------------------------------
+
+
+.table-audit {
+
+  &,
+  tbody,
+  thead,
+  tr,
+  td {
+    display: block;
+    width: auto;
+  }
+}
+
+
+
+.table-audit {
+  background: $background-color;
+  margin: 10px 0px;
+  width: 100%;
+
+  .table__cell-32 {
+    padding: 16px 0;
+  }
+
+  .table__cell-16 {
+    padding: 16px 0;
+  }
+}
+
+.is-tight .table-audit tr:not(:first-child) td {
+  padding-top: 0px;
+  transition: all .5s ease;
+}
+
+
+
+.audit-action-content {
+  overflow: hidden;
+}
+
+
+/*TOP MENU*/
+.audit-top-menu {
+  padding: 16px;
+  background: white;
+  margin-bottom: 50px;
+  display: table;
+  width: 100%;
+}
+
+.audit-top-menu-left-container,
+.audit-top-menu-right-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.audit-top-menu-right-container {
+  text-align: right;
+}
+
+.audit-top-menu-input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.audit-top-menu-label {
+  vertical-align: sub;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.audit-top-menu-display-mode {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.audit-top-menu-display-button-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.audit-top-menu-display-button {
+  margin: 0;
+  float: left;
+  vertical-align: middle;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+
+/*LOG ITEM*/
+
+.audit-action-item {
+  border: 1px solid $color-border;
+  padding: 16px;
+  background-color: $white;
+  position: relative;
+  margin-bottom: 8px;
+  transition: all .5s ease;
+}
+
+.audit-mixed-avatar-container,
+.audit-related-to-container {
+  float: left;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.audit-expand-container,
+.audit-time-container {
+  float: right;
+  margin-top: 12px;
+  margin-right: 16px;
+}
+
+
+.audit-mixed-avatar-container {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.audit-avatar-user,
+.audit-avatar-source {
+  position: absolute;
+}
+
+.audit-avatar-user {
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  background-color: $color-azure;
+}
+
+.audit-avatar-source {
+  bottom: 0;
+  right: 0;
+  border: 2px solid $white;
+  box-sizing: content-box;
+  background-color: $color-grey-lightest;
+}
+
+.audit-user-name,
+.audit-source-name {
+  font-weight: bold;
+  float: left;
+}
+
+.audit-source-type {
+  float: left;
+}
+
+.audit-user-name, .audit-source-type {
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+
+.audit-content-wrapper{
+  width: 100%;
+}
+
+.audit-content-action {
+  float: left;
+  margin-right: 3px;
+}
+
+.audit-single-error {
+  padding-right: 150px;
+}
+
+
+.audit-expand-container {
+  margin-top: 5px;
+  clear: right;
+  width: 124px;
+
+}
+
+/*.audit-log-expand:after {
+  content: 'expand'
+}
+
+.audit-action-item-expanded .audit-log-expand:after {
+  content: 'collapse'
+}*/
+
+.audit-time-container {
+  color: $text-grey;
+  margin-top: 0;
+  width: 126px;
+}
+
+.audit-icon-time {
+  vertical-align: middle;
+  margin-top: 1px; // Makes sure IE doesn't cut the top edge of the icon.
+  display: inline-block;
+}
+
+.audit-time {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.audit-action-icon {
+  position: absolute;
+  right: -16px;
+  top: 16px;
+}
+
+.audit-expandable {
+  display: none;
+  margin-top: 16px;
+}
+
+.audit-action-item-expanded {
+  .audit-expandable {
+    display: block;
+  }
+}
+
+// Expand
+.audit-log-expand {
+  color: $color-azure;
+  cursor: pointer;
+  position: relative;
+}
+
+// Tight mode
+.audit-action-container.is-tight {
+  .audit-action-item {
+    margin-bottom: 0;
+    border-bottom-width: 0;
+    padding: 8px;
+    transition: all .5s ease;
+  }
+}
+
+
+
+// FILTER EXPAND
+.filter-list-2-expand-wrapper {
+  height: 219px;
+  overflow: hidden;
+}
+
+.filter-list-2-container {
+  &.is-expanded {
+    .filter-list-2-expand-icon:before {
+      content: '\e5a4';
+    }
+  }
+}
+
+
+// RESPONSIVE LOG ITEMS
+@media screen and (max-width: $screen-min) {
+
+  .audit-expand-container,
+  .audit-time-container:not(.audit-sidebar-time-container) {
+    background-color: $background-color;
+    border: 1px solid $color-border;
+    float: left;
+    width: 50%;
+    margin: 0px;
+    height: 40px;
+    text-align: center;
+  }
+
+  .audit-time-container {
+    border-right-width: 0;
+    padding-top: 10px;
+  }
+
+  .audit-log-expand {
+    display: block;
+    height: 100%;
+    line-height: 1em;
+    vertical-align: middle;
+    margin: auto;
+    padding-top: 10px;
+
+    &:hover {
+      background-color: $color-azure;
+      color: $white;
+    }
+  }
+
+
+  .audit-related-to-container {
+    width: 100%;
+    padding: 0 48px 0 49px;
+    min-height: 40px;
+  }
+
+  .audit-mixed-avatar-container {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+
+  .audit-content-action {
+    margin-bottom: 8px;
+  }
+
+  .audit-action-icon {
+    right: 16px;
+  }
+}

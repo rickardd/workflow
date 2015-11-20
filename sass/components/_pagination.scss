@@ -1,0 +1,64 @@
+// pagination
+ul.pagination {
+  li {
+    display: block;
+    float: left;
+    margin: 0 4px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &.pagination-last {
+      margin-left: 12px;
+    }
+
+    &.pagination-first {
+      margin-right: 12px;
+    }
+  }
+
+  .button {
+    display: block;
+  }
+}
+
+// center pagination
+.pagination-center {
+  text-align: center;
+
+  ul.pagination {
+    display: inline-block;
+  }
+}
+
+// right align pagination
+.pagination-right {
+  text-align: right;
+
+  ul.pagination {
+    display: inline-block;
+  }
+}
+
+.pagination.is-empty {
+  display: none;
+}
+
+// expander button
+.pagination-expander {
+  display: block;
+  color: $text-1;
+
+  &.expander-24 {
+    padding: 4px;
+  }
+
+  &.expander-32 {
+    padding: 8px;
+  }
+
+  &.expander-40 {
+    padding: 12px;
+  }
+}

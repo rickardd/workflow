@@ -1,0 +1,16 @@
+// module message block
+.module__message {
+  padding: 12px 24px;
+}
+.module__message--yellow {
+  background-color: $color-lightning-highlight;
+}
+.module__message--blue {
+  background-color: $color-azure-highlight;
+}
+.module__message--red {
+  background-color: $color-ember-highlight;
+}
+.module__message--border {
+  border-bottom: 1px solid $color-grey-lighter;
+}

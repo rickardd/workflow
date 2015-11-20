@@ -1,0 +1,13 @@
+// user notifications page
+
+.notifications-checkbox {
+  position: relative;
+  display: block;
+  padding: 0 0 0 24px;
+  cursor: pointer;
+  .solo-checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

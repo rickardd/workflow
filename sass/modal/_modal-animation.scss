@@ -1,0 +1,88 @@
+html.cssanimations .modal-overlay {
+  opacity: 0;
+  
+  -webkit-animation: modal-background-anim .3s ease-in-out;
+  -moz-animation: modal-background-anim .3s ease-in-out;
+  -ms-animation: modal-background-anim .3s ease-in-out;
+  -o-animation: modal-background-anim .3s ease-in-out;
+  animation: modal-background-anim .3s ease-in-out;
+  
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes modal-background-anim {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@-o-keyframes modal-background-anim {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@-moz-keyframes modal-background-anim {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes modal-background-anim {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+body.show-applications {
+  .modal-overlay {
+    display: block;
+  }
+}
+
+.modal-overlay.is-hidden {
+  display: none;
+}
+
+.modal-overlay.is-active {
+  display: block;
+}
+
+
+@-webkit-keyframes modal-anim {
+	from { 
+    opacity: 0; 
+    transform: translate(0, 35px);
+	}
+	to { 
+    opacity: 1; 
+    transform: translate(0, 0);
+	}
+}
+@-o-keyframes modal-anim {
+	from { 
+    opacity: 0; 
+    transform: translate(0, 35px);
+	}
+	to { 
+    opacity: 1; 
+    transform: translate(0, 0);
+	}
+}
+@-moz-keyframes modal-anim {
+	from { 
+    opacity: 0; 
+    transform: translate(0, 35px);
+	}
+	to { 
+    opacity: 1; 
+    transform: translate(0, 0);
+	}
+}
+@keyframes modal-anim {
+	from { 
+    opacity: 0; 
+    transform: translate(0, 35px);
+	}
+	to { 
+    opacity: 1; 
+    transform: translate(0, 0);
+	}
+}

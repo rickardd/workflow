@@ -1,0 +1,82 @@
+// loading icon
+.loading-icon {
+  background-image: url(../content/images/icons/loading.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+// if css animations are supported
+html.cssanimations {
+  .loading-icon {
+    background-image: none;
+
+    &:before {
+      content: '\e58a';
+    }
+  }
+
+  .loading-icon.is-animated {
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+  }
+
+  .is-spinning:before {
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+  }
+
+  .loading-icon--animate {
+    transform-origin: center;
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+  }
+}
+
+
+// loading animation
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}

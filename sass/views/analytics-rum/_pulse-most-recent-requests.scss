@@ -1,0 +1,83 @@
+@include screen-min{
+  .table-recent-requests{
+    .table__cell--gutter{
+      display: none;
+    }
+    thead{
+      display: none;
+    }
+    tr,
+    td{
+      display: block;
+    }
+    tr{
+      position: relative;
+      padding: 0 12px 24px;
+      overflow: hidden;
+      margin-bottom: 4px;
+    }
+    td{
+      float: left;
+    }
+
+    .table-recent-requests__bug,
+    .table-recent-requests__time,
+    .table-recent-requests__location,
+    .table-recent-requests__user{
+      /* border-bottom: 1px solid $color-grey-lightest; */
+      margin-left: 8px;
+      /* min-height: 41px; */
+    }
+    .table-recent-requests__time,
+    .table-recent-requests__location,
+    .table-recent-requests__user{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .table-recent-requests__time{
+      width: 180px;
+      max-width: 180px;
+    }
+    .table-recent-requests__page{
+      clear: both;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-left: 60px;
+      padding-right: 30px;
+    }
+
+    .table-recent-requests__user{
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 170px;
+    }
+    .table-recent-requests__location{
+      width: 130px;
+    }
+    .table-recent-requests__session{
+      width: 40px;
+    }
+  }
+}
+
+@include screen-mob{
+  .table-recent-requests{
+    tr{
+      margin-bottom: 24px;
+    }
+    .table-recent-requests__bug{
+      display: none;
+    }
+    td,
+    .table-recent-requests__time{
+      float: none;
+      width: 100%;
+      max-width: 100%;
+    }
+    .table-recent-requests__page{
+      padding-left: 20px;
+    }
+  }
+}

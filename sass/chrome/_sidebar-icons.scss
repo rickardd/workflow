@@ -1,0 +1,91 @@
+// sidebar icons
+
+// icon structure
+.sidebar-icon {
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  &:before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+// sprite refrence (changes color based on body.theme class currently)
+.sidebar-icon:before {
+  background-image: url('/content/images/sidebar/sidebar-sprite--blue.png');
+  background-repeat: no-repeat;
+  background-size: 48px 216px;
+}
+
+html.svg {
+  .sidebar-icon:before {
+    background-image: url('/content/images/sidebar/sidebar-sprite--blue.svg');
+  }
+}
+
+//----- rum theme
+body.theme-purple {
+  .sidebar-icon:before {
+    background-image: url('/content/images/sidebar/sidebar-sprite--purple.png');
+  }
+}
+html.svg {
+  body.theme-purple {
+    .sidebar-icon:before {
+      background-image: url('/content/images/sidebar/sidebar-sprite--purple.svg');
+    }
+  }
+}
+
+// mixin that calculates the icon position based on the number it is down the sprite,
+// and wether it is in its active state or not.
+
+$sidebar-icon: 24px; // icon size
+
+@mixin sidebar-icon($count,$active) {
+  @if $active == true {
+    $active: $sidebar-icon;
+  }
+  @else {
+    $active: 0;
+  }
+  background-position: unquote(-$active+' '+($count*-$sidebar-icon));
+}
+
+
+// icon classes
+$icon-state: false; // not active
+
+
+// icons
+.sidebar-icon--dashboard:before {@include sidebar-icon(0,$icon-state);}
+.sidebar-icon--settings:before {@include sidebar-icon(1,$icon-state);}
+.sidebar-icon--pulse:before {@include sidebar-icon(2,$icon-state);}
+.sidebar-icon--crash-reporting:before {@include sidebar-icon(3,$icon-state);}
+.sidebar-icon--feedback:before {@include sidebar-icon(4,$icon-state);}
+.sidebar-icon--invite-team:before {@include sidebar-icon(5,$icon-state);}
+.sidebar-icon--deployment-tracking:before {@include sidebar-icon(6,$icon-state);}
+.sidebar-icon--user-tracking:before {@include sidebar-icon(7,$icon-state);}
+.sidebar-icon--feature-request:before {@include sidebar-icon(8,$icon-state);}
+
+// active icons
+.is-active {
+  $icon-state: true;
+  .sidebar-icon--dashboard:before {@include sidebar-icon(0,$icon-state);}
+  .sidebar-icon--settings:before {@include sidebar-icon(1,$icon-state);}
+  .sidebar-icon--pulse:before {@include sidebar-icon(2,$icon-state);}
+  .sidebar-icon--crash-reporting:before {@include sidebar-icon(3,$icon-state);}
+  .sidebar-icon--feedback:before {@include sidebar-icon(4,$icon-state);}
+  .sidebar-icon--invite-team:before {@include sidebar-icon(5,$icon-state);}
+  .sidebar-icon--deployment-tracking:before {@include sidebar-icon(6,$icon-state);}
+  .sidebar-icon--feature-request:before {@include sidebar-icon(8,$icon-state);}
+}

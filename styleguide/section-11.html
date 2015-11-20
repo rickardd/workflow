@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../style/kss-rick.css">
+  <link rel="stylesheet" href="../style/screen.css" />
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Naming Convension</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-4.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-5.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Icons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-6.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Page Setup</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-7.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Module</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-11.html">
+          <span class="kss-nav__ref">11</span
+          ><span class="kss-nav__name">Tables</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-11.html#kssref-11-1">
+                <span class="kss-nav__ref">11.1</span
+                ><span class="kss-nav__name">NOTE!</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-11.html#kssref-11-2">
+                <span class="kss-nav__ref">11.2</span
+                ><span class="kss-nav__name">General table setup</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-11.html#kssref-11-3">
+                <span class="kss-nav__ref">11.3</span
+                ><span class="kss-nav__name">Fixed tables</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-11.html#kssref-11-4">
+                <span class="kss-nav__ref">11.4</span
+                ><span class="kss-nav__name">Real use example</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-15.html">
+          <span class="kss-nav__ref">15</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-100.html">
+          <span class="kss-nav__ref">100</span
+          ><span class="kss-nav__name">Links</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-200.html">
+          <span class="kss-nav__ref">200</span
+          ><span class="kss-nav__name">KSS Documentation</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-11" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-11">
+          <span class="kss-title__ref">
+              11
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Tables
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>The generic table is created with the base class .table-standard</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-11-1" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-11-1">
+          <span class="kss-title__ref">
+              11.1
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          NOTE!
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Many tables have table__cell--standard defined on the td. That is NOT nessesary if it is defined on the th element.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-11-2" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-11-2">
+          <span class="kss-title__ref">
+              11.2
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          General table setup
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard">
+      <thead>
+        <tr class="table__heading">
+          <th class="table__cell--standard">Product Name</th>
+          <th class="table__cell--standard">Price</th>
+          <th class="table__cell--standard">Applications</th>
+          <th class="table__cell--standard">Storage (errors)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Micro
+          </td>
+          <td>
+            $14 USD
+          </td>
+          <td>
+            1
+          </td>
+          <td>
+            5,000 errors stored
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Small
+          </td>
+          <td>
+            $49 USD
+          </td>
+          <td>
+            10
+          </td>
+          <td>
+            250,000 errors stored
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Medium
+          </td>
+          <td>
+            $149 USD
+          </td>
+          <td>
+            50
+          </td>
+          <td>
+            3,000,000 errors stored
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table--standard&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr class=&quot;table__heading&quot;&gt;
+          &lt;th class=&quot;table__cell--standard&quot;&gt;Product Name&lt;/th&gt;
+          &lt;th class=&quot;table__cell--standard&quot;&gt;Price&lt;/th&gt;
+          &lt;th class=&quot;table__cell--standard&quot;&gt;Applications&lt;/th&gt;
+          &lt;th class=&quot;table__cell--standard&quot;&gt;Storage (errors)&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            Micro
+          &lt;/td&gt;
+          &lt;td&gt;
+            $14 USD
+          &lt;/td&gt;
+          &lt;td&gt;
+            1
+          &lt;/td&gt;
+          &lt;td&gt;
+            5,000 errors stored
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+          &lt;td&gt;
+            Small
+          &lt;/td&gt;
+          &lt;td&gt;
+            $49 USD
+          &lt;/td&gt;
+          &lt;td&gt;
+            10
+          &lt;/td&gt;
+          &lt;td&gt;
+            250,000 errors stored
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+          &lt;td&gt;
+            Medium
+          &lt;/td&gt;
+          &lt;td&gt;
+            $149 USD
+          &lt;/td&gt;
+          &lt;td&gt;
+            50
+          &lt;/td&gt;
+          &lt;td&gt;
+            3,000,000 errors stored
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+      &lt;/tbody&gt;
+
+    &lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-11-3" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-11-3">
+          <span class="kss-title__ref">
+              11.3
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Fixed tables
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Is used to allow fixed px with on table cell.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-11-4" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-11-4">
+          <span class="kss-title__ref">
+              11.4
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Real use example
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard table--fixed">
+  <thead>
+    <tr class=" ">
+      <th class="table__cell--tight dep-table-mob">Deployments</th>
+      <th class="table__cell--tight table__cell-120 dep-table-hide">Version</th>
+      <th class="dep-table-hide"></th>
+      <th class="table__cell--tight table__cell-200 dep-table-hide">Deployed by</th>
+      <th class="table__cell--tight table__cell-200 dep-table-hide">Time</th>
+    </tr>
+  </thead>
+  <tbody class="js-deployments-list-body"><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/798137610" title="deployment 1.0.0.15037">1.0.0.15037</a></h4>
+    <span class="dep-timestamp">24th Jun 2:16pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Daniel
+    </div>
+    <p class="dep-note">Push integration changes into audit log
+
+Master
+
+Dan</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/798137610" title="deployment 1.0.0.15037">1.0.0.15037</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Push integration changes into audit log
+
+Master
+
+Dan</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Daniel
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  24th Jun 2:16pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/798112450" title="deployment 1.0.0.15035">1.0.0.15035</a></h4>
+    <span class="dep-timestamp">24th Jun 1:36pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Daniel
+    </div>
+    <p class="dep-note">Expire audit log redis cache
+
+Master
+
+Dan</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/798112450" title="deployment 1.0.0.15035">1.0.0.15035</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Expire audit log redis cache
+
+Master
+
+Dan</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Daniel
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  24th Jun 1:36pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/798096053" title="deployment 1.0.0.15031">1.0.0.15031</a></h4>
+    <span class="dep-timestamp">24th Jun 1:11pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Rickard
+    </div>
+    <p class="dep-note">Rum Style updates
+
+
+Fixed css name duplication.
+New live puls map style
+
+
+Rick</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/798096053" title="deployment 1.0.0.15031">1.0.0.15031</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Rum Style updates
+
+
+Fixed css name duplication.
+New live puls map style
+
+
+Rick</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Rickard
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  24th Jun 1:11pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/797381360" title="deployment 1.0.0.15003">1.0.0.15003</a></h4>
+    <span class="dep-timestamp">23rd Jun 3:51pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Rickard
+    </div>
+    <p class="dep-note">Rum styles + Cached audit log query
+
+RUM
+
+
+New header
+Generic font settings
+Removed inline styles
+Sandbox animation stuff
+
+
+Audit log
+
+
+Cache audit log query so filters aren't lost when people go back
+
+
+Rick and Daniel</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/797381360" title="deployment 1.0.0.15003">1.0.0.15003</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Rum styles + Cached audit log query
+
+RUM
+
+
+New header
+Generic font settings
+Removed inline styles
+Sandbox animation stuff
+
+
+Audit log
+
+
+Cache audit log query so filters aren't lost when people go back
+
+
+Rick and Daniel</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Rickard
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  23rd Jun 3:51pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/797227980" title="deployment 1.0.0.14987">1.0.0.14987</a></h4>
+    <span class="dep-timestamp">23rd Jun 12:28pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Callum
+    </div>
+    <p class="dep-note">master merge of worker-js-chrome
+
+Callum</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/797227980" title="deployment 1.0.0.14987">1.0.0.14987</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master merge of worker-js-chrome
+
+Callum</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Callum
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  23rd Jun 12:28pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/796563100" title="deployment 1.0.0.14946">1.0.0.14946</a></h4>
+    <span class="dep-timestamp">22nd Jun 1:50pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Daniel
+    </div>
+    <p class="dep-note">
+Assana push stack trace
+Stop owner removing themselves from a plan
+
+
+Master
+
+Dan</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/796563100" title="deployment 1.0.0.14946">1.0.0.14946</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">
+Assana push stack trace
+Stop owner removing themselves from a plan
+
+
+Master
+
+Dan</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Daniel
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  22nd Jun 1:50pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/793516300" title="deployment 1.0.0.14900">1.0.0.14900</a></h4>
+    <span class="dep-timestamp">18th Jun 2:24pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Daniel
+    </div>
+    <p class="dep-note">Make version link go somewhere
+
+Master
+
+Dan</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/793516300" title="deployment 1.0.0.14900">1.0.0.14900</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Make version link go somewhere
+
+Master
+
+Dan</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Daniel
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  18th Jun 2:24pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/793351600" title="deployment 1.0.0.14895">1.0.0.14895</a></h4>
+    <span class="dep-timestamp">18th Jun 11:55am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Rickard
+    </div>
+    <p class="dep-note">Sandbox new header styles
+
+Rick</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/793351600" title="deployment 1.0.0.14895">1.0.0.14895</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Sandbox new header styles
+
+Rick</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Rickard
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  18th Jun 11:55am
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/793330030" title="deployment 1.0.0.14891">1.0.0.14891</a></h4>
+    <span class="dep-timestamp">18th Jun 11:03am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Daniel
+    </div>
+    <p class="dep-note">Small JS fix to  not put ? on the end of occurrence URLs
+
+Master
+
+Dan</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/793330030" title="deployment 1.0.0.14891">1.0.0.14891</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Small JS fix to  not put ? on the end of occurrence URLs
+
+Master
+
+Dan</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Daniel
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  18th Jun 11:03am
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/793303140" title="deployment 1.0.0.14882">1.0.0.14882</a></h4>
+    <span class="dep-timestamp">18th Jun 10:01am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/857a9414910d0128b69aebcddbc81e0f?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Jeremy
+    </div>
+    <p class="dep-note">master
+
+
+neutron-pulse
+
+
+jeremy</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/793303140" title="deployment 1.0.0.14882">1.0.0.14882</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master
+
+
+neutron-pulse
+
+
+jeremy</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/857a9414910d0128b69aebcddbc81e0f?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Jeremy
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  18th Jun 10:01am
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/791703630" title="deployment 1.0.0.14839">1.0.0.14839</a></h4>
+    <span class="dep-timestamp">16th Jun 4:10pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Daniel
+    </div>
+    <p class="dep-note">Spit out trello errors
+
+Master
+
+Dan</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/791703630" title="deployment 1.0.0.14839">1.0.0.14839</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Spit out trello errors
+
+Master
+
+Dan</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Daniel
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  16th Jun 4:10pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/791584920" title="deployment 1.0.0.14819">1.0.0.14819</a></h4>
+    <span class="dep-timestamp">16th Jun 11:58am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Alex
+    </div>
+    <p class="dep-note">master
+
+add date range picker to affected users and deployment tracking
+
+alex</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/791584920" title="deployment 1.0.0.14819">1.0.0.14819</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master
+
+add date range picker to affected users and deployment tracking
+
+alex</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Alex
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  16th Jun 11:58am
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/791481530" title="deployment 1.0.0.14803">1.0.0.14803</a></h4>
+    <span class="dep-timestamp">16th Jun 9:25am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Alex
+    </div>
+    <p class="dep-note">master
+
+add hubspot tracking
+
+alex</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/791481530" title="deployment 1.0.0.14803">1.0.0.14803</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master
+
+add hubspot tracking
+
+alex</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Alex
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  16th Jun 9:25am
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/788289600" title="deployment 1.0.0.14740">1.0.0.14740</a></h4>
+    <span class="dep-timestamp">11th Jun 4:14pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Alex
+    </div>
+    <p class="dep-note">master
+
+*fix an edge case where some users wouldn't get a proper error list in user tracking
+
+alex</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/788289600" title="deployment 1.0.0.14740">1.0.0.14740</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master
+
+*fix an edge case where some users wouldn't get a proper error list in user tracking
+
+alex</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Alex
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  11th Jun 4:14pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/788269150" title="deployment 1.0.0.14733">1.0.0.14733</a></h4>
+    <span class="dep-timestamp">11th Jun 3:29pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Callum
+    </div>
+    <p class="dep-note">master merge of localdev-chrome-js-cachebuster-fix and rick's branch 'test'
+
+
+Fix JS cachebuster chrome dev tools bug on local
+
+
+Callum
+
+2 Date picker bug fixes
+
+
+Datepicker was still clickable when date picker was invisible.
+Border around links behaved weird in some situations
+Rick
+</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/788269150" title="deployment 1.0.0.14733">1.0.0.14733</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master merge of localdev-chrome-js-cachebuster-fix and rick's branch 'test'
+
+
+Fix JS cachebuster chrome dev tools bug on local
+
+
+Callum
+
+2 Date picker bug fixes
+
+
+Datepicker was still clickable when date picker was invisible.
+Border around links behaved weird in some situations
+Rick
+</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Callum
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  11th Jun 3:29pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/788239290" title="deployment 1.0.0.14729">1.0.0.14729</a></h4>
+    <span class="dep-timestamp">11th Jun 2:31pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Alex
+    </div>
+    <p class="dep-note">master
+
+*load developer media scripts as https
+*open sans font fixes
+
+alex</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/788239290" title="deployment 1.0.0.14729">1.0.0.14729</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master
+
+*load developer media scripts as https
+*open sans font fixes
+
+alex</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Alex
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  11th Jun 2:31pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/786493290" title="deployment 1.0.0.14677">1.0.0.14677</a></h4>
+    <span class="dep-timestamp">10th Jun 11:57am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Callum
+    </div>
+    <p class="dep-note">master merge of summary-fix
+
+Callum</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/786493290" title="deployment 1.0.0.14677">1.0.0.14677</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master merge of summary-fix
+
+Callum</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Callum
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  10th Jun 11:57am
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/786434840" title="deployment 1.0.0.14668">1.0.0.14668</a></h4>
+    <span class="dep-timestamp">10th Jun 9:25am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Alex
+    </div>
+    <p class="dep-note">master
+
+add developer media tracking scripts
+
+alex</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/786434840" title="deployment 1.0.0.14668">1.0.0.14668</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master
+
+add developer media tracking scripts
+
+alex</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Alex
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  10th Jun 9:25am
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/785730910" title="deployment 1.0.0.14631">1.0.0.14631</a></h4>
+    <span class="dep-timestamp">9th Jun 2:01pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Callum
+    </div>
+    <p class="dep-note">master merge of ei-refactor-qa
+
+Callum</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/785730910" title="deployment 1.0.0.14631">1.0.0.14631</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master merge of ei-refactor-qa
+
+Callum</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Callum
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  9th Jun 2:01pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/785659320" title="deployment 1.0.0.14614">1.0.0.14614</a></h4>
+    <span class="dep-timestamp">9th Jun 11:41am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/0bc3507a0d8d65e10e58d67726bef75f?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Jamie
+    </div>
+    <p class="dep-note">master
+
+
+Assign to users or teams
+Multiple assignment - Errors can be assigned to multiple users or teams
+List API for creating a "what is assigned to who" style page (not included in this PR)
+Error assignments transferred when merging error groups
+User error assignments transferred when migrating apps between plans
+Modify error assignments when changing teams (remove user / remove app / remove team)
+
+
+Jamie</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/785659320" title="deployment 1.0.0.14614">1.0.0.14614</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master
+
+
+Assign to users or teams
+Multiple assignment - Errors can be assigned to multiple users or teams
+List API for creating a "what is assigned to who" style page (not included in this PR)
+Error assignments transferred when merging error groups
+User error assignments transferred when migrating apps between plans
+Modify error assignments when changing teams (remove user / remove app / remove team)
+
+
+Jamie</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/0bc3507a0d8d65e10e58d67726bef75f?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Jamie
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  9th Jun 11:41am
+</td></tr></tbody>
+</table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table--standard table--fixed&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr class=&quot; &quot;&gt;
+      &lt;th class=&quot;table__cell--tight dep-table-mob&quot;&gt;Deployments&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight table__cell-120 dep-table-hide&quot;&gt;Version&lt;/th&gt;
+      &lt;th class=&quot;dep-table-hide&quot;&gt;&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight table__cell-200 dep-table-hide&quot;&gt;Deployed by&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight table__cell-200 dep-table-hide&quot;&gt;Time&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&quot;js-deployments-list-body&quot;&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/798137610&quot; title=&quot;deployment 1.0.0.15037&quot;&gt;1.0.0.15037&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;24th Jun 2:16pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Daniel
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Push integration changes into audit log
+
+Master
+
+Dan&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/798137610&quot; title=&quot;deployment 1.0.0.15037&quot;&gt;1.0.0.15037&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Push integration changes into audit log
+
+Master
+
+Dan&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Daniel
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  24th Jun 2:16pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/798112450&quot; title=&quot;deployment 1.0.0.15035&quot;&gt;1.0.0.15035&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;24th Jun 1:36pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Daniel
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Expire audit log redis cache
+
+Master
+
+Dan&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/798112450&quot; title=&quot;deployment 1.0.0.15035&quot;&gt;1.0.0.15035&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Expire audit log redis cache
+
+Master
+
+Dan&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Daniel
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  24th Jun 1:36pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/798096053&quot; title=&quot;deployment 1.0.0.15031&quot;&gt;1.0.0.15031&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;24th Jun 1:11pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Rickard
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Rum Style updates
+
+
+Fixed css name duplication.
+New live puls map style
+
+
+Rick&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/798096053&quot; title=&quot;deployment 1.0.0.15031&quot;&gt;1.0.0.15031&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Rum Style updates
+
+
+Fixed css name duplication.
+New live puls map style
+
+
+Rick&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Rickard
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  24th Jun 1:11pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/797381360&quot; title=&quot;deployment 1.0.0.15003&quot;&gt;1.0.0.15003&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;23rd Jun 3:51pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Rickard
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Rum styles + Cached audit log query
+
+RUM
+
+
+New header
+Generic font settings
+Removed inline styles
+Sandbox animation stuff
+
+
+Audit log
+
+
+Cache audit log query so filters aren&#x27;t lost when people go back
+
+
+Rick and Daniel&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/797381360&quot; title=&quot;deployment 1.0.0.15003&quot;&gt;1.0.0.15003&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Rum styles + Cached audit log query
+
+RUM
+
+
+New header
+Generic font settings
+Removed inline styles
+Sandbox animation stuff
+
+
+Audit log
+
+
+Cache audit log query so filters aren&#x27;t lost when people go back
+
+
+Rick and Daniel&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Rickard
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  23rd Jun 3:51pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/797227980&quot; title=&quot;deployment 1.0.0.14987&quot;&gt;1.0.0.14987&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;23rd Jun 12:28pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Callum
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master merge of worker-js-chrome
+
+Callum&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/797227980&quot; title=&quot;deployment 1.0.0.14987&quot;&gt;1.0.0.14987&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master merge of worker-js-chrome
+
+Callum&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Callum
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  23rd Jun 12:28pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/796563100&quot; title=&quot;deployment 1.0.0.14946&quot;&gt;1.0.0.14946&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;22nd Jun 1:50pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Daniel
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;
+Assana push stack trace
+Stop owner removing themselves from a plan
+
+
+Master
+
+Dan&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/796563100&quot; title=&quot;deployment 1.0.0.14946&quot;&gt;1.0.0.14946&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;
+Assana push stack trace
+Stop owner removing themselves from a plan
+
+
+Master
+
+Dan&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Daniel
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  22nd Jun 1:50pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/793516300&quot; title=&quot;deployment 1.0.0.14900&quot;&gt;1.0.0.14900&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;18th Jun 2:24pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Daniel
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Make version link go somewhere
+
+Master
+
+Dan&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/793516300&quot; title=&quot;deployment 1.0.0.14900&quot;&gt;1.0.0.14900&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Make version link go somewhere
+
+Master
+
+Dan&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Daniel
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  18th Jun 2:24pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/793351600&quot; title=&quot;deployment 1.0.0.14895&quot;&gt;1.0.0.14895&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;18th Jun 11:55am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Rickard
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Sandbox new header styles
+
+Rick&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/793351600&quot; title=&quot;deployment 1.0.0.14895&quot;&gt;1.0.0.14895&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Sandbox new header styles
+
+Rick&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Rickard
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  18th Jun 11:55am
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/793330030&quot; title=&quot;deployment 1.0.0.14891&quot;&gt;1.0.0.14891&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;18th Jun 11:03am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Daniel
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Small JS fix to  not put ? on the end of occurrence URLs
+
+Master
+
+Dan&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/793330030&quot; title=&quot;deployment 1.0.0.14891&quot;&gt;1.0.0.14891&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Small JS fix to  not put ? on the end of occurrence URLs
+
+Master
+
+Dan&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Daniel
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  18th Jun 11:03am
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/793303140&quot; title=&quot;deployment 1.0.0.14882&quot;&gt;1.0.0.14882&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;18th Jun 10:01am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/857a9414910d0128b69aebcddbc81e0f?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Jeremy
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master
+
+
+neutron-pulse
+
+
+jeremy&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/793303140&quot; title=&quot;deployment 1.0.0.14882&quot;&gt;1.0.0.14882&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master
+
+
+neutron-pulse
+
+
+jeremy&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/857a9414910d0128b69aebcddbc81e0f?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Jeremy
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  18th Jun 10:01am
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/791703630&quot; title=&quot;deployment 1.0.0.14839&quot;&gt;1.0.0.14839&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;16th Jun 4:10pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Daniel
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Spit out trello errors
+
+Master
+
+Dan&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/791703630&quot; title=&quot;deployment 1.0.0.14839&quot;&gt;1.0.0.14839&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Spit out trello errors
+
+Master
+
+Dan&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Daniel
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  16th Jun 4:10pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/791584920&quot; title=&quot;deployment 1.0.0.14819&quot;&gt;1.0.0.14819&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;16th Jun 11:58am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Alex
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master
+
+add date range picker to affected users and deployment tracking
+
+alex&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/791584920&quot; title=&quot;deployment 1.0.0.14819&quot;&gt;1.0.0.14819&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master
+
+add date range picker to affected users and deployment tracking
+
+alex&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Alex
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  16th Jun 11:58am
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/791481530&quot; title=&quot;deployment 1.0.0.14803&quot;&gt;1.0.0.14803&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;16th Jun 9:25am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Alex
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master
+
+add hubspot tracking
+
+alex&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/791481530&quot; title=&quot;deployment 1.0.0.14803&quot;&gt;1.0.0.14803&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master
+
+add hubspot tracking
+
+alex&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Alex
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  16th Jun 9:25am
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/788289600&quot; title=&quot;deployment 1.0.0.14740&quot;&gt;1.0.0.14740&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;11th Jun 4:14pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Alex
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master
+
+*fix an edge case where some users wouldn&#x27;t get a proper error list in user tracking
+
+alex&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/788289600&quot; title=&quot;deployment 1.0.0.14740&quot;&gt;1.0.0.14740&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master
+
+*fix an edge case where some users wouldn&#x27;t get a proper error list in user tracking
+
+alex&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Alex
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  11th Jun 4:14pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/788269150&quot; title=&quot;deployment 1.0.0.14733&quot;&gt;1.0.0.14733&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;11th Jun 3:29pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Callum
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master merge of localdev-chrome-js-cachebuster-fix and rick&#x27;s branch &#x27;test&#x27;
+
+
+Fix JS cachebuster chrome dev tools bug on local
+
+
+Callum
+
+2 Date picker bug fixes
+
+
+Datepicker was still clickable when date picker was invisible.
+Border around links behaved weird in some situations
+Rick
+&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/788269150&quot; title=&quot;deployment 1.0.0.14733&quot;&gt;1.0.0.14733&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master merge of localdev-chrome-js-cachebuster-fix and rick&#x27;s branch &#x27;test&#x27;
+
+
+Fix JS cachebuster chrome dev tools bug on local
+
+
+Callum
+
+2 Date picker bug fixes
+
+
+Datepicker was still clickable when date picker was invisible.
+Border around links behaved weird in some situations
+Rick
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Callum
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  11th Jun 3:29pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/788239290&quot; title=&quot;deployment 1.0.0.14729&quot;&gt;1.0.0.14729&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;11th Jun 2:31pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Alex
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master
+
+*load developer media scripts as https
+*open sans font fixes
+
+alex&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/788239290&quot; title=&quot;deployment 1.0.0.14729&quot;&gt;1.0.0.14729&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master
+
+*load developer media scripts as https
+*open sans font fixes
+
+alex&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Alex
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  11th Jun 2:31pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/786493290&quot; title=&quot;deployment 1.0.0.14677&quot;&gt;1.0.0.14677&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;10th Jun 11:57am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Callum
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master merge of summary-fix
+
+Callum&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/786493290&quot; title=&quot;deployment 1.0.0.14677&quot;&gt;1.0.0.14677&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master merge of summary-fix
+
+Callum&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Callum
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  10th Jun 11:57am
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/786434840&quot; title=&quot;deployment 1.0.0.14668&quot;&gt;1.0.0.14668&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;10th Jun 9:25am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Alex
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master
+
+add developer media tracking scripts
+
+alex&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/786434840&quot; title=&quot;deployment 1.0.0.14668&quot;&gt;1.0.0.14668&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master
+
+add developer media tracking scripts
+
+alex&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/e7b935bbe7f09b38dd4bdbf6f7c76bf5?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Alex
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  10th Jun 9:25am
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/785730910&quot; title=&quot;deployment 1.0.0.14631&quot;&gt;1.0.0.14631&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;9th Jun 2:01pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Callum
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master merge of ei-refactor-qa
+
+Callum&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/785730910&quot; title=&quot;deployment 1.0.0.14631&quot;&gt;1.0.0.14631&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master merge of ei-refactor-qa
+
+Callum&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Callum
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  9th Jun 2:01pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/785659320&quot; title=&quot;deployment 1.0.0.14614&quot;&gt;1.0.0.14614&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;9th Jun 11:41am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/0bc3507a0d8d65e10e58d67726bef75f?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Jamie
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master
+
+
+Assign to users or teams
+Multiple assignment - Errors can be assigned to multiple users or teams
+List API for creating a &quot;what is assigned to who&quot; style page (not included in this PR)
+Error assignments transferred when merging error groups
+User error assignments transferred when migrating apps between plans
+Modify error assignments when changing teams (remove user / remove app / remove team)
+
+
+Jamie&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/785659320&quot; title=&quot;deployment 1.0.0.14614&quot;&gt;1.0.0.14614&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master
+
+
+Assign to users or teams
+Multiple assignment - Errors can be assigned to multiple users or teams
+List API for creating a &quot;what is assigned to who&quot; style page (not included in this PR)
+Error assignments transferred when merging error groups
+User error assignments transferred when migrating apps between plans
+Modify error assignments when changing teams (remove user / remove app / remove team)
+
+
+Jamie&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/0bc3507a0d8d65e10e58d67726bef75f?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Jamie
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  9th Jun 11:41am
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

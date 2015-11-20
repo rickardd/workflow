@@ -1,0 +1,197 @@
+// error instance page heading
+
+// error header
+.ei-header-primary {
+  position: relative;
+  padding: 0 $ei-sidebar+40px 0 0;
+  @include screen-mob {
+    padding: 0;
+  }
+}
+
+.ei-status-button {
+  display: block;
+}
+
+.ei-header-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  @include screen-mob {
+    position: static;
+    width: auto;
+    margin: 12px 0 0;
+  }
+}
+
+.ei-header-controls-layout {
+  position: relative;
+  padding: 0 48px 0 0;
+}
+.ei-settings-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ei-button-cog {
+  .cog-icon {
+    transition: transform 80ms ease-in-out;
+  }
+  &:active,
+  &:hover {
+    .cog-icon {
+      transform: rotate(25deg);
+    }
+  }
+}
+
+
+.ei-header-title {
+  @extend nowrap;
+  display: block;
+  cursor: pointer;
+  @include font-size(1.6);
+  padding: 10px 0 8px;
+  font-weight: bold;
+  border-bottom: 2px solid $color-border-light;
+
+
+  &:hover,
+  &:active {
+    border-radius: 3px;
+    padding: 10px 10px 8px;
+    margin: 0 -10px;
+  }
+
+  &:hover {
+    background: $color-border-light;
+    border-color: $color-border-light;
+  }
+
+  &:active {
+    background: $color-border;
+    border-color: $color-border;
+  }
+}
+
+
+
+// integration controls
+.ei-header-secondary  {
+  position: relative;
+  margin: 8px 0 0;
+}
+
+.ei-header-button-aggregate {
+  display: none;
+  @media screen and (max-width:$screen-min) {
+    display: block;
+  }
+}
+
+.ei-header-button-container {
+  float: left;
+  margin: 0 12px 0 0;
+
+  &.is-right {
+    float: right;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:$ei-header-responsive) {
+  .ei-header-button-container,
+  .ei-header-button-container.is-right {
+    margin: 0 0 2px;
+    float: none;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+
+// header button
+.ei-header-btn {
+  @extend noselect;
+  cursor: pointer;
+  display: block;
+  color: $text-1;
+  background: transparent;
+  position: relative;
+  padding: 8px;
+  line-height: 16px;
+  border-radius: 3px;
+  @include font-size(1.4);
+
+  &:hover {
+    color: $text-1;
+    background: $color-grey-lighter;
+  }
+  &:active,
+  &.is-active {
+    color: $text-1;
+    background: $color-grey-light;
+  }
+
+  &.has-before {
+    padding-left: 32px;
+  }
+  &.has-after {
+    padding-right: 32px;
+  }
+}
+
+
+.ei-header-btn-before {
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.ei-header-btn-after {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+// header buttons responsive
+@media screen and (max-width:$ei-header-responsive) {
+  .ei-header-btn {
+    border: none;
+    background: $color-grey-lighter;
+    padding: 8px;
+    border-radius: 3px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover,&:active {
+      border: none;
+      background: $color-grey-light;
+    }
+
+    &.button-before {
+      padding-left: 32px;
+    }
+    &.button-after {
+      padding-right: 32px;
+    }
+  }
+
+  .ei-header-btn-before {
+    left: 8px;
+  }
+  .ei-header-btn-after {
+    right: 8px;
+  }
+}

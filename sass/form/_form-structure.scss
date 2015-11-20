@@ -1,0 +1,61 @@
+.form-split-container{
+  @extend clearfix;
+}
+.form-split {
+  width: 50%;
+  float: left;
+
+  &.is-left {
+    padding-right: 16px;
+    border-right: 1px solid $background-color;
+  }
+
+  &.is-right {
+    padding-left: 16px;
+  }
+
+  @media screen and (max-width: $screen-min) {
+    &,
+    &.is-right,
+    &.is-left{
+      float: none;
+      padding: 0;
+      margin: 0;
+      border: none;
+      width: 100%;
+      margin-bottom: 32px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.element-split-container {
+
+  @extend clearfix;
+}
+
+.element-split {
+  width: 50%;
+  float: left;
+
+  &.is-left {
+    padding-right: 8px;
+  }
+
+  &.is-right {
+    padding-left: 8px;
+  }
+}
+
+.form-footer {
+  margin-top: 24px;
+  clear: both;
+
+  @extend .clearfix;
+
+  @media screen and (max-width: $screen-med) {
+    margin-top: 16px;
+  }
+}

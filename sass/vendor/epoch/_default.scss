@@ -1,0 +1,154 @@
+ /*
+ * theme/_default.scss - Theme design for dark page backgrounds.
+ * Designed by Ryan Sandor Richards
+ */
+
+$axisAndText: #d0d0d0;
+$background: #fff;
+
+// Axes and Ticks
+.epoch {
+  .axis path, .axis line {
+    stroke: $axisAndText;
+  }
+  .axis .tick text {
+    fill: $axisAndText;
+  }
+
+  .background {
+    fill: white;
+  }
+
+  .outer-border {
+    stroke: $color-grey-lightest;
+    stroke-width: 1px;
+    fill: none;
+  }
+
+  .tooltip-text {
+    font-weight: normal;
+    fill: white;
+  }
+
+  .y.axis.left line {
+    stroke: $background-color;
+    stroke-opacity: 1;
+
+  }
+
+  .y.axis.left g:first-child line{
+    visibility: hidden;
+  }
+
+  path.domain {
+    stroke-width: 0;
+  }
+}
+
+// Error instance spark bar chart
+.errorinstance-chart {
+  rect.left-axis-border {
+    width: 0;
+  }
+
+  rect.bottom-axis-border {
+    height: 0;
+  }
+
+  rect.background {
+    fill: none;
+  }
+
+  rect.outer-border {
+    stroke-width: 0;
+  }
+
+  .svgchild {
+    transform: translate(0, 0);
+  }
+
+  rect.bar {
+    fill: $color-grey-light !important;
+  }
+
+  .start-dot {
+    fill: $color-ember;
+    stroke-width: 2px;
+    stroke: $background-color;
+  }
+
+  .end-dot {
+    fill: $color-azure;
+    stroke-width: 2px;
+    stroke: $background-color;
+  }
+
+  .tooltip-x {
+    fill: $color-grey-lighter;
+  }
+}
+
+.analytics-spark {
+  .outer-border {
+    stroke: none;
+    fill: none;
+  }
+}
+
+// Line Charts
+.epoch .line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.stackedAreaTooltipContainer {
+  pointer-events: none;
+
+  .tooltip-background {
+    fill: $color-stealth;
+  }
+
+  .row {
+    text {
+      fill: white;
+      font-weight: normal;
+    }
+
+    &.time text {
+      font-size: 10px;
+      fill: $color-grey-light;
+    }
+
+    &.title text {
+      font-size: 10px;
+      fill: $color-grey-lightest;
+    }
+
+    .tooltip-lighter {
+      font-size: 11px;
+      fill: $color-grey-lighter;
+    }
+  }
+}
+
+// Categorical Colors
+$dark_category10: 
+  #909CFF, #FFAC89, #E889E8, #78E8D3, #C2FF97,
+  $color-azure;
+
+.epoch, .epoch.category10 {
+  @include epoch-category-colors($dark_category10, 6);  
+}
+
+// Stacked area
+
+$dark_category10area: 
+  $color-azure, $color-forest, $color-flame, $color-lightning, $color-ember;
+
+.epoch, .epoch.category10area {
+  @include epoch-category-colors($dark_category10area, 5);  
+}
+
+.topBar {
+  fill: transparent;
+}

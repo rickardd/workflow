@@ -1,0 +1,259 @@
+// SVG icons
+
+
+// integration icons
+.integration-icon {
+  display: block;
+  border-radius: 4px;
+  background-size: 100%;
+
+  // Integration PNGs
+  &.visualstudioonline-icon {background-image: url('../Content/images/integration-icons/visualstudio.png');}
+  &.webhook-icon {background-image: url('../Content/images/integration-icons/webhooks.png');}
+  &.hipchat-icon {background-image: url('../Content/images/integration-icons/hipchat.png');}
+  &.heroku-icon {background-image: url('../Content/images/integration-icons/heroku.png');}
+  &.campfire-icon {background-image: url('../Content/images/integration-icons/campfire.png');}
+  &.youtrack-icon {background-image: url('../Content/images/integration-icons/youtrack.png');}
+  &.github-icon {background-image: url('../Content/images/integration-icons/github.png');}
+  &.fogbugz-icon {background-image: url('../Content/images/integration-icons/fogbugz.png');}
+  &.trello-icon {background-image: url('../Content/images/integration-icons/trello.png');}
+  &.sprintly-icon {background-image: url('../Content/images/integration-icons/sprintly.png');}
+  &.jira-icon {background-image: url('../Content/images/integration-icons/jira.png');}
+  &.jiraoauth-icon {background-image: url('../Content/images/integration-icons/jira.png');}
+  &.bitbucket-icon {background-image: url('../Content/images/integration-icons/bitbucket.png');}
+  &.pivotaltracker-icon {background-image: url('../Content/images/integration-icons/pivotaltracker.png');}
+  &.slack-icon {background-image: url('../Content/images/integration-icons/slack.png');}
+  &.flowdock-icon {background-image: url('../Content/images/integration-icons/flowdock.png');}
+  &.bugherd-icon {background-image: url('../Content/images/integration-icons/bugherd.png');}
+  &.kato-icon {background-image: url('../Content/images/integration-icons/kato.png');}
+  &.lighthouse-icon {background-image: url('../Content/images/integration-icons/lighthouse.png');}
+  &.asana-icon {background-image: url('../Content/images/integration-icons/asana.png');}
+  &.intercom-icon {background-image: url('../Content/images/integration-icons/intercom.png');}
+  &.octopus-icon {background-image: url('../Content/images/integration-icons/octopus.png');}
+  &.bash-icon {background-image: url('../Content/images/integration-icons/bash.png');}
+  &.powershell-icon {background-image: url('../Content/images/integration-icons/powershell.png');}
+  &.powershell-icon {background-image: url('../Content/images/integration-icons/zendesk.png');}
+  &.moxtra-icon {background-image: url('../Content/images/integration-icons/moxtra.png'); }
+}
+
+// if browser supports SVG
+// Integration SVGs
+html.svg {
+  .integration-icon {
+    &.visualstudioonline-icon {background-image: url('../Content/images/integration-icons/visualstudio.svg');}
+    &.webhook-icon {background-image: url('../Content/images/integration-icons/webhooks.svg');}
+    &.hipchat-icon {background-image: url('../Content/images/integration-icons/hipchat.svg');}
+    &.heroku-icon {background-image: url('../Content/images/integration-icons/heroku.svg');}
+    &.campfire-icon {background-image: url('../Content/images/integration-icons/campfire.svg');}
+    &.youtrack-icon {background-image: url('../Content/images/integration-icons/youtrack.svg');}
+    &.github-icon {background-image: url('../Content/images/integration-icons/github.svg');}
+    &.fogbugz-icon {background-image: url('../Content/images/integration-icons/fogbugz.svg');}
+    &.trello-icon {background-image: url('../Content/images/integration-icons/trello.svg');}
+    &.sprintly-icon {background-image: url('../Content/images/integration-icons/sprintly.svg');}
+    &.jira-icon {background-image: url('../Content/images/integration-icons/jira.svg');}
+    &.jiraoauth-icon {background-image: url('../Content/images/integration-icons/jira.svg');}
+    &.bitbucket-icon {background-image: url('../Content/images/integration-icons/bitbucket.svg');}
+    &.pivotaltracker-icon {background-image: url('../Content/images/integration-icons/pivotaltracker.svg');}
+    &.slack-icon {background-image: url('../Content/images/integration-icons/slack.svg');}
+    &.flowdock-icon {background-image: url('../Content/images/integration-icons/flowdock.svg');}
+    &.bugherd-icon {background-image: url('../Content/images/integration-icons/bugherd.svg');}
+    &.kato-icon {background-image: url('../Content/images/integration-icons/kato.svg');}
+    &.lighthouse-icon {background-image: url('../Content/images/integration-icons/lighthouse.svg');}
+    &.asana-icon {background-image: url('../Content/images/integration-icons/asana.svg');}
+    &.intercom-icon {background-image: url('../Content/images/integration-icons/intercom.svg');}
+    &.octopus-icon {background-image: url('../Content/images/integration-icons/octopus.svg');}
+    &.bash-icon {background-image: url('../Content/images/integration-icons/bash.svg');}
+    &.powershell-icon {background-image: url('../Content/images/integration-icons/powershell.svg');}
+    &.zendesk-icon {background-image: url('../Content/images/integration-icons/zendesk.svg');}
+  }
+}
+
+// general icon class for SVG / PNG icons
+.svg-icon {
+  background-size: 100%;
+}
+
+
+// PNG => SVG background replacement mixin
+@mixin iconGenerator($class-name,$png-path,$svg-path) {
+  #{$class-name} {
+    background-image: url('../Content/images/#{$png-path}');
+  }
+  html.svg #{$class-name} {
+    background-image: url('../Content/images/#{$svg-path}');
+  }
+}
+
+
+// anonomus user
+$class-name: '.icon--anonymous-user';
+$png-path: 'avatars/icon--anon-user.png';
+$svg-path: 'avatars/icon--anon-user.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// chrome
+$class-name: '.icon-chrome';
+$png-path: 'error-instance/icon_chrome.png';
+$svg-path: 'error-instance/icon_chrome.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// chromium
+$class-name: '.icon-chromium';
+$png-path: 'error-instance/icon_chromium.png';
+$svg-path: 'error-instance/icon_chromium.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// firefox
+$class-name: '.icon-firefox';
+$png-path: 'error-instance/icon_firefox.png';
+$svg-path: 'error-instance/icon_firefox.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// safari
+$class-name: '.icon-safari';
+$png-path: 'error-instance/icon_safari.png';
+$svg-path: 'error-instance/icon_safari.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// explorer
+$class-name: '.icon-explorer';
+$png-path: 'error-instance/icon_explorer.png';
+$svg-path: 'error-instance/icon_explorer.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// edge
+$class-name: '.icon-edge';
+$png-path: 'error-instance/icon_edge.png';
+$svg-path: 'error-instance/icon_edge.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// opera
+$class-name: '.icon-opera';
+$png-path: 'error-instance/icon_opera.png';
+$svg-path: 'error-instance/icon_opera.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// android
+$class-name: '.icon-android';
+$png-path: 'error-instance/icon_android.png';
+$svg-path: 'error-instance/icon_android.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// mac
+$class-name: '.icon-mac';
+$png-path: 'error-instance/icon_mac.png';
+$svg-path: 'error-instance/icon_mac.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// ios
+$class-name: '.icon-ios';
+$png-path: 'error-instance/icon_ios.png';
+$svg-path: 'error-instance/icon_ios.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// osx
+$class-name: '.icon-osx';
+$png-path: 'error-instance/icon_ios.png';
+$svg-path: 'error-instance/icon_ios.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows 95
+$class-name: '.icon-windows95';
+$png-path: 'error-instance/icon_windows95.png';
+$svg-path: 'error-instance/icon_windows95.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows CE
+$class-name: '.icon-windowsCE';
+$png-path: 'error-instance/icon_windows95.png';
+$svg-path: 'error-instance/icon_windows95.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows XP
+$class-name: '.icon-windowsXP';
+$png-path: 'error-instance/icon_windows7.png';
+$svg-path: 'error-instance/icon_windows7.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows Vista
+$class-name: '.icon-windowsVista';
+$png-path: 'error-instance/icon_windows7.png';
+$svg-path: 'error-instance/icon_windows7.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows 7
+$png-path: 'error-instance/icon_windows7.png';
+$svg-path: 'error-instance/icon_windows7.svg';
+$class-name: '.icon-windows7';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows 8
+$class-name: '.icon-windows8';
+$png-path: 'error-instance/icon_windows8.png';
+$svg-path: 'error-instance/icon_windows8.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows 8.1
+$class-name: '.icon-windows81';
+$png-path: 'error-instance/icon_windows8.png';
+$svg-path: 'error-instance/icon_windows8.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows phone
+$class-name: '.icon-windowsPhone';
+$png-path: 'error-instance/icon_winRT.png';
+$svg-path: 'error-instance/icon_winRT.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// windows phone
+$class-name: '.icon-linux';
+$png-path: 'error-instance/icon_linux.png';
+$svg-path: 'error-instance/icon_linux.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+
+
+
+// Platform icons
+
+// Blackberry
+$class-name: '.icon-blackberry';
+$png-path: 'icons/platforms/icon_blackberry.png';
+$svg-path: 'icons/platforms/icon_blackberry.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// Berkley Software Distribution
+$class-name: '.icon-bsd';
+$png-path: 'icons/platforms/icon_bsd.png';
+$svg-path: 'icons/platforms/icon_bsd.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// Centos
+$class-name: '.icon-centos';
+$png-path: 'icons/platforms/icon_centos.png';
+$svg-path: 'icons/platforms/icon_centos.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// Debian
+$class-name: '.icon-debian';
+$png-path: 'icons/platforms/icon_debian.png';
+$svg-path: 'icons/platforms/icon_debian.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// Fedora
+$class-name: '.icon-fedora';
+$png-path: 'icons/platforms/icon_fedora.png';
+$svg-path: 'icons/platforms/icon_fedora.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// Symbian
+$class-name: '.icon-symbian';
+$png-path: 'icons/platforms/icon_symbian.png';
+$svg-path: 'icons/platforms/icon_symbian.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+// Ubuntu
+$class-name: '.icon-ubuntu';
+$png-path: 'icons/platforms/icon_ubuntu.png';
+$svg-path: 'icons/platforms/icon_ubuntu.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);

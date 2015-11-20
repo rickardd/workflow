@@ -1,0 +1,44 @@
+// Styles for form TextArea elements
+
+.textarea-style {
+  min-height: 40px;
+  padding: 8px;
+  border: 1px solid $color-border;
+  -webkit-appearance: none;
+  min-width: 100%;
+  max-width: 100%;
+  &:hover {
+    border-color: $color-border-dark;
+  }
+  &:focus {
+    border-color: $color-azure;
+  }
+}
+
+.input-wrapper {
+  &.is-error {
+    .textarea-style {
+      border-color: $color-ember!important;
+    }
+    .textarea-error {
+      display: block;
+    }
+  }
+
+  &.is-success {
+    .textarea-style {
+      border-color: $color-forest!important;
+    }
+  }
+
+  &.is-warning {
+    .textarea-style {
+      border-color: $color-lightning!important;
+    }
+
+    .textarea-error {
+      display: block;
+      color: $color-lightning;
+    }
+  }
+}

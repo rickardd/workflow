@@ -1,0 +1,28 @@
+
+//-- application settings 
+.section.application-settings {
+  padding: 24px;
+}
+
+.reset-api-key {
+  cursor: pointer;
+}
+
+.reset-api-key:before {
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: inline-block;
+
+  font-family: 'flaticons';
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  vertical-align: middle;
+  content: '\e58a';
+}
+
+.application-settings-message {
+  margin: 24px;
+}

@@ -1,0 +1,57 @@
+// prettyPrint
+
+// pretty print colors
+$prettyprint-red: #e0504f;
+$prettyprint-blue: #38a3ed;
+$prettyprint-green: #61bd62;
+$prettyprint-yellow: #f9a94a;
+$prettyprint-magenta: magenta;
+$prettyprint-darkorange: darkorange;
+
+.code-block {
+  overflow: auto;
+  padding: 2px;
+  pre {
+    display: block;
+    font-family: $font-family-mono;
+    @include font-size($fontsize-code);
+
+    span {
+      display: inline;
+      margin: 0px;
+      padding: 0;
+    }
+  }
+
+  .string {
+    color: $prettyprint-green;
+  }
+
+  .number {
+    color: $prettyprint-darkorange;
+  }
+
+  .boolean {
+    color: $prettyprint-red;
+  }
+
+  .null {
+    color: $prettyprint-magenta;
+  }
+
+  .key {
+    color: $prettyprint-blue;
+  }
+
+  code {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    background: $background-color;
+    border: 1px solid $color-grey-lightest;
+    font-family: $font-family-mono;
+    padding: 2px 4px;
+    border-radius: 2px;
+    @include font-size(1.2);
+  }
+}

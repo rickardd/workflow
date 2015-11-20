@@ -1,0 +1,32 @@
+// -- product icons
+
+.product-icon {
+  display: block;
+  background-image: url('../Content/images/plan-settings/lock-tumbler.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+}
+
+
+// Pulse
+.product-icon--pulse {
+  background-color: $color-byzantine-light;
+  background-image: url('/Content/images/icon-products/icon-pulse.png');
+}
+html.svg .product-icon--pulse {
+  background-image: url('/Content/images/icon-products/icon-pulse.svg');
+}
+
+
+// Crash Reporting
+.product-icon--crash-reporting {
+  background-color: $color-azure;
+  background-image: url('/Content/images/icon-products/icon-crashreporting.png');
+}
+html.svg .product-icon--crash-reporting {
+  background-image: url('/Content/images/icon-products/icon-crashreporting.svg');
+}

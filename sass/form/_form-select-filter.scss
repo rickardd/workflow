@@ -1,0 +1,75 @@
+// select filter
+
+.select-filter {
+  height: 40px;
+  position: relative;
+
+  // inactive / active states
+  .select-filter-dropdown {
+    display: none;
+  }
+  &.is-active .select-filter-dropdown {
+    display: block;
+    z-index: 10;
+  }
+}
+
+.select-filter-dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  margin: 2px 0 0;
+  background: $white;
+  border: 1px solid rgba(50, 85, 119, 0.22);
+  box-shadow: $dropdown-shadow;
+
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.select-filter-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  color: $color-grey-light;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: $text-1;
+  }
+}
+
+.select-filter-search {
+  position: relative;
+  padding: 4px 48px 4px 4px;
+  border-bottom: 1px solid $color-grey-lightest;
+}
+
+.select-filter-input {}
+
+.select-filter-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px;
+}
+
+.select-filter-list {
+  @extend noselect;
+  max-height: 240px;
+  overflow: auto;
+  li {
+    @extend nowrap;
+    cursor: pointer;
+    padding: 8px 16px;
+    line-height: 16px;
+    &:hover {
+      background: $background-color;
+    }
+    &:active {
+      background: $color-grey-lightest;
+    }
+  }
+}

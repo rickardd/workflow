@@ -1,0 +1,93 @@
+.breadcrumb,
+.breadcrumb-header {
+  li {
+    max-width: 100%;
+    display: block;
+    float: left;
+    margin: 0 8px 0 0;
+  }
+
+  a {
+    position: relative;
+    padding: 0 24px 0 0;
+  }
+
+  .icon-16 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  a, p {
+    display: block;
+    font-weight: bold;
+    line-height: 16px;
+  }
+}
+
+
+// new header breadcrumb
+.breadcrumb-header {
+  a, p {
+    @include font-size(1.8);
+    line-height: 32px;
+  }
+
+  .icon-16:before {
+    line-height: 32px;
+  }
+}
+
+.breadcrumb-heading {
+  padding: 4px 0;
+
+  a {
+    padding: 0 40px 0 0;
+  }
+
+  .icon-32 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .icon-24 {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+
+  a, p {
+    @include font-size(2.4);
+    line-height: 32px;
+  }
+}
+
+
+
+
+// breadcrumb
+ul.billing-breadcrumb {
+  li {
+    position: relative;
+    float: left;
+    padding: 0 32px 0 0;
+
+    .icon-16 {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+}
+
+.breadcrumb-text {
+  display: block;
+  line-height: 32px;
+  font-weight: bold;
+  @include font-size(1.6);
+}

@@ -1,0 +1,37 @@
+/*.dsym-section {
+  h2 {
+    margin: 0 0 24px;
+  }
+  .dropzone {
+    margin: 0;
+  }
+}
+
+.dsym-table {
+  margin: 0 300px 0 0;
+}
+
+
+.dsym-upload {
+  display: block;
+  width: 260px;
+  float: right;
+}
+
+@media screen and (max-width:1500px) {
+  .dsym-upload {
+    float: none;
+    margin: 0 0 40px;
+  }
+
+  .dsym-table {
+    margin: 0;
+  }
+}*/
+
+
+.dsym-upload{
+  .dropzone{
+    margin: 0 0 48px 0;
+  }
+}

@@ -1,0 +1,39 @@
+.grid {
+  margin: -6px;
+  padding: 0 0 24px;
+  &:last-child {
+    padding: 0;
+  }
+}
+
+.grid__column {
+  padding: 6px;
+  float: left;
+  @media (max-width: $screen-min) {
+    width: 100%!important;
+  }
+}
+
+.grid--responsive-margin-24 {
+  @media (max-width: $screen-min) {
+    .grid__column{
+      margin-bottom: 12px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+// Generates 12 grid columns e.g .grid_column--3
+$grid-columns: 12;
+@for $i from 1 to $grid-columns {
+  .grid__column--#{$i} {
+    width: ( 100% / $grid-columns ) * $i;
+   }
+}
+
+.grid__column--12 {
+  width: 100%;
+}

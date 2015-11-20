@@ -1,0 +1,52 @@
+.dep-edit-dropdown {
+  float: left;
+}
+
+.dep-edit-button {
+  padding: 4px;
+  display: block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: $screen-mob) {
+
+	.page-header-deployments{
+
+		.p-h-controls{
+			position: static;
+		}
+
+		.p-h-control,
+		input,
+		.input-wrapper,
+		.quick-picker,
+		.quick-picker .date-input-wrapper{
+			width: 100%;
+		}
+
+		.quick-picker{
+			margin-left: -6px;
+		}
+
+		.ellipsis-space{
+			padding-right: 0;    
+		}
+	}
+}
+
+
+
+@media screen and (max-width: $screen-med) {
+
+	.page-header-deployment{
+
+		.p-h-controls{
+			position: static;
+			clear: both;
+		}
+
+		.ellipsis-space{
+			padding-right: 0;    
+		}
+	}
+}

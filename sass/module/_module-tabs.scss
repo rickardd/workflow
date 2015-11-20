@@ -1,0 +1,227 @@
+// tabs: sits above a .module
+.module-tabs {
+  margin: 0 0 -1px;
+  border-left: 1px solid $color-border;
+}
+
+// tab style
+.module-tab {
+  position: relative;
+  text-align: center;
+  float: left;
+  display: block;
+  padding: 12px;
+  background: $color-grey-lightest;
+  border-top: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 2px;
+  }
+
+  &:hover:before {
+    background: $color-border-dark;
+  }
+
+  &:active:before {
+    background: $color-azure;
+  }
+  // active tab
+  &.is-active {
+    background: $white;
+    z-index: 2;
+
+    &:before {
+      z-index: 3;
+      background: $color-azure;
+    }
+  }
+}
+
+
+// tab-colors
+.module-tab {
+  &.is-red.is-active,
+  &.is-red:active {
+    &:before {
+      background: $color-ember;
+    }
+  }
+
+  &.is-blue.is-active,
+  &.is-blue:active {
+    &:before {
+      background: $color-azure;
+    }
+  }
+
+  &.is-green.is-active,
+  &.is-green:active {
+    &:before {
+      background: $color-forest;
+    }
+  }
+
+  &.is-yellow.is-active,
+  &.is-yellow:active {
+    &:before {
+      background: $color-lightning;
+    }
+  }
+}
+
+
+// tab content
+.tab-text {
+  @include font-size(1.4);
+  font-weight: bold;
+  line-height: 16px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @media screen and (max-width:$screen-mob) {
+    display: none;
+  }
+}
+
+.tab-content {
+  position: relative;
+  max-width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+
+.tab-content.has-icon {
+  padding: 0 0 0 28px;
+
+  @media screen and (max-width:$screen-mob) {
+    padding: 0;
+  }
+
+  .icon-16 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media screen and (max-width:$screen-mob) {
+      position: static;
+    }
+  }
+}
+
+
+.tab-count {
+  display: block;
+  float: right;
+  color: #fff;
+  padding: 2px 4px;
+  font-size: 12px;
+  line-height: 16px;
+  vertical-align: middle;
+  font-weight: normal;
+  margin: -2px 0 -2px 12px;
+  border-radius: 2px;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 24px;
+
+  @media screen and (max-width:$screen-mob) {
+    margin: -3px 0;
+    float: none;
+    display: inline-block;
+  }
+
+  &.is-red {
+    background: $color-ember;
+  }
+
+  &.is-blue {
+    background: $color-azure;
+  }
+
+  &.is-yellow {
+    background: $color-lightning;
+  }
+
+  &.is-green {
+    background: $color-forest;
+  }
+}
+
+
+// tab widths
+.module-tabs {
+  li {
+    width: 100%;
+    max-width: 240px;
+    cursor: pointer;
+    @include noselect;
+
+    @media screen and (max-width: $screen-min) {
+      max-width: none;
+    }
+  }
+  // two tabs
+  li:first-child:nth-last-child(2),
+  li:first-child:nth-last-child(2) ~ li {
+    width: 50%;
+  }
+  // three tabs
+  li:first-child:nth-last-child(3),
+  li:first-child:nth-last-child(3) ~ li {
+    width: 33.333%;
+  }
+  // four tabs
+  li:first-child:nth-last-child(4),
+  li:first-child:nth-last-child(4) ~ li {
+    width: 25%;
+  }
+  // five tabs
+  li:first-child:nth-last-child(5),
+  li:first-child:nth-last-child(5) ~ li {
+    width: 20%;
+  }
+  // six tabs
+  li:first-child:nth-last-child(6),
+  li:first-child:nth-last-child(6) ~ li {
+    width: (100%/6);
+  }
+
+  @media screen and (max-width: $screen-min) {
+    // two tabs
+    li:first-child:nth-last-child(2),
+    li:first-child:nth-last-child(2) ~ li {
+      width: 50%;
+    }
+    // three tabs
+    li:first-child:nth-last-child(3),
+    li:first-child:nth-last-child(3) ~ li {
+      width: 33.333%;
+    }
+    // four tabs
+    li:first-child:nth-last-child(4),
+    li:first-child:nth-last-child(4) ~ li {
+      width: 25%;
+    }
+    // five tabs
+    li:first-child:nth-last-child(5),
+    li:first-child:nth-last-child(5) ~ li {
+      width: 20%;
+    }
+    // six tabs
+    li:first-child:nth-last-child(6),
+    li:first-child:nth-last-child(6) ~ li {
+      //width: (100%/3);
+    }
+  }
+}

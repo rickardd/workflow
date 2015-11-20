@@ -1,0 +1,28 @@
+// sidebar application
+.sidebar-application {
+  padding: 16px 0;
+  margin: 0 16px;
+}
+
+.sidebar-application-container {
+  padding: 0 0 0 32px;
+  position: relative;
+  min-height: 32px;
+
+  .avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.sidebar-application-name {
+  display: table-cell;
+  width: 100%;
+  height: 32px;
+  vertical-align: middle;
+  color: $white;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 0 0 0 16px;    // because margin don't work with display:table-cell
+}

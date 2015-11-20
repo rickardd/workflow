@@ -1,0 +1,108 @@
+/********************
+ * SVG CSS
+ */
+ /*
+svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+*/
+path.line {
+  fill: none;
+  stroke: #349be3;
+  stroke-width: 1px;
+}
+
+.mini-chart rect {
+  fill: #349be3;  
+}
+
+.mini-chart .resize rect {
+  //shape-rendering: crispEdges;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.area-shade {
+  fill: rgba(93, 175, 233, 0.07803921568627451);
+}
+
+path.pattern {
+  stroke: #8abfe2;
+  stroke-width: 10;
+  stroke-opacity: 0.12;
+}
+
+.brush .extent {
+  stroke: #FFF;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.resize rect {
+  fill: rgb(200,200,200);
+  visibility: visible !important;
+}
+
+.focus circle {
+  fill: none;
+}
+
+.focus circle.y {
+  stroke: #349be3;
+}
+
+.focus line {
+  stroke: purple;
+  shape-rendering: crispEdges;
+}
+
+.focus line.y {
+  stroke: steelblue;
+  stroke-dasharray: 3 3;
+  opacity: .5;
+}
+
+.focus .tooltip {
+  fill: #fff;
+  stroke: #C4C4C4;
+  stroke-width: 1px;
+  shape-rendering: crispedges;
+}
+
+line.tick {
+  stroke-width: 1px;
+  fill: none;
+  stroke: #2f3946;
+  stroke-opacity: .1;
+  shape-rendering: crispEdges;
+}
+
+.axis {
+  fill: #697286;
+  path {
+    stroke: #697286;
+    stroke-width: 1px;
+    fill: none;
+    shape-rendering: crispEdges;
+  }
+}
+
+.nodata {
+  fill: #697286;
+}
+
+.deployments rect {
+  fill-opacity: .3;
+  fill: $color-grey;
+}

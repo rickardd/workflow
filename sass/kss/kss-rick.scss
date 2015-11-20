@@ -1,0 +1,147 @@
+$color-darkest: #333;
+$color-dark: #888;
+$color-grey: #bbb;
+$color-bright: #f1f1f1;
+$color-white: #fff;
+
+
+#kss-node{
+
+  .kss-main {
+      background-color: $color-bright;
+  }
+
+  .kss-sidebar {
+      background-color: $color-white;
+      color: $color-white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: scroll;
+  }
+
+  .kss-section{
+    background-color: $color-white;
+    max-width: 960px;
+    margin: 12px 0;
+    padding: 24px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fafafa;
+
+  }
+
+
+
+
+
+
+  .kss-doc-title,
+  .kss-nav,
+  .kss-nav__menu,
+  .kss-nav__ref,
+  .kss-nav__name,
+  .kss-nav__menu-item {
+      color: $color-darkest;
+  }
+
+  .kss-nav__menu-item {
+      font-size: 12px;
+      a{
+        display: block;
+        padding: 4px;
+        &:hover{
+          background-color: $color-bright;
+        }
+      }
+  }
+
+
+
+  .kss-modifier__wrapper {
+      border: none;
+      padding: 0;
+  }
+
+  .kss-modifier__heading {
+      margin: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+      background-color: transparent;
+      font-weight: bold;
+  }
+
+
+  .kss-markup {
+      margin: 24px 0 24px 0;
+      border: none;
+  }
+
+  .kss-markup,
+  .kss-style {
+    pre{
+      overflow: auto;
+      border: 1px solid $color-grey;
+    }
+  }
+
+
+  .kss-title__ref{
+    &:before{
+      content: '';
+      display: none;
+    }
+
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-dark;
+
+
+  }
+
+
+  .kss-title__permalink:hover .kss-title__permalink-hash,
+  .kss-title__permalink:focus .kss-title__permalink-hash,
+  .kss-title__permalink:active .kss-title__permalink-hash{
+    display: none;
+  }
+
+
+  .kss-modifier__example{
+    border-bottom: 1px dashed $color-grey;
+    padding-bottom: 12px;
+  }
+
+
+  .kss-style{
+    h1, h2, h3, h4, h5, h6 {
+      color: $color-darkest;
+      display: block;
+      font-family: 'Helvetica Neue', Helvetica, Arial;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 0;
+
+      h1 {
+          font-size: 22px;
+          line-height: 22px;
+      }
+
+      h2 {
+          font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      h4 {
+          font-size: 16px;
+      }
+    }
+  }
+
+
+
+
+}

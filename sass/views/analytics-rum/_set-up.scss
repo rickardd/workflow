@@ -1,0 +1,43 @@
+.banner{
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.banner--peg{
+    position: relative;
+    &:before{
+        content: '';
+        bottom: -10px;
+        left: calc( 50% - 10px );
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+        background-color: $color-byzantine;  
+        position: absolute;
+    } 
+}
+
+.banner--purple{
+    background-color: $color-byzantine;
+    color: $white;
+}
+
+.banner__rum-image{
+    max-width: 660px;
+    margin: 20px auto;
+}
+.banner__rum-image__image{
+    width: 100%;
+}
+
+
+.banner__heading-1{
+    @include font-size(4.2);
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.banner__heading-2{
+    @include font-size(1.8);
+    font-weight: normal;
+}

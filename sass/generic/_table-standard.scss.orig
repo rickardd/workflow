@@ -1,0 +1,343 @@
+/* TABLE STYLES */
+
+// .table--standard
+// - Sets standard properties to a table
+
+// .table--high-cells
+// - Sets the cells to specific hight to give the table more "air"
+
+// .table__cell--standard
+// - Adds space in the cell. Use this class for regular content like text and such.
+
+// .table__cell--button
+// - Sets properties specefic for button cells.
+
+// .table__cell--left
+// - Align content in the cell to the left.
+
+// .table__cell--right
+// - Align content in the cell to the right.
+
+// .table__cell--center
+// - Align content in the cell to the center.
+
+// .table__cell-middle
+// - Vertically align content in the cell to the middle.
+
+// .table__cell-32
+// - Sets the width on the cell to 32px or decired width.
+
+// ! HIDE COLUMN
+// - If a column or the thead should be hiden on smaller screens use shared classes ( .screen-max-hide / .screen-med-hide / .screen-min-hide / .screen-mob-hide)
+
+.table--fixed {
+  table-layout: fixed;
+}
+
+
+// general
+.table--standard {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: $white;
+
+  th,
+  td {
+    vertical-align: middle;
+  }
+
+  th {
+    @include font-size(1.3);
+    color: #666;
+    font-weight: bold;
+    line-height: 16px;
+  }
+
+  tr {
+    border-bottom: 1px solid $color-border-light;
+  }
+}
+
+
+<<<<<<< HEAD
+.table-row {
+  border-bottom: 1px solid $color-border-light;
+=======
+.table__row {
+  border-bottom: 1px solid $color-grey-lightest;
+>>>>>>> BEM namings on all tables.
+}
+
+.table__row--red {
+  background-color: $color-ember-highlight;
+}
+
+tr.is-active,
+<<<<<<< HEAD
+.table-row--grey {
+  background: $color-grey-lightest;
+=======
+.table__row--grey {
+  background: $grey-light;
+>>>>>>> BEM namings on all tables.
+}
+
+.table__row--red {
+  background-color: $color-ember-highlight;
+  color: $color-ember-dark;
+}
+.table__row--blue {
+  background-color: $color-azure-highlight;
+  color: $color-azure-dark;
+}
+
+
+
+// specific
+.table__cell-control {
+  @extend noselect;
+  cursor: pointer;
+  padding: 0 12px;
+  height: 40px;
+
+  .icon-16 {
+    color: $text-1;
+  }
+
+  &.table__cell-control__no-hover {
+    &:hover {
+      background: none;
+    }
+    cursor: default;
+  }
+
+  &:hover {
+    background: $background-color;
+
+    .icon-16 {
+      color: $text-1;
+    }
+  }
+
+  &:active {
+    text-indent: 1px 0 0 0;
+
+    .table__sort-text {
+      transform: translateY(2px);
+    }
+  }
+
+  &.is-active {
+    background: $background-color;
+    border-bottom: 2px solid $color-border;
+  }
+}
+
+.table__sort-text {
+  @extend nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 16px;
+  padding: 0 24px 0 0;
+  font-weight: bold;
+  position: relative;
+
+  .icon-16 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.table__cell--browser,
+.table__cell--platform {
+  width: 240px;
+  @include screen-min {
+    width: 160px;
+  }
+}
+
+// Table cell spacings
+
+.table__cell--standard .apikey.hide {
+  margin: 8px 0 0;
+}
+
+.table__cell--checkbox {
+  width: 24px;
+  padding-right: 8px;
+}
+
+/* .table__cell-avatar {
+  padding: 8px 0;
+} */
+
+.table__cell--tight {
+  padding: 8px;
+}
+
+.table__cell--tightest {
+  padding: 4px 8px;
+}
+
+.table__cell--standard {
+  padding: 12px;
+}
+
+// padding on A rather than table__cell
+.table__cell--message {
+  a {
+    padding: 12px;
+    line-height: 16px;
+  }
+}
+
+
+// CUSTOM TABLE CELLS
+
+// Add to style guide;
+.table__cell--text-input { // Todo: replace with .table__cell--220
+  min-width: 220px;
+}
+
+.table__cell-gutter, // Todo: remove one
+.table__cell--gutter{
+  width: 24px;
+  max-width: 24px;
+  @media screen and (max-width:$screen-min) {
+    width: 16px;
+  }
+
+}
+
+$table-widths: 16 24 32 40 48 56 64 60 80 100 120 140 150 160 180 200 220 240 300 400 500;
+
+@each $width in $table-widths{
+  .table__cell-#{$width} {
+    width: #{$width}px;
+    max-width: #{$width}px;
+  }
+}
+
+.table__cell--button {
+  width: 140px;
+  padding: 4px 0;
+  white-space: nowrap;
+  text-align: right;
+}
+
+
+.table__cell--left {
+  text-align: left;
+}
+
+.table__cell--right {
+  text-align: right;
+}
+
+.table__cell--center {
+  text-align: center;
+}
+
+.table__cell--space-left {
+  padding-left: 16px;
+}
+
+// Gives the the table a more spacy layout
+//!todo don't like this too much.
+.table--high-cells td {
+  height: 65px;
+}
+
+// Gives date cells enough room to display DD MMM YYYY format dates
+td.table__cell--date { // Todo: use table__cell-120?
+  min-width: 120px;
+}
+
+@include screen-mob {
+  .table--responsive {
+    display: block;
+    width: 100%;
+
+    .table__cell--gutter,
+    .table__heading {
+      display: none;
+    }
+
+    tbody,
+    tr,
+    td {
+      display: block;
+      width: 100%;
+      min-width: 100%;
+    }
+
+    tr {
+      padding: 12px;
+    }
+
+    td {
+      padding: 0 0 0 120px;
+      margin: 0 0 4px;
+      position: relative;
+      height: auto;
+      min-height: 16px;
+
+      &:before {
+        content: attr(data-content);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: inherit;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+// block-responsive
+@include screen-mob {
+  .table--responsive-block {
+    display: block;
+    width: 100%;
+
+    .table__cell--gutter,
+    .table__heading {
+      display: none;
+    }
+
+    tbody,
+    tr,
+    td {
+      display: block;
+      width: 100%;
+      min-width: 100%;
+      padding: 0;
+    }
+
+    tr {
+      margin: 0 0 16px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    td {
+      margin: 0 0 4px;
+      position: relative;
+      height: auto;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

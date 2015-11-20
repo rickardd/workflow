@@ -1,0 +1,131 @@
+// Button patterns
+//
+// Reprecated: This is broken stuff. Don't use it.
+//
+// Markup:
+// <div class="button-pattern button-pattern--cancel-submit">
+//   <div class="button-pattern__cancel">
+//    <div class="button button-32 button-blue">cancel</div>
+//   </div>
+//   <div class="button-pattern__submit">
+//    <div class="button button-32 button-red">submit</div>
+//   </div>
+// </div>
+//
+// Styleguide 4.3
+
+
+
+// button patterns
+
+.button-pattern {
+  position: relative;
+}
+
+.bp-btn,
+.bp-submit,
+.bp-cancel,
+.bp-preview,
+.bp-markdown {
+  position: absolute;
+}
+
+// pattern types
+// * .pattern-submit
+// * .pattern-cancel
+// * .pattern-submit
+
+// submit only
+.pattern-submit {
+  height: 36px;
+
+  .bp-submit {
+    top: 0;
+    right: 0;
+    width: 200px;
+  }
+
+  @include screen-mob {
+    .bp-submit {
+      position: static;
+      width: 100%;
+    }
+  }
+}
+
+// submit + cancel
+.pattern-submit-cancel {
+  height: 36px;
+  .bp-cancel,
+  .bp-submit {
+    max-width: 50%;
+  }
+  .bp-cancel {
+    top: 0;
+    left: 0;
+  }
+  .bp-submit {
+    top: 0;
+    right: 0;
+    min-width: 120px;
+  }
+  @include screen-mob {
+    height: auto;
+    .bp-cancel,
+    .bp-submit {
+      margin: 4px 0 0;
+      width: 100%;
+      max-width: none;
+      position: static;
+    }
+  }
+}
+
+
+// markdown / comment buttons
+.pattern-markdown {
+  height: 36px;
+
+  .bp-preview {
+    top: 0;
+    right: 168px;
+  }
+
+  .bp-submit {
+    width: 160px;
+    top: 0;
+    right: 0;
+  }
+
+  .bp-markdown {
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    line-height: 16px;
+  }
+
+  @include screen-mob {
+    @include clearfix;
+    height: auto;
+
+    .bp-markdown {
+      line-height: normal;
+      padding: 0;
+    }
+
+
+    .bp-submit,
+    .bp-preview {
+      float: left;
+      width: 50%;
+    }
+
+    .bp-preview,
+    .bp-submit,
+    .bp-markdown {
+      margin: 4px 0 0;
+      position: static;
+      width: 100%;
+    }
+  }
+}

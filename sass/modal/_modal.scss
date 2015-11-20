@@ -1,0 +1,114 @@
+// Modal
+
+.modal {
+  position: relative;
+  border-radius: 6px;
+  margin: 56px auto;
+  background: $white;
+  //border: 1px solid $color-border-transparent;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  box-shadow: $dropdown-shadow;
+}
+
+
+html.cssanimations .modal {
+  opacity: 0;
+
+  -webkit-animation: modal-anim .2s ease-in-out .1s ;
+  -moz-animation: modal-anim .2s ease-in-out .1s ;
+  -ms-animation: modal-anim .2s ease-in-out .1s ;
+  -o-animation: modal-anim .2s ease-in-out .1s ;
+  animation: modal-anim .2s ease-in-out .1s ;
+  
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+// close button
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  overflow: hidden;
+}
+
+.modal-close-button {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: block;
+  padding: 4px;
+  border-radius: 3px;
+  color: $text-grey;
+  background: none;
+  &:hover {
+    color: $white;
+    background: $color-ember;
+  }
+  &:active {
+    color: $white;
+    background: $color-ember-dark;
+  }
+}
+
+
+// modal heading
+.modal-head,
+.modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid $color-border-light;
+}
+
+// modal body
+.modal-content {
+  margin: 24px 0;
+  &.has-padding {
+    margin: 0;
+    padding: 24px;
+  }
+}
+
+// modal footer
+.modal-foot {
+  padding: 12px 24px 24px;
+}
+
+.modal-footer {
+  padding: 24px;
+  border-top: 1px solid $color-border-light;
+}
+
+
+
+
+
+// don't use !todo remove
+// bulk delete modals
+.modal-actions {
+  .button {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width:$screen-mob) {
+  .modal-actions {
+    .button {
+      width: 100%;
+      display: block;
+      margin: 0 0 8px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

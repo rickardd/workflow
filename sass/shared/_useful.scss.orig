@@ -1,0 +1,240 @@
+// useful classes
+
+// hide/show
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+.float-left{
+  float: left;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.float-right{
+  float: right;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.line-height-32,
+.line-height-32-before:before,
+.line-height-32-after:after{
+  line-height: 32px;
+}
+
+.line-height-32--force{
+  line-height: 32px !important;
+}
+
+
+@media screen and (max-width:$screen-max) {
+  .hide-max {
+    display: none;
+  }
+
+  .show-max {
+    display: block;
+  }
+}
+
+@media screen and (max-width:$screen-med) {
+  .hide-med {
+    display: none;
+  }
+
+  .show-med {
+    display: block;
+  }
+}
+
+@media screen and (max-width:$screen-min) {
+  .hide-min {
+    display: none;
+  }
+
+  .show-min {
+    display: block;
+  }
+}
+
+@media screen and (max-width:$screen-mob) {
+  .hide-mob {
+    display: none!important;
+  }
+
+  .show-mob {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width:$screen-med) {
+  .screen-med-hide {
+    display: none;
+  }
+
+  .screen-med-show,
+  .screen-med-show-block {
+    display: block;
+  }
+}
+
+@media screen and (max-width:$screen-min) {
+  .screen-min-hide {
+    display: none;
+  }
+
+  .screen-min-show {
+    //display: none;
+  }
+}
+
+@media screen and (max-width:$screen-mob) {
+  .screen-mob-hide {
+    display: none;
+  }
+
+  .screen-mob-show {
+    display: block;
+  }
+}
+
+
+
+// word break
+.break {
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.nowrap{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// clearfix
+clearfix,
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+// disabled
+.disabled,
+.is-disabled {
+  pointer-events: none;
+}
+
+
+.clickable {
+  cursor: pointer;
+}
+
+
+.text-icon {
+  position: relative;
+}
+.text-icon--center{
+  display: inline-block;
+  max-width: 100%;
+}
+.text-icon--16 {
+  padding-left: 24px;
+  .text-icon__text {
+    line-height: 16px;
+  }
+}
+.text-icon--24 {
+  padding-left: 40px;
+  .text-icon__text {
+    line-height: 24px;
+  }
+}
+
+
+.text-icon__icon,
+.text-icon__text{
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: middle;
+}
+.text-icon__icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  .icon-16,
+  .icon-24,
+  .avatar{
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+.text-icon__text{
+  @extend ellipsis;
+  text-align: left;
+}
+<<<<<<< HEAD
+
+=======
+.text-icon--center{
+  max-width: 100%;
+}
+.text-icon--16{
+  padding-left: 24px;
+  line-height: 16px;
+}
+
+.text-icon--24{
+  padding-left: 40px;
+  line-height: 24px;
+}
+
+.text-icon--height-40{
+  line-height: 40px;
+}
+>>>>>>> Refactored text-icon
+
+
+
+.no-select{
+  @extend noselect;
+}
+
+
+
+// open in new window
+.text-icon-after {
+  @extend clearfix;
+  float: left;
+  position: relative;
+  padding-right: 24px;
+}
+.text-icon-after__text {
+  display: block;
+  width: 100%;
+  line-height: 16px;
+}
+.text-icon-after__icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

@@ -41,8 +41,8 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'style/main.css': 'sass/main.scss',
-          'styleguide/styleguide.css': 'sass/styleguide.scss' // TODO: duplicateds css file
+          'style/kss-rick.css': 'sass/kss-rick.scss',
+          'style/screen.css': 'sass/screen.scss',
         }
       }
     },
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
       markup: {
         files: [
           'html/**/*.html',
-          'styleguide/template/index.html'
+          'styleguide/template_3/index.html'
           ],
           tasks: ['kss'],
         options: {
@@ -152,7 +152,7 @@ module.exports = function (grunt) {
     },
     kss: {
      options: {
-        css: 'styleguide.css',
+        // css: 'styleguide.css',
         template: 'styleguide/template'
       },
       dist: {

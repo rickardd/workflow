@@ -1,0 +1,42 @@
+// Components specific to the live page of Raygun:Pulse
+
+// live "active" users block 
+.live-users {
+  position: relative;
+  padding-left: 56px;
+}
+.live-users__chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+}
+.live-users__data {
+  margin-left: 12px;
+}
+
+.live-users-table {
+  width: 100%;
+  table-layout: fixed;
+  tr {
+    border-bottom: 1px solid $color-border-light;
+  }
+  td {
+    padding: 4px 0;
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.live-users-table__users-total {
+  line-height: 16px;
+  @include font-size(1.4);
+}
+
+.live-users-table__users-new,
+.live-users-table__users-returning {
+  line-height: 16px;
+  @include font-size(1.2);
+}

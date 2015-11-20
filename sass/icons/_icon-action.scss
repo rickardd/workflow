@@ -1,0 +1,43 @@
+.action-icon {
+  border-radius: 3px;
+  color: $white;
+  padding: 16px;
+  vertical-align: middle;
+  display: inline-block;
+  background-color: $color-azure;
+
+  &.action-icon-micro {
+    padding: 4px;
+  }
+
+  &.action-icon-small {
+    padding: 8px;
+  }
+
+  &.action-icon-large {
+    padding: 16px;
+  }
+  &.action-icon-red {
+    background-color: $color-ember;
+  }
+
+  &.action-icon-blue {
+    background-color: $color-azure;
+  }
+
+  &.action-icon-green {
+    background-color: $color-forest;
+  }
+
+  &.action-icon-yellow {
+    background-color: $color-lightning;
+  }
+
+  &.action-icon-grey {
+    background-color: $color-grey-lightest;
+  }
+
+  &.action-icon-transparent {
+    background: none;
+  }
+}

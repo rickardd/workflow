@@ -1,0 +1,40 @@
+
+.modal-effect{
+  border: 1px solid rgba(0,0,0,.2);
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+.generic-tooltip{
+    background: $white;
+    padding: 6px;
+    color: #333 !important;
+    pointer-events: none;
+}
+.latency-info{
+    min-width: 150px;
+    background: $white;
+    padding: 6px;
+    color: #333 !important;
+    pointer-events: none;
+}
+.latency-info__table{
+  min-width: 100%;
+  font-size: 12px;
+}
+.latency-info__table__cell{
+  line-height: 16px;
+}
+.latency-info__table__cell{
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-bottom: 1px;
+  &:first-child{
+    padding-left: 0;
+  }
+}
+.latency-info-tag-wrapper{
+  float: left;
+  position: relative;
+  padding: 0 0 0 12px;
+}

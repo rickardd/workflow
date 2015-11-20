@@ -1,0 +1,39 @@
+.page-heading {
+  padding: 0 0 12px;
+  border-bottom: 1px solid $color-border;
+  margin: 0 0 24px;
+  position: relative;
+
+  &.has-navigation {
+    padding-bottom: 0;
+  }
+
+  h1 {
+    padding: 6px 0;
+    line-height: 28px;
+    @include font-size(2.4);
+    font-weight: bold;
+  }
+}
+
+.page-heading-section {
+  margin-top: 12px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.page-heading-context {
+  @include font-size(1.4);
+  line-heigh: 16px;
+}
+
+
+.ellipsis-space-350 {
+  padding-right: 350px;
+}
+
+.ellipsis-space-610 {
+  padding-right: 610px;
+}

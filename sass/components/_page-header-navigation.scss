@@ -1,0 +1,147 @@
+// page header navigation
+
+.header-navigation {
+  position: relative;
+  @include noselect;
+  @include screen-min {
+    margin: 0 -4px;
+    padding-bottom: 8px;
+  }
+}
+
+.header-navigation__item {
+  display: block;
+  float: left;
+  margin-right: 24px;
+  position: relative;
+
+  @include screen-min {
+    margin: 4px;
+  }
+}
+
+
+.header-navigation-button__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: $text-grey;
+
+  @include screen-min {
+    top: 10px;
+    left: 16px;
+  }
+}
+
+.header-navigation-button__text {
+  display: block;
+  line-height: 16px;
+  color: $text-1;
+}
+
+
+
+.header-navigation-button {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 12px 0 12px 24px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    height: 3px;
+    left: 0;
+    width: 100%;
+  }
+
+  &:hover:before,
+  &:active:before {
+    background: $color-border-dark;
+  }
+
+  &:active {
+    .header-navigation-button__icon,
+    .header-navigation-button__text {
+      transform: translateY(1px);
+    }
+  }
+
+  @include screen-min {
+    border-radius: 24px;
+    background-color: $color-grey-lightest;
+    padding: 10px 16px 10px 40px;
+
+    &:hover,
+    &:active {
+      background-color: $color-grey-lighter;
+    }
+
+    &:active {
+      .header-navigation-button__icon,
+      .header-navigation-button__text {
+        transform: none;
+      }
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+// color states
+.header-navigation-button--active {
+
+  @include screen-min {
+    .header-navigation-button__icon,
+    .header-navigation-button__text {
+      color: $white!important;
+    }
+  }
+  // dark
+  &.header-navigation-button--dark {
+    &:before {
+      background: $color-stealth;
+    }
+
+    .header-navigation-button__icon {
+      color: $color-stealth;
+    }
+
+    @include screen-min {
+      background-color: $color-stealth;
+    }
+  }
+  // blue
+  &.header-navigation-button--blue {
+    &:before {
+      background: $color-azure;
+    }
+    .header-navigation-button__icon {
+      color: $color-azure;
+    }
+    @include screen-min {
+      background-color: $color-azure;
+    }
+  }
+  // purple
+  &.header-navigation-button--purple {
+    &:before {
+      background: $color-byzantine;
+    }
+
+    .header-navigation-button__icon {
+      color: $color-byzantine;
+    }
+
+    @include screen-min {
+      background-color: $color-byzantine;
+    }
+  }
+}

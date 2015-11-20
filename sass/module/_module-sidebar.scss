@@ -1,0 +1,75 @@
+// module__sidebar .module__body
+
+
+.module-layout {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+
+  @include screen-min {
+    display: block;
+  }
+}
+
+.module-layout__item {
+  display: table-cell;
+  vertical-align: top;
+
+  @include screen-min {
+    display: block;
+  }
+}
+
+.module-layout__item--chart {
+  vertical-align: middle;
+}
+
+// these only work on the right hand side currently
+.module-layout__item--320 {
+  width: 320px;
+}
+
+.module-layout__item--400 {
+  width: 400px;
+}
+
+.module-layout__item--320,
+.module-layout__item--400 {
+  border-left: 1px solid $color-border;
+  @include screen-min {
+    border-left: none;
+    border-top: 1px solid $color-border;
+    width: auto;
+  }
+}
+
+.module-chart {
+  padding: 24px;
+}
+.module-chart__chart {
+  height: 100%;
+}
+.module-chart__key {
+  margin-top: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+
+// sidebar
+.module-sidebar {
+  width: 100%;
+}
+
+.module-sidebar__section {
+  border-bottom: 1px solid $color-border;
+  padding: 24px;
+  &:last-child {
+    border: none;
+  }
+}
+
+.module-sidebar__header {
+  margin-bottom: 8px;
+  font-weight: bold;
+}

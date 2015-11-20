@@ -1,0 +1,135 @@
+// notifications banner
+.ei-integration-container {}
+
+.integration-banner {
+  padding: 8px 24px;
+  background: $color-grey;
+  border-bottom: 1px solid $color-border;
+  @include screen-min {
+    padding: 8px 12px;
+  }
+}
+
+.ib-container {
+  position: relative;
+  padding: 0 36px;
+}
+.ib-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ib-text {
+  display: block;
+  line-height: 24px;
+  font-weight: bold;
+}
+.ib-close {
+  cursor: pointer;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right:0;
+  padding: 4px;
+  border-radius: 50%;
+  color: $text-grey;
+  background: $color-grey-lightest;
+  &:hover,
+  &:active {
+    color: $text-grey;
+  }
+}
+
+
+// notice banner
+.ei-notice-container {
+  margin: -1px 0 0;
+  background: $color-grey;
+  padding: 0 24px;
+  @include screen-min {
+    padding: 0 16px;
+  }
+  @include screen-mob {
+    padding: 0 12px;
+  }
+
+
+  &.is-green {background-color: $color-forest;}
+  &.is-red {background-color: $color-ember;}
+  &.is-yellow {background-color: $color-lightning;}
+}
+.ei-notice {
+  position: relative;
+  padding: 8px 0 8px 40px;
+}
+.ei-notice-icon {
+  color: $white;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 3px;
+}
+.ei-notice-message {
+  color: $white;
+  line-height: 20px;
+  padding: 2px 0;
+}
+
+
+// filter banner
+.eif-banner {
+  padding: 0 24px;
+  @include screen-min {
+    padding: 0 12px;
+  }
+}
+
+.eif-content {
+  margin: 0 0 24px;
+}
+
+.eif-heading {
+  margin: 0 0 12px;
+}
+
+ul.eif-list {
+  margin: 6px -4px 0px -4px;
+}
+
+li.eif-item {
+  position: relative;
+  padding: 4px 6px;
+  float: left;
+  background: $color-azure;
+  color: $white;
+  margin: 4px;
+  max-width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.eif-text {
+  display: block;
+  line-height: 20px;
+}
+
+.eif-remove {
+  @extend noselect;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $color-azure;
+  &:hover {
+    background: $color-azure-light;
+  }
+  &:active {
+    background: $color-azure-dark;
+  }
+}

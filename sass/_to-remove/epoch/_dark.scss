@@ -1,0 +1,66 @@
+/*
+ * theme/_dark.scss
+ * Categorical Colors Adapted from d3:
+ * https://github.com/mbostock/d3/wiki/Ordinal-Scales#categorical-colors
+ */
+/**/
+.epoch-theme-dark {
+  // Fonts
+  .epoch {
+    font-family: $font-family;
+    font-size: 12pt;
+  }
+
+  // Axes and Ticks
+  .epoch {
+    .axis path, .axis line {
+      fill: none;
+      stroke: #000;
+    }
+
+    .background {
+      fill: #364760;
+      stroke: none;
+      stroke-width: 0;
+    }
+
+    .yBackground {
+      fill: #2A394F;
+
+    }
+
+    text {
+      fill: #D7E0E9;
+      font-size: 15px;
+    }
+
+    .y.axis.left line, .tick.major line {
+      stroke-width: 0;
+      stroke: #2A394F;
+    }
+
+    .y.axis.left g:first-child line{
+      visibility: visible;
+    }
+
+    .y.axis.left g:nth-last-of-type(1) line{
+      visibility: visible;
+    }
+
+    .x.axis.bottom.canvas text {
+      font-family: $font-family;
+      font-size: 15px;
+      fill: #697286;
+    }
+  }
+
+  // Line Charts
+  .epoch .line {
+    fill: none;
+    stroke-width: 2px;
+  }
+
+  .epoch.sparklines .line {
+    stroke-width: 1px;
+  }
+}
