@@ -1,3 +1,21 @@
+// Action icons
+//
+// Styleguide icon.action
+
+// Action icon
+//
+// .action-icon class wraps icons with a box of color.
+//
+// Markup:
+// <div class="action-icon">
+//   <span class="flat-icon icon-16 add-user-icon"></span>
+// </div>
+//
+// Styleguide icon.action.1
+
+
+
+
 .action-icon {
   border-radius: 3px;
   color: $white;
@@ -5,6 +23,22 @@
   vertical-align: middle;
   display: inline-block;
   background-color: $color-azure;
+
+
+  // Action icon - sizes
+  //
+  // The size defines the amount of space within the box.
+  //
+  // .action-icon-micro - description
+  // .action-icon-small - description
+  // .action-icon-large - description
+  //
+  // Markup:
+  // <div class="action-icon {{modifier_class}}">
+  //   <span class="flat-icon icon-16 add-user-icon"></span>
+  // </div>
+  //
+  // Styleguide icon.action.2
 
   &.action-icon-micro {
     padding: 4px;
@@ -17,6 +51,22 @@
   &.action-icon-large {
     padding: 16px;
   }
+
+  // Action icon - colors
+  //
+  // .action-icon-red - description
+  // .action-icon-blue - description
+  // .action-icon-yellow - description
+  // .action-icon-grey - description
+  // .action-icon-transparent - description
+  //
+  // Markup:
+  // <div class="action-icon action-icon-small {{modifier_class}}">
+  //   <span class="flat-icon icon-16 add-user-icon"></span>
+  // </div>
+  //
+  // Styleguide icon.action.3
+
   &.action-icon-red {
     background-color: $color-ember;
   }
@@ -34,7 +84,7 @@
   }
 
   &.action-icon-grey {
-    background-color: $color-grey-lightest;
+    background-color: $color-grey-lighter;
   }
 
   &.action-icon-transparent {

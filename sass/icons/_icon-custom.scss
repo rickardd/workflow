@@ -1,17 +1,22 @@
-﻿// Code Language icons
+﻿// Custom icons
+//
+// Styleguide icon.custom
+
+// Code Language icons
 //-------------------------------
 // font-family
 @font-face {
   font-family: 'kyles-code-icons';
-  src: url('../fonts/custom-icons/icomoon.eot');
-  src: url('../fonts/custom-icons/icomoon.eot?#iefix') format("embedded-opentype"),
-       url('../fonts/custom-icons/icomoon.ttf') format('truetype'),
-       url('../fonts/custom-icons/icomoon.svg#icomoon') format('svg');
+  src: url('../Content/fonts/custom-icons/icomoon.eot');
+  src: url('../Content/fonts/custom-icons/icomoon.eot?#iefix') format("embedded-opentype"),
+       url('../Content/fonts/custom-icons/icomoon.ttf') format('truetype'),
+       url('../Content/fonts/custom-icons/icomoon.svg#icomoon') format('svg');
 
 	// Better Font Rendering ===========
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 
 .custom-icon {
   font-family: 'kyles-code-icons';
@@ -19,7 +24,50 @@
   font-style: normal!important;
 }
 
-// language icons
+
+// Custom language
+//
+// Used with the custom-icon class and a icon-size class
+//
+// optimized icon size 32px
+//
+// .adobeair-icon - description
+// .angular-icon - description
+// .backbone-icon - description
+// .cakephp-icon - description
+// .coldfusion-icon - description
+// .django-icon - description
+// .dotnet-icon - description
+// .drupal-icon - description
+// .ember-icon - description
+// .go-icon - description
+// .googleappengine-icon - description
+// .java-icon - description
+// .javascript-icon - description
+// .laravel-icon - description
+// .nodejs-icon - description
+// .php-icon - description
+// .play2-icon - description
+// .python-icon - description
+// .scala-icon - description
+// .unity3d-icon - description
+// .windowsstore-icon - description
+// .wordpress-icon - description
+// .xamarin-icon - description
+// .windows8-icon - description
+// .windows-icon - description
+// .ios-icon - description
+// .android-icon - description
+// .rails-icon - description
+// .aspnet-icon - description
+// .aspnet2-icon - description
+// .nancy-icon - description
+// .unknown-icon - description
+//
+// Markup: <div class="custom-icon icon-32 {{modifier_class}}"></div>
+//
+// Styleguide icon.custom.1
+
 .adobeair-icon:before{content:'\e608';}
 .angular-icon:before{content:'\e609';}
 .backbone-icon:before{content:'\e60a';}
@@ -53,16 +101,37 @@
 .nancy-icon:before {content:'\e631';}
 .unknown-icon:before {content: '\e62f';}
 
-// -- form icons
+// Custom form
+//
+// optimized icon size ??
+//
+// .radiounchecked-icon - description
+// .radiochecked-icon - description
+//
+// Markup: <div class="custom-icon icon-16 {{modifier_class}}"></div>
+//
+// Styleguide icon.custom.2
+
 .radiounchecked-icon:before{content:'\e600';}
 .radiochecked-icon:before{content:'\e607';}
 
-// -- star icons
-.solidstar-icon:before {content:'\e635';}
-.strokestar-icon:before {content:'\e634';}
+
+// Custom social media
+//
+// optimized icon size ??
+//
+// .twitter-icon - description
+// .dribbble-icon - description
+// .facebook-icon - description
+// .linkedin-icon - description
+// .github-icon - description
+// .googleplus-icon - description
+//
+// Markup: <div class="custom-icon icon-16 {{modifier_class}}"></div>
+//
+// Styleguide icon.custom.3
 
 .custom-icon {
-//-- social media
   &.twitter-icon:before{content:'\e623';}
   &.dribbble-icon:before{content:'\e624';}
   &.facebook-icon:before{content:'\e627';}
@@ -74,10 +143,22 @@
   &.bitbucket-icon:before {content:'\e632';}
 }
 
-//-- other
-.filter-icon:before{content:'\e605';}
 
-//-- browser icons
+// Custom browser
+//
+// optimized icon size ??
+//
+// .safari-icon - descrioption
+// .opera-icon - descrioption
+// .ie-icon - descrioption
+// .ie8-icon - descrioption
+// .firefox-icon - descrioption
+// .chrome-icon - descrioption
+//
+// Markup: <div class="custom-icon icon-16 {{modifier_class}}"></div>
+//
+// Styleguide icon.custom.4
+
 .safari-icon:before {content:'\e604';}
 .opera-icon:before {content:'\e628';}
 .ie-icon:before {content:'\e629';}
@@ -86,29 +167,62 @@
 .chrome-icon:before {content:'\e62b';}
 
 
-//-- custom 16px icons
-.collapse-icon:before {content:'\e637';}
-.expand2-icon:before {content:'\e636';}
+// Custom various
+//
+// optimized icon size ??
+//
+// .solidstar-icon - Star
+// .strokestar-icon - Star
+// .filter-icon - filter
+// .icon-integration - description
+// .icon-last - description
+// .icon-first - description
+// .icon-new-window - description
+// .icon-emoji-sad - description
+// .icon-emoji-average - description
+// .icon-emoji-happy - description
+// .icon-warning - description
+// .icon-bug - description
+// .icon-beacon - description
+// .icon-performance-poor - description
+// .icon-performance-average - description
+// .icon-performance-good - description
+// .icon-video - description
+// .icon-audio - description
+// .icon-file - description
+// .icon-document - description
+// .icon-timeline - description
+// .icon-source-code - description
+// .icon-font - description
+// .icon-flash - description
+// .icon-installer - description
+// .icon-image - description
+// .icon-television - description
+// .icon-checkbox-unchecked - description
+// .icon-checkbox-checked - description
+// .unchecked-icon - description
+// .checked-icon - description
+// .icon-box-cross - description
+// .icon-box-plus - description
+// .icon-loading - description
+// .icon-error-data - description
+// .icon-every-platform - description
+// .icon-real-time - description
+// .icon-smart-notifications - description
+//
+// Markup: <div class="custom-icon icon-16 {{modifier_class}}"></div>
+//
+// Styleguide icon.custom.5
+
+.solidstar-icon:before {content:'\e635';}
+.strokestar-icon:before {content:'\e634';}
+.filter-icon:before{content:'\e605';}
 
 
 .icon-integration:before {content:'\e63a';}
 .icon-last:before {content:'\e63c';}
 .icon-first:before {content:'\e63b';}
-
 .icon-new-window:before{content:'\e645';}
-.icon-view-session:before{content:'\e459';}
-
-//-- RUM (real user monitoring) icons
-.icon-pulse:before {content:'\e642';}
-.icon-sessions:before {content:'\e652';}
-.icon-users:before {content:'\e644';}
-.icon-browsers:before {content:'\e63e';}
-.icon-platforms:before {content:'\e641';}
-.icon-globe:before {content:'\e63f';}
-
-
-
-// new icons
 .icon-emoji-sad:before {content:'\e601';}
 .icon-emoji-average:before {content:'\e602';}
 .icon-emoji-happy:before {content:'\e603';}
@@ -129,7 +243,6 @@
 .icon-installer:before {content:'\e64e';}
 .icon-image:before {content:'\e64d';}
 .icon-television:before{content:'\e658';}
-// --
 .icon-checkbox-unchecked:before {content:'\e648';}
 .icon-checkbox-checked:before {content:'\e649';}
 .unchecked-icon:before{content:'\e648';}
@@ -146,10 +259,56 @@
 
 
 
-// 56 pixels optimized
+// Custom pulse
+//
+// optimized icon size ??
+//
+// .icon-pulse - description
+// .icon-sessions - description
+// .icon-users - description
+// .icon-browsers-window - description
+// .icon-platforms-sad - description
+// .icon-globe - description
+//
+// Markup: <div class="custom-icon icon-16 {{modifier_class}}"></div>
+//
+// Styleguide icon.custom.6
+
+.icon-pulse:before {content:'\e642';}
+.icon-sessions:before {content:'\e652';}
+.icon-users:before {content:'\e644';}
+.icon-browsers:before {content:'\e63e';}
+.icon-platforms:before {content:'\e641';}
+.icon-globe:before {content:'\e63f';}
+
+
+// Custom 56px
+//
+// Use with the .custom-icon class and the .size class.
+//
+// optimized icon size 56
+//
+// .icon-graph - description
+// .icon-globe-2 - description
+// .icon-health - description
+// .icon-users-2 - description
+// .icon-monitors - description
+// .icon-happy - description
+//
+// Markup: <div class="custom-icon icon-56 {{modifier_class}}"></div>
+//
+// Styleguide icon.custom.7
+
+
 .icon-graph:before {content:'\e900';}
 .icon-globe-2:before {content:'\e901';}
 .icon-health:before {content:'\e902';}
 .icon-users-2:before {content:'\e905';}
 .icon-monitors:before {content:'\e904';}
 .icon-happy:before {content:'\e903';}
+
+
+
+//-- custom 16px icons
+.collapse-icon:before {content:'\e637';} // todo remove
+.expand2-icon:before {content:'\e636';} // todo remove

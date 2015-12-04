@@ -1,3 +1,42 @@
+// Breadcrumbs
+//
+// Breadcrumbs are primarly used for navigation purposes when a back action is needed.
+//
+// Styleguide component.breadcrumb
+
+
+// General
+//
+// Breadcrumbs have a max width of 33%, add a .text-ellipsis class to text inside so that is formats nicely
+// Note that the last item is a p tag
+//
+// Markup:
+// <ul class="breadcrumb clearfix">
+//   <li>
+//     <a href="#" class="text-ellipsis">
+//       One
+//       <span class="flat-icon icon-16 arrowright-icon"></span>
+//     </a>
+//   </li>
+//   <li>
+//     <a href="#" class="text-ellipsis">
+//       Open
+//       <span class="flat-icon icon-16 arrowright-icon"></span>
+//     </a>
+//   </li>
+//   <li>
+//     <a href="#" class="text-ellipsis">
+//       Face
+//       <span class="flat-icon icon-16 arrowright-icon"></span>
+//     </a>
+//   </li>
+//   <li>
+//     <p class="text-ellipsis">Sandwich</p>
+//   </li>
+// </ul>
+//
+// Styleguide component.breadcrumb.1
+
 .breadcrumb,
 .breadcrumb-header {
   li {
@@ -26,7 +65,29 @@
 }
 
 
-// new header breadcrumb
+// Heading breadcrumb
+//
+// Add .breadcrumb-heading class to the ul
+// Also change the icon-size to .icon-32 from .icon-16
+//
+// Markup:
+// <ul class="breadcrumb breadcrumb-heading clearfix">
+//   <li>
+//     <a href="#" class="text-ellipsis">One<span class="flat-icon icon-32 arrowright-icon"></span></a>
+//   </li>
+//   <li>
+//     <a href="#" class="text-ellipsis">Open<span class="flat-icon icon-32 arrowright-icon"></span></a>
+//   </li>
+//   <li>
+//     <a href="#" class="text-ellipsis">Face<span class="flat-icon icon-32 arrowright-icon"></span></a>
+//   </li>
+//   <li>
+//     <p class="text-ellipsis">Sandwich</p>
+//   </li>
+// </ul>
+//
+// Styleguide component.breadcrumb.2
+
 .breadcrumb-header {
   a, p {
     @include font-size(1.8);
@@ -90,4 +151,68 @@ ul.billing-breadcrumb {
   line-height: 32px;
   font-weight: bold;
   @include font-size(1.6);
+}
+
+
+
+// updated breadcrumb control
+// !todo replace all old instances of this control
+
+.breadcrumb2 {}
+.breadcrumb2__item {
+  float: left;
+}
+
+
+// breadcrumb item regular
+.breadcrumb2-item {
+  position: relative;
+  padding: 4px 0;
+  line-height: 16px;
+  @include font-size(1.4);
+}
+.breadcrumb2-item--arrow {
+  padding-right: 28px;
+}
+
+.breadcrumb2-item__arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 6px;
+}
+
+.breadcrumb2-item__content {
+  display: block;
+  font-weight: bold;
+}
+a.breadcrumb2-item__content {
+  cursor: pointer;
+}
+
+
+// breadcrumb item medium
+.breadcrumb2-item-heading {
+  position: relative;
+  padding: 4px 0;
+  line-height: 16px;
+  @include font-size(1.6);
+}
+.breadcrumb2-item-heading--arrow {
+  padding-right: 28px;
+}
+
+.breadcrumb2-item-heading__arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 6px;
+}
+
+.breadcrumb2-item-heading__content {
+  display: block;
+  font-weight: bold;
+}
+a.breadcrumb2-item-heading__content {
+  cursor: pointer;
 }

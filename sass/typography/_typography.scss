@@ -1,11 +1,17 @@
-// Typography Stylesheet
-// Typography Block, add to content parent.
+// Typography
+//
+// Add the class .typography to parent element to get proper text formating.
+//
+// Markup: typography/kss-markup--typography.html
+//
+// Styleguide typography
 
 .typography {
   @include font-size(1.4);
-  line-height: 1.4;
+  line-height: 1.5;
   a {
     color: $color-azure;
+    white-space: nowrap;
     text-decoration: underline;
     &:hover,
     &:active {
@@ -46,22 +52,18 @@
     }
   }
 
-  pre,
-  pre code {
-    padding: 12px;
-    display: block;
-  }
   pre {
     margin: 4px 0 16px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    background: $background-color;
   }
-
   code {
     display: inline-block;
-    padding: 1px 4px;
+    padding: 2px 6px;
     border-radius: 2px;
     font-family: $font-family-mono;
     background: $background-color;
-    border: 1px solid $color-grey-lightest;
     @include font-size(1.2);
   }
 

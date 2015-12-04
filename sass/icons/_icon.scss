@@ -1,12 +1,11 @@
 // Icons
 //
 // Some stuff about icons
-// Icons are NOT usign BEM nameing convenison.
+// Icons are NOT usign BEM nameing convenison... yet
 //
 // .icon             - Needs -size and -color properties
 //
-// Styleguide 5
-
+// Styleguide icon
 
 
 // Font-Icons
@@ -16,12 +15,10 @@
 // don't extend this anymore please
 
 //-- test icon
-.test-icon {
+.tet-icon {
   background: $color-stealth;
   border-radius: 2px;
 }
-
-
 
 // Icon sizes
 //
@@ -37,7 +34,7 @@
 // Markup:
 // <div class="flat-icon {{modifier_class}} error-custom-icon"></div>
 //
-// Styleguide 5.1
+// Styleguide icon.1
 
 // icon defaults
 .icon-16,
@@ -157,6 +154,7 @@
 
 
 
+
 // Icon colors
 //
 // .icon-purple      - Description
@@ -166,7 +164,7 @@
 // Markup:
 // <div class="flat-icon {{modifier_class}} icon-24 error-custom-icon"></div>
 //
-// Styleguide 5.2
+// Styleguide icon.2
 
 
 // icon colors
@@ -180,8 +178,23 @@
   background: $color-forest;
 }
 
+
+// Css icons
+//
+// Icon disc is a css made disc
+//
+// .icon-disc--purple - description
+// .icon-disc--green - description
+// .icon-disc--blue - description
+// .icon-disc--purple - description
+//
+// Markup:
+// <div class="icon-16 icon-disc {{modifier_class}}"></div>
+//
+// Styleguide icon.css
+
 // circle icon
-.icon-disc {
+.icon-disc { // Todo: replace with this under pulse graphs
   padding: 4px;
   &:before {
     display: block;
@@ -196,7 +209,7 @@
 .icon-disc--blue:before{background:$color-azure;}
 .icon-disc--purple:before{background:$color-byzantine;}
 
-
+// Todo pull out?
 // OLD below
 //-- places used
 // - appSettings/integration/tabs

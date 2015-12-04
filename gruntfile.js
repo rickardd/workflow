@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'style/kss-rick.css': 'sass/kss-rick.scss',
+          'style/kss-style.css': 'sass/kss-style.scss',
           'style/screen.css': 'sass/screen.scss',
         }
       }

@@ -29,14 +29,14 @@ input.search-input {
   padding: 0 12px 0 40px;
   height: 40px;
   width: 100%;
-  color: $color-grey-lighter;
+  color: $color-grey-light;
   border-radius: 4px;
 
   &::-webkit-input-placeholder,
   &:-moz-placeholder,
   &::-moz-placeholder,
   &:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: rgba($color-grey-lighter,0.8);
+    color: rgba($color-grey-light,0.8);
     opacity: 1;
   }
 }

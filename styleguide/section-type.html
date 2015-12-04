@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../style/kss-style.css">
+  <link rel="stylesheet" href="../style/screen.css" />
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <!-- <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header> -->
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">KSS Documentation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Naming Convension</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Test urls</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-button.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-center.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Center</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">8</span
+          ><span class="kss-nav__name">Colors</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-component.html">
+          <span class="kss-nav__ref">9</span
+          ><span class="kss-nav__name">Component</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-form.html">
+          <span class="kss-nav__ref">10</span
+          ><span class="kss-nav__name">Form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-grid.html">
+          <span class="kss-nav__ref">11</span
+          ><span class="kss-nav__name">Grid</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-icon.html">
+          <span class="kss-nav__ref">12</span
+          ><span class="kss-nav__name">Icons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-mixin.html">
+          <span class="kss-nav__ref">13</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-module.html">
+          <span class="kss-nav__ref">14</span
+          ><span class="kss-nav__name">Module</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pageheader.html">
+          <span class="kss-nav__ref">15</span
+          ><span class="kss-nav__name">Page header</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pagesetup.html">
+          <span class="kss-nav__ref">16</span
+          ><span class="kss-nav__name">Page Setup</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-table.html">
+          <span class="kss-nav__ref">17</span
+          ><span class="kss-nav__name">Tables</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-texticon.html">
+          <span class="kss-nav__ref">18</span
+          ><span class="kss-nav__name">Text-icon</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-toaster.html">
+          <span class="kss-nav__ref">19</span
+          ><span class="kss-nav__name">Toaster</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-type.html">
+          <span class="kss-nav__ref">20</span
+          ><span class="kss-nav__name">Type</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-type.html#kssref-type-1">
+                <span class="kss-nav__ref">20.1</span
+                ><span class="kss-nav__name">Text sizing variables</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-type.html#kssref-type-2">
+                <span class="kss-nav__ref">20.2</span
+                ><span class="kss-nav__name">Text colors</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-type.html#kssref-type-3">
+                <span class="kss-nav__ref">20.3</span
+                ><span class="kss-nav__name">Handy text classes</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-type.html#kssref-type-4">
+                <span class="kss-nav__ref">20.4</span
+                ><span class="kss-nav__name">Heading sizing classes</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-type.html#kssref-type-5">
+                <span class="kss-nav__ref">20.5</span
+                ><span class="kss-nav__name">Text sizing classes</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-typography.html">
+          <span class="kss-nav__ref">21</span
+          ><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-useful.html">
+          <span class="kss-nav__ref">22</span
+          ><span class="kss-nav__name">Useful classes</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-type" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-type">
+          <span class="kss-title__ref">
+              20
+            <span class="kss-title__permalink-hash">
+                #type
+            </span>
+          </span>
+          Type
+        </a>
+      </h1>
+
+
+    </div>
+
+
+      </div>
+      <section id="kssref-type-1" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-type-1">
+          <span class="kss-title__ref">
+              20.1
+            <span class="kss-title__permalink-hash">
+                #type.1
+            </span>
+          </span>
+          Text sizing variables
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-h1</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-h2</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-h3</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-h4</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-h5</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-form</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-standard</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-button</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-small</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$fontsize-code</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$type-small</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$type-base</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$type-large</code>
+          <div class="kss-parameters__description">how and when to use ???</div>
+        </li>
+      </ul>
+
+    </div>
+
+
+      </section>
+      <section id="kssref-type-2" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-type-2">
+          <span class="kss-title__ref">
+              20.2
+            <span class="kss-title__permalink-hash">
+                #type.2
+            </span>
+          </span>
+          Text colors
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <span class="[modifier class]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-blue
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $color-azure-dark
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-purple
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $color-byzantine-light
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-red
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $color-ember-dark
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-orange
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $color-flame-dark
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-yellow
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $color-lightning
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-green
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $color-forest-dark
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-green">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-grey
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $text-grey
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-grey-light
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $text-grey-light
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-white
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $white
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-black
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $black
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-dark
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $text-1
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-light
+        </div>
+        <div class="kss-modifier__description kss-style">
+          $color-grey-light
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;span class=&quot;[modifier class]&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;span&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-type-3" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-type-3">
+          <span class="kss-title__ref">
+              20.3
+            <span class="kss-title__permalink-hash">
+                #type.3
+            </span>
+          </span>
+          Handy text classes
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.text-normal</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.text-underline</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.text-break</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.text-ellipsis</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.text-mono</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.foot-note</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.headline</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+      </ul>
+
+    </div>
+
+
+      </section>
+      <section id="kssref-type-4" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-type-4">
+          <span class="kss-title__ref">
+              20.4
+            <span class="kss-title__permalink-hash">
+                #type.4
+            </span>
+          </span>
+          Heading sizing classes
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <span class="[modifier class]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .heading-size-1
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <span class="heading-size-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .heading-size-2
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <span class="heading-size-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .heading-size-3
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <span class="heading-size-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .heading-size-4
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <span class="heading-size-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .heading-size-5
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <span class="heading-size-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;span class=&quot;[modifier class]&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;span&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-type-5" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-type-5">
+          <span class="kss-title__ref">
+              20.5
+            <span class="kss-title__permalink-hash">
+                #type.5
+            </span>
+          </span>
+          Text sizing classes
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <span class="[modifier class]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-size-large
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-size-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-size-medium
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-size-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .text-size-small
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <span class="text-size-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;span class=&quot;[modifier class]&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;span&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

@@ -1,9 +1,10 @@
+// Module-content
+//
+// A generic container. Often used within a module container but can be used anywhere.
+//
+// Styleguide module.content
+//
 
-.module-content__header{
-    padding: 8px 0;
-    border-bottom: 1px solid $color-border;
-    margin-bottom: 8px;
-}
 
 $module-padding: 24px;
 $module-padding-tight: 12px;
@@ -22,6 +23,38 @@ $module-padding-mob: 12px;
       @include screen-mob {#{$property}: $module-padding-mob;}
   }
 }
+
+
+// Module-content - Spacing
+//
+// Has 7 spacing properties. By defalut 24px on full screen. It's responsive padding.
+// All padding-propperties has a tight version with is 16px.
+//
+// .module-content--padding-all - Padding on all sides
+// .module-content--padding-all-tight - Padding on all sides
+// .module-content--padding-top - Padding top
+// .module-content--padding-top-tight - Padding top
+// .module-content--padding-right - Padding to the right
+// .module-content--padding-right-tight - Padding to the right
+// .module-content--padding-bottom - Padding bottom
+// .module-content--padding-bottom-tight - Padding bottom
+// .module-content--padding-left - Padding left
+// .module-content--padding-left-tight - Padding left
+// .module-content--padding-vertical - padding top and bottom
+// .module-content--padding-vertical-tight - padding top and bottom
+// .module-content--padding-horizontal - padding left and right
+// .module-content--padding-horizontal-tight - padding left and right
+//
+// Markup:
+// <div class="module module--white">
+//   <div class="module__body">
+//     <div class="module-content {{modifier_class}}">
+//       <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+//     </div>
+//   </div>
+// </div>
+//
+// Styleguide module.content.1
 
 @include module-padding( all, padding);
 @include module-padding( top, padding-top);
@@ -66,7 +99,15 @@ $module-padding-mob: 12px;
     padding-right: $module-padding-mob;
   }
 }
-.module-content--padding-horizontal-tight{
+
+// Border modifier
+.module-content--border-top {
+  border-top: 1px solid $color-border-light;
+}
+
+.module-content--border-bottom {
+  border-bottom: 1px solid $color-border-light;
+}.module-content--padding-horizontal-tight{
   padding-left: $module-padding-tight;
   padding-right: $module-padding-tight;
   @include screen-min {
@@ -77,4 +118,31 @@ $module-padding-mob: 12px;
     padding-left: $module-padding-mob;
     padding-right: $module-padding-mob;
   }
+}
+
+
+// Module-content - Header
+//
+// module-content also has an header. It's great if you want to have section withing e.g a module.
+// Use in combination with heading-size-5.
+//
+// .module-content__header - the header wrapper class
+//
+// Markup:
+// <div class="module module--white">
+//   <div class="module__body">
+//     <div class="module-content module-content--padding-all">
+//       <div class="{{modifier_class}}">
+//         <hi class="heading-size-5">module content header example</h1>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+//
+// Styleguide module.content.2
+
+.module-content__header{
+    padding: 8px 0;
+    border-bottom: 1px solid $color-border;
+    margin-bottom: 16px;
 }

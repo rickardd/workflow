@@ -1,3 +1,32 @@
+// Activity
+//
+// .red - Change both the .is-red and .text-red class
+// .green - Change both the .is-green and .text-green class
+// .yellow - Change both the .is-yellow and .text-yellow class
+//
+// Markup:
+// <div class="module module-white">
+//   <div class="module-activity is-grey">
+//     <div class="ma-bar is-right is-{{modifier_class}}"></div>
+//     <div class="ma-avatar">
+//       <span class="avatar avatar-32">
+//         <img src="/Content/Images/icons/avatars/2.png">
+//       </span>
+//     </div>
+//     <div class="ma-content">
+//       <div class="typography">
+//         <h4 class="heading-size-5">Activity <span class="text-{{modifier_class}}">status</span> on September 11th 2015, 12:45:15</h4>
+//       </div>
+//     </div>
+//     <ul class="ma-detail clearfix">
+//       <li>3 months ago</li>
+//     </ul>
+//   </div>
+// </div>
+//
+// Styleguide module.activity
+
+
 //-- module activity block
 .module-activity {
   position: relative;
@@ -28,7 +57,7 @@
   &.is-right {right: -1px;}
   // color
   &.is-red {background:$color-ember;}
-  &.is-grey {background:$color-grey-lightest;}
+  &.is-grey {background:$color-grey-lighter;}
   &.is-blue {background:$color-azure;}
   &.is-green {background:$color-forest;}
   &.is-yellow {background:$color-lightning;}

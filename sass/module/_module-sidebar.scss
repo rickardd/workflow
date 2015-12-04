@@ -1,4 +1,11 @@
-// module__sidebar .module__body
+// Module-layout
+//
+// .module-layout__item--320 - Description
+// .module-layout__item--400 - Description
+//
+// Markup: module/kss-markup--module-layout.html
+//
+// Styleguide module.layout
 
 
 .module-layout {
@@ -43,6 +50,15 @@
   }
 }
 
+
+// Module-chart
+//
+// Use inside .module-layout__item.module-layout__item--chart
+//
+// Markup: module/kss-markup--module-chart.html
+//
+// Styleguide module.chart
+
 .module-chart {
   padding: 24px;
 }
@@ -56,7 +72,18 @@
 }
 
 
-// sidebar
+
+
+// Module-sidebar
+//
+// Module-sidebar is un item that should be placed inside a module-layout__item.
+//
+// The sidebar has sections and sections headers.
+//
+// Markup: module/kss-markup--module-sidebar.html
+//
+// Styleguide module.sidebar
+
 .module-sidebar {
   width: 100%;
 }

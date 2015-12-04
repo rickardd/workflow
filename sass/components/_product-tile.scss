@@ -1,0 +1,128 @@
+// Product Tile
+
+.product-tile {
+  margin: 0 auto;
+  //max-width: 540px;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+  background: $white;
+}
+.product-tile__progress,
+.product-tile__warning,
+.product-tile__button {
+  border-bottom: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  border-left: 1px solid $color-border;
+}
+
+// Product tile header
+.product-tile__heading {
+  padding: 24px;
+  border-radius: 3px 3px 0 0;
+}
+.product-tile__heading--blue {
+  background: $color-azure;
+}
+.product-tile__heading--purple {
+  background: $color-byzantine;
+}
+.product-tile__heading--grey {
+  background: $color-grey-dark;
+}
+
+
+.product-tile-heading {
+  position: relative;
+  padding-left: 96px;
+}
+
+
+.product-tile-heading__title {
+  @include font-size(2.4);
+  color: $white;
+  display: table-cell;
+  vertical-align: middle;
+  height: 80px;
+}
+.product-tile-heading__icon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+// Product tile progress
+.product-tile__progress {
+  padding: 12px 24px 16px;
+}
+
+
+// Progress control -- reusable !todo break this out
+.progress-control {
+  position: relative;
+}
+.progress-control__title {
+  line-height: 16px;
+  padding-right: 80px;
+}
+.progress-control__value {
+  position: absolute;
+  text-align: right;
+  top: 0;
+  right: 0;
+  width: 80px;
+  line-height: 16px;
+}
+.progress-control__bar {
+  margin-top: 4px;
+}
+
+.product-progress {
+  border-radius: 4px;
+  height: 8px;
+  background: $color-border;
+}
+.product-progress__bar {
+  height: 8px;
+  border-radius: 4px;
+}
+.product-progress__bar--grey {
+  background: $color-grey-dark;
+}
+.product-progress__bar--blue {
+  background: $color-azure;
+}
+.product-progress__bar--purple {
+  background: $color-byzantine;
+}
+.product-progress__bar--red {
+  background: $color-ember;
+}
+
+// warning message
+.product-tile__warning {
+  padding: 16px 24px;
+  background: $color-lightning-highlight;
+}
+
+.product-warning {}
+.product-warning__message {}
+.product-warning__checkbox {
+  margin-top: 16px;
+}
+
+
+
+// Product tile button
+.product-tile__button {
+  padding: 24px;
+  border-radius: 0 0 3px 3px;
+}
+
+
+.product-more {
+  text-align: center;
+  margin-top: 24px;
+}

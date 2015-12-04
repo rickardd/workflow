@@ -37,16 +37,22 @@
 }
 
 .element-split {
-  width: 50%;
-  float: left;
 
-  &.is-left {
-    padding-right: 8px;
-  }
+	// Only split for medium-up
+	@include mw-screen-mob() {
+		width: 50%;
+		float: left;
 
-  &.is-right {
-    padding-left: 8px;
-  }
+	  &.is-left {
+		padding-right: 8px;
+	  }
+
+	  &.is-right {
+		padding-left: 8px;
+	  }
+	}
+  
+
 }
 
 .form-footer {

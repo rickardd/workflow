@@ -1,0 +1,4207 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../style/kss-style.css">
+  <link rel="stylesheet" href="../style/screen.css" />
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <!-- <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header> -->
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">KSS Documentation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Naming Convension</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Test urls</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-button.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-center.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Center</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">8</span
+          ><span class="kss-nav__name">Colors</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-component.html">
+          <span class="kss-nav__ref">9</span
+          ><span class="kss-nav__name">Component</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-form.html">
+          <span class="kss-nav__ref">10</span
+          ><span class="kss-nav__name">Form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-grid.html">
+          <span class="kss-nav__ref">11</span
+          ><span class="kss-nav__name">Grid</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-icon.html">
+          <span class="kss-nav__ref">12</span
+          ><span class="kss-nav__name">Icons</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-1">
+                <span class="kss-nav__ref">12.1</span
+                ><span class="kss-nav__name">Icon sizes</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-2">
+                <span class="kss-nav__ref">12.2</span
+                ><span class="kss-nav__name">Icon colors</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-action">
+                <span class="kss-nav__ref">12.3</span
+                ><span class="kss-nav__name">Action icons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-avatar">
+                <span class="kss-nav__ref">12.4</span
+                ><span class="kss-nav__name">Avatar</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-css">
+                <span class="kss-nav__ref">12.5</span
+                ><span class="kss-nav__name">Css icons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-custom">
+                <span class="kss-nav__ref">12.6</span
+                ><span class="kss-nav__name">Custom icons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-flat">
+                <span class="kss-nav__ref">12.7</span
+                ><span class="kss-nav__name">Flat icons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-loading">
+                <span class="kss-nav__ref">12.8</span
+                ><span class="kss-nav__name">Loading icons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-product">
+                <span class="kss-nav__ref">12.9</span
+                ><span class="kss-nav__name">Product icons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-icon.html#kssref-icon-svg">
+                <span class="kss-nav__ref">12.10</span
+                ><span class="kss-nav__name">SVG icons</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-mixin.html">
+          <span class="kss-nav__ref">13</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-module.html">
+          <span class="kss-nav__ref">14</span
+          ><span class="kss-nav__name">Module</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pageheader.html">
+          <span class="kss-nav__ref">15</span
+          ><span class="kss-nav__name">Page header</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pagesetup.html">
+          <span class="kss-nav__ref">16</span
+          ><span class="kss-nav__name">Page Setup</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-table.html">
+          <span class="kss-nav__ref">17</span
+          ><span class="kss-nav__name">Tables</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-texticon.html">
+          <span class="kss-nav__ref">18</span
+          ><span class="kss-nav__name">Text-icon</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-toaster.html">
+          <span class="kss-nav__ref">19</span
+          ><span class="kss-nav__name">Toaster</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-type.html">
+          <span class="kss-nav__ref">20</span
+          ><span class="kss-nav__name">Type</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-typography.html">
+          <span class="kss-nav__ref">21</span
+          ><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-useful.html">
+          <span class="kss-nav__ref">22</span
+          ><span class="kss-nav__name">Useful classes</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-icon" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-icon">
+          <span class="kss-title__ref">
+              12
+            <span class="kss-title__permalink-hash">
+                #icon
+            </span>
+          </span>
+          Icons
+        </a>
+      </h1>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.icon</code>
+          <div class="kss-parameters__description">Needs -size and -color properties</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>Some stuff about icons
+Icons are NOT usign BEM nameing convenison... yet</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-icon-1" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-1">
+          <span class="kss-title__ref">
+              12.1
+            <span class="kss-title__permalink-hash">
+                #icon.1
+            </span>
+          </span>
+          Icon sizes
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon [modifier class] error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-16
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-16 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-24
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-24 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-32
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-32 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-40
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-40 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-48
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-48 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-56
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-56 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-64
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-64 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-128
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-128 error-custom-icon"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;flat-icon [modifier class] error-custom-icon&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-2" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-2">
+          <span class="kss-title__ref">
+              12.2
+            <span class="kss-title__permalink-hash">
+                #icon.2
+            </span>
+          </span>
+          Icon colors
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon [modifier class] icon-24 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-purple
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-purple icon-24 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-blue
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-blue icon-24 error-custom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-green
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-green icon-24 error-custom-icon"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;flat-icon [modifier class] icon-24 error-custom-icon&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-action" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-action">
+          <span class="kss-title__ref">
+              12.3
+            <span class="kss-title__permalink-hash">
+                #icon.action
+            </span>
+          </span>
+          Action icons
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-action.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-action.1">
+          <span class="kss-title__ref">
+              12.3.1
+            <span class="kss-title__permalink-hash">
+                #icon.action.1
+            </span>
+          </span>
+          Action icon
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>.action-icon class wraps icons with a box of color.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;action-icon&quot;&gt;
+  &lt;span class=&quot;flat-icon icon-16 add-user-icon&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-action.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-action.2">
+          <span class="kss-title__ref">
+              12.3.2
+            <span class="kss-title__permalink-hash">
+                #icon.action.2
+            </span>
+          </span>
+          Action icon - sizes
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The size defines the amount of space within the box.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon [modifier class]">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .action-icon-micro
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-micro">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .action-icon-small
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-small">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .action-icon-large
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-large">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;action-icon [modifier class]&quot;&gt;
+  &lt;span class=&quot;flat-icon icon-16 add-user-icon&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-action.3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-action.3">
+          <span class="kss-title__ref">
+              12.3.3
+            <span class="kss-title__permalink-hash">
+                #icon.action.3
+            </span>
+          </span>
+          Action icon - colors
+        </a>
+      </h3>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-small [modifier class]">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .action-icon-red
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-small action-icon-red">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .action-icon-blue
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-small action-icon-blue">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .action-icon-yellow
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-small action-icon-yellow">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .action-icon-grey
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-small action-icon-grey">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .action-icon-transparent
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="action-icon action-icon-small action-icon-transparent">
+  <span class="flat-icon icon-16 add-user-icon"></span>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;action-icon action-icon-small [modifier class]&quot;&gt;
+  &lt;span class=&quot;flat-icon icon-16 add-user-icon&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-avatar" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-avatar">
+          <span class="kss-title__ref">
+              12.4
+            <span class="kss-title__permalink-hash">
+                #icon.avatar
+            </span>
+          </span>
+          Avatar
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Use with the .avatar class. Note tat all avatars should have the .avatar--circle class
+The child &quot;the actual avatar&quot; should have same size as the .avatar wrapper</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="avatar avatar-24 [modifier class]">
+  <div class="svg-icon icon-24 icon--anonymous-user"></div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .avatar--circle
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="avatar avatar-24 avatar--circle">
+  <div class="svg-icon icon-24 icon--anonymous-user"></div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;avatar avatar-24 [modifier class]&quot;&gt;
+  &lt;div class=&quot;svg-icon icon-24 icon--anonymous-user&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-avatar.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-avatar.1">
+          <span class="kss-title__ref">
+              12.4.1
+            <span class="kss-title__permalink-hash">
+                #icon.avatar.1
+            </span>
+          </span>
+          Avatar-16
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <div class="avatar avatar--circle avatar-16"><div class="svg-icon icon-16 icon--anonymous-user"></div></div>
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-avatar.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-avatar.2">
+          <span class="kss-title__ref">
+              12.4.2
+            <span class="kss-title__permalink-hash">
+                #icon.avatar.2
+            </span>
+          </span>
+          Avatar-20
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <div class="avatar avatar--circle avatar-20"><div class="svg-icon icon-20 icon--anonymous-user"></div></div>
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-avatar.3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-avatar.3">
+          <span class="kss-title__ref">
+              12.4.3
+            <span class="kss-title__permalink-hash">
+                #icon.avatar.3
+            </span>
+          </span>
+          Avatar-24
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <div class="avatar avatar--circle avatar-24"><div class="svg-icon icon-24 icon--anonymous-user"></div></div>
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-avatar.4" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-avatar.4">
+          <span class="kss-title__ref">
+              12.4.4
+            <span class="kss-title__permalink-hash">
+                #icon.avatar.4
+            </span>
+          </span>
+          Avatar-32
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <div class="avatar avatar--circle avatar-32"><div class="svg-icon icon-32 icon--anonymous-user"></div></div>
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-avatar.5" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-avatar.5">
+          <span class="kss-title__ref">
+              12.4.5
+            <span class="kss-title__permalink-hash">
+                #icon.avatar.5
+            </span>
+          </span>
+          Avatar-40
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <div class="avatar avatar--circle avatar-40"><div class="svg-icon icon-40 icon--anonymous-user"></div></div>
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-avatar.6" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-avatar.6">
+          <span class="kss-title__ref">
+              12.4.6
+            <span class="kss-title__permalink-hash">
+                #icon.avatar.6
+            </span>
+          </span>
+          Avatar-64
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <div class="avatar avatar--circle avatar-64"><div class="svg-icon icon-64 icon--anonymous-user"></div></div>
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-avatar.7" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-avatar.7">
+          <span class="kss-title__ref">
+              12.4.7
+            <span class="kss-title__permalink-hash">
+                #icon.avatar.7
+            </span>
+          </span>
+          Avatar-128
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <div class="avatar avatar--circle avatar-128"><div class="svg-icon icon-128 icon--anonymous-user"></div></div>
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-css" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-css">
+          <span class="kss-title__ref">
+              12.5
+            <span class="kss-title__permalink-hash">
+                #icon.css
+            </span>
+          </span>
+          Css icons
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Icon disc is a css made disc</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="icon-16 icon-disc [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-disc--purple
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="icon-16 icon-disc icon-disc--purple"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-disc--green
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="icon-16 icon-disc icon-disc--green"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-disc--blue
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="icon-16 icon-disc icon-disc--blue"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-disc--purple
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="icon-16 icon-disc icon-disc--purple"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;icon-16 icon-disc [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-custom" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-custom">
+          <span class="kss-title__ref">
+              12.6
+            <span class="kss-title__permalink-hash">
+                #icon.custom
+            </span>
+          </span>
+          Custom icons
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-custom.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-custom.1">
+          <span class="kss-title__ref">
+              12.6.1
+            <span class="kss-title__permalink-hash">
+                #icon.custom.1
+            </span>
+          </span>
+          Custom language
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Used with the custom-icon class and a icon-size class</p>
+<p>optimized icon size 32px</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .adobeair-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 adobeair-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .angular-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 angular-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .backbone-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 backbone-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cakephp-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 cakephp-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .coldfusion-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 coldfusion-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .django-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 django-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .dotnet-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 dotnet-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .drupal-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 drupal-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .ember-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 ember-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .go-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 go-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .googleappengine-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 googleappengine-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .java-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 java-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .javascript-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 javascript-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .laravel-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 laravel-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .nodejs-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 nodejs-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .php-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 php-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .play2-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 play2-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .python-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 python-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .scala-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 scala-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .unity3d-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 unity3d-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .windowsstore-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 windowsstore-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .wordpress-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 wordpress-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .xamarin-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 xamarin-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .windows8-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 windows8-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .windows-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 windows-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .ios-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 ios-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .android-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 android-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .rails-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 rails-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .aspnet-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 aspnet-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .aspnet2-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 aspnet2-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .nancy-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 nancy-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .unknown-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-32 unknown-icon"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;custom-icon icon-32 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-custom.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-custom.2">
+          <span class="kss-title__ref">
+              12.6.2
+            <span class="kss-title__permalink-hash">
+                #icon.custom.2
+            </span>
+          </span>
+          Custom form
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .radiounchecked-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 radiounchecked-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .radiochecked-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 radiochecked-icon"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;custom-icon icon-16 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-custom.3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-custom.3">
+          <span class="kss-title__ref">
+              12.6.3
+            <span class="kss-title__permalink-hash">
+                #icon.custom.3
+            </span>
+          </span>
+          Custom social media
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .twitter-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 twitter-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .dribbble-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 dribbble-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .facebook-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 facebook-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .linkedin-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 linkedin-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .github-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 github-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .googleplus-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 googleplus-icon"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;custom-icon icon-16 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-custom.4" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-custom.4">
+          <span class="kss-title__ref">
+              12.6.4
+            <span class="kss-title__permalink-hash">
+                #icon.custom.4
+            </span>
+          </span>
+          Custom browser
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .safari-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          descrioption
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 safari-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .opera-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          descrioption
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 opera-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .ie-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          descrioption
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 ie-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .ie8-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          descrioption
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 ie8-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .firefox-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          descrioption
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 firefox-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .chrome-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          descrioption
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 chrome-icon"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;custom-icon icon-16 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-custom.5" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-custom.5">
+          <span class="kss-title__ref">
+              12.6.5
+            <span class="kss-title__permalink-hash">
+                #icon.custom.5
+            </span>
+          </span>
+          Custom various
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .solidstar-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Star
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 solidstar-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .strokestar-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Star
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 strokestar-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .filter-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          filter
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 filter-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-integration
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-integration"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-last
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-last"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-first
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-first"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-new-window
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-new-window"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-emoji-sad
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-emoji-sad"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-emoji-average
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-emoji-average"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-emoji-happy
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-emoji-happy"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-warning
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-warning"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-bug
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-bug"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-beacon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-beacon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-performance-poor
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-performance-poor"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-performance-average
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-performance-average"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-performance-good
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-performance-good"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-video
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-video"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-audio
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-audio"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-file
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-file"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-document
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-document"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-timeline
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-timeline"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-source-code
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-source-code"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-font
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-font"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-flash
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-flash"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-installer
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-installer"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-image
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-image"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-television
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-television"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-checkbox-unchecked
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-checkbox-unchecked"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-checkbox-checked
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-checkbox-checked"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .unchecked-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 unchecked-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .checked-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 checked-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-box-cross
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-box-cross"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-box-plus
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-box-plus"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-loading
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-loading"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-error-data
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-error-data"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-every-platform
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-every-platform"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-real-time
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-real-time"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-smart-notifications
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-smart-notifications"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;custom-icon icon-16 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-custom.6" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-custom.6">
+          <span class="kss-title__ref">
+              12.6.6
+            <span class="kss-title__permalink-hash">
+                #icon.custom.6
+            </span>
+          </span>
+          Custom pulse
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-pulse
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-pulse"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-sessions
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-sessions"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-users
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-users"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-browsers-window
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-browsers-window"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-platforms-sad
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-platforms-sad"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-globe
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-16 icon-globe"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;custom-icon icon-16 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-custom.7" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-custom.7">
+          <span class="kss-title__ref">
+              12.6.7
+            <span class="kss-title__permalink-hash">
+                #icon.custom.7
+            </span>
+          </span>
+          Custom 56px
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Use with the .custom-icon class and the .size class.</p>
+<p>optimized icon size 56</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-56 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-graph
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-56 icon-graph"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-globe-2
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-56 icon-globe-2"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-health
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-56 icon-health"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-users-2
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-56 icon-users-2"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-monitors
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-56 icon-monitors"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-happy
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="custom-icon icon-56 icon-happy"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;custom-icon icon-56 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-flat" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-flat">
+          <span class="kss-title__ref">
+              12.7
+            <span class="kss-title__permalink-hash">
+                #icon.flat
+            </span>
+          </span>
+          Flat icons
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon [modifier class] icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-desktop
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-desktop icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-laptop
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-laptop icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-tablet
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-tablet icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-mobile
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-mobile icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-stopwatch
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-stopwatch icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .img-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon img-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .key-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon key-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .bell-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon bell-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .wrench-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon wrench-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .gauge-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon gauge-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .dashboard-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon dashboard-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .addapplication-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon addapplication-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .change-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon change-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .question-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon question-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .trashcan-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon trashcan-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .plan-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon plan-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .application-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon application-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .grid-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon grid-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .grid-large-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon grid-large-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .grid-square-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon grid-square-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .grid-square-large-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon grid-square-large-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .rows-square-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon rows-square-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .team-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon team-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .invoice-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon invoice-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .consumers-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon consumers-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .chain-angled-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon chain-angled-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .file-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon file-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .share-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon share-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .lock-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon lock-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .unlock-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon unlock-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .calendar-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon calendar-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .time-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon time-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .star-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon star-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .play-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon play-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .user-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon user-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .storage-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon storage-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .auditlog-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon auditlog-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .rewind-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon rewind-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .back-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon back-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .forward-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon forward-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .fast-forward-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon fast-forward-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .arrowleft-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon arrowleft-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .arrowright-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon arrowright-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .arrowup-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon arrowup-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .arrowdown-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon arrowdown-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .doublearrowleft-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon doublearrowleft-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .doublearrowright-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon doublearrowright-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .dropdown-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon dropdown-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .globe-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon globe-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .menu-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon menu-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .add-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon add-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .plus-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon plus-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .login-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon login-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .logout-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon logout-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .add-user-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon add-user-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .eye-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon eye-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .mask-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon mask-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .unmask-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon unmask-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .search-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon search-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-before.left-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-before left-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-before.circle-down-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-before circle-down-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .tshirt-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon tshirt-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-after.tshirt-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon icon-after tshirt-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cog-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon cog-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .settings-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon settings-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .plane-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon plane-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .plugins-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon plugins-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .refresh-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon refresh-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .comment-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon comment-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .comment-double-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon comment-double-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .expand-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon expand-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .download-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon download-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .edit-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon edit-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .map-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon map-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .i-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon i-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .light-bulb-1-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon light-bulb-1-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .light-bulb-2-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon light-bulb-2-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .save-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon save-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cross-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon cross-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cancel-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon cancel-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .remove-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon remove-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .close-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon close-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cross-circle-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon cross-circle-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cancel-circle-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon cancel-circle-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .remove-circle-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon remove-circle-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .close-circle-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon close-circle-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cross-square-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon cross-square-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cancel-square-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon cancel-square-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .remove-square-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon remove-square-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .close-square-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon close-square-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .pencil-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon pencil-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .infinity-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon infinity-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .invitation-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon invitation-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .clock-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon clock-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .email-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon email-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .feedback-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon feedback-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .compose-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon compose-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .description-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon description-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .setup-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon setup-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .link-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon link-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .warning-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon warning-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .tick-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon tick-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .infinity-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon infinity-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .application-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon application-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .nodes-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon nodes-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .plus-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon plus-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .minus-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon minus-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .minus-circle-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon minus-circle-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .minus-square-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon minus-square-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .draghandle-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon draghandle-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .view-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon view-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .time-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon time-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .app-audit-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon app-audit-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .plan-audit-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon plan-audit-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .aggregated-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon aggregated-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .aggregate-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon aggregate-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .grouped-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon grouped-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .clipboard-tick-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon clipboard-tick-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .clipboard-cross-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon clipboard-cross-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .clipboard-minus-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon clipboard-minus-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .clipboard-plus-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon clipboard-plus-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .error-summary-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon error-summary-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .error-details-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon error-details-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .error-request-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon error-request-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .error-environment-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon error-environment-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .error-custom-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon error-custom-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .error-raw-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon error-raw-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .resolved-error-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon resolved-error-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .ignored-error-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon ignored-error-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .permanently-ignored-error-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon permanently-ignored-error-icon icon-16"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .mute-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flat-icon mute-icon icon-16"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;flat-icon [modifier class] icon-16&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-loading" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-loading">
+          <span class="kss-title__ref">
+              12.8
+            <span class="kss-title__permalink-hash">
+                #icon.loading
+            </span>
+          </span>
+          Loading icons
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-loading.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-loading.1">
+          <span class="kss-title__ref">
+              12.8.1
+            <span class="kss-title__permalink-hash">
+                #icon.loading.1
+            </span>
+          </span>
+          Loading icon
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>This file needs to be better documented. What should be used and what not.</p>
+<p>Optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="loading-icon icon-16 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .loading-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="loading-icon icon-16 loading-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .loading-icon.is-animated
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Should maybe not be used more
+        </div>
+        <div class="kss-modifier__example">
+          <div class="loading-icon icon-16 loading-icon is-animated"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .is-spinning
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Should maybe not be used more
+        </div>
+        <div class="kss-modifier__example">
+          <div class="loading-icon icon-16 is-spinning"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .loading-icon--animate
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Maybe the better one
+        </div>
+        <div class="kss-modifier__example">
+          <div class="loading-icon icon-16 loading-icon--animate"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;loading-icon icon-16 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-product" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-product">
+          <span class="kss-title__ref">
+              12.9
+            <span class="kss-title__permalink-hash">
+                #icon.product
+            </span>
+          </span>
+          Product icons
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-product.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-product.1">
+          <span class="kss-title__ref">
+              12.9.1
+            <span class="kss-title__permalink-hash">
+                #icon.product.1
+            </span>
+          </span>
+          Product icon
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Optimized icon size ??</p>
+<p>Use with the product-icon class</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="product-icon icon-16 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .product-icon--pulse
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="product-icon icon-16 product-icon--pulse"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .product-icon--crash-reporting
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="product-icon icon-16 product-icon--crash-reporting"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;product-icon icon-16 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-svg" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-icon-svg">
+          <span class="kss-title__ref">
+              12.10
+            <span class="kss-title__permalink-hash">
+                #icon.svg
+            </span>
+          </span>
+          SVG icons
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-icon-svg.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-svg.1">
+          <span class="kss-title__ref">
+              12.10.1
+            <span class="kss-title__permalink-hash">
+                #icon.svg.1
+            </span>
+          </span>
+          SVG integration icons
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .visualstudioonline-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 visualstudioonline-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .webhook-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 webhook-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .hipchat-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 hipchat-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .heroku-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 heroku-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .campfire-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 campfire-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .youtrack-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 youtrack-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .github-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 github-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .fogbugz-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 fogbugz-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .trello-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 trello-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .sprintly-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 sprintly-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .jira-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 jira-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .jiraoauth-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 jiraoauth-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .bitbucket-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 bitbucket-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .pivotaltracker-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 pivotaltracker-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .slack-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 slack-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .flowdock-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 flowdock-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .bugherd-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 bugherd-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .kato-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 kato-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .lighthouse-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 lighthouse-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .asana-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 asana-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .intercom-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 intercom-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .octopus-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 octopus-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .bash-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 bash-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .powershell-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 powershell-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .powershell-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 powershell-icon"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .moxtra-icon
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="integration-icon icon-32 moxtra-icon"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;integration-icon icon-32 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-svg.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-svg.2">
+          <span class="kss-title__ref">
+              12.10.2
+            <span class="kss-title__permalink-hash">
+                #icon.svg.2
+            </span>
+          </span>
+          SVG browser icons
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Use with .svg-icon class and icon-size class</p>
+<p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-chrome
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-chrome"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-chromium
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-chromium"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-firefox
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-firefox"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-safari
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-safari"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-explorer
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-explorer"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-edge
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-edge"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-opera
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-opera"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;svg-icon icon-24 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-svg.3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-svg.3">
+          <span class="kss-title__ref">
+              12.10.3
+            <span class="kss-title__permalink-hash">
+                #icon.svg.3
+            </span>
+          </span>
+          SVG OS icons
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Use with .svg-icon class and icon-size class</p>
+<p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-android
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-android"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-mac
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-mac"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-ios
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-ios"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-osx
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-osx"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-windows95
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-windows95"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-windowsCE
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-windowsCE"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-windowsXP
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-windowsXP"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-windowsVista
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-windowsVista"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-windows7
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-windows7"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-windows8
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-windows8"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-windows81
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-windows81"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-windowsPhone
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-windowsPhone"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-linux
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-linux"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;svg-icon icon-24 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-svg.4" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-svg.4">
+          <span class="kss-title__ref">
+              12.10.4
+            <span class="kss-title__permalink-hash">
+                #icon.svg.4
+            </span>
+          </span>
+          SVG platform icons
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Use with .svg-icon class and icon-size class</p>
+<p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-blackberry
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-blackberry"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-bsd
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-bsd"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-centos
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-centos"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-debian
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-debian"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-fedora
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-fedora"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-symbian
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-symbian"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon-ubuntu
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon-ubuntu"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;svg-icon icon-24 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-icon-svg.5" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-icon-svg.5">
+          <span class="kss-title__ref">
+              12.10.5
+            <span class="kss-title__permalink-hash">
+                #icon.svg.5
+            </span>
+          </span>
+          SVG other icons
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Use with .svg-icon class and icon-size class</p>
+<p>optimized icon size ??</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 [modifier class]"></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .icon--anonymous-user
+        </div>
+        <div class="kss-modifier__description kss-style">
+          description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="svg-icon icon-24 icon--anonymous-user"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;svg-icon icon-24 [modifier class]&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

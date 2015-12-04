@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../style/kss-style.css">
+  <link rel="stylesheet" href="../style/screen.css" />
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <!-- <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header> -->
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">KSS Documentation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Naming Convension</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Test urls</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-button.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-center.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Center</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">8</span
+          ><span class="kss-nav__name">Colors</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-component.html">
+          <span class="kss-nav__ref">9</span
+          ><span class="kss-nav__name">Component</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-component.html#kssref-component-breadcrumb">
+                <span class="kss-nav__ref">9.1</span
+                ><span class="kss-nav__name">Breadcrumbs</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-component.html#kssref-component-loading">
+                <span class="kss-nav__ref">9.2</span
+                ><span class="kss-nav__name">Loading spinner</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-component.html#kssref-component-loading-region">
+                <span class="kss-nav__ref">9.3</span
+                ><span class="kss-nav__name">Loading region</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-component.html#kssref-component-message">
+                <span class="kss-nav__ref">9.4</span
+                ><span class="kss-nav__name">Message box</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-component.html#kssref-component-pagination">
+                <span class="kss-nav__ref">9.5</span
+                ><span class="kss-nav__name">Pagination</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-form.html">
+          <span class="kss-nav__ref">10</span
+          ><span class="kss-nav__name">Form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-grid.html">
+          <span class="kss-nav__ref">11</span
+          ><span class="kss-nav__name">Grid</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-icon.html">
+          <span class="kss-nav__ref">12</span
+          ><span class="kss-nav__name">Icons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-mixin.html">
+          <span class="kss-nav__ref">13</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-module.html">
+          <span class="kss-nav__ref">14</span
+          ><span class="kss-nav__name">Module</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pageheader.html">
+          <span class="kss-nav__ref">15</span
+          ><span class="kss-nav__name">Page header</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pagesetup.html">
+          <span class="kss-nav__ref">16</span
+          ><span class="kss-nav__name">Page Setup</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-table.html">
+          <span class="kss-nav__ref">17</span
+          ><span class="kss-nav__name">Tables</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-texticon.html">
+          <span class="kss-nav__ref">18</span
+          ><span class="kss-nav__name">Text-icon</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-toaster.html">
+          <span class="kss-nav__ref">19</span
+          ><span class="kss-nav__name">Toaster</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-type.html">
+          <span class="kss-nav__ref">20</span
+          ><span class="kss-nav__name">Type</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-typography.html">
+          <span class="kss-nav__ref">21</span
+          ><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-useful.html">
+          <span class="kss-nav__ref">22</span
+          ><span class="kss-nav__name">Useful classes</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-component" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-component">
+          <span class="kss-title__ref">
+              9
+            <span class="kss-title__permalink-hash">
+                #component
+            </span>
+          </span>
+          Component
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>A component is a mix of elemnts. E.g a drop down which is using a button and list style.</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-component-breadcrumb" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-component-breadcrumb">
+          <span class="kss-title__ref">
+              9.1
+            <span class="kss-title__permalink-hash">
+                #component.breadcrumb
+            </span>
+          </span>
+          Breadcrumbs
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Breadcrumbs are primarly used for navigation purposes when a back action is needed.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-component-breadcrumb.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-breadcrumb.1">
+          <span class="kss-title__ref">
+              9.1.1
+            <span class="kss-title__permalink-hash">
+                #component.breadcrumb.1
+            </span>
+          </span>
+          General
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Breadcrumbs have a max width of 33%, add a .text-ellipsis class to text inside so that is formats nicely
+Note that the last item is a p tag</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <ul class="breadcrumb clearfix">
+  <li>
+    <a href="#" class="text-ellipsis">
+      One
+      <span class="flat-icon icon-16 arrowright-icon"></span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="text-ellipsis">
+      Open
+      <span class="flat-icon icon-16 arrowright-icon"></span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="text-ellipsis">
+      Face
+      <span class="flat-icon icon-16 arrowright-icon"></span>
+    </a>
+  </li>
+  <li>
+    <p class="text-ellipsis">Sandwich</p>
+  </li>
+</ul>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;breadcrumb clearfix&quot;&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; class=&quot;text-ellipsis&quot;&gt;
+      One
+      &lt;span class=&quot;flat-icon icon-16 arrowright-icon&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; class=&quot;text-ellipsis&quot;&gt;
+      Open
+      &lt;span class=&quot;flat-icon icon-16 arrowright-icon&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; class=&quot;text-ellipsis&quot;&gt;
+      Face
+      &lt;span class=&quot;flat-icon icon-16 arrowright-icon&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p class=&quot;text-ellipsis&quot;&gt;Sandwich&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-breadcrumb.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-breadcrumb.2">
+          <span class="kss-title__ref">
+              9.1.2
+            <span class="kss-title__permalink-hash">
+                #component.breadcrumb.2
+            </span>
+          </span>
+          Heading breadcrumb
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Add .breadcrumb-heading class to the ul
+Also change the icon-size to .icon-32 from .icon-16</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <ul class="breadcrumb breadcrumb-heading clearfix">
+  <li>
+    <a href="#" class="text-ellipsis">One<span class="flat-icon icon-32 arrowright-icon"></span></a>
+  </li>
+  <li>
+    <a href="#" class="text-ellipsis">Open<span class="flat-icon icon-32 arrowright-icon"></span></a>
+  </li>
+  <li>
+    <a href="#" class="text-ellipsis">Face<span class="flat-icon icon-32 arrowright-icon"></span></a>
+  </li>
+  <li>
+    <p class="text-ellipsis">Sandwich</p>
+  </li>
+</ul>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;breadcrumb breadcrumb-heading clearfix&quot;&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; class=&quot;text-ellipsis&quot;&gt;One&lt;span class=&quot;flat-icon icon-32 arrowright-icon&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; class=&quot;text-ellipsis&quot;&gt;Open&lt;span class=&quot;flat-icon icon-32 arrowright-icon&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; class=&quot;text-ellipsis&quot;&gt;Face&lt;span class=&quot;flat-icon icon-32 arrowright-icon&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p class=&quot;text-ellipsis&quot;&gt;Sandwich&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-loading" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-component-loading">
+          <span class="kss-title__ref">
+              9.2
+            <span class="kss-title__permalink-hash">
+                #component.loading
+            </span>
+          </span>
+          Loading spinner
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="loading-raygun"></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;loading-raygun&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-loading-region" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-component-loading-region">
+          <span class="kss-title__ref">
+              9.3
+            <span class="kss-title__permalink-hash">
+                #component.loading-region
+            </span>
+          </span>
+          Loading region
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>The loading reggion will expand the loading area to it&#39;s chilldrens height.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module__body">
+ <div class="loading-region">
+  <div class="module-content module-content--padding-all">
+   <div style="height: 500px"> If this content expands or shrink the spinner will change with it.</div>
+  </div>
+  <div class="loading-container">
+   <div class="loading-raygun"></div>
+  </div>
+ </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module__body&quot;&gt;
+ &lt;div class=&quot;loading-region&quot;&gt;
+  &lt;div class=&quot;module-content module-content--padding-all&quot;&gt;
+   &lt;div style=&quot;height: 500px&quot;&gt; If this content expands or shrink the spinner will change with it.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;loading-container&quot;&gt;
+   &lt;div class=&quot;loading-raygun&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-message" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-component-message">
+          <span class="kss-title__ref">
+              9.4
+            <span class="kss-title__permalink-hash">
+                #component.message
+            </span>
+          </span>
+          Message box
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-component-message.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-message.1">
+          <span class="kss-title__ref">
+              9.4.1
+            <span class="kss-title__permalink-hash">
+                #component.message.1
+            </span>
+          </span>
+          Colors and and icons
+        </a>
+      </h3>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+              <article class="message-box is-blue">
+      <header class="message-box-header has-icon">
+        <span class="message-box-icon flat-icon icon-16 i-icon"></span>
+        <h1 class="message-box-headline">Information message</h1>
+      </header>
+      <div class="message-box-body">
+        <div class="message-box-text-container typography">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="message-box is-orange">
+      <header class="message-box-header has-icon">
+        <span class="message-box-icon flat-icon icon-16 warning-icon"></span>
+        <h1 class="message-box-headline">Warning / Alert / Pay attention</h1>
+      </header>
+      <div class="message-box-body">
+        <div class="message-box-text-container typography">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="message-box is-red">
+      <header class="message-box-header has-icon">
+        <span class="message-box-icon flat-icon icon-16 error-raw-icon"></span>
+        <h1 class="message-box-headline">Error / Something went wrong</h1>
+      </header>
+      <div class="message-box-body">
+        <div class="message-box-text-container typography">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="message-box is-green">
+      <header class="message-box-header has-icon">
+        <span class="message-box-icon flat-icon icon-16 save-icon"></span>
+        <h1 class="message-box-headline">Success</h1>
+      </header>
+      <div class="message-box-body">
+        <div class="message-box-text-container typography">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="message-box is-blue">
+      <header class="message-box-header has-icon">
+        <span class="message-box-icon flat-icon icon-16 wrench-icon"></span>
+        <h1 class="message-box-headline">Highlight a feature / New feature</h1>
+      </header>
+      <div class="message-box-body">
+        <div class="message-box-text-container typography">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="message-box is-light-blue">
+      <header class="message-box-header has-icon">
+        <span class="message-box-icon flat-icon icon-16 tshirt-icon"></span>
+        <h1 class="message-box-headline">Empty content / No data</h1>
+      </header>
+      <div class="message-box-body">
+        <div class="message-box-text-container typography">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          </p>
+        </div>
+      </div>
+    </article>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">    &lt;article class=&quot;message-box is-blue&quot;&gt;
+      &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+        &lt;span class=&quot;message-box-icon flat-icon icon-16 i-icon&quot;&gt;&lt;/span&gt;
+        &lt;h1 class=&quot;message-box-headline&quot;&gt;Information message&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;message-box-body&quot;&gt;
+        &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+          &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+
+
+    &lt;article class=&quot;message-box is-orange&quot;&gt;
+      &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+        &lt;span class=&quot;message-box-icon flat-icon icon-16 warning-icon&quot;&gt;&lt;/span&gt;
+        &lt;h1 class=&quot;message-box-headline&quot;&gt;Warning / Alert / Pay attention&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;message-box-body&quot;&gt;
+        &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+          &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+
+
+    &lt;article class=&quot;message-box is-red&quot;&gt;
+      &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+        &lt;span class=&quot;message-box-icon flat-icon icon-16 error-raw-icon&quot;&gt;&lt;/span&gt;
+        &lt;h1 class=&quot;message-box-headline&quot;&gt;Error / Something went wrong&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;message-box-body&quot;&gt;
+        &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+          &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+
+
+    &lt;article class=&quot;message-box is-green&quot;&gt;
+      &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+        &lt;span class=&quot;message-box-icon flat-icon icon-16 save-icon&quot;&gt;&lt;/span&gt;
+        &lt;h1 class=&quot;message-box-headline&quot;&gt;Success&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;message-box-body&quot;&gt;
+        &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+          &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+
+
+    &lt;article class=&quot;message-box is-blue&quot;&gt;
+      &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+        &lt;span class=&quot;message-box-icon flat-icon icon-16 wrench-icon&quot;&gt;&lt;/span&gt;
+        &lt;h1 class=&quot;message-box-headline&quot;&gt;Highlight a feature / New feature&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;message-box-body&quot;&gt;
+        &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+          &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+
+
+    &lt;article class=&quot;message-box is-light-blue&quot;&gt;
+      &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+        &lt;span class=&quot;message-box-icon flat-icon icon-16 tshirt-icon&quot;&gt;&lt;/span&gt;
+        &lt;h1 class=&quot;message-box-headline&quot;&gt;Empty content / No data&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;message-box-body&quot;&gt;
+        &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+          &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-message.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-message.2">
+          <span class="kss-title__ref">
+              9.4.2
+            <span class="kss-title__permalink-hash">
+                #component.message.2
+            </span>
+          </span>
+          Close
+        </a>
+      </h3>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <article class="message-box is-blue">
+  <header class="message-box-header has-icon">
+    <span class="message-box-icon flat-icon icon-16 i-icon"></span>
+    <h1 class="message-box-headline">Information message</h1>
+    <div class="message-box-close flat-icon icon-16 close-icon"></div>
+  </header>
+  <div class="message-box-body">
+    <div class="message-box-text-container typography">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+      </p>
+    </div>
+  </div>
+</article>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;article class=&quot;message-box is-blue&quot;&gt;
+  &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+    &lt;span class=&quot;message-box-icon flat-icon icon-16 i-icon&quot;&gt;&lt;/span&gt;
+    &lt;h1 class=&quot;message-box-headline&quot;&gt;Information message&lt;/h1&gt;
+    &lt;div class=&quot;message-box-close flat-icon icon-16 close-icon&quot;&gt;&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;message-box-body&quot;&gt;
+    &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-message.3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-message.3">
+          <span class="kss-title__ref">
+              9.4.3
+            <span class="kss-title__permalink-hash">
+                #component.message.3
+            </span>
+          </span>
+          In content - MEssage
+        </a>
+      </h3>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <article class="message-box is-grey in-content">
+  <header class="message-box-header">
+    <h1 class="message-box-headline">Uses the Raygun API?</h1>
+  </header>
+  <div class="message-box-body">
+    <div class="message-box-text-container typography">
+      <p>
+        Do you want to develop an application that uses the Raygun API?
+      </p>
+      <p>
+        Register an application to generate OAuth tokens.
+      </p>
+    </div>
+  </div>
+</article>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;article class=&quot;message-box is-grey in-content&quot;&gt;
+  &lt;header class=&quot;message-box-header&quot;&gt;
+    &lt;h1 class=&quot;message-box-headline&quot;&gt;Uses the Raygun API?&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;message-box-body&quot;&gt;
+    &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+      &lt;p&gt;
+        Do you want to develop an application that uses the Raygun API?
+      &lt;/p&gt;
+      &lt;p&gt;
+        Register an application to generate OAuth tokens.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-message.4" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-message.4">
+          <span class="kss-title__ref">
+              9.4.4
+            <span class="kss-title__permalink-hash">
+                #component.message.4
+            </span>
+          </span>
+          In content - MEssage + Icon
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Use with .is-grey and .in-content</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <article class="message-box is-grey in-content">
+  <header class="message-box-header has-icon">
+    <span class="message-box-icon flat-icon icon-16 i-icon"></span>
+    <h1 class="message-box-headline">Uses the Raygun API?</h1>
+  </header>
+  <div class="message-box-body has-icon">
+    <div class="message-box-text-container typography">
+      <p>
+        Do you want to develop an application that uses the Raygun API?
+      </p>
+      <p>
+        Register an application to generate OAuth tokens.
+      </p>
+    </div>
+  </div>
+</article>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;article class=&quot;message-box is-grey in-content&quot;&gt;
+  &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+    &lt;span class=&quot;message-box-icon flat-icon icon-16 i-icon&quot;&gt;&lt;/span&gt;
+    &lt;h1 class=&quot;message-box-headline&quot;&gt;Uses the Raygun API?&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;message-box-body has-icon&quot;&gt;
+    &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+      &lt;p&gt;
+        Do you want to develop an application that uses the Raygun API?
+      &lt;/p&gt;
+      &lt;p&gt;
+        Register an application to generate OAuth tokens.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-message.5" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-message.5">
+          <span class="kss-title__ref">
+              9.4.5
+            <span class="kss-title__permalink-hash">
+                #component.message.5
+            </span>
+          </span>
+          In content - Pay attention
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>NOTE! this will always have a warning icon</p>
+<p>.has-icon on both .message-box-header and .message-box-body</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <article class="message-box is-orange in-content">
+  <header class="message-box-header has-icon">
+    <span class="message-box-icon flat-icon icon-16 warning-icon"></span>
+    <h1 class="message-box-headline">Danger! Joker is getting closer</h1>
+  </header>
+  <div class="message-box-body has-icon">
+    <div class="message-box-text-container typography">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eius officiis perspiciatis aut veritatis excepturi.
+      </p>
+    </div>
+  </div>
+</article>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;article class=&quot;message-box is-orange in-content&quot;&gt;
+  &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+    &lt;span class=&quot;message-box-icon flat-icon icon-16 warning-icon&quot;&gt;&lt;/span&gt;
+    &lt;h1 class=&quot;message-box-headline&quot;&gt;Danger! Joker is getting closer&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;message-box-body has-icon&quot;&gt;
+    &lt;div class=&quot;message-box-text-container typography&quot;&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eius officiis perspiciatis aut veritatis excepturi.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-message.6" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-message.6">
+          <span class="kss-title__ref">
+              9.4.6
+            <span class="kss-title__permalink-hash">
+                #component.message.6
+            </span>
+          </span>
+          In content - Pay attention one line
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>NOTE! this will always have a warning icon</p>
+<p>.has-icon on header</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <article class="message-box is-orange in-content">
+  <header class="message-box-header has-icon">
+    <span class="message-box-icon flat-icon icon-16 warning-icon"></span>
+    <h1 class="message-box-headline">Danger! Joker is getting closer</h1>
+  </header>
+</article>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;article class=&quot;message-box is-orange in-content&quot;&gt;
+  &lt;header class=&quot;message-box-header has-icon&quot;&gt;
+    &lt;span class=&quot;message-box-icon flat-icon icon-16 warning-icon&quot;&gt;&lt;/span&gt;
+    &lt;h1 class=&quot;message-box-headline&quot;&gt;Danger! Joker is getting closer&lt;/h1&gt;
+  &lt;/header&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-component-pagination" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-component-pagination">
+          <span class="kss-title__ref">
+              9.5
+            <span class="kss-title__permalink-hash">
+                #component.pagination
+            </span>
+          </span>
+          Pagination
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-component-pagination.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-component-pagination.1">
+          <span class="kss-title__ref">
+              9.5.1
+            <span class="kss-title__permalink-hash">
+                #component.pagination.1
+            </span>
+          </span>
+          Pagination
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>It&#39;s many depricated paginations in the app. This is the one that shoule be used.</p>
+<p>Pagination should be right aligned. This is just one example of how to do it.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="clearfix">
+  <div class="float-right">
+    <a title="First" class="pagination-item js-paging-button" data-page="1"><span class="flat-icon icon-16 rewind-icon"></span></a>
+    <a title="Previous" class="pagination-item js-paging-button" data-page="1"><span class="flat-icon icon-16 back-icon"></span></a>
+    <a title="Go to page" class="pagination-item js-paging-button" data-page="1">1</a>
+    <span class="pagination-item pagination-item--active">2</span>
+    <a title="Go to page" class="pagination-item js-paging-button" data-page="3">3</a>
+    <a title="Go to page" class="pagination-item js-paging-button" data-page="4">4</a>
+    <a title="Go to page" class="pagination-item js-paging-button" data-page="5">5</a>
+    <a class="pagination-item js-paging-button" data-page="3"><span class="flat-icon icon-16 forward-icon"></span></a>
+    <a title="Last" class="pagination-item js-paging-button" data-page="13"><span class="flat-icon icon-16 fast-forward-icon"></span></a>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;clearfix&quot;&gt;
+  &lt;div class=&quot;float-right&quot;&gt;
+    &lt;a title=&quot;First&quot; class=&quot;pagination-item js-paging-button&quot; data-page=&quot;1&quot;&gt;&lt;span class=&quot;flat-icon icon-16 rewind-icon&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;a title=&quot;Previous&quot; class=&quot;pagination-item js-paging-button&quot; data-page=&quot;1&quot;&gt;&lt;span class=&quot;flat-icon icon-16 back-icon&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;a title=&quot;Go to page&quot; class=&quot;pagination-item js-paging-button&quot; data-page=&quot;1&quot;&gt;1&lt;/a&gt;
+    &lt;span class=&quot;pagination-item pagination-item--active&quot;&gt;2&lt;/span&gt;
+    &lt;a title=&quot;Go to page&quot; class=&quot;pagination-item js-paging-button&quot; data-page=&quot;3&quot;&gt;3&lt;/a&gt;
+    &lt;a title=&quot;Go to page&quot; class=&quot;pagination-item js-paging-button&quot; data-page=&quot;4&quot;&gt;4&lt;/a&gt;
+    &lt;a title=&quot;Go to page&quot; class=&quot;pagination-item js-paging-button&quot; data-page=&quot;5&quot;&gt;5&lt;/a&gt;
+    &lt;a class=&quot;pagination-item js-paging-button&quot; data-page=&quot;3&quot;&gt;&lt;span class=&quot;flat-icon icon-16 forward-icon&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;a title=&quot;Last&quot; class=&quot;pagination-item js-paging-button&quot; data-page=&quot;13&quot;&gt;&lt;span class=&quot;flat-icon icon-16 fast-forward-icon&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

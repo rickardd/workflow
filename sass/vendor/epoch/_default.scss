@@ -20,7 +20,7 @@ $background: #fff;
   }
 
   .outer-border {
-    stroke: $color-grey-lightest;
+    stroke: $color-grey-lighter;
     stroke-width: 1px;
     fill: none;
   }
@@ -68,23 +68,23 @@ $background: #fff;
   }
 
   rect.bar {
-    fill: $color-grey-light !important;
+    fill: $color-grey !important;
   }
 
   .start-dot {
     fill: $color-ember;
     stroke-width: 2px;
-    stroke: $background-color;
+    stroke: $color-grey;
   }
 
   .end-dot {
     fill: $color-azure;
     stroke-width: 2px;
-    stroke: $background-color;
+    stroke: $color-grey;
   }
 
   .tooltip-x {
-    fill: $color-grey-lighter;
+    fill: $color-grey;
   }
 }
 
@@ -121,12 +121,12 @@ $background: #fff;
 
     &.title text {
       font-size: 10px;
-      fill: $color-grey-lightest;
+      fill: $color-grey-lighter;
     }
 
     .tooltip-lighter {
       font-size: 11px;
-      fill: $color-grey-lighter;
+      fill: $color-grey-light;
     }
   }
 }

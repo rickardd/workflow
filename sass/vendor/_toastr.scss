@@ -1,3 +1,19 @@
+// Toaster
+//
+// The toast will have icons on the site.
+//
+// .toast-success - Success
+// .toast-error - Error
+// .toast-info - Info
+// .toast-warning - Warning
+//
+// Markup:
+// <div class="sg-module-example">
+//   <div class="toast-top-right"><div class="toast {{modifier_class}}"><div class="toast-message"><div class="header single"><h4>Message goes here...</h4></div></div></div></div>
+// </div>
+//
+// Styleguide toaster
+
 // custom toast styles
 .toast-message {
   background: 0;

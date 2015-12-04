@@ -1,8 +1,26 @@
-//---------------------------------------------------------------
-// Raygun Color Variables
-//---------------------------------------------------------------
+// Colors
+//
+// Colors is great for painting.
+//
+// Styleguide color
 
-// text-colors
+
+// Text color variables
+//
+// $text-black - description
+// $text-1 - description
+// $text-2 - description
+// $text-3 - description
+// $text-blue - description
+// $text-red - description
+// $text-green - description
+// $text-yellow - description
+// $text-purple - description
+// $text-grey - description
+// $text-grey-light - description
+//
+// Styleguide color.1
+
 $text-black: #333;
 $text-1:#333;
 $text-2:#666;
@@ -15,6 +33,13 @@ $text-purple:#8A4DC7;
 $text-grey: #808080;
 $text-grey-light: #bbb;
 
+
+// Other colors
+//
+// Markup: shared/kss-markup--colors.html
+//
+// Styleguide color.2
+
 // primary
 $white: #fff;
 $black: #000;
@@ -24,23 +49,17 @@ $background-color: #f1f1f1;
 $background-color-dark: #e1e1e1;
 $background-overlay: rgba(#444,0.8);
 
-// Shadows
-$box-shadow: 0 1px 2px rgba($black,0.1);
-$modal-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
-$header-shadow: 0 2px 1px rgba($black,0.15);
-$dropdown-shadow: 0 2px 12px rgba(0,0,0,0.2);
-
 // Primary Raygun Greys (use $color-grey-darkest // Jet DK instead of Black)
 $color-grey-darker: #bbb; // Jet MD
 $color-grey-dark: #cfcfcd; // Battleship
-$color-grey: #ddd; //#b6b6b4; // Silver DK
-$color-grey-light: #d8d8d8; // Silver MD // -- remove
+$color-grey: #d8d8d8; //#b6b6b4; // Silver DK
+$color-grey-light: #ddd; // Silver MD // -- remove
 $color-grey-lighter: #f1f1f1;//#dcdbdb;
 $color-grey-lightest: #fafafa;//#dddddd; // Silver LT -- should be background-1
 
 // border colors
 $color-border-dark: #bbb;
-$color-border: #d8d8d8;
+$color-border: #d3d3d3;//#ccc;
 $color-border-light: #efefef;
 $color-border-transparent: rgba(0,0,0,0.2);
 
@@ -71,7 +90,7 @@ $color-byzantine-highlight: rgba(#855eae,0.2);
 $color-ember-dark: #dc280a  ;
 $color-ember: #F73415  ;
 $color-ember-light: #fa5028  ;
-$color-ember-highlight: #fdd6d0;
+$color-ember-highlight: #fef0ef;
 
 // Unassigned
 $color-flame-dark: #fa610b  ;
@@ -82,7 +101,7 @@ $color-flame-light: #fb8c4c  ;
 $color-lightning-dark: #f4e216;
 $color-lightning: #ffc539;//#a97b53;
 $color-lightning-light: #f4e216;
-$color-lightning-highlight: #FFEBB7;//#fffae7;
+$color-lightning-highlight: #fff5db;//#FFEBB7;//#fffae7;
 
 // Call to Action Green
 $color-forest-dark: #00ad09  ;
@@ -102,3 +121,19 @@ $color-server-green: #00BB00;
 
 // ToDo: bar chart color: keep or replace? Used in bar-charts.
 $color-graph-blue: #3E88C7;
+
+
+
+// Shadow colors
+//
+// $box-shadow - description
+// $modal-shadow - description
+// $header-shadow - description
+// $dropdown-shadow - description
+//
+// Styleguide color.3
+
+$box-shadow: 0 1px 4px rgba($black,0.1);
+$modal-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+$header-shadow: 0 2px 1px rgba($black,0.15);
+$dropdown-shadow: 0 2px 12px rgba(0,0,0,0.2);

@@ -1,6 +1,6 @@
-// variables to remove 
+// todo: variables to remove
 $stats-width: 240px;
-// screen-widths 
+// screen-widths
 $screen-tablet: 960px;
 $screen-mobile: 640px;
 
@@ -14,11 +14,25 @@ $scrollbar-width: 20px;
 $screen-max: 1400px;
 $screen-med: 960px  +$scrollbar-width + $pre-sidebar;
 $screen-min: 840px  +$scrollbar-width + $pre-sidebar;
-$screen-mob: 640px; 
+$screen-mob: 640px;
 
+
+// Responsive breakpoints
+//
+// Use as @include $mixin
+//
+// $screen-max - Smaller than 1400px
+// $screen-min - Smaller than 840px
+// $mw-screen-min - Smaller than 840px
+// $screen-med - Smaller than 960px
+// $mw-screen-med - Bigger than 960px
+// $screen-mob - Smaller than 640px
+// $mw-screen-mob - Bigger than 640px
+//
+// Styleguide mixin.breakpoints
 
 // Medium Screens
-@mixin screen-med {
+@mixin screen-med { // Todo: duplicated mixin. Pull out
   @media screen and (max-width:$screen-med) {
     @content;
   }
@@ -51,6 +65,13 @@ $screen-mob: 640px;
     }
 }
 
+// Medium Screens and up
+@mixin mw-screen-med {
+    @media only screen and (min-width: ($screen-med + 1)) {
+        @content;
+    }
+}
+
 // Tiny Screens
 @mixin screen-mob {
     @media (max-width: $screen-mob) {
@@ -58,7 +79,7 @@ $screen-mob: 640px;
     }
 }
 
-// Tiny Screens
+// > Tiny Screens
 @mixin mw-screen-mob {
     @media (min-width: $screen-mob) {
         @content;

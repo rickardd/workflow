@@ -1,3 +1,27 @@
+// Component
+//
+// A component is a mix of elemnts. E.g a drop down which is using a button and list style.
+//
+// Styleguide component
+
+// Loading region
+//
+// The loading reggion will expand the loading area to it's chilldrens height.
+//
+// Markup:
+// <div class="module__body">
+//  <div class="loading-region">
+//   <div class="module-content module-content--padding-all">
+//    <div style="height: 500px"> If this content expands or shrink the spinner will change with it.</div>
+//   </div>
+//   <div class="loading-container">
+//    <div class="loading-raygun"></div>
+//   </div>
+//  </div>
+// </div>
+//
+// Styleguide component.loading-region
+
 .loading-region{
 	min-height: 160px;
   position: relative;

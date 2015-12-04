@@ -1,4 +1,22 @@
-// form validation styles
+// Form
+//
+// Styleguide form
+
+// Validation
+//
+// If used in a form add the class .form-validation together with the .validation-summary-errors to give it propper width
+//
+// Markup:
+// <div class="validation-summary-errors">
+//   <ul>
+//     <li>Validation feedback one</li>
+//     <li>Validation feedback two</li>
+//     <li>Validation feedback three</li>
+//   </ul>
+// </div>
+//
+// Styleguide form.validation
+
 
 .validation-summary-errors {
   margin: 0 0 24px;
@@ -16,7 +34,7 @@
   margin: 16px 0;
   padding: 8px;
   border-radius: 3px;
-  border: 1px solid $color-grey-lightest;
+  border: 1px solid $color-grey-lighter;
   background: $white;
   color: $color-ember;
 }

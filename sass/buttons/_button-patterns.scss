@@ -1,6 +1,6 @@
 // Button patterns
 //
-// Reprecated: This is broken stuff. Don't use it.
+// Depricated: This is broken stuff. Don't use it.
 //
 // Markup:
 // <div class="button-pattern button-pattern--cancel-submit">
@@ -13,11 +13,6 @@
 // </div>
 //
 // Styleguide 4.3
-
-
-
-// button patterns
-
 .button-pattern {
   position: relative;
 }
@@ -30,6 +25,12 @@
   position: absolute;
 }
 
+.button-pattern__button {
+  position: absolute;
+}
+.button-pattern__button--submit {}
+.button-pattern__button--cancel {}
+
 // pattern types
 // * .pattern-submit
 // * .pattern-cancel
@@ -37,16 +38,20 @@
 
 // submit only
 .pattern-submit {
+  position: relative;
   height: 36px;
 
-  .bp-submit {
+  .bp-submit,
+  .pattern-submit__submit {
+    position: absolute;
     top: 0;
     right: 0;
     width: 200px;
   }
 
   @include screen-mob {
-    .bp-submit {
+    .bp-submit,
+    .pattern-submit__submit  {
       position: static;
       width: 100%;
     }

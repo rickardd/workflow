@@ -1,4 +1,30 @@
-// Master name: page-header
+// Page header
+//
+// Styleguide pageheader
+
+
+// Basic
+//
+// The page container should have a center block within. See center section for more info.
+//
+// The .page-header has white background and a border bottom.
+//
+// .page-header__section--margin
+//
+// Markup:
+// <header class="page-header">
+//   <div class="center center-max">
+//     <div class="page-header__container">
+//       <div class="page-header__title">
+//         <h1 class="heading-size-3 text-ellipsis">Page header</h1>
+//       </div>
+//     </div>
+//   </div>
+// </header>
+//
+// Styleguide pageheader.1
+
+
 
 // container
 .page-header {
@@ -31,7 +57,47 @@
   position: relative;
 }
 
-// page header section
+
+// Sections
+//
+// Example of different sections and properties placed together.
+// .page-header__section
+// .page-header__section--margin
+// .page-header__section--datepicker
+// .header-section__datepicker
+// .page-header__section--button
+// .header-section__button
+//
+// Markup:
+// <header class="page-header">
+//   <div class="center center-max">
+//     <div class="page-header__container">
+//       <div class="page-header__section page-header__section--margin">
+//         <div class="page-header__title">
+//           <div class="kss-box kss-box--grey-1">
+//             <!-- Temporary kss box -->
+//             <h1 class="heading-size-3 text-bold text-ellipsis">Page header</h1>
+//           </div>
+//         </div>
+//         <div class="header-section__button ">
+//           <div class="kss-box kss-box--grey-3">
+//             <!-- Temporary kss box -->
+//             Button
+//           </div>
+//         </div>
+//       </div>
+//       <div class="page-header__section">
+//         <div class="kss-box kss-box--grey-4">
+//           <!-- Temporary kss box -->
+//           Navitaion
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </header>
+//
+// Styleguide pageheader.2
+
 .page-header__section {}
 .page-header__section--margin {
   margin-bottom: 4px;
@@ -60,6 +126,47 @@
 }
 
 
+
+// Pulse sections
+//
+// In order to place the datepicker right .page-header__section--pulse is required
+//
+// Markup:
+// <header class="page-header">
+//   <div class="center center-max">
+//     <div class="page-header__container">
+//       <div class="page-header__section page-header__section--margin page-header__section--pulse">
+//         <div class="page-header__title">
+//           <div class="kss-box kss-box--grey-1">
+//             <!-- Temporary kss box -->
+//             <h1 class="heading-size-3 text-bold text-ellipsis">Page header</h1>
+//           </div>
+//         </div>
+//         <div class="header-section__datepicker">
+//           <div class="kss-box kss-box--grey-2">
+//             <!-- Temporary kss box -->
+//             datepicker
+//           </div>
+//         </div>
+//         <div class="header-section__button ">
+//           <div class="kss-box kss-box--grey-3">
+//             <!-- Temporary kss box -->
+//             Button
+//           </div>
+//         </div>
+//       </div>
+//       <div class="page-header__section">
+//         <div class="kss-box kss-box--grey-4">
+//           <!-- Temporary kss box -->
+//           Navitaion
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </header>
+//
+// Styleguide pageheader.3
+
 .page-header__section--pulse {
   position: relative;
   padding-right: 366px;
@@ -77,7 +184,7 @@
   .header-section__datepicker {
     position: absolute;
     width: 320px;
-    right: 40px;
+    right: 48px;
     top: 0;
 
     @include screen-mob {
@@ -100,7 +207,7 @@
 }
 
 
-
+// Todo: add to styleguide
 // Subnavigation / breadcrumb
 .subnavigation {
   position: relative;

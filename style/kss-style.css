@@ -1,0 +1,669 @@
+#kss-node {
+  background-color: #f8f8f8;
+  background-image: none;
+  height: 100%; }
+  #kss-node .kss-main {
+    background-color: #f8f8f8;
+    margin-left: 280px;
+    padding-left: 40px;
+    width: 100%; }
+  #kss-node .kss-sidebar {
+    background-color: #f8f8f8;
+    color: #fff;
+    height: 100vh;
+    width: 280px;
+    padding-right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; }
+  #kss-node .kss-section {
+    background-color: #fff;
+    max-width: 960px;
+    margin: 24px 0;
+    padding: 24px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fafafa; }
+  #kss-node .kss-doc-title,
+  #kss-node .kss-nav,
+  #kss-node .kss-nav__menu,
+  #kss-node .kss-nav__ref,
+  #kss-node .kss-nav__name,
+  #kss-node .kss-nav__menu-item {
+    color: #333; }
+  #kss-node .kss-nav__menu {
+    margin-top: 24px; }
+  #kss-node .kss-nav {
+    margin-top: 0; }
+
+@-webkit-keyframes menu-item-hover {
+  from {
+    background-color: #fcfcfc; }
+  to {
+    background-color: #f8f8f8; } }
+
+@keyframes menu-item-hover {
+  from {
+    background-color: #fcfcfc; }
+  to {
+    background-color: #f8f8f8; } }
+  #kss-node .kss-nav__menu-item {
+    font-size: 14px; }
+    #kss-node .kss-nav__menu-item a {
+      display: block;
+      padding: 4px 4px 4px 8px;
+      border-left: 2px solid transparent; }
+      #kss-node .kss-nav__menu-item a:hover {
+        border-left: 2px solid #8a4dc7;
+        animation: menu-item-hover 1s ease; }
+  #kss-node .kss-nav__menu-child {
+    padding: 2px 0; }
+    #kss-node .kss-nav__menu-child li {
+      font-size: 12px; }
+      #kss-node .kss-nav__menu-child li a {
+        padding: 2px 4px 2px 22px; }
+    #kss-node .kss-nav__menu-child li:first-child,
+    #kss-node .kss-nav__menu-child li:last-child {
+      border: none;
+      padding: 0;
+      margin: 0; }
+  #kss-node .kss-description {
+    margin-top: 12px; }
+  #kss-node .kss-style p {
+    margin: 0 0 24px 0; }
+  #kss-node .kss-modifier__wrapper {
+    border: none;
+    padding: 0; }
+  #kss-node .kss-modifier__heading {
+    margin: 0 0 24px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-weight: bold; }
+  #kss-node .kss-markup {
+    margin: 24px 0 24px 0;
+    border: none; }
+  #kss-node .kss-markup pre,
+  #kss-node .kss-style pre {
+    overflow: auto;
+    border: 1px solid #bbb; }
+  #kss-node .kss-title__ref {
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    color: #888; }
+    #kss-node .kss-title__ref:before {
+      content: '';
+      display: none; }
+  #kss-node .kss-title__permalink:hover .kss-title__permalink-hash,
+  #kss-node .kss-title__permalink:focus .kss-title__permalink-hash,
+  #kss-node .kss-title__permalink:active .kss-title__permalink-hash {
+    display: none; }
+  #kss-node .kss-modifier__example {
+    border-bottom: 1px dashed #bbb;
+    padding-bottom: 12px; }
+  #kss-node .kss-style h1, #kss-node .kss-style h2, #kss-node .kss-style h3, #kss-node .kss-style h4, #kss-node .kss-style h5, #kss-node .kss-style h6 {
+    color: #333;
+    display: block;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0; }
+    #kss-node .kss-style h1 h1, #kss-node .kss-style h2 h1, #kss-node .kss-style h3 h1, #kss-node .kss-style h4 h1, #kss-node .kss-style h5 h1, #kss-node .kss-style h6 h1 {
+      font-size: 22px;
+      line-height: 22px; }
+    #kss-node .kss-style h1 h2, #kss-node .kss-style h2 h2, #kss-node .kss-style h3 h2, #kss-node .kss-style h4 h2, #kss-node .kss-style h5 h2, #kss-node .kss-style h6 h2 {
+      font-size: 20px; }
+    #kss-node .kss-style h1 h3, #kss-node .kss-style h2 h3, #kss-node .kss-style h3 h3, #kss-node .kss-style h4 h3, #kss-node .kss-style h5 h3, #kss-node .kss-style h6 h3 {
+      font-size: 18px; }
+    #kss-node .kss-style h1 h4, #kss-node .kss-style h2 h4, #kss-node .kss-style h3 h4, #kss-node .kss-style h4 h4, #kss-node .kss-style h5 h4, #kss-node .kss-style h6 h4 {
+      font-size: 16px; }
+  #kss-node .kss-markup pre,
+  #kss-node .kss-style pre {
+    border-color: #f8f8f8; }
+  #kss-node ol.linenums {
+    padding-bottom: 0; }
+  #kss-node .kss-overview .kss-banner {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    margin-bottom: 44px;
+    height: 160px; }
+  #kss-node .kss-overview .kss-brand-logo {
+    width: 100%;
+    height: 100%; }
+  #kss-node .kss-overview.kss-style h2 {
+    margin-bottom: 6px;
+    margin-top: 44px; }
+    #kss-node .kss-overview.kss-style h2:first-child {
+      margin-top: 0; }
+  #kss-node .kss-overview.kss-style p {
+    margin-bottom: 12px; }
+  #kss-node .kss-overview.kss-style pre {
+    margin-bottom: 12px; }
+  #kss-node .kss-overview.kss-style code {
+    border: none;
+    background-color: #333;
+    color: #fcfcfc;
+    width: 100%;
+    display: block;
+    padding: 2px 8px; }
+  #kss-node .kss-overview.kss-style ul {
+    list-style: disc;
+    margin: 0 0 12px 0; }
+    #kss-node .kss-overview.kss-style ul:last-child {
+      margin: 0; }
+
+.kss-background-list li {
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 50px; }
+
+.color-box {
+  height: 36px;
+  width: 36px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.color-hex:before {
+  content: 'code:'; }
+
+.color-var:before {
+  content: 'var:'; }
+
+.color-hex:before,
+.color-var:before {
+  font-size: 1.2rem;
+  color: #ddd;
+  display: inline-block;
+  width: 40px; }
+
+.color-hex:after,
+.color-var:after {
+  font-size: 1.2rem; }
+
+.kss-background-list .color-white .color-box {
+  background-color: #fff; }
+
+.kss-background-list .color-white .color-hex:after {
+  content: "#fff"; }
+
+.kss-background-list .color-white .color-var:after {
+  content: "$white"; }
+
+.kss-background-list .color-white .color-box {
+  border: 1px solid #d8d8d8; }
+
+.kss-background-list .color-black .color-box {
+  background-color: #000; }
+
+.kss-background-list .color-black .color-hex:after {
+  content: "#000"; }
+
+.kss-background-list .color-black .color-var:after {
+  content: "$black"; }
+
+.kss-background-list .color-background-color .color-box {
+  background-color: #f1f1f1; }
+
+.kss-background-list .color-background-color .color-hex:after {
+  content: "#f1f1f1"; }
+
+.kss-background-list .color-background-color .color-var:after {
+  content: "$background-color"; }
+
+.kss-background-list .color-background-color-dark .color-box {
+  background-color: #e1e1e1; }
+
+.kss-background-list .color-background-color-dark .color-hex:after {
+  content: "#e1e1e1"; }
+
+.kss-background-list .color-background-color-dark .color-var:after {
+  content: "$background-color-dark"; }
+
+.kss-background-list .color-background-overlay .color-box {
+  background-color: rgba(68, 68, 68, 0.8); }
+
+.kss-background-list .color-background-overlay .color-hex:after {
+  content: "rgba(68, 68, 68, 0.8)"; }
+
+.kss-background-list .color-background-overlay .color-var:after {
+  content: "$background-overlay"; }
+
+.kss-background-list .color-grey-darker .color-box {
+  background-color: #bbb; }
+
+.kss-background-list .color-grey-darker .color-hex:after {
+  content: "#bbb"; }
+
+.kss-background-list .color-grey-darker .color-var:after {
+  content: "$grey-darker"; }
+
+.kss-background-list .color-grey-dark .color-box {
+  background-color: #cfcfcd; }
+
+.kss-background-list .color-grey-dark .color-hex:after {
+  content: "#cfcfcd"; }
+
+.kss-background-list .color-grey-dark .color-var:after {
+  content: "$grey-dark"; }
+
+.kss-background-list .color-grey .color-box {
+  background-color: #d8d8d8; }
+
+.kss-background-list .color-grey .color-hex:after {
+  content: "#d8d8d8"; }
+
+.kss-background-list .color-grey .color-var:after {
+  content: "$grey"; }
+
+.kss-background-list .color-grey-light .color-box {
+  background-color: #ddd; }
+
+.kss-background-list .color-grey-light .color-hex:after {
+  content: "#ddd"; }
+
+.kss-background-list .color-grey-light .color-var:after {
+  content: "$grey-light"; }
+
+.kss-background-list .color-grey-lighter .color-box {
+  background-color: #f1f1f1; }
+
+.kss-background-list .color-grey-lighter .color-hex:after {
+  content: "#f1f1f1"; }
+
+.kss-background-list .color-grey-lighter .color-var:after {
+  content: "$grey-lighter"; }
+
+.kss-background-list .color-grey-lightest .color-box {
+  background-color: #fafafa; }
+
+.kss-background-list .color-grey-lightest .color-hex:after {
+  content: "#fafafa"; }
+
+.kss-background-list .color-grey-lightest .color-var:after {
+  content: "$grey-lightest"; }
+
+.kss-background-list .color-border-dark .color-box {
+  background-color: #bbb; }
+
+.kss-background-list .color-border-dark .color-hex:after {
+  content: "#bbb"; }
+
+.kss-background-list .color-border-dark .color-var:after {
+  content: "$border-dark"; }
+
+.kss-background-list .color-border .color-box {
+  background-color: #d3d3d3; }
+
+.kss-background-list .color-border .color-hex:after {
+  content: "#d3d3d3"; }
+
+.kss-background-list .color-border .color-var:after {
+  content: "$border"; }
+
+.kss-background-list .color-border-light .color-box {
+  background-color: #efefef; }
+
+.kss-background-list .color-border-light .color-hex:after {
+  content: "#efefef"; }
+
+.kss-background-list .color-border-light .color-var:after {
+  content: "$border-light"; }
+
+.kss-background-list .color-border-transparent .color-box {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.kss-background-list .color-border-transparent .color-hex:after {
+  content: "rgba(0, 0, 0, 0.2)"; }
+
+.kss-background-list .color-border-transparent .color-var:after {
+  content: "$border-transparent"; }
+
+.kss-background-list .color-stealth-darkest .color-box {
+  background-color: #262d3a; }
+
+.kss-background-list .color-stealth-darkest .color-hex:after {
+  content: "#262d3a"; }
+
+.kss-background-list .color-stealth-darkest .color-var:after {
+  content: "$stealth-darkest"; }
+
+.kss-background-list .color-stealth-dark .color-box {
+  background-color: #262d3a; }
+
+.kss-background-list .color-stealth-dark .color-hex:after {
+  content: "#262d3a"; }
+
+.kss-background-list .color-stealth-dark .color-var:after {
+  content: "$stealth-dark"; }
+
+.kss-background-list .color-stealth .color-box {
+  background-color: #303847; }
+
+.kss-background-list .color-stealth .color-hex:after {
+  content: "#303847"; }
+
+.kss-background-list .color-stealth .color-var:after {
+  content: "$stealth"; }
+
+.kss-background-list .color-stealth-light .color-box {
+  background-color: #5A606B; }
+
+.kss-background-list .color-stealth-light .color-hex:after {
+  content: "#5A606B"; }
+
+.kss-background-list .color-stealth-light .color-var:after {
+  content: "$stealth-light"; }
+
+.kss-background-list .color-alpine-dark .color-box {
+  background-color: #1499a6; }
+
+.kss-background-list .color-alpine-dark .color-hex:after {
+  content: "#1499a6"; }
+
+.kss-background-list .color-alpine-dark .color-var:after {
+  content: "$alpine-dark"; }
+
+.kss-background-list .color-alpine .color-box {
+  background-color: #1CB6C0; }
+
+.kss-background-list .color-alpine .color-hex:after {
+  content: "#1CB6C0"; }
+
+.kss-background-list .color-alpine .color-var:after {
+  content: "$alpine"; }
+
+.kss-background-list .color-alpine-light .color-box {
+  background-color: #62ccd4; }
+
+.kss-background-list .color-alpine-light .color-hex:after {
+  content: "#62ccd4"; }
+
+.kss-background-list .color-alpine-light .color-var:after {
+  content: "$alpine-light"; }
+
+.kss-background-list .color-azure-dark .color-box {
+  background-color: #0369d2; }
+
+.kss-background-list .color-azure-dark .color-hex:after {
+  content: "#0369d2"; }
+
+.kss-background-list .color-azure-dark .color-var:after {
+  content: "$azure-dark"; }
+
+.kss-background-list .color-azure .color-box {
+  background-color: #158FEF; }
+
+.kss-background-list .color-azure .color-hex:after {
+  content: "#158FEF"; }
+
+.kss-background-list .color-azure .color-var:after {
+  content: "$azure"; }
+
+.kss-background-list .color-azure-light .color-box {
+  background-color: #5eb2f4; }
+
+.kss-background-list .color-azure-light .color-hex:after {
+  content: "#5eb2f4"; }
+
+.kss-background-list .color-azure-light .color-var:after {
+  content: "$azure-light"; }
+
+.kss-background-list .color-azure-highlight .color-box {
+  background-color: #ecf4ff; }
+
+.kss-background-list .color-azure-highlight .color-hex:after {
+  content: "#ecf4ff"; }
+
+.kss-background-list .color-azure-highlight .color-var:after {
+  content: "$azure-highlight"; }
+
+.kss-background-list .color-byzantine-dark .color-box {
+  background-color: #511a8c; }
+
+.kss-background-list .color-byzantine-dark .color-hex:after {
+  content: "#511a8c"; }
+
+.kss-background-list .color-byzantine-dark .color-var:after {
+  content: "$byzantine-dark"; }
+
+.kss-background-list .color-byzantine .color-box {
+  background-color: #8a4dc7; }
+
+.kss-background-list .color-byzantine .color-hex:after {
+  content: "#8a4dc7"; }
+
+.kss-background-list .color-byzantine .color-var:after {
+  content: "$byzantine"; }
+
+.kss-background-list .color-byzantine-light .color-box {
+  background-color: #855eae; }
+
+.kss-background-list .color-byzantine-light .color-hex:after {
+  content: "#855eae"; }
+
+.kss-background-list .color-byzantine-light .color-var:after {
+  content: "$byzantine-light"; }
+
+.kss-background-list .color-byzantine-highlight .color-box {
+  background-color: rgba(133, 94, 174, 0.2); }
+
+.kss-background-list .color-byzantine-highlight .color-hex:after {
+  content: "rgba(133, 94, 174, 0.2)"; }
+
+.kss-background-list .color-byzantine-highlight .color-var:after {
+  content: "$byzantine-highlight"; }
+
+.kss-background-list .color-ember-dark .color-box {
+  background-color: #dc280a; }
+
+.kss-background-list .color-ember-dark .color-hex:after {
+  content: "#dc280a"; }
+
+.kss-background-list .color-ember-dark .color-var:after {
+  content: "$ember-dark"; }
+
+.kss-background-list .color-ember .color-box {
+  background-color: #F73415; }
+
+.kss-background-list .color-ember .color-hex:after {
+  content: "#F73415"; }
+
+.kss-background-list .color-ember .color-var:after {
+  content: "$ember"; }
+
+.kss-background-list .color-ember-light .color-box {
+  background-color: #fa5028; }
+
+.kss-background-list .color-ember-light .color-hex:after {
+  content: "#fa5028"; }
+
+.kss-background-list .color-ember-light .color-var:after {
+  content: "$ember-light"; }
+
+.kss-background-list .color-ember-highlight .color-box {
+  background-color: #fef0ef; }
+
+.kss-background-list .color-ember-highlight .color-hex:after {
+  content: "#fef0ef"; }
+
+.kss-background-list .color-ember-highlight .color-var:after {
+  content: "$ember-highlight"; }
+
+.kss-background-list .color-flame-dark .color-box {
+  background-color: #fa610b; }
+
+.kss-background-list .color-flame-dark .color-hex:after {
+  content: "#fa610b"; }
+
+.kss-background-list .color-flame-dark .color-var:after {
+  content: "$flame-dark"; }
+
+.kss-background-list .color-flame .color-box {
+  background-color: #FB7A31; }
+
+.kss-background-list .color-flame .color-hex:after {
+  content: "#FB7A31"; }
+
+.kss-background-list .color-flame .color-var:after {
+  content: "$flame"; }
+
+.kss-background-list .color-flame-light .color-box {
+  background-color: #fb8c4c; }
+
+.kss-background-list .color-flame-light .color-hex:after {
+  content: "#fb8c4c"; }
+
+.kss-background-list .color-flame-light .color-var:after {
+  content: "$flame-light"; }
+
+.kss-background-list .color-lightning-dark .color-box {
+  background-color: #f4e216; }
+
+.kss-background-list .color-lightning-dark .color-hex:after {
+  content: "#f4e216"; }
+
+.kss-background-list .color-lightning-dark .color-var:after {
+  content: "$lightning-dark"; }
+
+.kss-background-list .color-lightning .color-box {
+  background-color: #ffc539; }
+
+.kss-background-list .color-lightning .color-hex:after {
+  content: "#ffc539"; }
+
+.kss-background-list .color-lightning .color-var:after {
+  content: "$lightning"; }
+
+.kss-background-list .color-lightning-light .color-box {
+  background-color: #f4e216; }
+
+.kss-background-list .color-lightning-light .color-hex:after {
+  content: "#f4e216"; }
+
+.kss-background-list .color-lightning-light .color-var:after {
+  content: "$lightning-light"; }
+
+.kss-background-list .color-lightning-highlight .color-box {
+  background-color: #fff5db; }
+
+.kss-background-list .color-lightning-highlight .color-hex:after {
+  content: "#fff5db"; }
+
+.kss-background-list .color-lightning-highlight .color-var:after {
+  content: "$lightning-highlight"; }
+
+.kss-background-list .color-forest-dark .color-box {
+  background-color: #00ad09; }
+
+.kss-background-list .color-forest-dark .color-hex:after {
+  content: "#00ad09"; }
+
+.kss-background-list .color-forest-dark .color-var:after {
+  content: "$forest-dark"; }
+
+.kss-background-list .color-forest .color-box {
+  background-color: #1CC526; }
+
+.kss-background-list .color-forest .color-hex:after {
+  content: "#1CC526"; }
+
+.kss-background-list .color-forest .color-var:after {
+  content: "$forest"; }
+
+.kss-background-list .color-forest-light .color-box {
+  background-color: #46d04e; }
+
+.kss-background-list .color-forest-light .color-hex:after {
+  content: "#46d04e"; }
+
+.kss-background-list .color-forest-light .color-var:after {
+  content: "$forest-light"; }
+
+.kss-background-list .color-forest-highlight .color-box {
+  background-color: rgba(70, 208, 78, 0.2); }
+
+.kss-background-list .color-forest-highlight .color-hex:after {
+  content: "rgba(70, 208, 78, 0.2)"; }
+
+.kss-background-list .color-forest-highlight .color-var:after {
+  content: "$forest-highlight"; }
+
+.kss-background-list .color-lime-dark .color-box {
+  background-color: #609407; }
+
+.kss-background-list .color-lime-dark .color-hex:after {
+  content: "#609407"; }
+
+.kss-background-list .color-lime-dark .color-var:after {
+  content: "$lime-dark"; }
+
+.kss-background-list .color-azure-darker .color-box {
+  background-color: #0256AD; }
+
+.kss-background-list .color-azure-darker .color-hex:after {
+  content: "#0256AD"; }
+
+.kss-background-list .color-azure-darker .color-var:after {
+  content: "$azure-darker"; }
+
+.kss-background-list .color-gold .color-box {
+  background-color: #FFD700; }
+
+.kss-background-list .color-gold .color-hex:after {
+  content: "#FFD700"; }
+
+.kss-background-list .color-gold .color-var:after {
+  content: "$gold"; }
+
+.kss-background-list .color-opera-red .color-box {
+  background-color: #CC0F16; }
+
+.kss-background-list .color-opera-red .color-hex:after {
+  content: "#CC0F16"; }
+
+.kss-background-list .color-opera-red .color-var:after {
+  content: "$opera-red"; }
+
+.kss-background-list .color-dns-green .color-box {
+  background-color: #006600; }
+
+.kss-background-list .color-dns-green .color-hex:after {
+  content: "#006600"; }
+
+.kss-background-list .color-dns-green .color-var:after {
+  content: "$dns-green"; }
+
+.kss-background-list .color-server-green .color-box {
+  background-color: #00BB00; }
+
+.kss-background-list .color-server-green .color-hex:after {
+  content: "#00BB00"; }
+
+.kss-background-list .color-server-green .color-var:after {
+  content: "$server-green"; }
+
+.kss-box {
+  display: block;
+  min-height: 40px;
+  vertical-align: middle; }
+
+.kss-box--pink {
+  background-color: #FF7597; }
+
+.kss-box--grey-1 {
+  background-color: #f0f0f0; }
+
+.kss-box--grey-2 {
+  background-color: gainsboro; }
+
+.kss-box--grey-3 {
+  background-color: #c8c8c8; }
+
+.kss-box--grey-4 {
+  background-color: #b4b4b4; }
+
+/*# sourceMappingURL=kss-style.css.map */

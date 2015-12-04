@@ -1,3 +1,69 @@
+// Module-tabs
+//
+// Styleguide module.tabs
+
+// Module tabs
+//
+// Basic Tab Structure
+// Tabs sit atop a .module.module--white element
+//
+// Widths are automatic
+// Upto 5 tabs
+// Use text-hide classes such as .hide-mob on tab content elements to make responsive
+// States:
+//
+// The class .is-indent will indent the tabs 24px on either side.
+//
+// Tabs
+//
+// Tabs have two states:
+//
+// .is-active is the class to be added on the active tab
+// to change the color of a tab, add the state class .is-red to the .module-tab (colors include is-red,is-yellow,is-blue,is-green)
+//
+// Styleguide module.tabs.1
+
+
+// Module tabs - colors
+//
+// Markup:
+// <ul class="module-tabs clearfix">
+//   <li class="module-tab is-red">
+//     <span class="tab-content">
+//       <span class="tab-count is-red">12,456</span>
+//       <span class="tab-text">Active</span>
+//     </span>
+//   </li>
+//   <li class="module-tab is-blue is-active">
+//     <span class="tab-content">
+//       <span class="tab-count is-blue">12,456</span>
+//       <span class="tab-text">Resolved</span>
+//     </span>
+//   </li>
+//   <li class="module-tab is-green">
+//     <span class="tab-content">
+//       <span class="tab-count is-green">12,456</span>
+//       <span class="tab-text">Ignored</span>
+//     </span>
+//   </li>
+//   <li class="module-tab is-yellow">
+//     <span class="tab-content">
+//       <span class="tab-count is-yellow">12,456</span>
+//       <span class="tab-text">Perm ignored</span>
+//     </span>
+//   </li>
+// </ul>
+// <div class="module module--white">
+//   <div class="module__body">
+//     <div class="module-content--padding-all">
+//       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+//     </div>
+//   </div>
+// </div>
+//
+//
+// Styleguide module.tabs.2
+
 // tabs: sits above a .module
 .module-tabs {
   margin: 0 0 -1px;
@@ -11,7 +77,7 @@
   float: left;
   display: block;
   padding: 12px;
-  background: $color-grey-lightest;
+  background: $background-color-dark;
   border-top: 1px solid $color-border;
   border-right: 1px solid $color-border;
 

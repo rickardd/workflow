@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../style/kss-style.css">
+  <link rel="stylesheet" href="../style/screen.css" />
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <!-- <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header> -->
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">KSS Documentation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Naming Convension</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Test urls</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-button.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-center.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Center</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">8</span
+          ><span class="kss-nav__name">Colors</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-component.html">
+          <span class="kss-nav__ref">9</span
+          ><span class="kss-nav__name">Component</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-form.html">
+          <span class="kss-nav__ref">10</span
+          ><span class="kss-nav__name">Form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-grid.html">
+          <span class="kss-nav__ref">11</span
+          ><span class="kss-nav__name">Grid</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-icon.html">
+          <span class="kss-nav__ref">12</span
+          ><span class="kss-nav__name">Icons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-mixin.html">
+          <span class="kss-nav__ref">13</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-module.html">
+          <span class="kss-nav__ref">14</span
+          ><span class="kss-nav__name">Module</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-1">
+                <span class="kss-nav__ref">14.1</span
+                ><span class="kss-nav__name">Basic setup</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-2">
+                <span class="kss-nav__ref">14.2</span
+                ><span class="kss-nav__name">Module - colors</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-3">
+                <span class="kss-nav__ref">14.3</span
+                ><span class="kss-nav__name">Module__header</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-4">
+                <span class="kss-nav__ref">14.4</span
+                ><span class="kss-nav__name">Module__footer</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-activity">
+                <span class="kss-nav__ref">14.5</span
+                ><span class="kss-nav__name">Activity</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-chart">
+                <span class="kss-nav__ref">14.6</span
+                ><span class="kss-nav__name">Module-chart</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-content">
+                <span class="kss-nav__ref">14.7</span
+                ><span class="kss-nav__name">Module-content</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-header">
+                <span class="kss-nav__ref">14.8</span
+                ><span class="kss-nav__name">Module-header</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-layout">
+                <span class="kss-nav__ref">14.9</span
+                ><span class="kss-nav__name">Module-layout</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-sidebar">
+                <span class="kss-nav__ref">14.10</span
+                ><span class="kss-nav__name">Module-sidebar</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-module.html#kssref-module-tabs">
+                <span class="kss-nav__ref">14.11</span
+                ><span class="kss-nav__name">Module-tabs</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pageheader.html">
+          <span class="kss-nav__ref">15</span
+          ><span class="kss-nav__name">Page header</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pagesetup.html">
+          <span class="kss-nav__ref">16</span
+          ><span class="kss-nav__name">Page Setup</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-table.html">
+          <span class="kss-nav__ref">17</span
+          ><span class="kss-nav__name">Tables</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-texticon.html">
+          <span class="kss-nav__ref">18</span
+          ><span class="kss-nav__name">Text-icon</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-toaster.html">
+          <span class="kss-nav__ref">19</span
+          ><span class="kss-nav__name">Toaster</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-type.html">
+          <span class="kss-nav__ref">20</span
+          ><span class="kss-nav__name">Type</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-typography.html">
+          <span class="kss-nav__ref">21</span
+          ><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-useful.html">
+          <span class="kss-nav__ref">22</span
+          ><span class="kss-nav__name">Useful classes</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-module" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-module">
+          <span class="kss-title__ref">
+              14
+            <span class="kss-title__permalink-hash">
+                #module
+            </span>
+          </span>
+          Module
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Module is a container for basic content.</p>
+<p>.module--margin adds a margin beneath the module</p>
+<p>Modules are often combined with module-content blocks. Please navigate to module-content section for more info.</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-module-1" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-1">
+          <span class="kss-title__ref">
+              14.1
+            <span class="kss-title__permalink-hash">
+                #module.1
+            </span>
+          </span>
+          Basic setup
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <h1 class="heading-size-5">module header</h1>
+  </header>
+  <div class="module__body">
+    <div class="module-content module-content--padding-all">
+      content
+    </div>
+  </div>
+  <div class="module__footer module__footer--border">
+    content footer
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header module__header--grey&quot;&gt;
+    &lt;h1 class=&quot;heading-size-5&quot;&gt;module header&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;module__body&quot;&gt;
+    &lt;div class=&quot;module-content module-content--padding-all&quot;&gt;
+      content
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;module__footer module__footer--border&quot;&gt;
+    content footer
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-2" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-2">
+          <span class="kss-title__ref">
+              14.2
+            <span class="kss-title__permalink-hash">
+                #module.2
+            </span>
+          </span>
+          Module - colors
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module [modifier class]">
+ <div class="module-content module-content--padding-all">
+  content
+ </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module--white
+        </div>
+        <div class="kss-modifier__description kss-style">
+          White background color, box shadows and borders
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+ <div class="module-content module-content--padding-all">
+  content
+ </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module--grey
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Adds only grey background.
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--grey">
+ <div class="module-content module-content--padding-all">
+  content
+ </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module [modifier class]&quot;&gt;
+ &lt;div class=&quot;module-content module-content--padding-all&quot;&gt;
+  content
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-3" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-3">
+          <span class="kss-title__ref">
+              14.3
+            <span class="kss-title__permalink-hash">
+                #module.3
+            </span>
+          </span>
+          Module__header
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Should be used as a children to the module</p>
+<p>Standard header should have a h1 size 5.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header [modifier class]">
+    <h1 class="heading-size-5">module header</h1>
+  </header>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module__header--grey
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Grey background color.
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <h1 class="heading-size-5">module header</h1>
+  </header>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header [modifier class]&quot;&gt;
+    &lt;h1 class=&quot;heading-size-5&quot;&gt;module header&lt;/h1&gt;
+  &lt;/header&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-4" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-4">
+          <span class="kss-title__ref">
+              14.4
+            <span class="kss-title__permalink-hash">
+                #module.4
+            </span>
+          </span>
+          Module__footer
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Should be used as a children to the module</p>
+<p>NOTE! When use of border skip the padding at the bottom of the module-content. See separate section for more info. Otherwise it will be a big gap between content and footer.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-all">
+      content
+    </div>
+  </div>
+  <header class="module__footer [modifier class]">
+    footer content
+  </header>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module__footer--border
+        </div>
+        <div class="kss-modifier__description kss-style">
+          adds a border top
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-all">
+      content
+    </div>
+  </div>
+  <header class="module__footer module__footer--border">
+    footer content
+  </header>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module__footer--tight
+        </div>
+        <div class="kss-modifier__description kss-style">
+          A tighter padding top and bottom.
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-all">
+      content
+    </div>
+  </div>
+  <header class="module__footer module__footer--tight">
+    footer content
+  </header>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;div class=&quot;module__body&quot;&gt;
+    &lt;div class=&quot;module-content module-content--padding-all&quot;&gt;
+      content
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;header class=&quot;module__footer [modifier class]&quot;&gt;
+    footer content
+  &lt;/header&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-activity" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-activity">
+          <span class="kss-title__ref">
+              14.5
+            <span class="kss-title__permalink-hash">
+                #module.activity
+            </span>
+          </span>
+          Activity
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module-white">
+  <div class="module-activity is-grey">
+    <div class="ma-bar is-right is-[modifier class]"></div>
+    <div class="ma-avatar">
+      <span class="avatar avatar-32">
+        <img src="/Content/Images/icons/avatars/2.png">
+      </span>
+    </div>
+    <div class="ma-content">
+      <div class="typography">
+        <h4 class="heading-size-5">Activity <span class="text-[modifier class]">status</span> on September 11th 2015, 12:45:15</h4>
+      </div>
+    </div>
+    <ul class="ma-detail clearfix">
+      <li>3 months ago</li>
+    </ul>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .red
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Change both the .is-red and .text-red class
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module-white">
+  <div class="module-activity is-grey">
+    <div class="ma-bar is-right is-red"></div>
+    <div class="ma-avatar">
+      <span class="avatar avatar-32">
+        <img src="/Content/Images/icons/avatars/2.png">
+      </span>
+    </div>
+    <div class="ma-content">
+      <div class="typography">
+        <h4 class="heading-size-5">Activity <span class="text-red">status</span> on September 11th 2015, 12:45:15</h4>
+      </div>
+    </div>
+    <ul class="ma-detail clearfix">
+      <li>3 months ago</li>
+    </ul>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .green
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Change both the .is-green and .text-green class
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module-white">
+  <div class="module-activity is-grey">
+    <div class="ma-bar is-right is-green"></div>
+    <div class="ma-avatar">
+      <span class="avatar avatar-32">
+        <img src="/Content/Images/icons/avatars/2.png">
+      </span>
+    </div>
+    <div class="ma-content">
+      <div class="typography">
+        <h4 class="heading-size-5">Activity <span class="text-green">status</span> on September 11th 2015, 12:45:15</h4>
+      </div>
+    </div>
+    <ul class="ma-detail clearfix">
+      <li>3 months ago</li>
+    </ul>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .yellow
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Change both the .is-yellow and .text-yellow class
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module-white">
+  <div class="module-activity is-grey">
+    <div class="ma-bar is-right is-yellow"></div>
+    <div class="ma-avatar">
+      <span class="avatar avatar-32">
+        <img src="/Content/Images/icons/avatars/2.png">
+      </span>
+    </div>
+    <div class="ma-content">
+      <div class="typography">
+        <h4 class="heading-size-5">Activity <span class="text-yellow">status</span> on September 11th 2015, 12:45:15</h4>
+      </div>
+    </div>
+    <ul class="ma-detail clearfix">
+      <li>3 months ago</li>
+    </ul>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module-white&quot;&gt;
+  &lt;div class=&quot;module-activity is-grey&quot;&gt;
+    &lt;div class=&quot;ma-bar is-right is-[modifier class]&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;ma-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-32&quot;&gt;
+        &lt;img src=&quot;/Content/Images/icons/avatars/2.png&quot;&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ma-content&quot;&gt;
+      &lt;div class=&quot;typography&quot;&gt;
+        &lt;h4 class=&quot;heading-size-5&quot;&gt;Activity &lt;span class=&quot;text-[modifier class]&quot;&gt;status&lt;/span&gt; on September 11th 2015, 12:45:15&lt;/h4&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;ma-detail clearfix&quot;&gt;
+      &lt;li&gt;3 months ago&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-chart" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-chart">
+          <span class="kss-title__ref">
+              14.6
+            <span class="kss-title__permalink-hash">
+                #module.chart
+            </span>
+          </span>
+          Module-chart
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Use inside .module-layout<strong>item.module-layout</strong>item--chart</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <h4 class="heading-size-5">Module header</h4>
+  </header>
+  <div class="module-layout">
+    <div class="module-layout__item module-layout__item--chart">
+      <div class="module-chart">
+        <div class="module-chart__chart">
+          <div class="kss-box kss-box--pink">
+            Chart goes here...
+            <!-- Temporary kss box -->
+          </div>
+        </div>
+        <div class="module-chart__key">
+          <ul class="chart-tags clearfix">
+            <li>
+              <span class="chart-tag tag-purple-light"></span>
+              Item 1
+            </li>
+            <li>
+              <span class="chart-tag tag-purple-dark"></span>
+              Item 2
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="module-layout__item module-layout__item--320 ">
+      <!-- Right layout item -->
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header module__header--grey&quot;&gt;
+    &lt;h4 class=&quot;heading-size-5&quot;&gt;Module header&lt;/h4&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;module-layout&quot;&gt;
+    &lt;div class=&quot;module-layout__item module-layout__item--chart&quot;&gt;
+      &lt;div class=&quot;module-chart&quot;&gt;
+        &lt;div class=&quot;module-chart__chart&quot;&gt;
+          &lt;div class=&quot;kss-box kss-box--pink&quot;&gt;
+            Chart goes here...
+            &lt;!-- Temporary kss box --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;module-chart__key&quot;&gt;
+          &lt;ul class=&quot;chart-tags clearfix&quot;&gt;
+            &lt;li&gt;
+              &lt;span class=&quot;chart-tag tag-purple-light&quot;&gt;&lt;/span&gt;
+              Item 1
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span class=&quot;chart-tag tag-purple-dark&quot;&gt;&lt;/span&gt;
+              Item 2
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;module-layout__item module-layout__item--320 &quot;&gt;
+      &lt;!-- Right layout item --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-content" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-content">
+          <span class="kss-title__ref">
+              14.7
+            <span class="kss-title__permalink-hash">
+                #module.content
+            </span>
+          </span>
+          Module-content
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A generic container. Often used within a module container but can be used anywhere.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-module-content.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-module-content.1">
+          <span class="kss-title__ref">
+              14.7.1
+            <span class="kss-title__permalink-hash">
+                #module.content.1
+            </span>
+          </span>
+          Module-content - Spacing
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Has 7 spacing properties. By defalut 24px on full screen. It&#39;s responsive padding.
+All padding-propperties has a tight version with is 16px.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content [modifier class]">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-all
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding on all sides
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-all">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-all-tight
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding on all sides
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-all-tight">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-top
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding top
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-top">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-top-tight
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding top
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-top-tight">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-right
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding to the right
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-right">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-right-tight
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding to the right
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-right-tight">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-bottom
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding bottom
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-bottom">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-bottom-tight
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding bottom
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-bottom-tight">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-left
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding left
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-left">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-left-tight
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Padding left
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-left-tight">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-vertical
+        </div>
+        <div class="kss-modifier__description kss-style">
+          padding top and bottom
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-vertical">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-vertical-tight
+        </div>
+        <div class="kss-modifier__description kss-style">
+          padding top and bottom
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-vertical-tight">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-horizontal
+        </div>
+        <div class="kss-modifier__description kss-style">
+          padding left and right
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-horizontal">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content--padding-horizontal-tight
+        </div>
+        <div class="kss-modifier__description kss-style">
+          padding left and right
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-horizontal-tight">
+      <div style="background-color: #f1f1f1">Lorem ipsum dolor sit amet</div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;div class=&quot;module__body&quot;&gt;
+    &lt;div class=&quot;module-content [modifier class]&quot;&gt;
+      &lt;div style=&quot;background-color: #f1f1f1&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-content.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-module-content.2">
+          <span class="kss-title__ref">
+              14.7.2
+            <span class="kss-title__permalink-hash">
+                #module.content.2
+            </span>
+          </span>
+          Module-content - Header
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>module-content also has an header. It&#39;s great if you want to have section withing e.g a module.
+Use in combination with heading-size-5.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-all">
+      <div class="[modifier class]">
+        <hi class="heading-size-5">module content header example</h1>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-content__header
+        </div>
+        <div class="kss-modifier__description kss-style">
+          the header wrapper class
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <div class="module__body">
+    <div class="module-content module-content--padding-all">
+      <div class="module-content__header">
+        <hi class="heading-size-5">module content header example</h1>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;div class=&quot;module__body&quot;&gt;
+    &lt;div class=&quot;module-content module-content--padding-all&quot;&gt;
+      &lt;div class=&quot;[modifier class]&quot;&gt;
+        &lt;hi class=&quot;heading-size-5&quot;&gt;module content header example&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-header" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-header">
+          <span class="kss-title__ref">
+              14.8
+            <span class="kss-title__permalink-hash">
+                #module.header
+            </span>
+          </span>
+          Module-header
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Use to combine components and titles in module headers</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-module-header.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-module-header.1">
+          <span class="kss-title__ref">
+              14.8.1
+            <span class="kss-title__permalink-hash">
+                #module.header.1
+            </span>
+          </span>
+          Module-header title
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Just title</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <div class="module-header-title">
+        <h4 class="heading-size-5">Header goes here...</h4>
+    </div>
+  </header>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header module__header--grey&quot;&gt;
+    &lt;div class=&quot;module-header-title&quot;&gt;
+        &lt;h4 class=&quot;heading-size-5&quot;&gt;Header goes here...&lt;/h4&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-header.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-module-header.2">
+          <span class="kss-title__ref">
+              14.8.2
+            <span class="kss-title__permalink-hash">
+                #module.header.2
+            </span>
+          </span>
+          Module-header checkbox
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Title and Checkbox</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <div class="module-header-checkbox">
+      <div class="module-header-checkbox__title">
+        <h4 class="heading-size-5">Header goes here...</h4>
+      </div>
+      <div class="module-header-checkbox__checkbox">
+        <label class="checkbox-control">
+          <span class="solo-checkbox">
+            <input type="checkbox" class="js-anonusers" checked="">
+            <span class="custom-icon icon-16 checkbox-icon"></span>
+          </span>
+          Something to tick
+        </label>
+      </div>
+    </div>
+  </div>
+</header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header module__header--grey&quot;&gt;
+    &lt;div class=&quot;module-header-checkbox&quot;&gt;
+      &lt;div class=&quot;module-header-checkbox__title&quot;&gt;
+        &lt;h4 class=&quot;heading-size-5&quot;&gt;Header goes here...&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;module-header-checkbox__checkbox&quot;&gt;
+        &lt;label class=&quot;checkbox-control&quot;&gt;
+          &lt;span class=&quot;solo-checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; class=&quot;js-anonusers&quot; checked=&quot;&quot;&gt;
+            &lt;span class=&quot;custom-icon icon-16 checkbox-icon&quot;&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          Something to tick
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-header.3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-module-header.3">
+          <span class="kss-title__ref">
+              14.8.3
+            <span class="kss-title__permalink-hash">
+                #module.header.3
+            </span>
+          </span>
+          Module-header button
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Title and Button</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <div class="module-header-button">
+      <div class="module-header-button__title">
+        <h4 class="heading-size-5">Title goes here...</h4>
+      </div>
+      <div class="module-header-button__button">
+          <a class="button button-32 button-blue text-bold">Button...</a>
+      </div>
+    </div>
+  </header>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header module__header--grey&quot;&gt;
+    &lt;div class=&quot;module-header-button&quot;&gt;
+      &lt;div class=&quot;module-header-button__title&quot;&gt;
+        &lt;h4 class=&quot;heading-size-5&quot;&gt;Title goes here...&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;module-header-button__button&quot;&gt;
+          &lt;a class=&quot;button button-32 button-blue text-bold&quot;&gt;Button...&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-header.4" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-module-header.4">
+          <span class="kss-title__ref">
+              14.8.4
+            <span class="kss-title__permalink-hash">
+                #module.header.4
+            </span>
+          </span>
+          Module-header settings
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Title and Settings cog</p>
+<p>To make the</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <div class="module-header-setting">
+      <div class="module-header-setting__title">
+        <h4 class="heading-size-5">Average load times distribution</h4>
+      </div>
+      <div class="module-header-setting__button">
+        <div class="dropdown2 js-option-button-container">
+          <div class="dropdown2__button">
+            <div class="header-settings__button js-dropdown-button">
+              <span class="flat-icon icon-16 cog-icon"></span>
+            </div>
+          </div>
+            <!-- Drop down goes here. Toggle with javascript -->
+          </div>
+        </div>
+      </div>
+  </header>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header module__header--grey&quot;&gt;
+    &lt;div class=&quot;module-header-setting&quot;&gt;
+      &lt;div class=&quot;module-header-setting__title&quot;&gt;
+        &lt;h4 class=&quot;heading-size-5&quot;&gt;Average load times distribution&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;module-header-setting__button&quot;&gt;
+        &lt;div class=&quot;dropdown2 js-option-button-container&quot;&gt;
+          &lt;div class=&quot;dropdown2__button&quot;&gt;
+            &lt;div class=&quot;header-settings__button js-dropdown-button&quot;&gt;
+              &lt;span class=&quot;flat-icon icon-16 cog-icon&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;!-- Drop down goes here. Toggle with javascript --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-layout" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-layout">
+          <span class="kss-title__ref">
+              14.9
+            <span class="kss-title__permalink-hash">
+                #module.layout
+            </span>
+          </span>
+          Module-layout
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <h4 class="heading-size-5">Module header</h4>
+  </header>
+  <div class="module-layout">
+    <div class="module-layout__item">
+    <!-- Content goes here -->
+    </div>
+    <div class="module-layout__item [modifier class]">
+      <div class="kss-box">
+        <!-- Temporary styleguide box -->
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-layout__item--320
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <h4 class="heading-size-5">Module header</h4>
+  </header>
+  <div class="module-layout">
+    <div class="module-layout__item">
+    <!-- Content goes here -->
+    </div>
+    <div class="module-layout__item module-layout__item--320">
+      <div class="kss-box">
+        <!-- Temporary styleguide box -->
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .module-layout__item--400
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <h4 class="heading-size-5">Module header</h4>
+  </header>
+  <div class="module-layout">
+    <div class="module-layout__item">
+    <!-- Content goes here -->
+    </div>
+    <div class="module-layout__item module-layout__item--400">
+      <div class="kss-box">
+        <!-- Temporary styleguide box -->
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header module__header--grey&quot;&gt;
+    &lt;h4 class=&quot;heading-size-5&quot;&gt;Module header&lt;/h4&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;module-layout&quot;&gt;
+    &lt;div class=&quot;module-layout__item&quot;&gt;
+    &lt;!-- Content goes here --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;module-layout__item [modifier class]&quot;&gt;
+      &lt;div class=&quot;kss-box&quot;&gt;
+        &lt;!-- Temporary styleguide box --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-sidebar" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-sidebar">
+          <span class="kss-title__ref">
+              14.10
+            <span class="kss-title__permalink-hash">
+                #module.sidebar
+            </span>
+          </span>
+          Module-sidebar
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Module-sidebar is un item that should be placed inside a module-layout__item.</p>
+<p>The sidebar has sections and sections headers.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="module module--white">
+  <header class="module__header module__header--grey">
+    <h4 class="heading-size-5">Module header</h4>
+  </header>
+  <div class="module-layout">
+    <div class="module-layout__item module-layout__item--chart">
+      <!-- Chart goes here -->
+    </div>
+    <div class="module-layout__item module-layout__item--320">
+      <div class="module-sidebar">
+        <div class="module-sidebar__section">
+          <div class="module-sidebar__header">Sidebar Header</div>
+          <div class="graph-block-number__value">Sidebar Value</div>
+        </div>
+        <div class="module-sidebar__section">
+          <div class="module-sidebar__header">Sidebar Header</div>
+          <div class="graph-block-number__value">Sidebar Value</div>
+        </div>
+        <div class="module-sidebar__section">
+          <div class="module-sidebar__header">Sidebar Header</div>
+          <div class="graph-block-number__value">Sidebar Value</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;header class=&quot;module__header module__header--grey&quot;&gt;
+    &lt;h4 class=&quot;heading-size-5&quot;&gt;Module header&lt;/h4&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;module-layout&quot;&gt;
+    &lt;div class=&quot;module-layout__item module-layout__item--chart&quot;&gt;
+      &lt;!-- Chart goes here --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;module-layout__item module-layout__item--320&quot;&gt;
+      &lt;div class=&quot;module-sidebar&quot;&gt;
+        &lt;div class=&quot;module-sidebar__section&quot;&gt;
+          &lt;div class=&quot;module-sidebar__header&quot;&gt;Sidebar Header&lt;/div&gt;
+          &lt;div class=&quot;graph-block-number__value&quot;&gt;Sidebar Value&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;module-sidebar__section&quot;&gt;
+          &lt;div class=&quot;module-sidebar__header&quot;&gt;Sidebar Header&lt;/div&gt;
+          &lt;div class=&quot;graph-block-number__value&quot;&gt;Sidebar Value&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;module-sidebar__section&quot;&gt;
+          &lt;div class=&quot;module-sidebar__header&quot;&gt;Sidebar Header&lt;/div&gt;
+          &lt;div class=&quot;graph-block-number__value&quot;&gt;Sidebar Value&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-module-tabs" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-module-tabs">
+          <span class="kss-title__ref">
+              14.11
+            <span class="kss-title__permalink-hash">
+                #module.tabs
+            </span>
+          </span>
+          Module-tabs
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-module-tabs.1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-module-tabs.1">
+          <span class="kss-title__ref">
+              14.11.1
+            <span class="kss-title__permalink-hash">
+                #module.tabs.1
+            </span>
+          </span>
+          Module tabs
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Basic Tab Structure
+Tabs sit atop a .module.module--white element</p>
+<p>Widths are automatic
+Upto 5 tabs
+Use text-hide classes such as .hide-mob on tab content elements to make responsive
+States:</p>
+<p>The class .is-indent will indent the tabs 24px on either side.</p>
+<p>Tabs</p>
+<p>Tabs have two states:</p>
+<p>.is-active is the class to be added on the active tab
+to change the color of a tab, add the state class .is-red to the .module-tab (colors include is-red,is-yellow,is-blue,is-green)</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-module-tabs.2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-module-tabs.2">
+          <span class="kss-title__ref">
+              14.11.2
+            <span class="kss-title__permalink-hash">
+                #module.tabs.2
+            </span>
+          </span>
+          Module tabs - colors
+        </a>
+      </h3>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <ul class="module-tabs clearfix">
+  <li class="module-tab is-red">
+    <span class="tab-content">
+      <span class="tab-count is-red">12,456</span>
+      <span class="tab-text">Active</span>
+    </span>
+  </li>
+  <li class="module-tab is-blue is-active">
+    <span class="tab-content">
+      <span class="tab-count is-blue">12,456</span>
+      <span class="tab-text">Resolved</span>
+    </span>
+  </li>
+  <li class="module-tab is-green">
+    <span class="tab-content">
+      <span class="tab-count is-green">12,456</span>
+      <span class="tab-text">Ignored</span>
+    </span>
+  </li>
+  <li class="module-tab is-yellow">
+    <span class="tab-content">
+      <span class="tab-count is-yellow">12,456</span>
+      <span class="tab-text">Perm ignored</span>
+    </span>
+  </li>
+</ul>
+<div class="module module--white">
+  <div class="module__body">
+    <div class="module-content--padding-all">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;module-tabs clearfix&quot;&gt;
+  &lt;li class=&quot;module-tab is-red&quot;&gt;
+    &lt;span class=&quot;tab-content&quot;&gt;
+      &lt;span class=&quot;tab-count is-red&quot;&gt;12,456&lt;/span&gt;
+      &lt;span class=&quot;tab-text&quot;&gt;Active&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;module-tab is-blue is-active&quot;&gt;
+    &lt;span class=&quot;tab-content&quot;&gt;
+      &lt;span class=&quot;tab-count is-blue&quot;&gt;12,456&lt;/span&gt;
+      &lt;span class=&quot;tab-text&quot;&gt;Resolved&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;module-tab is-green&quot;&gt;
+    &lt;span class=&quot;tab-content&quot;&gt;
+      &lt;span class=&quot;tab-count is-green&quot;&gt;12,456&lt;/span&gt;
+      &lt;span class=&quot;tab-text&quot;&gt;Ignored&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;module-tab is-yellow&quot;&gt;
+    &lt;span class=&quot;tab-content&quot;&gt;
+      &lt;span class=&quot;tab-count is-yellow&quot;&gt;12,456&lt;/span&gt;
+      &lt;span class=&quot;tab-text&quot;&gt;Perm ignored&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;module module--white&quot;&gt;
+  &lt;div class=&quot;module__body&quot;&gt;
+    &lt;div class=&quot;module-content--padding-all&quot;&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

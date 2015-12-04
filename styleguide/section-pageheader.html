@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../style/kss-style.css">
+  <link rel="stylesheet" href="../style/screen.css" />
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <!-- <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header> -->
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">KSS Documentation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Naming Convension</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Test urls</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-button.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-center.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Center</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">8</span
+          ><span class="kss-nav__name">Colors</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-component.html">
+          <span class="kss-nav__ref">9</span
+          ><span class="kss-nav__name">Component</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-form.html">
+          <span class="kss-nav__ref">10</span
+          ><span class="kss-nav__name">Form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-grid.html">
+          <span class="kss-nav__ref">11</span
+          ><span class="kss-nav__name">Grid</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-icon.html">
+          <span class="kss-nav__ref">12</span
+          ><span class="kss-nav__name">Icons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-mixin.html">
+          <span class="kss-nav__ref">13</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-module.html">
+          <span class="kss-nav__ref">14</span
+          ><span class="kss-nav__name">Module</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pageheader.html">
+          <span class="kss-nav__ref">15</span
+          ><span class="kss-nav__name">Page header</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-pageheader.html#kssref-pageheader-1">
+                <span class="kss-nav__ref">15.1</span
+                ><span class="kss-nav__name">Basic</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-pageheader.html#kssref-pageheader-2">
+                <span class="kss-nav__ref">15.2</span
+                ><span class="kss-nav__name">Sections</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-pageheader.html#kssref-pageheader-3">
+                <span class="kss-nav__ref">15.3</span
+                ><span class="kss-nav__name">Pulse sections</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-pageheader.html#kssref-pageheader-navigation">
+                <span class="kss-nav__ref">15.4</span
+                ><span class="kss-nav__name">Header-navigation</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pagesetup.html">
+          <span class="kss-nav__ref">16</span
+          ><span class="kss-nav__name">Page Setup</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-table.html">
+          <span class="kss-nav__ref">17</span
+          ><span class="kss-nav__name">Tables</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-texticon.html">
+          <span class="kss-nav__ref">18</span
+          ><span class="kss-nav__name">Text-icon</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-toaster.html">
+          <span class="kss-nav__ref">19</span
+          ><span class="kss-nav__name">Toaster</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-type.html">
+          <span class="kss-nav__ref">20</span
+          ><span class="kss-nav__name">Type</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-typography.html">
+          <span class="kss-nav__ref">21</span
+          ><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-useful.html">
+          <span class="kss-nav__ref">22</span
+          ><span class="kss-nav__name">Useful classes</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-pageheader" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-pageheader">
+          <span class="kss-title__ref">
+              15
+            <span class="kss-title__permalink-hash">
+                #pageheader
+            </span>
+          </span>
+          Page header
+        </a>
+      </h1>
+
+
+    </div>
+
+
+      </div>
+      <section id="kssref-pageheader-1" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-pageheader-1">
+          <span class="kss-title__ref">
+              15.1
+            <span class="kss-title__permalink-hash">
+                #pageheader.1
+            </span>
+          </span>
+          Basic
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>The page container should have a center block within. See center section for more info.</p>
+<p>The .page-header has white background and a border bottom.</p>
+<p>.page-header__section--margin</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <header class="page-header">
+  <div class="center center-max">
+    <div class="page-header__container">
+      <div class="page-header__title">
+        <h1 class="heading-size-3 text-ellipsis">Page header</h1>
+      </div>
+    </div>
+  </div>
+</header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;page-header&quot;&gt;
+  &lt;div class=&quot;center center-max&quot;&gt;
+    &lt;div class=&quot;page-header__container&quot;&gt;
+      &lt;div class=&quot;page-header__title&quot;&gt;
+        &lt;h1 class=&quot;heading-size-3 text-ellipsis&quot;&gt;Page header&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-pageheader-2" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-pageheader-2">
+          <span class="kss-title__ref">
+              15.2
+            <span class="kss-title__permalink-hash">
+                #pageheader.2
+            </span>
+          </span>
+          Sections
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Example of different sections and properties placed together.
+.page-header<strong>section
+.page-header</strong>section--margin
+.page-header<strong>section--datepicker
+.header-section</strong>datepicker
+.page-header<strong>section--button
+.header-section</strong>button</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <header class="page-header">
+  <div class="center center-max">
+    <div class="page-header__container">
+      <div class="page-header__section page-header__section--margin">
+        <div class="page-header__title">
+          <div class="kss-box kss-box--grey-1">
+            <!-- Temporary kss box -->
+            <h1 class="heading-size-3 text-bold text-ellipsis">Page header</h1>
+          </div>
+        </div>
+        <div class="header-section__button ">
+          <div class="kss-box kss-box--grey-3">
+            <!-- Temporary kss box -->
+            Button
+          </div>
+        </div>
+      </div>
+      <div class="page-header__section">
+        <div class="kss-box kss-box--grey-4">
+          <!-- Temporary kss box -->
+          Navitaion
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;page-header&quot;&gt;
+  &lt;div class=&quot;center center-max&quot;&gt;
+    &lt;div class=&quot;page-header__container&quot;&gt;
+      &lt;div class=&quot;page-header__section page-header__section--margin&quot;&gt;
+        &lt;div class=&quot;page-header__title&quot;&gt;
+          &lt;div class=&quot;kss-box kss-box--grey-1&quot;&gt;
+            &lt;!-- Temporary kss box --&gt;
+            &lt;h1 class=&quot;heading-size-3 text-bold text-ellipsis&quot;&gt;Page header&lt;/h1&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;header-section__button &quot;&gt;
+          &lt;div class=&quot;kss-box kss-box--grey-3&quot;&gt;
+            &lt;!-- Temporary kss box --&gt;
+            Button
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;page-header__section&quot;&gt;
+        &lt;div class=&quot;kss-box kss-box--grey-4&quot;&gt;
+          &lt;!-- Temporary kss box --&gt;
+          Navitaion
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-pageheader-3" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-pageheader-3">
+          <span class="kss-title__ref">
+              15.3
+            <span class="kss-title__permalink-hash">
+                #pageheader.3
+            </span>
+          </span>
+          Pulse sections
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>In order to place the datepicker right .page-header__section--pulse is required</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <header class="page-header">
+  <div class="center center-max">
+    <div class="page-header__container">
+      <div class="page-header__section page-header__section--margin page-header__section--pulse">
+        <div class="page-header__title">
+          <div class="kss-box kss-box--grey-1">
+            <!-- Temporary kss box -->
+            <h1 class="heading-size-3 text-bold text-ellipsis">Page header</h1>
+          </div>
+        </div>
+        <div class="header-section__datepicker">
+          <div class="kss-box kss-box--grey-2">
+            <!-- Temporary kss box -->
+            datepicker
+          </div>
+        </div>
+        <div class="header-section__button ">
+          <div class="kss-box kss-box--grey-3">
+            <!-- Temporary kss box -->
+            Button
+          </div>
+        </div>
+      </div>
+      <div class="page-header__section">
+        <div class="kss-box kss-box--grey-4">
+          <!-- Temporary kss box -->
+          Navitaion
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;page-header&quot;&gt;
+  &lt;div class=&quot;center center-max&quot;&gt;
+    &lt;div class=&quot;page-header__container&quot;&gt;
+      &lt;div class=&quot;page-header__section page-header__section--margin page-header__section--pulse&quot;&gt;
+        &lt;div class=&quot;page-header__title&quot;&gt;
+          &lt;div class=&quot;kss-box kss-box--grey-1&quot;&gt;
+            &lt;!-- Temporary kss box --&gt;
+            &lt;h1 class=&quot;heading-size-3 text-bold text-ellipsis&quot;&gt;Page header&lt;/h1&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;header-section__datepicker&quot;&gt;
+          &lt;div class=&quot;kss-box kss-box--grey-2&quot;&gt;
+            &lt;!-- Temporary kss box --&gt;
+            datepicker
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;header-section__button &quot;&gt;
+          &lt;div class=&quot;kss-box kss-box--grey-3&quot;&gt;
+            &lt;!-- Temporary kss box --&gt;
+            Button
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;page-header__section&quot;&gt;
+        &lt;div class=&quot;kss-box kss-box--grey-4&quot;&gt;
+          &lt;!-- Temporary kss box --&gt;
+          Navitaion
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-pageheader-navigation" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-pageheader-navigation">
+          <span class="kss-title__ref">
+              15.4
+            <span class="kss-title__permalink-hash">
+                #pageheader.navigation
+            </span>
+          </span>
+          Header-navigation
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>See section page-header section to include it in a header section.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <ul class="header-navigation clearfix">
+  <li class="header-navigation__item">
+    <a class="header-navigation-button header-navigation-button--blue header-navigation-button--active" href="#">
+      <span class="header-navigation-button__icon">
+        <span class="flat-icon icon-16 plan-icon"></span>
+      </span>
+      <span class="header-navigation-button__text">Item 1</span>
+    </a>
+  </li>
+  <li class="header-navigation__item">
+    <a class="header-navigation-button header-navigation-button--blue header-navigation-button--active" href="#">
+      <span class="header-navigation-button__icon">
+        <span class="flat-icon icon-16 plan-icon"></span>
+      </span>
+      <span class="header-navigation-button__text">Item 2</span>
+    </a>
+  </li>
+</ul>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;header-navigation clearfix&quot;&gt;
+  &lt;li class=&quot;header-navigation__item&quot;&gt;
+    &lt;a class=&quot;header-navigation-button header-navigation-button--blue header-navigation-button--active&quot; href=&quot;#&quot;&gt;
+      &lt;span class=&quot;header-navigation-button__icon&quot;&gt;
+        &lt;span class=&quot;flat-icon icon-16 plan-icon&quot;&gt;&lt;/span&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;header-navigation-button__text&quot;&gt;Item 1&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;header-navigation__item&quot;&gt;
+    &lt;a class=&quot;header-navigation-button header-navigation-button--blue header-navigation-button--active&quot; href=&quot;#&quot;&gt;
+      &lt;span class=&quot;header-navigation-button__icon&quot;&gt;
+        &lt;span class=&quot;flat-icon icon-16 plan-icon&quot;&gt;&lt;/span&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;header-navigation-button__text&quot;&gt;Item 2&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

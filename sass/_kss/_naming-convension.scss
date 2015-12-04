@@ -1,0 +1,40 @@
+// Naming Convension
+//
+// CSS class names are using BEM (Block - Element - Modifier) style.
+// Separators between block and element is __. (double underscore)
+// Separators between element and modifier is --. (double dash)
+// E.G Block__Element--Modifier
+//
+// This is an real use example of BEM style
+//
+// Markup:
+// <div class="text-icon text-icon--24">
+//   <span class="text-icon__icon">
+//     <div class="avatar avatar-24 avatar--circle">
+//       <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+//     </div>
+//   </span>
+//   <span class="text-icon__text text-ellipsis ">
+//     Rickard
+//   </span>
+// </div>
+//
+// Styleguide 2
+
+// Element structure
+//
+// block - block
+// block__element - element is a children of the block
+// block__element__element - WRONG: only one element under the block
+//
+//
+// Styleguide 2.1
+
+// Properties and stats
+//
+// block--property - block property
+// block__element--property - element property
+// block__element--property-1--property-2 - WRONG: only one property per class-name
+// block__element--property-1 block__element--property-2 - RIGHT: 2 class-names with one property each.
+//
+// Styleguide 2.2

@@ -2,9 +2,36 @@
 //
 // Fundamental blocks to set up a page.
 //
-// .page-container             - Description
+// This will set up a page with content centered
 //
-// Styleguide 6
+// .page-container gives the page propper space on the sides
+//
+// .center centers the content
+//
+// .center-1120,.center-960,.center-640 and .center-480 sets a max width for the content. .center-1120 is standard.
+//
+// .page-header for the page headers
+//
+// .module.moduel-basic is the white boxes for the page content. Each of them can have a .module__header
+//
+// Markup:
+// <section class="page-container">
+//   <div class="center center-1120">
+//     <header class="page-heading">
+//       <h1 class="text-ellipsis" title="">Page title</h1>
+//     </header>
+//     <article class="module module--white">
+//       <header class="module__header">
+//         <h4>Module title</h4>
+//       </header>
+//       <div class="module-body">
+//         content goes here...
+//       </div>
+//     </article>
+//   </div>
+// </section>
+//
+// Styleguide pagesetup
 
 .page-container {
   padding: 24px;
@@ -21,11 +48,20 @@
 
 // Module
 //
-// Some generic button info
+// Module is a container for basic content.
 //
-// .module             - White boxes
+// .module--margin adds a margin beneath the module
 //
-// Styleguide 7
+// Modules are often combined with module-content blocks. Please navigate to module-content section for more info.
+//
+// Styleguide module
+
+
+// Basic setup
+//
+// Markup: module/kss-markup--module.html
+//
+// Styleguide module.1
 
 .module {
   position: relative;
@@ -35,6 +71,21 @@
   margin-bottom: 24px;
 }
 
+
+// Module - colors
+//
+// .module--white - White background color, box shadows and borders
+// .module--grey - Adds only grey background.
+//
+// Markup:
+// <div class="module {{modifier_class}}">
+//  <div class="module-content module-content--padding-all">
+//   content
+//  </div>
+// </div>
+//
+// Styleguide module.2
+
 .module--white {
   border: 1px solid $color-border;
   background: #fff;
@@ -42,8 +93,26 @@
 }
 
 .module--grey {
-  background: $color-grey-lighter;
+  background: $color-grey-light;
 }
+
+
+// Module__header
+//
+// Should be used as a children to the module
+//
+// Standard header should have a h1 size 5.
+//
+// .module__header--grey - Grey background color.
+//
+// Markup:
+// <div class="module module--white">
+//   <header class="module__header {{modifier_class}}">
+//     <h1 class="heading-size-5">module header</h1>
+//   </header>
+// </div>
+//
+// Styleguide module.3
 
 .module__header {
   position: relative;
@@ -72,6 +141,8 @@
 
 .module__body{}
 
+
+
 .module__footer {
   padding: 24px;
   @include screen-min{
@@ -82,6 +153,29 @@
   }
 }
 
+
+// Module__footer
+//
+// Should be used as a children to the module
+//
+// NOTE! When use of border skip the padding at the bottom of the module-content. See separate section for more info. Otherwise it will be a big gap between content and footer.
+//
+// .module__footer--border - adds a border top
+// .module__footer--tight - A tighter padding top and bottom.
+//
+// Markup:
+// <div class="module module--white">
+//   <div class="module__body">
+//     <div class="module-content module-content--padding-all">
+//       content
+//     </div>
+//   </div>
+//   <header class="module__footer {{modifier_class}}">
+//     footer content
+//   </header>
+// </div>
+//
+// Styleguide module.4
 
 .module__footer--border{
   border-top: 1px solid $color-border-light;

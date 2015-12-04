@@ -1,0 +1,84 @@
+// KSS Documentation
+//
+// "Markup:" will greate the code example block.
+// It can be a referens to a file inside the sass folder or a commented example.
+//
+// E.G: "Markup: froms/basic.html". Can use html or mustache .hbs files.
+//
+// E.G: "Markup: <a href="https://google.com">google.com</a>". Will print out the code.
+//
+// If the word "Markup:" is not used the link above wont have the code markup but the link will appear like a link.
+//
+// Read more ...
+//
+//
+//
+// <a href="https://github.com/kss-node/kss/blob/spec/SPEC.md" target="_blank">https://github.com/kss-node</a>
+//
+// styleguide 1
+
+
+
+// KSS Required fields
+//
+// *Title which is the first line of the comment.
+//
+//
+//
+// <a href="https://github.com/kss-node/kss/blob/spec/SPEC.md" target="_blank">https://github.com/kss-node</a>
+//
+// styleguide 1.1
+
+
+
+// Modifiers
+//
+// :hover             - Subtle hover highlight.
+// .stars-given       - A highlight indicating you've already given a star.
+// .stars-given:hover - Subtle hover highlight on top of stars-given styling.
+// .disabled          - Dims the button to indicate it cannot be used.
+//
+// These ones will be generated inside the mustach variable {{modifier_class}}. One for each line
+//
+// styleguide 1.2
+
+
+// Reguired and optional fields
+//
+// Each KSS documentation block consists of two required parts and a few optional parts:
+//
+// 1: a heading (required)
+//
+// 2: a description of what the style does or looks like (optional)
+//
+// 3: kss-node only: the name of file containing the HTML markup the CSS applies to, or a copy of the markup inline (optional)
+//
+// 4: a list of modifier classes or pseudo-classes and how they modify the style (optional)
+//
+// 5: a reference to the style's position in the style guide (required)
+//
+// 6: kss-node only: a numerical weight that can be used to re-position a style outside of the normal alphabetical order (optional)
+//
+// So... at minimum to create a style guide section a comment would look like this
+//
+//  Markup:
+//  // Title of section
+//  //
+//  // styleguide 11.1
+//
+//  NOTE! that
+//
+//  styleguide 99.3
+
+
+// Issues
+//
+// Known things that could create problems.
+//
+// 1. Avoid comments starting with the word styleguide. That like asking for pars error.
+//
+// 2. Blocknumbers over 99 can behave wierd. e.g styleguide 100.3 will be move this block under the item 1.
+//
+// 3. If two group number are the same it can be a conflict. E.G "icon-colors 5.2" and "icon-sizes 5.2" can inharit each other properties.
+//
+// Styleguide 1.4

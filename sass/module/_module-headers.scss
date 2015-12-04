@@ -1,15 +1,58 @@
-// Module Headers
-// - header blocks that sit within a module - header
+// Module-header
+//
+// Use to combine components and titles in module headers
+//
+// Styleguide module.header
 
-// just title
+
+
+
+// Module-header title
+//
+// Just title
+//
+// Markup:
+// <div class="module module--white">
+//   <header class="module__header module__header--grey">
+//     <div class="module-header-title">
+//         <h4 class="heading-size-5">Header goes here...</h4>
+//     </div>
+//   </header>
+// </div>
+//
+// Styleguide module.header.1
+
 .module-header-title {
   line-height: 20px;
 }
 
 
+// Module-header checkbox
+//
+// Title and Checkbox
+//
+// Markup:
+// <div class="module module--white">
+//   <header class="module__header module__header--grey">
+//     <div class="module-header-checkbox">
+//       <div class="module-header-checkbox__title">
+//         <h4 class="heading-size-5">Header goes here...</h4>
+//       </div>
+//       <div class="module-header-checkbox__checkbox">
+//         <label class="checkbox-control">
+//           <span class="solo-checkbox">
+//             <input type="checkbox" class="js-anonusers" checked="">
+//             <span class="custom-icon icon-16 checkbox-icon"></span>
+//           </span>
+//           Something to tick
+//         </label>
+//       </div>
+//     </div>
+//   </div>
+// </header>
+//
+// Styleguide module.header.2
 
-
-// checkbox header
 .module-header-checkbox {
   position: relative;
   padding-right: 240px;
@@ -26,8 +69,26 @@
 
 
 
+// Module-header button
+//
+// Title and Button
+//
+// Markup:
+// <div class="module module--white">
+//   <header class="module__header module__header--grey">
+//     <div class="module-header-button">
+//       <div class="module-header-button__title">
+//         <h4 class="heading-size-5">Title goes here...</h4>
+//       </div>
+//       <div class="module-header-button__button">
+//           <a class="button button-32 button-blue text-bold">Button...</a>
+//       </div>
+//     </div>
+//   </header>
+// </div>
+//
+// Styleguide module.header.3
 
-// button header
 .module-header-button {
   position: relative;
   padding-right: 240px;
@@ -43,8 +104,35 @@
 
 
 
+// Module-header settings
+//
+// Title and Settings cog
+//
+// To make the
+//
+// Markup:
+// <div class="module module--white">
+//   <header class="module__header module__header--grey">
+//     <div class="module-header-setting">
+//       <div class="module-header-setting__title">
+//         <h4 class="heading-size-5">Average load times distribution</h4>
+//       </div>
+//       <div class="module-header-setting__button">
+//         <div class="dropdown2 js-option-button-container">
+//           <div class="dropdown2__button">
+//             <div class="header-settings__button js-dropdown-button">
+//               <span class="flat-icon icon-16 cog-icon"></span>
+//             </div>
+//           </div>
+//             <!-- Drop down goes here. Toggle with javascript -->
+//           </div>
+//         </div>
+//       </div>
+//   </header>
+// </div>
+//
+// Styleguide module.header.4
 
-// setting header (dropdown cog)
 .module-header-setting {
   position: relative;
   padding-right: 40px;
@@ -58,7 +146,7 @@
   right: -16px;
 }
 
-// settings button
+// settings button !todo replace with button-subtle
 .header-settings__button {
   cursor: pointer;
   width: 32px;
@@ -72,7 +160,7 @@
   }
   &.header-settings__button--active,
   &:active {
-    background: $color-grey-lighter;
+    background: $color-grey-light;
   }
 
   &:hover,
@@ -84,4 +172,3 @@
     }
   }
 }
-

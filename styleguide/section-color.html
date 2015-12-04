@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../style/kss-style.css">
+  <link rel="stylesheet" href="../style/screen.css" />
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <!-- <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header> -->
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">KSS Documentation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Naming Convension</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Test urls</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-button.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-center.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Center</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">8</span
+          ><span class="kss-nav__name">Colors</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-color.html#kssref-color-1">
+                <span class="kss-nav__ref">8.1</span
+                ><span class="kss-nav__name">Text color variables</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-color.html#kssref-color-2">
+                <span class="kss-nav__ref">8.2</span
+                ><span class="kss-nav__name">Other colors</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-color.html#kssref-color-3">
+                <span class="kss-nav__ref">8.3</span
+                ><span class="kss-nav__name">Shadow colors</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-component.html">
+          <span class="kss-nav__ref">9</span
+          ><span class="kss-nav__name">Component</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-form.html">
+          <span class="kss-nav__ref">10</span
+          ><span class="kss-nav__name">Form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-grid.html">
+          <span class="kss-nav__ref">11</span
+          ><span class="kss-nav__name">Grid</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-icon.html">
+          <span class="kss-nav__ref">12</span
+          ><span class="kss-nav__name">Icons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-mixin.html">
+          <span class="kss-nav__ref">13</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-module.html">
+          <span class="kss-nav__ref">14</span
+          ><span class="kss-nav__name">Module</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pageheader.html">
+          <span class="kss-nav__ref">15</span
+          ><span class="kss-nav__name">Page header</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pagesetup.html">
+          <span class="kss-nav__ref">16</span
+          ><span class="kss-nav__name">Page Setup</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-table.html">
+          <span class="kss-nav__ref">17</span
+          ><span class="kss-nav__name">Tables</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-texticon.html">
+          <span class="kss-nav__ref">18</span
+          ><span class="kss-nav__name">Text-icon</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-toaster.html">
+          <span class="kss-nav__ref">19</span
+          ><span class="kss-nav__name">Toaster</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-type.html">
+          <span class="kss-nav__ref">20</span
+          ><span class="kss-nav__name">Type</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-typography.html">
+          <span class="kss-nav__ref">21</span
+          ><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-useful.html">
+          <span class="kss-nav__ref">22</span
+          ><span class="kss-nav__name">Useful classes</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-color" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-color">
+          <span class="kss-title__ref">
+              8
+            <span class="kss-title__permalink-hash">
+                #color
+            </span>
+          </span>
+          Colors
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Colors is great for painting.</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-color-1" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-color-1">
+          <span class="kss-title__ref">
+              8.1
+            <span class="kss-title__permalink-hash">
+                #color.1
+            </span>
+          </span>
+          Text color variables
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-black</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-1</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-2</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-3</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-blue</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-red</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-green</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-yellow</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-purple</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-grey</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$text-grey-light</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+      </ul>
+
+    </div>
+
+
+      </section>
+      <section id="kssref-color-2" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-color-2">
+          <span class="kss-title__ref">
+              8.2
+            <span class="kss-title__permalink-hash">
+                #color.2
+            </span>
+          </span>
+          Other colors
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <ul class="kss-background-list clearfix">
+
+  <li class="color-white">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+  <li class="color-black">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+  <li class="color-background-color">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+  <!-- weird nameing -->
+  <li class="color-background-color-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+  <!-- weird nameing -->
+  <li class="color-background-color">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+  <!-- weird nameing -->
+  <li class="color-background-overlay">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+  <li class="color-grey-darker">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+  <li class="color-grey-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+  <li class="color-grey">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-grey-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-grey-lighter">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-grey-lightest">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-border-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-border">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-border-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-border-transparent">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-stealth-darkest">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-stealth-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-stealth">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-stealth-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-alpine-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-alpine">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-alpine-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-azure-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-azure">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-azure-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-azure-highlight">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-byzantine-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-byzantine">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-byzantine-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-byzantine-highlight">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-ember-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-ember">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-ember-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-ember-highlight">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-flame-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-flame">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-flame-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-lightning-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-lightning">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-lightning-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-lightning-highlight">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-forest-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-forest">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-forest-light">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-forest-highlight">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-lime-dark">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-azure-darker">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-gold">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-opera-red">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-dns-green">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+  <li class="color-server-green">
+    <div class="color-box"></div>
+    <div class="color-hex"></div>
+    <div class="color-var"></div>
+  </li>
+
+
+</ul>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;kss-background-list clearfix&quot;&gt;
+
+  &lt;li class=&quot;color-white&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class=&quot;color-black&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class=&quot;color-background-color&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;!-- weird nameing --&gt;
+  &lt;li class=&quot;color-background-color-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;!-- weird nameing --&gt;
+  &lt;li class=&quot;color-background-color&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;!-- weird nameing --&gt;
+  &lt;li class=&quot;color-background-overlay&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class=&quot;color-grey-darker&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class=&quot;color-grey-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class=&quot;color-grey&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-grey-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-grey-lighter&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-grey-lightest&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-border-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-border&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-border-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-border-transparent&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-stealth-darkest&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-stealth-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-stealth&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-stealth-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-alpine-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-alpine&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-alpine-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-azure-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-azure&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-azure-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-azure-highlight&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-byzantine-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-byzantine&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-byzantine-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-byzantine-highlight&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-ember-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-ember&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-ember-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-ember-highlight&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-flame-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-flame&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-flame-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-lightning-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-lightning&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-lightning-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-lightning-highlight&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-forest-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-forest&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-forest-light&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-forest-highlight&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-lime-dark&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-azure-darker&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-gold&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-opera-red&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-dns-green&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;color-server-green&quot;&gt;
+    &lt;div class=&quot;color-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-hex&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;color-var&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+
+&lt;/ul&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-color-3" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-color-3">
+          <span class="kss-title__ref">
+              8.3
+            <span class="kss-title__permalink-hash">
+                #color.3
+            </span>
+          </span>
+          Shadow colors
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$box-shadow</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$modal-shadow</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$header-shadow</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$dropdown-shadow</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+      </ul>
+
+    </div>
+
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

@@ -1,0 +1,404 @@
+
+$kss-color-darkest: #333;
+$kss-color-dark: #888;
+$kss-color-grey: #bbb;
+$kss-color-bright: #f8f8f8;
+$kss-color-brightest: #fcfcfc;
+$kss-color-white: #fff;
+$kss-color-purple: #8a4dc7;
+$kss-color-pink: #FF7597;
+
+$kss-color-tint-grey-1: rgb(240, 240, 240);
+$kss-color-tint-grey-2: rgb(220, 220, 220);
+$kss-color-tint-grey-3: rgb(200, 200, 200);
+$kss-color-tint-grey-4: rgb(180, 180, 180);
+
+#kss-node{
+  background-color: $kss-color-bright;
+  background-image: none;
+  height: 100%;
+
+  .kss-main {
+      background-color: $kss-color-bright;
+      margin-left: 280px;
+      padding-left: 40px;
+      width: 100%;
+  }
+
+  .kss-sidebar {
+      background-color: $kss-color-bright;
+      color: $kss-color-white;
+      height: 100vh;
+      width: 280px;
+      padding-right: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+  }
+
+  .kss-section{
+    background-color: $kss-color-white;
+    max-width: 960px;
+    margin: 24px 0;
+    padding: 24px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fafafa;
+
+  }
+
+  .kss-doc-title,
+  .kss-nav,
+  .kss-nav__menu,
+  .kss-nav__ref,
+  .kss-nav__name,
+  .kss-nav__menu-item {
+      color: $kss-color-darkest;
+  }
+
+  .kss-nav__menu{
+    margin-top: 24px;
+  }
+
+  .kss-nav{
+    margin-top: 0;
+  }
+
+@-webkit-keyframes menu-item-hover {
+    from { background-color: $kss-color-brightest}
+    to { background-color: $kss-color-bright}
+}
+
+@keyframes menu-item-hover {
+    from { background-color: $kss-color-brightest}
+    to { background-color: $kss-color-bright}
+}
+
+
+  .kss-nav__menu-item {
+      font-size: 14px;
+      a{
+        display: block;
+        padding: 4px 4px 4px 8px;
+        border-left: 2px solid transparent;
+        &:hover{
+          border-left: 2px solid $kss-color-purple;
+          animation: menu-item-hover 1s ease;
+        }
+      }
+  }
+
+  .kss-nav__menu-child{
+    padding: 2px 0;
+    li{
+      font-size: 12px;
+       a{
+          padding: 2px 4px 2px 22px;
+       }
+    }
+    li:first-child,
+    li:last-child{
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    li:first-child{
+
+    }
+  }
+
+  .kss-description {
+    margin-top: 12px;
+  }
+  .kss-style p {
+    margin: 0 0 24px 0;
+  }
+
+  .kss-modifier__wrapper {
+      border: none;
+      padding: 0;
+  }
+
+  .kss-modifier__heading {
+      margin: 0 0 24px 0;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+      background-color: transparent;
+      font-weight: bold;
+  }
+
+
+  .kss-markup {
+      margin: 24px 0 24px 0;
+      border: none;
+  }
+
+  .kss-markup,
+  .kss-style {
+    pre{
+      overflow: auto;
+      border: 1px solid $kss-color-grey;
+    }
+  }
+
+  .kss-title__ref{
+    &:before{
+      content: '';
+      display: none;
+    }
+
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    color: $kss-color-dark;
+  }
+
+  .kss-title__permalink:hover .kss-title__permalink-hash,
+  .kss-title__permalink:focus .kss-title__permalink-hash,
+  .kss-title__permalink:active .kss-title__permalink-hash{
+    display: none;
+  }
+
+  .kss-modifier__example{
+    border-bottom: 1px dashed $kss-color-grey;
+    padding-bottom: 12px;
+  }
+
+  .kss-style{
+    h1, h2, h3, h4, h5, h6 {
+      color: $kss-color-darkest;
+      display: block;
+      font-family: 'Helvetica Neue', Helvetica, Arial;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 0;
+
+      h1 {
+          font-size: 22px;
+          line-height: 22px;
+      }
+
+      h2 {
+          font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      h4 {
+          font-size: 16px;
+      }
+    }
+  }
+
+
+  .kss-markup pre,
+  .kss-style pre{
+    border-color: $kss-color-bright;
+  }
+
+  ol.linenums{
+    padding-bottom: 0;
+  }
+
+
+// OVERVIEW STYLES
+  .kss-overview{
+
+    .kss-banner{
+      text-align: center;
+      border-bottom: 2px solid $kss-color-darkest;
+      margin-bottom: 44px;
+      height: 160px;
+    }
+
+    .kss-brand-logo{
+      width: 100%;
+      height: 100%;
+    }
+
+    &.kss-style {
+      h2{
+        margin-bottom: 6px;
+        margin-top: 44px;
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+      p{
+        margin-bottom: 12px;
+      }
+      pre{
+        margin-bottom: 12px;
+      }
+      code{
+          border: none;
+          background-color: $kss-color-darkest;
+          color: $kss-color-brightest;
+          width: 100%;
+          display: block;
+          padding: 2px 8px;
+      }
+
+      ul{
+        list-style: disc;
+        margin: 0 0 12px 0;
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+// *********************
+// CUSTOM UNIQUE BLOCKS
+// *********************
+
+// COLORS
+
+@mixin kss-colors( $color, $name) {
+  .color-#{$name} {
+    .color-box {
+      background-color: $color;
+    }
+
+    .color-hex:after {
+      content: '#{$color}';
+    }
+
+    .color-var:after {
+      content: '$'+$name;
+    }
+
+    @if $name == 'white' or $name == 'sidebar-text-active' {
+      .color-box {
+        border: 1px solid $color-grey;
+      }
+    }
+  }
+}
+
+.kss-background-list {
+  li {
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 50px;
+  }
+}
+
+
+.color-box {
+  height: 36px;
+  width: 36px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.color-hex:before {
+  content: 'code:';
+}
+
+.color-var:before {
+  content: 'var:';
+}
+
+.color-hex:before,
+.color-var:before {
+  font-size: 1.2rem;
+  color: $color-grey-light;
+  display: inline-block;
+  width: 40px;
+}
+
+.color-hex:after,
+.color-var:after {
+  font-size: 1.2rem;
+}
+
+
+
+.kss-background-list {
+  @include kss-colors( $white, 'white' );
+  @include kss-colors( $black, 'black' );
+  @include kss-colors( $background-color, 'background-color' );
+  @include kss-colors( $background-color-dark, 'background-color-dark' );
+  @include kss-colors( $background-overlay, 'background-overlay' );
+  @include kss-colors( $color-grey-darker, 'grey-darker' );
+  @include kss-colors( $color-grey-dark, 'grey-dark' );
+  @include kss-colors( $color-grey, 'grey' );
+  @include kss-colors( $color-grey-light, 'grey-light' );
+  @include kss-colors( $color-grey-lighter, 'grey-lighter' );
+  @include kss-colors( $color-grey-lightest, 'grey-lightest' );
+  @include kss-colors( $color-border-dark, 'border-dark' );
+  @include kss-colors( $color-border, 'border' );
+  @include kss-colors( $color-border-light, 'border-light' );
+  @include kss-colors( $color-border-transparent, 'border-transparent' );
+  @include kss-colors( $color-stealth-darkest, 'stealth-darkest' );
+  @include kss-colors( $color-stealth-dark, 'stealth-dark' );
+  @include kss-colors( $color-stealth, 'stealth' );
+  @include kss-colors( $color-stealth-light, 'stealth-light' );
+  @include kss-colors( $color-alpine-dark, 'alpine-dark' );
+  @include kss-colors( $color-alpine, 'alpine' );
+  @include kss-colors( $color-alpine-light, 'alpine-light' );
+  @include kss-colors( $color-azure-dark, 'azure-dark' );
+  @include kss-colors( $color-azure, 'azure' );
+  @include kss-colors( $color-azure-light, 'azure-light' );
+  @include kss-colors( $color-azure-highlight, 'azure-highlight' );
+  @include kss-colors( $color-byzantine-dark, 'byzantine-dark' );
+  @include kss-colors( $color-byzantine, 'byzantine' );
+  @include kss-colors( $color-byzantine-light, 'byzantine-light' );
+  @include kss-colors( $color-byzantine-highlight, 'byzantine-highlight' );
+  @include kss-colors( $color-ember-dark, 'ember-dark' );
+  @include kss-colors( $color-ember, 'ember' );
+  @include kss-colors( $color-ember-light, 'ember-light' );
+  @include kss-colors( $color-ember-highlight, 'ember-highlight' );
+  @include kss-colors( $color-flame-dark, 'flame-dark' );
+  @include kss-colors( $color-flame, 'flame' );
+  @include kss-colors( $color-flame-light, 'flame-light' );
+  @include kss-colors( $color-lightning-dark, 'lightning-dark' );
+  @include kss-colors( $color-lightning, 'lightning' );
+  @include kss-colors( $color-lightning-light, 'lightning-light' );
+  @include kss-colors( $color-lightning-highlight, 'lightning-highlight' );
+  @include kss-colors( $color-forest-dark, 'forest-dark' );
+  @include kss-colors( $color-forest, 'forest' );
+  @include kss-colors( $color-forest-light, 'forest-light' );
+  @include kss-colors( $color-forest-highlight, 'forest-highlight' );
+  @include kss-colors( $color-lime-dark, 'lime-dark' );
+  @include kss-colors( $color-azure-darker, 'azure-darker' );
+  @include kss-colors( $color-gold, 'gold' );
+  @include kss-colors( $color-opera-red, 'opera-red' );
+  @include kss-colors( $color-dns-green, 'dns-green' );
+  @include kss-colors( $color-server-green, 'server-green' );
+}
+
+
+.kss-box{
+  display: block;
+  min-height: 40px;
+  vertical-align: middle;
+}
+
+
+.kss-box--pink{
+  background-color: $kss-color-pink;
+}
+
+.kss-box--grey-1{
+  background-color: $kss-color-tint-grey-1;
+}
+.kss-box--grey-2{
+  background-color: $kss-color-tint-grey-2;
+}
+.kss-box--grey-3{
+  background-color: $kss-color-tint-grey-3;
+}
+.kss-box--grey-4{
+  background-color: $kss-color-tint-grey-4;
+}

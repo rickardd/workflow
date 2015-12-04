@@ -3,7 +3,7 @@
   margin: 16px;
   border-radius: 3px;
   border: 2px solid $white !important;
-  background: $color-grey-lightest !important;
+  background: $color-grey-lighter !important;
 
   &.dz-drag-hover {
     border-color: $color-azure !important;
@@ -30,7 +30,7 @@
     content: '\e431';
     display: block;
     margin: 0 0 16px;
-    color: $color-grey-lightest;
+    color: $color-grey-lighter;
     font-size: 64px;
     line-height: 64px;
     text-align: center;

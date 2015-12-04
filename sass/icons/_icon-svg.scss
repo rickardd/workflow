@@ -1,4 +1,41 @@
 // SVG icons
+//
+// Styleguide icon.svg
+
+// SVG integration icons
+//
+// optimized icon size ??
+//
+// .visualstudioonline-icon - description
+// .webhook-icon - description
+// .hipchat-icon - description
+// .heroku-icon - description
+// .campfire-icon - description
+// .youtrack-icon - description
+// .github-icon - description
+// .fogbugz-icon - description
+// .trello-icon - description
+// .sprintly-icon - description
+// .jira-icon - description
+// .jiraoauth-icon - description
+// .bitbucket-icon - description
+// .pivotaltracker-icon - description
+// .slack-icon - description
+// .flowdock-icon - description
+// .bugherd-icon - description
+// .kato-icon - description
+// .lighthouse-icon - description
+// .asana-icon - description
+// .intercom-icon - description
+// .octopus-icon - description
+// .bash-icon - description
+// .powershell-icon - description
+// .powershell-icon - description
+// .moxtra-icon - description
+//
+// Markup: <div class="integration-icon icon-32 {{modifier_class}}"></div>
+//
+// Styleguide icon.svg.1
 
 
 // integration icons
@@ -34,6 +71,7 @@
   &.powershell-icon {background-image: url('../Content/images/integration-icons/powershell.png');}
   &.powershell-icon {background-image: url('../Content/images/integration-icons/zendesk.png');}
   &.moxtra-icon {background-image: url('../Content/images/integration-icons/moxtra.png'); }
+  &.victorops-icon {background-image: url('../Content/images/integration-icons/victorops.png'); }
 }
 
 // if browser supports SVG
@@ -65,6 +103,7 @@ html.svg {
     &.bash-icon {background-image: url('../Content/images/integration-icons/bash.svg');}
     &.powershell-icon {background-image: url('../Content/images/integration-icons/powershell.svg');}
     &.zendesk-icon {background-image: url('../Content/images/integration-icons/zendesk.svg');}
+	&.victorops-icon {background-image: url('../Content/images/integration-icons/victorops.svg'); }
   }
 }
 
@@ -84,12 +123,23 @@ html.svg {
   }
 }
 
-
-// anonomus user
-$class-name: '.icon--anonymous-user';
-$png-path: 'avatars/icon--anon-user.png';
-$svg-path: 'avatars/icon--anon-user.svg';
-@include iconGenerator($class-name,$png-path,$svg-path);
+// SVG browser icons
+//
+// Use with .svg-icon class and icon-size class
+//
+// optimized icon size ??
+//
+// .icon-chrome - description
+// .icon-chromium - description
+// .icon-firefox - description
+// .icon-safari - description
+// .icon-explorer - description
+// .icon-edge - description
+// .icon-opera - description
+//
+// Markup: <div class="svg-icon icon-24 {{modifier_class}}"></div>
+//
+// Styleguide icon.svg.2
 
 // chrome
 $class-name: '.icon-chrome';
@@ -132,6 +182,31 @@ $class-name: '.icon-opera';
 $png-path: 'error-instance/icon_opera.png';
 $svg-path: 'error-instance/icon_opera.svg';
 @include iconGenerator($class-name,$png-path,$svg-path);
+
+
+// SVG OS icons
+//
+// Use with .svg-icon class and icon-size class
+//
+// optimized icon size ??
+//
+// .icon-android - description
+// .icon-mac - description
+// .icon-ios - description
+// .icon-osx - description
+// .icon-windows95 - description
+// .icon-windowsCE - description
+// .icon-windowsXP - description
+// .icon-windowsVista - description
+// .icon-windows7 - description
+// .icon-windows8 - description
+// .icon-windows81 - description
+// .icon-windowsPhone - description
+// .icon-linux - description
+//
+// Markup: <div class="svg-icon icon-24 {{modifier_class}}"></div>
+//
+// Styleguide icon.svg.3
 
 // android
 $class-name: '.icon-android';
@@ -214,7 +289,23 @@ $svg-path: 'error-instance/icon_linux.svg';
 
 
 
-// Platform icons
+// SVG platform icons
+//
+// Use with .svg-icon class and icon-size class
+//
+// optimized icon size ??
+//
+// .icon-blackberry - description
+// .icon-bsd - description
+// .icon-centos - description
+// .icon-debian - description
+// .icon-fedora - description
+// .icon-symbian - description
+// .icon-ubuntu - description
+//
+// Markup: <div class="svg-icon icon-24 {{modifier_class}}"></div>
+//
+// Styleguide icon.svg.4
 
 // Blackberry
 $class-name: '.icon-blackberry';
@@ -256,4 +347,23 @@ $svg-path: 'icons/platforms/icon_symbian.svg';
 $class-name: '.icon-ubuntu';
 $png-path: 'icons/platforms/icon_ubuntu.png';
 $svg-path: 'icons/platforms/icon_ubuntu.svg';
+@include iconGenerator($class-name,$png-path,$svg-path);
+
+
+
+// SVG other icons
+//
+// Use with .svg-icon class and icon-size class
+//
+// optimized icon size ??
+//
+// .icon--anonymous-user - description
+//
+// Markup: <div class="svg-icon icon-24 {{modifier_class}}"></div>
+//
+// Styleguide icon.svg.5
+
+$class-name: '.icon--anonymous-user';
+$png-path: 'avatars/icon--anon-user.png';
+$svg-path: 'avatars/icon--anon-user.svg';
 @include iconGenerator($class-name,$png-path,$svg-path);

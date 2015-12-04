@@ -1,18 +1,45 @@
+// Pagination
+//
+// Styleguide component.pagination
 
+
+// Pagination
+//
+// It's many depricated paginations in the app. This is the one that shoule be used.
+//
+// Pagination should be right aligned. This is just one example of how to do it.
+//
+// Markup:
+// <div class="clearfix">
+//   <div class="float-right">
+//     <a title="First" class="pagination-item js-paging-button" data-page="1"><span class="flat-icon icon-16 rewind-icon"></span></a>
+//     <a title="Previous" class="pagination-item js-paging-button" data-page="1"><span class="flat-icon icon-16 back-icon"></span></a>
+//     <a title="Go to page" class="pagination-item js-paging-button" data-page="1">1</a>
+//     <span class="pagination-item pagination-item--active">2</span>
+//     <a title="Go to page" class="pagination-item js-paging-button" data-page="3">3</a>
+//     <a title="Go to page" class="pagination-item js-paging-button" data-page="4">4</a>
+//     <a title="Go to page" class="pagination-item js-paging-button" data-page="5">5</a>
+//     <a class="pagination-item js-paging-button" data-page="3"><span class="flat-icon icon-16 forward-icon"></span></a>
+//     <a title="Last" class="pagination-item js-paging-button" data-page="13"><span class="flat-icon icon-16 fast-forward-icon"></span></a>
+//   </div>
+// </div>
+//
+// Styleguide component.pagination.1
 
 .pagination-item{
+  cursor: pointer;
   border-radius: 2px;
+  @include font-size(1.4);
+  color: $text-black!important;
+  font-weight: bold;
   float: left;
   margin-left: 2px;
   line-height: 24px;
   height: 24px;
   min-width: 24px;
-  @include font-size(1.4);
-  color: $color-azure;
   display: block;
   text-align: center;
   padding: 0 4px;
-
   &:first-child{
     margin-left: 0;
   }
@@ -23,11 +50,12 @@
       line-height: 24px;
     }
   }
-
-  &:hover{
-    background-color: $color-azure-light;
-    color: $white;
-    cursor: pointer;
+  background-color: $color-grey;
+  &:hover {
+    background-color: $color-grey-light;
+  }
+  &:active {
+    background-color: $color-grey-darker;
   }
 }
 

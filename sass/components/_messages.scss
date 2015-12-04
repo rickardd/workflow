@@ -1,3 +1,15 @@
+// Message box
+//
+// Styleguide component.message
+
+// Colors and and icons
+//
+// Markup: components/kss-markup--message-box.html
+//
+// Styleguide component.message.1
+
+
+
 // VARIABLES
 $external-image-width: 135px;
 
@@ -7,11 +19,15 @@ $external-image-width: 135px;
   width: 100%;
   display: block;
   margin-bottom: 24px;
+  box-shadow: $box-shadow;
+  &.in-content {
+    box-shadow: none;
+  }
 }
 
 .message-box-icon {
   position: absolute;
-  top: 14px;
+  top: 12px;
   left: 16px;
 }
 
@@ -44,8 +60,31 @@ $external-image-width: 135px;
   position: relative;
   font-weight: bold;
   line-height: 1.2;
-  @include font-size(1.4); 
+  @include font-size(1.4);
 }
+
+
+
+
+// Close
+//
+// Markup:
+// <article class="message-box is-blue">
+//   <header class="message-box-header has-icon">
+//     <span class="message-box-icon flat-icon icon-16 i-icon"></span>
+//     <h1 class="message-box-headline">Information message</h1>
+//     <div class="message-box-close flat-icon icon-16 close-icon"></div>
+//   </header>
+//   <div class="message-box-body">
+//     <div class="message-box-text-container typography">
+//       <p>
+//         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tincidunt lacus nec viverra.
+//       </p>
+//     </div>
+//   </div>
+// </article>
+//
+// Styleguide component.message.2
 
 .message-box-close {
   position: absolute;
@@ -55,14 +94,6 @@ $external-image-width: 135px;
   &:hover {
     cursor: pointer;
   }
-}
-
-
-.message-box-image {
-  width: 100%;
-  max-width: 150px;
-  margin: 0 auto;
-  display: block;
 }
 
 // PROPERTIES
@@ -86,7 +117,6 @@ $external-image-width: 135px;
     .message-box-header {
       color: $white;
       background: $color-azure;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -94,7 +124,6 @@ $external-image-width: 135px;
     .message-box-header {
       color: $white;
       background: $color-lightning;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     }
   }
   // BLUE - Defalut
@@ -109,44 +138,6 @@ $external-image-width: 135px;
     .message-box-header {
       background: $color-flame-light;
       color: $white;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    }
-  }
-  // IMAGE
-  &.has-image {
-    .message-box-text-container,
-    .message-box-image-container {
-      display: inline-block;
-    }
-
-    .message-box-text-container {
-      width: 68%;
-      padding-right: 2%;
-    }
-
-    .message-box-image-container {
-      width: 30%;
-    }
-
-    &.place-image-top {
-      .message-box-text-container,
-      .message-box-image-container {
-        vertical-align: top;
-      }
-    }
-
-    &.place-image-middle {
-      .message-box-text-container,
-      .message-box-image-container {
-        vertical-align: middle;
-      }
-    }
-
-    &.place-image-bottom {
-      .message-box-text-container,
-      .message-box-image-container {
-        vertical-align: bottom;
-      }
     }
   }
 
@@ -157,6 +148,94 @@ $external-image-width: 135px;
   text-decoration: underline;
 }
 
+
+
+// In content - MEssage
+//
+// Markup:
+// <article class="message-box is-grey in-content">
+//   <header class="message-box-header">
+//     <h1 class="message-box-headline">Uses the Raygun API?</h1>
+//   </header>
+//   <div class="message-box-body">
+//     <div class="message-box-text-container typography">
+//       <p>
+//         Do you want to develop an application that uses the Raygun API?
+//       </p>
+//       <p>
+//         Register an application to generate OAuth tokens.
+//       </p>
+//     </div>
+//   </div>
+// </article>
+//
+// Styleguide component.message.3
+
+
+// In content - MEssage + Icon
+//
+// Use with .is-grey and .in-content
+//
+// Markup:
+// <article class="message-box is-grey in-content">
+//   <header class="message-box-header has-icon">
+//     <span class="message-box-icon flat-icon icon-16 i-icon"></span>
+//     <h1 class="message-box-headline">Uses the Raygun API?</h1>
+//   </header>
+//   <div class="message-box-body has-icon">
+//     <div class="message-box-text-container typography">
+//       <p>
+//         Do you want to develop an application that uses the Raygun API?
+//       </p>
+//       <p>
+//         Register an application to generate OAuth tokens.
+//       </p>
+//     </div>
+//   </div>
+// </article>
+//
+// Styleguide component.message.4
+
+
+// In content - Pay attention
+//
+// NOTE! this will always have a warning icon
+//
+// .has-icon on both .message-box-header and .message-box-body
+//
+// Markup:
+// <article class="message-box is-orange in-content">
+//   <header class="message-box-header has-icon">
+//     <span class="message-box-icon flat-icon icon-16 warning-icon"></span>
+//     <h1 class="message-box-headline">Danger! Joker is getting closer</h1>
+//   </header>
+//   <div class="message-box-body has-icon">
+//     <div class="message-box-text-container typography">
+//       <p>
+//         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eius officiis perspiciatis aut veritatis excepturi.
+//       </p>
+//     </div>
+//   </div>
+// </article>
+//
+// Styleguide component.message.5
+
+
+// In content - Pay attention one line
+//
+// NOTE! this will always have a warning icon
+//
+// .has-icon on header
+//
+// Markup:
+// <article class="message-box is-orange in-content">
+//   <header class="message-box-header has-icon">
+//     <span class="message-box-icon flat-icon icon-16 warning-icon"></span>
+//     <h1 class="message-box-headline">Danger! Joker is getting closer</h1>
+//   </header>
+// </article>
+//
+// Styleguide component.message.6
 
 // In-content grey and orange
 .message-box {
@@ -173,11 +252,11 @@ $external-image-width: 135px;
     }
     .message-box-body {
       padding-top: 0;
-      padding-bottom: 12px; 
+      padding-bottom: 12px;
       border-width: 0;
       &.has-icon{
         padding-left: 40px;
-      } 
+      }
     }
     &.is-orange {
       &,
@@ -188,8 +267,8 @@ $external-image-width: 135px;
     &.is-grey {
       &,
       .message-box-body {
-        background-color: $color-grey-lighter;
+        background-color: $color-grey-light;
       }
     }
   }
-} 
+}

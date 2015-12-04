@@ -19,13 +19,13 @@ $button-plain-icon: $text-1;
 $button-plain-border: $color-border-dark;
 $button-plain-gradient: $color-grey-lightest $color-grey-lighter;
 $button-plain-gradient-hover: #fcfcfc #f4f6fa;
-$button-plain-gradient-active: #e7eaf1 #eeeff3;
+$button-plain-gradient-active: #e1e1e1 #e1e1e1;
 
 // -- primary colors
 // blue
 $button-blue-color: #fff;
 $button-blue-icon: #fff;
-$button-blue-border: #1a76bf;
+$button-blue-border: #1669AB;
 $button-blue-gradient: #239bf6 #148fef;
 $button-blue-gradient-hover: #25a1f7 #1695f1;
 $button-blue-gradient-active: $color-azure-dark #219af5;
@@ -133,6 +133,7 @@ $button-intercom-gradient-active: #073650 #073650;
 
 
 
+
 // Button colors
 //
 // .button-plain               - Description
@@ -163,16 +164,6 @@ $button-intercom-gradient-active: #073650 #073650;
 // plain
 .button-plain {
   @include button-color;
-}
-
-// Sorry about these two, the pagination control is a PITA to put custom classes on.
-.pagination .disabled .button,
-.pagination .active .button,
-.button.is-disabled,
-.button--disabled {
-  color: #b8b9ba!important;
-  border-color: #e4e4e4!important;
-  background: #e4e4e4!important;
 }
 
 
@@ -248,28 +239,20 @@ $button-intercom-gradient-active: #073650 #073650;
     border-color: $color-azure;
   }
 }
-
-
-// grey button
+// -- grey
 .button-grey {
-  background: $color-grey-lighter;
-  color: $text-1;
-  border-color: $color-grey-lighter;
-  &:hover,
-  &:button--hover,
-  &.is-hover {
-    color: $text-1;
-    background: $color-grey-lightest;
-    border-color: $color-grey-lightest;
+  color: $text-1!important;
+  background-color: $color-grey;
+  &:hover {
+    background-color: $color-grey-light;
   }
   &:active,
-  &:button--active,
-  &.is-active {
-    color: $text-1;
-    background: $color-grey-light;
-    border-color: $color-grey-light;
+  &.button--active {
+    background-color: $color-grey-darker;
   }
 }
+
+
 
 // subtle button
 .button-subtle {
@@ -280,9 +263,24 @@ $button-intercom-gradient-active: #073650 #073650;
     color: $text-1;
     background: $color-grey-lighter;
   }
-  &:button--active,
+  //&:button--active,
   &:active {
-    color: $text-1;
-    background: $color-grey-light;
+    color: $text-1!important;
+    background: $color-grey!important;
   }
+}
+
+
+// Sorry about these two, the pagination control is a PITA to put custom classes on. //!todo remove all but .button--disabled
+.pagination .disabled .button,
+.pagination .active .button,
+.button.is-disabled,
+.button--disabled {
+  color: #b8b9ba!important;
+  border-color: #e4e4e4!important;
+  background: #e4e4e4!important;
+  box-shadow: none!important;
+}
+.button--disabled {
+  cursor: not-allowed!important;
 }

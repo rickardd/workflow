@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../style/kss-style.css">
+  <link rel="stylesheet" href="../style/screen.css" />
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <!-- <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header> -->
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">KSS Documentation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Naming Convension</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Test urls</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-button.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-center.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Center</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">8</span
+          ><span class="kss-nav__name">Colors</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-component.html">
+          <span class="kss-nav__ref">9</span
+          ><span class="kss-nav__name">Component</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-form.html">
+          <span class="kss-nav__ref">10</span
+          ><span class="kss-nav__name">Form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-grid.html">
+          <span class="kss-nav__ref">11</span
+          ><span class="kss-nav__name">Grid</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-icon.html">
+          <span class="kss-nav__ref">12</span
+          ><span class="kss-nav__name">Icons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-mixin.html">
+          <span class="kss-nav__ref">13</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-module.html">
+          <span class="kss-nav__ref">14</span
+          ><span class="kss-nav__name">Module</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pageheader.html">
+          <span class="kss-nav__ref">15</span
+          ><span class="kss-nav__name">Page header</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-pagesetup.html">
+          <span class="kss-nav__ref">16</span
+          ><span class="kss-nav__name">Page Setup</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-table.html">
+          <span class="kss-nav__ref">17</span
+          ><span class="kss-nav__name">Tables</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-1">
+                <span class="kss-nav__ref">17.1</span
+                ><span class="kss-nav__name">NOTE!</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-2">
+                <span class="kss-nav__ref">17.2</span
+                ><span class="kss-nav__name">Generic table setup</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-3">
+                <span class="kss-nav__ref">17.3</span
+                ><span class="kss-nav__name">Fixed tables</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-4">
+                <span class="kss-nav__ref">17.4</span
+                ><span class="kss-nav__name">Real use example</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-5">
+                <span class="kss-nav__ref">17.5</span
+                ><span class="kss-nav__name">Table controls</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-6">
+                <span class="kss-nav__ref">17.6</span
+                ><span class="kss-nav__name">Cell widths</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-7">
+                <span class="kss-nav__ref">17.7</span
+                ><span class="kss-nav__name">Cell size and spacing</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-8">
+                <span class="kss-nav__ref">17.8</span
+                ><span class="kss-nav__name">Rows</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-9">
+                <span class="kss-nav__ref">17.9</span
+                ><span class="kss-nav__name">Mobile responsiveness</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-table.html#kssref-table-10">
+                <span class="kss-nav__ref">17.10</span
+                ><span class="kss-nav__name">Cell positioning</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-texticon.html">
+          <span class="kss-nav__ref">18</span
+          ><span class="kss-nav__name">Text-icon</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-toaster.html">
+          <span class="kss-nav__ref">19</span
+          ><span class="kss-nav__name">Toaster</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-type.html">
+          <span class="kss-nav__ref">20</span
+          ><span class="kss-nav__name">Type</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-typography.html">
+          <span class="kss-nav__ref">21</span
+          ><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-useful.html">
+          <span class="kss-nav__ref">22</span
+          ><span class="kss-nav__name">Useful classes</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-table" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-table">
+          <span class="kss-title__ref">
+              17
+            <span class="kss-title__permalink-hash">
+                #table
+            </span>
+          </span>
+          Tables
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>The generic table is created with the base class .table-standard</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-table-1" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-1">
+          <span class="kss-title__ref">
+              17.1
+            <span class="kss-title__permalink-hash">
+                #table.1
+            </span>
+          </span>
+          NOTE!
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Many tables have a width class e.g table__cell-120 defined on the td. That is NOT necessary if it is defined on the th element.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-table-2" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-2">
+          <span class="kss-title__ref">
+              17.2
+            <span class="kss-title__permalink-hash">
+                #table.2
+            </span>
+          </span>
+          Generic table setup
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard">
+      <thead>
+        <tr class="table__heading">
+          <th class="table__cell--standard">Product Name</th>
+          <th class="table__cell--standard">Price</th>
+          <th class="table__cell--standard">Applications</th>
+          <th class="table__cell--standard">Storage (errors)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table__cell--standard">
+            Micro
+          </td>
+          <td class="table__cell--standard">
+            $14 USD
+          </td>
+          <td class="table__cell--standard">
+            1
+          </td>
+          <td class="table__cell--standard">
+            5,000 errors stored
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table__cell--standard">
+            Small
+          </td>
+          <td class="table__cell--standard">
+            $49 USD
+          </td>
+          <td class="table__cell--standard">
+            10
+          </td>
+          <td class="table__cell--standard">
+            250,000 errors stored
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table__cell--standard">
+            Medium
+          </td>
+          <td class="table__cell--standard">
+            $149 USD
+          </td>
+          <td class="table__cell--standard">
+            50
+          </td>
+          <td class="table__cell--standard">
+            3,000,000 errors stored
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table--standard&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr class=&quot;table__heading&quot;&gt;
+          &lt;th class=&quot;table__cell--standard&quot;&gt;Product Name&lt;/th&gt;
+          &lt;th class=&quot;table__cell--standard&quot;&gt;Price&lt;/th&gt;
+          &lt;th class=&quot;table__cell--standard&quot;&gt;Applications&lt;/th&gt;
+          &lt;th class=&quot;table__cell--standard&quot;&gt;Storage (errors)&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            Micro
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            $14 USD
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            1
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            5,000 errors stored
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            Small
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            $49 USD
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            10
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            250,000 errors stored
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            Medium
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            $149 USD
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            50
+          &lt;/td&gt;
+          &lt;td class=&quot;table__cell--standard&quot;&gt;
+            3,000,000 errors stored
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+      &lt;/tbody&gt;
+
+    &lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-table-3" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-3">
+          <span class="kss-title__ref">
+              17.3
+            <span class="kss-title__permalink-hash">
+                #table.3
+            </span>
+          </span>
+          Fixed tables
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Is used to allow fixed px with on table cell.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-table-4" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-4">
+          <span class="kss-title__ref">
+              17.4
+            <span class="kss-title__permalink-hash">
+                #table.4
+            </span>
+          </span>
+          Real use example
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard table--fixed">
+  <thead>
+    <tr class=" ">
+      <th class="table__cell--tight dep-table-mob">Deployments</th>
+      <th class="table__cell--tight table__cell-120 dep-table-hide">Version</th>
+      <th class="dep-table-hide"></th>
+      <th class="table__cell--tight table__cell-200 dep-table-hide">Deployed by</th>
+      <th class="table__cell--tight table__cell-200 dep-table-hide">Time</th>
+    </tr>
+  </thead>
+  <tbody class="js-deployments-list-body"><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/798112450" title="deployment 1.0.0.15035">1.0.0.15035</a></h4>
+    <span class="dep-timestamp">24th Jun 1:36pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Daniel
+    </div>
+    <p class="dep-note">Expire audit log redis cache
+
+Master
+
+Dan</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/798112450" title="deployment 1.0.0.15035">1.0.0.15035</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Expire audit log redis cache
+
+Master
+
+Dan</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Daniel
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  24th Jun 1:36pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/798096053" title="deployment 1.0.0.15031">1.0.0.15031</a></h4>
+    <span class="dep-timestamp">24th Jun 1:11pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Rickard
+    </div>
+    <p class="dep-note">Rum Style updates
+
+
+Fixed css name duplication.
+New live puls map style
+
+
+Rick</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/798096053" title="deployment 1.0.0.15031">1.0.0.15031</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Rum Style updates
+
+
+Fixed css name duplication.
+New live puls map style
+
+
+Rick</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Rickard
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  24th Jun 1:11pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/797227980" title="deployment 1.0.0.14987">1.0.0.14987</a></h4>
+    <span class="dep-timestamp">23rd Jun 12:28pm</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Callum
+    </div>
+    <p class="dep-note">master merge of worker-js-chrome
+
+Callum</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/797227980" title="deployment 1.0.0.14987">1.0.0.14987</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">master merge of worker-js-chrome
+
+Callum</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Callum
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  23rd Jun 12:28pm
+</td></tr><tr><td class="table__cell--standard dep-table-mob">
+
+  <div class="dep-mobile-cell">
+    <h4><a href="deployments/793351600" title="deployment 1.0.0.14895">1.0.0.14895</a></h4>
+    <span class="dep-timestamp">18th Jun 11:55am</span>
+    <div class="dep-table-avatar">
+      <span class="avatar avatar-16">
+        <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+      </span>
+      Rickard
+    </div>
+    <p class="dep-note">Sandbox new header styles
+
+Rick</p>
+  </div>
+
+</td>
+
+<td class="table__cell--tight dep-table-hide">
+  <a href="/deployments/6yyd/793351600" title="deployment 1.0.0.14895">1.0.0.14895</a>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  <p class="text-ellipsis text-grey-light">Sandbox new header styles
+
+Rick</p>
+</td>
+<td class="table__cell--tightest dep-table-hide">
+
+
+<div class="text-icon text-icon--24">
+  <span class="text-icon__icon">
+    <div class="avatar avatar-24 avatar--circle">
+      <img src="https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;r=pg&amp;s=24">
+    </div>
+  </span>
+  <span class="text-icon__text text-ellipsis ">
+    Rickard
+  </span>
+</div>
+</td>
+<td class="table__cell--tight dep-table-hide">
+  18th Jun 11:55am
+</td></tr></tbody>
+</table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table--standard table--fixed&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr class=&quot; &quot;&gt;
+      &lt;th class=&quot;table__cell--tight dep-table-mob&quot;&gt;Deployments&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight table__cell-120 dep-table-hide&quot;&gt;Version&lt;/th&gt;
+      &lt;th class=&quot;dep-table-hide&quot;&gt;&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight table__cell-200 dep-table-hide&quot;&gt;Deployed by&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight table__cell-200 dep-table-hide&quot;&gt;Time&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&quot;js-deployments-list-body&quot;&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/798112450&quot; title=&quot;deployment 1.0.0.15035&quot;&gt;1.0.0.15035&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;24th Jun 1:36pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Daniel
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Expire audit log redis cache
+
+Master
+
+Dan&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/798112450&quot; title=&quot;deployment 1.0.0.15035&quot;&gt;1.0.0.15035&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Expire audit log redis cache
+
+Master
+
+Dan&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/92cba7b702f92e4622a5fe4c7cfd01a4?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Daniel
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  24th Jun 1:36pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/798096053&quot; title=&quot;deployment 1.0.0.15031&quot;&gt;1.0.0.15031&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;24th Jun 1:11pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Rickard
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Rum Style updates
+
+
+Fixed css name duplication.
+New live puls map style
+
+
+Rick&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/798096053&quot; title=&quot;deployment 1.0.0.15031&quot;&gt;1.0.0.15031&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Rum Style updates
+
+
+Fixed css name duplication.
+New live puls map style
+
+
+Rick&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Rickard
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  24th Jun 1:11pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/797227980&quot; title=&quot;deployment 1.0.0.14987&quot;&gt;1.0.0.14987&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;23rd Jun 12:28pm&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Callum
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;master merge of worker-js-chrome
+
+Callum&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/797227980&quot; title=&quot;deployment 1.0.0.14987&quot;&gt;1.0.0.14987&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;master merge of worker-js-chrome
+
+Callum&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/ed85cb4f10affc304f46c2d5a8600051?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Callum
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  23rd Jun 12:28pm
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--standard dep-table-mob&quot;&gt;
+
+  &lt;div class=&quot;dep-mobile-cell&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;deployments/793351600&quot; title=&quot;deployment 1.0.0.14895&quot;&gt;1.0.0.14895&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;dep-timestamp&quot;&gt;18th Jun 11:55am&lt;/span&gt;
+    &lt;div class=&quot;dep-table-avatar&quot;&gt;
+      &lt;span class=&quot;avatar avatar-16&quot;&gt;
+        &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+      &lt;/span&gt;
+      Rickard
+    &lt;/div&gt;
+    &lt;p class=&quot;dep-note&quot;&gt;Sandbox new header styles
+
+Rick&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;a href=&quot;/deployments/6yyd/793351600&quot; title=&quot;deployment 1.0.0.14895&quot;&gt;1.0.0.14895&lt;/a&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  &lt;p class=&quot;text-ellipsis text-grey-light&quot;&gt;Sandbox new header styles
+
+Rick&lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tightest dep-table-hide&quot;&gt;
+
+
+&lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+  &lt;span class=&quot;text-icon__icon&quot;&gt;
+    &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+      &lt;img src=&quot;https://www.gravatar.com/avatar/f918db75c929f9ab99a9d35ba6125d10?d=mm&amp;amp;r=pg&amp;amp;s=24&quot;&gt;
+    &lt;/div&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+    Rickard
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--tight dep-table-hide&quot;&gt;
+  18th Jun 11:55am
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-table-5" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-5">
+          <span class="kss-title__ref">
+              17.5
+            <span class="kss-title__permalink-hash">
+                #table.5
+            </span>
+          </span>
+          Table controls
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard table--fixed">
+  <thead>
+    <tr class="table-controls">
+      <th class="table__cell-control">
+        <span class="table__sort-text">
+          User errors
+          <span class="flat-icon icon-16 arrowdown-icon"></span>
+        </span>
+      </th>
+      <th class="table__cell-control table__cell-200">
+        <span class="table__sort-text">
+          Impacted
+          <span class="flat-icon icon-16 arrowdown-icon"></span>
+        </span>
+      </th>
+      <th class="table__cell-control table__cell-200 is-active">
+        <span class="table__sort-text">
+          Last occurred
+          <span class="flat-icon icon-16 arrowup-icon"></span>
+        </span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="table__cell--standard">One</td>
+      <td class="table__cell--standard">Two</td>
+      <td class="table__cell--standard">Three</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table--standard table--fixed&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr class=&quot;table-controls&quot;&gt;
+      &lt;th class=&quot;table__cell-control&quot;&gt;
+        &lt;span class=&quot;table__sort-text&quot;&gt;
+          User errors
+          &lt;span class=&quot;flat-icon icon-16 arrowdown-icon&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/th&gt;
+      &lt;th class=&quot;table__cell-control table__cell-200&quot;&gt;
+        &lt;span class=&quot;table__sort-text&quot;&gt;
+          Impacted
+          &lt;span class=&quot;flat-icon icon-16 arrowdown-icon&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/th&gt;
+      &lt;th class=&quot;table__cell-control table__cell-200 is-active&quot;&gt;
+        &lt;span class=&quot;table__sort-text&quot;&gt;
+          Last occurred
+          &lt;span class=&quot;flat-icon icon-16 arrowup-icon&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;table__cell--standard&quot;&gt;One&lt;/td&gt;
+      &lt;td class=&quot;table__cell--standard&quot;&gt;Two&lt;/td&gt;
+      &lt;td class=&quot;table__cell--standard&quot;&gt;Three&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-table-6" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-6">
+          <span class="kss-title__ref">
+              17.6
+            <span class="kss-title__permalink-hash">
+                #table.6
+            </span>
+          </span>
+          Cell widths
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--gutter</code>
+          <div class="kss-parameters__description">Gutter is the first and last cell. Not meant to have any content.</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--avatar</code>
+          <div class="kss-parameters__description">Deprecated? Use .table__cell-32 instsead?</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--browser</code>
+          <div class="kss-parameters__description">Deprecated?</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--platform</code>
+          <div class="kss-parameters__description">Deprecated?</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--text-input</code>
+          <div class="kss-parameters__description">Deprecated. Use .table__cell-220 instead.</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-16</code>
+          <div class="kss-parameters__description">16px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-24</code>
+          <div class="kss-parameters__description">24px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-32</code>
+          <div class="kss-parameters__description">32px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-40</code>
+          <div class="kss-parameters__description">40px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-48</code>
+          <div class="kss-parameters__description">48px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-56</code>
+          <div class="kss-parameters__description">56px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-64</code>
+          <div class="kss-parameters__description">64px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-60</code>
+          <div class="kss-parameters__description">60px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-80</code>
+          <div class="kss-parameters__description">80px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-100</code>
+          <div class="kss-parameters__description">100px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-120</code>
+          <div class="kss-parameters__description">120px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-140</code>
+          <div class="kss-parameters__description">140px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-150</code>
+          <div class="kss-parameters__description">150px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-160</code>
+          <div class="kss-parameters__description">160px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-180</code>
+          <div class="kss-parameters__description">180px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-200</code>
+          <div class="kss-parameters__description">200px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-220</code>
+          <div class="kss-parameters__description">220px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-240</code>
+          <div class="kss-parameters__description">240px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-300</code>
+          <div class="kss-parameters__description">300px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-400</code>
+          <div class="kss-parameters__description">400px width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell-500</code>
+          <div class="kss-parameters__description">500px width</div>
+        </li>
+      </ul>
+
+    </div>
+
+
+      </section>
+      <section id="kssref-table-7" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-7">
+          <span class="kss-title__ref">
+              17.7
+            <span class="kss-title__permalink-hash">
+                #table.7
+            </span>
+          </span>
+          Cell size and spacing
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--standard</code>
+          <div class="kss-parameters__description">Normal spacing</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--tight</code>
+          <div class="kss-parameters__description">Tight spacing</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--tightest</code>
+          <div class="kss-parameters__description">Even tighter spacing</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--standard .apikey.hide</code>
+          <div class="kss-parameters__description">???</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--checkbox</code>
+          <div class="kss-parameters__description">width and padding for stand alone checkboxes.</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--button</code>
+          <div class="kss-parameters__description">width and padding for buttons.</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--message</code>
+          <div class="kss-parameters__description">Adds the padding to the child link instead of the cell itself.</div>
+        </li>
+      </ul>
+
+    </div>
+
+
+      </section>
+      <section id="kssref-table-8" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-8">
+          <span class="kss-title__ref">
+              17.8
+            <span class="kss-title__permalink-hash">
+                #table.8
+            </span>
+          </span>
+          Rows
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard">
+<tbbody>
+<tr class="table__row [modifier class]">
+  <td class="table__cell--tight">
+    Lorem
+  </td>
+  <td class="table__cell--tight">
+    Ipsum
+  </td>
+  <td class="table__cell--tight">
+    Dolar
+  </td>
+  <td class="table__cell--tight">
+    Sit
+  </td>
+</tr>
+</tbody>
+</table>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .table__row--red
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard">
+<tbbody>
+<tr class="table__row table__row--red">
+  <td class="table__cell--tight">
+    Lorem
+  </td>
+  <td class="table__cell--tight">
+    Ipsum
+  </td>
+  <td class="table__cell--tight">
+    Dolar
+  </td>
+  <td class="table__cell--tight">
+    Sit
+  </td>
+</tr>
+</tbody>
+</table>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .table__row--grey
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard">
+<tbbody>
+<tr class="table__row table__row--grey">
+  <td class="table__cell--tight">
+    Lorem
+  </td>
+  <td class="table__cell--tight">
+    Ipsum
+  </td>
+  <td class="table__cell--tight">
+    Dolar
+  </td>
+  <td class="table__cell--tight">
+    Sit
+  </td>
+</tr>
+</tbody>
+</table>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .table__row--blue
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Description
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard">
+<tbbody>
+<tr class="table__row table__row--blue">
+  <td class="table__cell--tight">
+    Lorem
+  </td>
+  <td class="table__cell--tight">
+    Ipsum
+  </td>
+  <td class="table__cell--tight">
+    Dolar
+  </td>
+  <td class="table__cell--tight">
+    Sit
+  </td>
+</tr>
+</tbody>
+</table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table--standard&quot;&gt;
+&lt;tbbody&gt;
+&lt;tr class=&quot;table__row [modifier class]&quot;&gt;
+  &lt;td class=&quot;table__cell--tight&quot;&gt;
+    Lorem
+  &lt;/td&gt;
+  &lt;td class=&quot;table__cell--tight&quot;&gt;
+    Ipsum
+  &lt;/td&gt;
+  &lt;td class=&quot;table__cell--tight&quot;&gt;
+    Dolar
+  &lt;/td&gt;
+  &lt;td class=&quot;table__cell--tight&quot;&gt;
+    Sit
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-table-9" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-9">
+          <span class="kss-title__ref">
+              17.9
+            <span class="kss-title__permalink-hash">
+                #table.9
+            </span>
+          </span>
+          Mobile responsiveness
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <table class="table--standard table--fixed table--responsive ">
+  <thead>
+    <tr class="table__heading  ">
+      <th class="table__cell--gutter"></th>
+      <th class="table__cell--tight">User</th>
+      <th class="table__cell--tight">Location</th>
+      <th class="table__cell--tight">First seen</th>
+      <th class="table__cell--tight">Last seen</th>
+      <th class="table__cell--gutter"></th>
+    </tr>
+  </thead>
+  <tbody class="js-new-users-table-body"><tr><td class="table__cell--gutter"></td>
+<!-- USER -->
+<td class="table__cell--tightest" data-content="User">
+  <div>
+    <div class="text-icon text-icon--24">
+      <span class="text-icon__icon">
+        <div class="avatar avatar-24 avatar--circle">
+          <img src="https://www.gravatar.com/avatar/85021077a40c22989049dbed0055d8b4?d=mm&amp;r=pg&amp;s=32">
+        </div>
+      </span>
+      <span class="text-icon__text text-ellipsis ">
+        <a class="text-ellipsis" title="Flashwit" href="/reporting/5n6/errorsforuser?userIdentifier=kyle.sawatsky%40gmail.com">Flashwit</a>
+      </span>
+    </div>
+  </div>
+</td>
+
+<td class="table__cell--tight" data-content="Loacation" title="Canada">
+  <div>
+    <div class="text-icon text-icon--16">
+      <div class="text-icon__icon">
+        <img src="/Content/images/flags/CA.png">
+      </div>
+      <div class="text-icon__text">
+        <a class="js-countrylink text-ellipsis" href="5n6?country=CA" data-code="CA">Canada</a>
+      </div>
+    </div>
+  </div>
+</td>
+
+<!-- First seen -->
+<td class="table__cell--tight" data-content="First seen">
+  <span class="text-ellipsis" title="November 30th 2015, 19:30:47 UTC">
+    Nov 30th 19:30:47
+  </span>
+</td>
+
+<td class="table__cell--tight" data-content="First seen">
+  <span class="text-ellipsis" title="November 30th 2015, 21:50:39 UTC">
+    Nov 30th 21:50:39
+  </span>
+</td>
+<td class="table__cell--gutter"></td></tr><tr><td class="table__cell--gutter"></td>
+<!-- USER -->
+<td class="table__cell--tightest" data-content="User">
+  <div>
+    <div class="text-icon text-icon--24">
+      <span class="text-icon__icon">
+        <div class="avatar avatar-24 avatar--circle">
+          <img src="https://www.gravatar.com/avatar/e50ce1287a52353382e191898b299c0c?d=mm&amp;r=pg&amp;s=32">
+        </div>
+      </span>
+      <span class="text-icon__text text-ellipsis ">
+        <a class="text-ellipsis" title="Bradley" href="/reporting/5n6/errorsforuser?userIdentifier=brad%40glacierlane.com">Bradley</a>
+      </span>
+    </div>
+  </div>
+</td>
+
+<td class="table__cell--tight" data-content="Loacation" title="United States of America">
+  <div>
+    <div class="text-icon text-icon--16">
+      <div class="text-icon__icon">
+        <img src="/Content/images/flags/US.png">
+      </div>
+      <div class="text-icon__text">
+        <a class="js-countrylink text-ellipsis" href="5n6?country=US" data-code="US">United States of America</a>
+      </div>
+    </div>
+  </div>
+</td>
+
+<!-- First seen -->
+<td class="table__cell--tight" data-content="First seen">
+  <span class="text-ellipsis" title="November 30th 2015, 16:49:11 UTC">
+    Nov 30th 16:49:11
+  </span>
+</td>
+
+<td class="table__cell--tight" data-content="First seen">
+  <span class="text-ellipsis" title="November 30th 2015, 17:05:07 UTC">
+    Nov 30th 17:05:07
+  </span>
+</td>
+<td class="table__cell--gutter"></td></tr></tbody>
+</table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table--standard table--fixed table--responsive &quot;&gt;
+  &lt;thead&gt;
+    &lt;tr class=&quot;table__heading  &quot;&gt;
+      &lt;th class=&quot;table__cell--gutter&quot;&gt;&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight&quot;&gt;User&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight&quot;&gt;Location&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight&quot;&gt;First seen&lt;/th&gt;
+      &lt;th class=&quot;table__cell--tight&quot;&gt;Last seen&lt;/th&gt;
+      &lt;th class=&quot;table__cell--gutter&quot;&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&quot;js-new-users-table-body&quot;&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--gutter&quot;&gt;&lt;/td&gt;
+&lt;!-- USER --&gt;
+&lt;td class=&quot;table__cell--tightest&quot; data-content=&quot;User&quot;&gt;
+  &lt;div&gt;
+    &lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+      &lt;span class=&quot;text-icon__icon&quot;&gt;
+        &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+          &lt;img src=&quot;https://www.gravatar.com/avatar/85021077a40c22989049dbed0055d8b4?d=mm&amp;amp;r=pg&amp;amp;s=32&quot;&gt;
+        &lt;/div&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+        &lt;a class=&quot;text-ellipsis&quot; title=&quot;Flashwit&quot; href=&quot;/reporting/5n6/errorsforuser?userIdentifier=kyle.sawatsky%40gmail.com&quot;&gt;Flashwit&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight&quot; data-content=&quot;Loacation&quot; title=&quot;Canada&quot;&gt;
+  &lt;div&gt;
+    &lt;div class=&quot;text-icon text-icon--16&quot;&gt;
+      &lt;div class=&quot;text-icon__icon&quot;&gt;
+        &lt;img src=&quot;/Content/images/flags/CA.png&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;text-icon__text&quot;&gt;
+        &lt;a class=&quot;js-countrylink text-ellipsis&quot; href=&quot;5n6?country=CA&quot; data-code=&quot;CA&quot;&gt;Canada&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/td&gt;
+
+&lt;!-- First seen --&gt;
+&lt;td class=&quot;table__cell--tight&quot; data-content=&quot;First seen&quot;&gt;
+  &lt;span class=&quot;text-ellipsis&quot; title=&quot;November 30th 2015, 19:30:47 UTC&quot;&gt;
+    Nov 30th 19:30:47
+  &lt;/span&gt;
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight&quot; data-content=&quot;First seen&quot;&gt;
+  &lt;span class=&quot;text-ellipsis&quot; title=&quot;November 30th 2015, 21:50:39 UTC&quot;&gt;
+    Nov 30th 21:50:39
+  &lt;/span&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--gutter&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table__cell--gutter&quot;&gt;&lt;/td&gt;
+&lt;!-- USER --&gt;
+&lt;td class=&quot;table__cell--tightest&quot; data-content=&quot;User&quot;&gt;
+  &lt;div&gt;
+    &lt;div class=&quot;text-icon text-icon--24&quot;&gt;
+      &lt;span class=&quot;text-icon__icon&quot;&gt;
+        &lt;div class=&quot;avatar avatar-24 avatar--circle&quot;&gt;
+          &lt;img src=&quot;https://www.gravatar.com/avatar/e50ce1287a52353382e191898b299c0c?d=mm&amp;amp;r=pg&amp;amp;s=32&quot;&gt;
+        &lt;/div&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;text-icon__text text-ellipsis &quot;&gt;
+        &lt;a class=&quot;text-ellipsis&quot; title=&quot;Bradley&quot; href=&quot;/reporting/5n6/errorsforuser?userIdentifier=brad%40glacierlane.com&quot;&gt;Bradley&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight&quot; data-content=&quot;Loacation&quot; title=&quot;United States of America&quot;&gt;
+  &lt;div&gt;
+    &lt;div class=&quot;text-icon text-icon--16&quot;&gt;
+      &lt;div class=&quot;text-icon__icon&quot;&gt;
+        &lt;img src=&quot;/Content/images/flags/US.png&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;text-icon__text&quot;&gt;
+        &lt;a class=&quot;js-countrylink text-ellipsis&quot; href=&quot;5n6?country=US&quot; data-code=&quot;US&quot;&gt;United States of America&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/td&gt;
+
+&lt;!-- First seen --&gt;
+&lt;td class=&quot;table__cell--tight&quot; data-content=&quot;First seen&quot;&gt;
+  &lt;span class=&quot;text-ellipsis&quot; title=&quot;November 30th 2015, 16:49:11 UTC&quot;&gt;
+    Nov 30th 16:49:11
+  &lt;/span&gt;
+&lt;/td&gt;
+
+&lt;td class=&quot;table__cell--tight&quot; data-content=&quot;First seen&quot;&gt;
+  &lt;span class=&quot;text-ellipsis&quot; title=&quot;November 30th 2015, 17:05:07 UTC&quot;&gt;
+    Nov 30th 17:05:07
+  &lt;/span&gt;
+&lt;/td&gt;
+&lt;td class=&quot;table__cell--gutter&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-table-10" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-table-10">
+          <span class="kss-title__ref">
+              17.10
+            <span class="kss-title__permalink-hash">
+                #table.10
+            </span>
+          </span>
+          Cell positioning
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--left</code>
+          <div class="kss-parameters__description">aligns it&#39;s content to the left</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--right</code>
+          <div class="kss-parameters__description">aligns it&#39;s content to the right</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">.table__cell--center</code>
+          <div class="kss-parameters__description">center aligns it&#39;s content</div>
+        </li>
+      </ul>
+
+    </div>
+
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

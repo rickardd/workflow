@@ -1,4 +1,6 @@
-// -- product icons
+// Product icons
+//
+// Styleguide icon.product
 
 .product-icon {
   display: block;
@@ -12,21 +14,74 @@
 }
 
 
-// Pulse
+// Product icon
+//
+// Optimized icon size ??
+//
+// Use with the product-icon class
+//
+// .product-icon--pulse - description
+// .product-icon--crash-reporting - description
+//
+// Markup: <div class="product-icon icon-16 {{modifier_class}}"></div>
+//
+// Styleguide icon.product.1
+
 .product-icon--pulse {
   background-color: $color-byzantine-light;
-  background-image: url('/Content/images/icon-products/icon-pulse.png');
+  background-image: url('/Content/images/icon-products/72--pulse.png');
 }
 html.svg .product-icon--pulse {
-  background-image: url('/Content/images/icon-products/icon-pulse.svg');
+  background-image: url('/Content/images/icon-products/72--pulse.png');
 }
 
-
-// Crash Reporting
 .product-icon--crash-reporting {
   background-color: $color-azure;
-  background-image: url('/Content/images/icon-products/icon-crashreporting.png');
+  background-image: url('/Content/images/icon-products/72--crash-reporting.png');
 }
 html.svg .product-icon--crash-reporting {
-  background-image: url('/Content/images/icon-products/icon-crashreporting.svg');
+  background-image: url('/Content/images/icon-products/72--crash-reporting.svg');
+}
+
+
+
+// UPDATED 80PX VERSIONS (PRODUCT TILE SCREENS)
+
+.product-tile-icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-size: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// loading
+.product-tile-icon--loading {
+  position: relative;
+  padding: 4px;
+  &:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid $white;
+  }
+}
+
+// Pulse
+.product-tile-icon--pulse {
+  background-image: url('/Content/images/icon-products/72--pulse.png');
+}
+html.svg .product-tile-icon--pulse {
+  background-image: url('/Content/images/icon-products/72--pulse.svg');
+}
+
+// Crash Reporting
+.product-tile-icon--crash-reporting {
+  background-image: url('/Content/images/icon-products/72--crash-reporting.png');
+}
+html.svg .product-tile-icon--crash-reporting {
+  background-image: url('/Content/images/icon-products/72--crash-reporting.svg');
 }

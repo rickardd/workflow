@@ -1,14 +1,24 @@
-// useful classes
+// Useful classes
+//
+// Commonly used classes that can be used across the app.
+//
+// Styleguide useful
 
-// hide/show
-.hide {
-  display: none;
-}
 
-.show {
-  display: block;
-}
-
+// Genaral
+//
+// .float-left- d
+// .center - d
+// .float-right - d
+// .break - Words that doesn't fit on the line will brake to new line
+// .nowrap - Words that doesn't fit will cut with three ending dots.
+// .full-width - Width 100%
+// .clearfix - Put on on parent if children has are floating elements.
+// .relative  - Position relative
+// .clickable  - Cursor pointer
+// .noselect  - Prevent user from selecting text
+//
+// Styleguide useful.general
 
 .float-left{
   float: left;
@@ -20,10 +30,69 @@
 .float-right{
   float: right;
 }
-
-.inline-block{
-  display: inline-block;
+.break {
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
+.nowrap{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// No styleguide reference
+@include screen-med { // overwrites .nowrap on screens smaller than med
+  .nowrap--normal-med{
+    white-space: normal;
+  }
+}
+// No styleguide reference
+@include screen-min { // overwrites .nowrap on screens smaller than min
+  .nowrap--normal-min{
+    white-space: normal;
+  }
+}
+
+.full-width{
+  width: 100%;
+}
+
+// clearfix
+clearfix,
+.clearfix {
+   @include clearfix();
+}
+
+// No styleguide reference
+.disabled, // Deprecated
+.is-disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.relative {
+  position: relative;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.no-select{
+  @extend noselect;
+}
+
+
+// Values
+//
+// Commonly used values
+//
+// .line-height-24 - Gives a 24px line-height
+// .line-height-32 - Gives a 32px line-height
+//
+// Styleguide useful.values
 
 .line-height-32,
 .line-height-32-before:before,
@@ -34,7 +103,40 @@
 .line-height-32--force{
   line-height: 32px !important;
 }
+.line-height-24,
+.line-height-24-before:before,
+.line-height-24-after:after{
+  line-height: 24px;
+}
 
+.line-height-24--force{
+  line-height: 24px !important;
+}
+
+
+// Hide and show
+//
+// See chapter breakpoints
+//
+// .hide - hide item
+// .show - show item
+// .hide-max - hides on screens smaller than breakpoint max
+// .show-max - shows on screens bigger than breakpoint max
+// .hide-med - hides on screens smaller than breakpoint med
+// .show-med - shows on screens bigger than breakpoint med
+// .hide-min - hides on screens smaller than breakpoint min
+// .show-min - shows on screens bigger than breakpoint min
+// .hide-mob - hides on screens smaller than breakpoint mob
+// .show-mob - shows on screens bigger than breakpoint mob
+//
+// Styleguide useful.visibility
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 
 @media screen and (max-width:$screen-max) {
   .hide-max {
@@ -94,7 +196,7 @@
   }
 
   .screen-min-show {
-    //display: none;
+    display: block;
   }
 }
 
@@ -110,131 +212,11 @@
 
 
 
-// word break
-.break {
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-}
-
-.nowrap{
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-// clearfix
-clearfix,
-.clearfix {
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-}
-
-
-// disabled
-.disabled,
-.is-disabled {
-  pointer-events: none;
-}
-
-
-.clickable {
-  cursor: pointer;
-}
-
-
-.text-icon {
-  position: relative;
-}
-.text-icon--center{
-  display: inline-block;
-  max-width: 100%;
-}
-.text-icon--16 {
-  padding-left: 24px;
-  .text-icon__text {
-    line-height: 16px;
-  }
-}
-.text-icon--24 {
-  padding-left: 40px;
-  .text-icon__text {
-    line-height: 24px;
-  }
-}
-
-
-.text-icon__icon,
-.text-icon__text{
-  line-height: inherit;
-  display: inline-block;
-  vertical-align: middle;
-}
-.text-icon__icon{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-
-  .icon-16,
-  .icon-24,
-  .avatar{
-    vertical-align: middle;
-    display: inline-block;
-  }
-}
-.text-icon__text{
-  @extend ellipsis;
-  text-align: left;
-}
-<<<<<<< HEAD
-
-=======
-.text-icon--center{
-  max-width: 100%;
-}
-.text-icon--16{
-  padding-left: 24px;
-  line-height: 16px;
-}
-
-.text-icon--24{
-  padding-left: 40px;
-  line-height: 24px;
-}
-
-.text-icon--height-40{
-  line-height: 40px;
-}
->>>>>>> Refactored text-icon
-
-
-
+<<<<<<< cbf062f8cb743bda38eba978f8ec15b8733b8327
 .no-select{
   @extend noselect;
 }
+=======
+>>>>>>> kss - useful comments
 
 
-
-// open in new window
-.text-icon-after {
-  @extend clearfix;
-  float: left;
-  position: relative;
-  padding-right: 24px;
-}
-.text-icon-after__text {
-  display: block;
-  width: 100%;
-  line-height: 16px;
-}
-.text-icon-after__icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}

@@ -1,13 +1,17 @@
+// Type
+//
+// Styleguide type
+
 // Open Sanas font refs
 @font-face {
   font-family: 'Open-Sans';
-  src: url('../fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+  src: url('../Content/fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open-Sans';
-  src: url('../fonts/open-sans/OpenSans-Semibold.ttf') format('truetype');
+  src: url('../Content/fonts/open-sans/OpenSans-Semibold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -15,7 +19,24 @@ $font-family: "Open-Sans",arial,helvetica,serif;
 $font-family-mono: "Source Code Pro", consolas, courier, monaco, 'courier new';
 
 
-// --
+// Text sizing variables
+//
+// $fontsize-h1 - how and when to use ???
+// $fontsize-h2 - how and when to use ???
+// $fontsize-h3 - how and when to use ???
+// $fontsize-h4 - how and when to use ???
+// $fontsize-h5 - how and when to use ???
+// $fontsize-form - how and when to use ???
+// $fontsize-standard - how and when to use ???
+// $fontsize-button - how and when to use ???
+// $fontsize-small - how and when to use ???
+// $fontsize-code - how and when to use ???
+// $type-small - how and when to use ???
+// $type-base - how and when to use ???
+// $type-large - how and when to use ???
+//
+// Styleguide type.1
+
 $fontsize-h1: 2.4;
 $fontsize-h2: 2.0;
 $fontsize-h3: 1.8;
@@ -66,26 +87,61 @@ a,
     color: $color-ember;
   }
 }
+.link-primary {
+  text-decoration: underline;
+}
 
-// Text variables
-.text-blue {color: $color-azure-dark;}
-.text-purple {color: $color-byzantine-light;}
+
+// Text colors
+//
+// .text-blue - $color-azure-dark
+// .text-purple - $color-byzantine-light
+// .text-red - $color-ember-dark
+// .text-orange - $color-flame-dark
+// .text-yellow - $color-lightning
+// .text-green - $color-forest-dark
+// .text-grey - $text-grey
+// .text-grey-light - $text-grey-light
+// .text-white - $white
+// .text-black - $black
+// .text-dark - $text-1
+// .text-light - $color-grey-light
+//
+// Markup:
+// <span class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+//
+// Styleguide type.2
+
+.text-blue {color: $color-azure;}
+.text-purple {color: $color-byzantine;}
 .text-red {color: $color-ember-dark;}
 .text-orange {color: $color-flame-dark;}
 .text-yellow {color: $color-lightning;}
-.text-green {color: $color-forest-dark;}
+.text-green {color: $color-forest;}
 .text-grey {color: $text-grey;}
 .text-grey-light {color: $text-grey-light;}
 .text-white {color: $white;}
 .text-black {color: $black;}
 .text-dark {color: $text-1;}
-.text-light {color: $color-grey-lighter;}
+.text-light {color: $text-grey-light;}
 .text-center {text-align: center;}
 .text-right {text-align: right;}
 .text-left {text-align: left;}
 .text-italic {font-style: italic;}
 .text-highlight {background-color: rgba($color-lightning, 0.2)}
 
+
+// Handy text classes
+//
+// .text-normal - description
+// .text-underline - description
+// .text-break - description
+// .text-ellipsis - description
+// .text-mono  - description
+// .foot-note - description
+// .headline - description
+//
+// Styleguide type.3
 
 .text-normal {font-weight: normal;}
 .text-underline {text-decoration: underline;}
@@ -129,6 +185,20 @@ ellipsis,
 }
 
 
+
+// Heading sizing classes
+//
+// .heading-size-1 - description
+// .heading-size-2 - description
+// .heading-size-3 - description
+// .heading-size-4 - description
+// .heading-size-5 - description
+//
+// Markup:
+// <span class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+//
+// Styleguide type.4
+
 // Headings
 h1, h2, h3, h4 {
   display: block;
@@ -159,7 +229,19 @@ h4,
   font-weight: bold;
 }
 
-// standard text font-sizes
+
+
+// Text sizing classes
+//
+// .text-size-large - description
+// .text-size-medium - description
+// .text-size-small - description
+//
+// Markup:
+// <span class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>
+//
+// Styleguide type.5
+
 .text-size-large {
   @include font-size(1.6);
 }

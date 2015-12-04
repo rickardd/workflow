@@ -6,14 +6,18 @@
   position: relative;
   line-height: 16px;
 
-  &:hover .checkbox-icon {
-    color: $text-1 !important;
-  }
+  @include noselect;
+
   .solo-checkbox {
     position: absolute;
     left: 0;
     top: 0;
   }
+
+  &:hover .checkbox-icon {
+    color: $text-1 !important;
+  }
+
   &.is-disabled{
     opacity: 0.5;
     pointer-events: none;
@@ -56,3 +60,43 @@
   border-radius: 2px;
 }
 
+// Checkbox control: grey modifier
+// Used on Integrations forms
+.grey-checkbox-control {
+  padding: 0 0 0 38px;
+  background-color: $color-grey-light;
+  border-radius: 2px;
+  overflow: hidden;
+
+  // Shared with .checkbox-control
+  // TODO: Phase out checkbox-control and move towards BEM
+  cursor: pointer;
+  display: block;
+  position: relative;
+  line-height: 16px;
+
+  @include noselect;
+
+  &:hover .checkbox-icon {
+    color: $text-1 !important;
+  }
+
+  &.is-disabled{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.grey-checkbox-control__label-text {
+  display: block;
+  padding: 10px;
+  background-color: $color-grey-lighter;
+}
+
+.grey-checkbox-control__checkbox {
+  display: block;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,17 +1,24 @@
-// new dropdown
+// Dropdown control
+
+// container
 .dropdown2 {
   display: inline-block;
   position: relative;
 }
-
-.dropdown2__button {
+.dropdown2--block {
+  display: block;
 }
 
+// button region
+.dropdown2__button {}
+
+// dropdown content
 .dropdown2__content {
   overflow: hidden;
   display: none;
   margin-top: -1px;
   position: absolute;
+  z-index: 1;
   top: 100%;
   left: 0;
   min-width: 100%;
@@ -21,6 +28,7 @@
   background-clip: padding-box;
   box-shadow: $dropdown-shadow;
   transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
 
   -webkit-animation: dropdown-anim 80ms linear;
   animation: dropdown-anim 80ms linear;
@@ -48,6 +56,8 @@
   transform-origin: 100% 0;
 }
 
+
+// dropdown content
 .dropdown2-section {
   padding: 6px 0;
   border-bottom: 1px solid $color-border-light;
@@ -57,6 +67,8 @@
 }
 
 .dropdown2-section__title {
+  @extend noselect;
+  display: block;
   font-weight: bold;
   line-height: 16px;
   white-space: nowrap;
@@ -65,13 +77,23 @@
   @include font-size(1.4);
 }
 
+.dropdown2-section__message {
+  color: $text-grey;
+  font-style: italic;
+  line-height: 1.2;
+  @include font-size(1.2);
+}
+
+// dropdown option
 .dropdown2-section__option {
   @include noselect;
+  display: block;
+  color: $text-1;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   cursor: pointer;
-  min-width: 180px;
+  min-width: 160px;
   max-width: 100%;
   line-height: 16px;
   padding: 10px 16px 10px 9px;
@@ -79,6 +101,7 @@
 
   &:hover,
   &:active {
+    color: $text-1;
     border-color: $color-border-dark;
     background: $color-grey-lighter;
   }
@@ -125,5 +148,59 @@
   &:hover,
   &:active {
     border-color: $color-byzantine;
+  }
+}
+
+
+
+// Dropdown Plan
+.dropdown2-section__plans {
+  padding: 2px 8px 6px;
+}
+
+.dropdown2-plan {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 4px;
+  width: 240px;
+  background: $color-grey-lighter;
+  border-radius: 3px;
+  padding: 10px 10px 10px 46px;
+  border: 2px solid $color-grey-lighter;
+  margin: 4px;
+  &:hover {
+    background: $color-grey-light;
+    border-color: $color-grey-light;
+  }
+  &:active {
+    background: $color-grey;
+    border-color: $color-grey;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dropdown2-plan--oversize {
+  border-color: $color-ember!important;
+}
+
+.dropdown2-plan__icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.dropdown2-plan__name {
+  @include font-size(1.4);
+  color: $text-1;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+.dropdown2-plan__details {
+  li {
+    margin-top: 4px;
   }
 }

@@ -1,15 +1,24 @@
 // Todo form style
 // - built special form-actions file for basic solid actions.
 
-.form-group {
-  margin: 0 0 16px;
-  @media screen and (max-width:$screen-min) {
-    margin: 0 0 12px;
-  }
+.form-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 0 16px;
+}
 
+.form-group {
 
   &:last-child { // Todo: Remove last-child and replace wirth class instead. All form-groups behabes like last-child if they exist in e.g .element-split-container
     margin: 0;
+  }
+
+  &,
+  &.form-group--margin{
+    margin: 0 0 20px;
+    @media screen and (max-width:$screen-min) {
+      margin: 0 0 12px;
+    }
   }
 
 }
@@ -17,6 +26,7 @@
 // generic label
 .input-label {
   display: block;
+  text-align: left;
   line-height: 16px;
   padding: 0 0 4px;
   @include font-size(1.4);

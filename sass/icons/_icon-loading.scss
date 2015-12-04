@@ -1,4 +1,22 @@
-// loading icon
+// Loading icons
+//
+// Styleguide icon.loading
+
+// Loading icon
+//
+// This file needs to be better documented. What should be used and what not.
+//
+// Optimized icon size ??
+//
+// .loading-icon - description
+// .loading-icon.is-animated - Should maybe not be used more
+// .is-spinning - Should maybe not be used more
+// .loading-icon--animate - Maybe the better one
+//
+// Markup: <div class="loading-icon icon-16 {{modifier_class}}"></div>
+//
+// Styleguide icon.loading.1
+
 .loading-icon {
   background-image: url(../content/images/icons/loading.gif);
   background-repeat: no-repeat;
@@ -8,7 +26,7 @@
 
 // if css animations are supported
 html.cssanimations {
-  .loading-icon {
+  .loading-icon { // Todo: Make spinn by default
     background-image: none;
 
     &:before {
@@ -16,21 +34,21 @@ html.cssanimations {
     }
   }
 
-  .loading-icon.is-animated {
+  .loading-icon.is-animated { // Todo: pull out?
     -webkit-animation: rotation 2s infinite linear;
     -moz-animation: rotation 2s infinite linear;
     -o-animation: rotation 2s infinite linear;
     animation: rotation 2s infinite linear;
   }
 
-  .is-spinning:before {
+  .is-spinning:before { // Todo: pull out?
     -webkit-animation: rotation 2s infinite linear;
     -moz-animation: rotation 2s infinite linear;
     -o-animation: rotation 2s infinite linear;
     animation: rotation 2s infinite linear;
   }
 
-  .loading-icon--animate {
+  .loading-icon--animate { // use this
     transform-origin: center;
     -webkit-animation: rotation 2s infinite linear;
     -moz-animation: rotation 2s infinite linear;

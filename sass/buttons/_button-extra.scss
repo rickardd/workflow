@@ -1,5 +1,5 @@
 // buttons inside a content block;
-.typography {
+.typography { //Todo: pull out?
   .button,.button-48 {
     margin: 0 0 40px;
   }
@@ -10,28 +10,3 @@
   }
 }
 
-
-// ToDo: add to style guide. 
-// JOINED BUTTON
-.button-joined-wrapper {
-  overflow: hidden;
-
-  &.has-no-list .button,
-  li .button {
-    margin: 0px;
-    float: left;
-    border-left-width: 0px;
-    border-radius: 0px;
-  }
-
-  &.has-no-list .button:first-of-type,
-  li:first-child .button {
-    border-left-width: 1px;
-    border-radius: 3px 0px 0px 3px;
-  }
-
-  &.has-no-list .button:last-of-type,
-  li:last-child .button {
-    border-radius: 0px 3px 3px 0px;
-  }
-}

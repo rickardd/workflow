@@ -1,3 +1,27 @@
+// Grid
+//
+// The grid is base on devision by 12.
+//
+// Styleguide grid
+
+// 2 column grid
+//
+// Markup: shared/kss-markup--grid-2-column.html
+//
+// Styleguide grid.1
+
+// 3 column grid
+//
+// Markup: shared/kss-markup--grid-3-column.html
+//
+// Styleguide grid.2
+
+// Mixed column grid
+//
+// Markup: shared/kss-markup--grid-mixed-column.html
+//
+// Styleguide grid.3
+
 .grid {
   margin: -6px;
   padding: 0 0 24px;
@@ -9,6 +33,8 @@
 .grid__column {
   padding: 6px;
   float: left;
+
+  // TODO: Remove this
   @media (max-width: $screen-min) {
     width: 100%!important;
   }
@@ -28,12 +54,71 @@
 
 // Generates 12 grid columns e.g .grid_column--3
 $grid-columns: 12;
-@for $i from 1 to $grid-columns {
-  .grid__column--#{$i} {
-    width: ( 100% / $grid-columns ) * $i;
-   }
+
+.grid__column {
+	@for $i from 1 to $grid-columns {
+	  &--#{$i} {
+		width: ( 100% / $grid-columns ) * $i;
+	   }
+	}
 }
 
 .grid__column--12 {
   width: 100%;
+}
+
+// -------------------------------------
+// Mobile first
+// Responsive grid helper classes
+// -------------------------------------
+
+.grid__row {
+  @include clearfix();
+}
+
+// Shorten to col to avoid naming clashes
+.grid__col {
+	float:left;
+	width: 100%;
+
+}
+
+
+// Line break
+//
+// To make sure every column is on the right line add .grid__column--break to every first coulmn of the line.
+// It's to make sure that every column is inline nomatter of it's height.
+//
+// .grid__column--break - Forces a line break on a column.
+//
+// Markup: shared/kss-markup--grid-line-break.html
+//
+// Styleguide grid.4
+
+.grid__column--break{
+  clear: left;
+}
+
+// --- Medium-up grid
+//  e.g .col-md-6
+@include mw-screen-mob() {
+	@for $i from 1 to $grid-columns {
+		.grid__col {
+			&--md-#{$i} {
+				width: ( 100% / $grid-columns ) * $i;
+			}
+		}
+	}
+}
+
+// --- Large-up grid
+//  e.g .grid__col--lg-4
+@include mw-screen-med() {
+	@for $i from 1 to $grid-columns {
+		.grid__col {
+			&--lg-#{$i} {
+				width: ( 100% / $grid-columns ) * $i;
+			}
+		}
+	}
 }

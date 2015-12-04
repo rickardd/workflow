@@ -1,4 +1,29 @@
-// page header navigation
+
+// Header-navigation
+//
+// See section page-header section to include it in a header section.
+//
+// Markup:
+// <ul class="header-navigation clearfix">
+//   <li class="header-navigation__item">
+//     <a class="header-navigation-button header-navigation-button--blue header-navigation-button--active" href="#">
+//       <span class="header-navigation-button__icon">
+//         <span class="flat-icon icon-16 plan-icon"></span>
+//       </span>
+//       <span class="header-navigation-button__text">Item 1</span>
+//     </a>
+//   </li>
+//   <li class="header-navigation__item">
+//     <a class="header-navigation-button header-navigation-button--blue header-navigation-button--active" href="#">
+//       <span class="header-navigation-button__icon">
+//         <span class="flat-icon icon-16 plan-icon"></span>
+//       </span>
+//       <span class="header-navigation-button__text">Item 2</span>
+//     </a>
+//   </li>
+// </ul>
+//
+// Styleguide pageheader.navigation
 
 .header-navigation {
   position: relative;
@@ -74,12 +99,12 @@
 
   @include screen-min {
     border-radius: 24px;
-    background-color: $color-grey-lightest;
+    background-color: $color-grey-lighter;
     padding: 10px 16px 10px 40px;
 
     &:hover,
     &:active {
-      background-color: $color-grey-lighter;
+      background-color: $color-grey-light;
     }
 
     &:active {

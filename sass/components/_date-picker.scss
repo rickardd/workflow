@@ -67,21 +67,24 @@
 //- datepicker dropdown
 .date-dropdown {
   display: none;
+  background-color: $white;
   border: 1px solid $color-border-transparent;
   -webkit-background-clip: padding;
   background-clip: padding-box;
   box-shadow: $dropdown-shadow;
-  background: $white;
 }
 
 .date-dropdown--expand {
   display: block;
-  animation: dateDropdown 160ms forwards linear;
 }
 //-datepicker animations
 html.cssanimations {
   .date-dropdown--expand {
-    animation: dateDropdown 160ms forwards linear;
+    transform-origin: 100% 0;
+    -webkit-transform-origin: 100% 0;
+
+    -webkit-animation: dropdown-anim 80ms linear;
+    animation: dropdown-anim 80ms linear;
   }
 }
 
@@ -126,7 +129,7 @@ html.cssanimations {
   width: 100%;
   padding: 8px;
   border-radius: 3px;
-  background: $color-grey-lighter;
+  background: $color-grey-light;
   color: $text-1 !important;
 
   &:hover {

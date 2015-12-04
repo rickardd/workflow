@@ -1,55 +1,22 @@
-/* TABLE STYLES */
-
-// .table--standard
-// - Sets standard properties to a table
-
-// .table--high-cells
-// - Sets the cells to specific hight to give the table more "air"
-
-// .table__cell--standard
-// - Adds space in the cell. Use this class for regular content like text and such.
-
-// .table__cell--button
-// - Sets properties specefic for button cells.
-
-// .table__cell--left
-// - Align content in the cell to the left.
-
-// .table__cell--right
-// - Align content in the cell to the right.
-
-// .table__cell--center
-// - Align content in the cell to the center.
-
-// .table__cell-middle
-// - Vertically align content in the cell to the middle.
-
-// .table__cell-32
-// - Sets the width on the cell to 32px or decired width.
-
-// ! HIDE COLUMN
-// - If a column or the thead should be hiden on smaller screens use shared classes ( .screen-max-hide / .screen-med-hide / .screen-min-hide / .screen-mob-hide)
-
-
 // Tables
 //
 // The generic table is created with the base class .table-standard
 //
-// Styleguide 11
+// Styleguide table
 
 
 // NOTE!
 //
-// Many tables have table__cell--standard defined on the td. That is NOT nessesary if it is defined on the th element.
+// Many tables have a width class e.g table__cell-120 defined on the td. That is NOT necessary if it is defined on the th element.
 //
-// styleguide 11.1
+// styleguide table.1
 
 
 // Real use example
 //
 // Markup: generic/kss-template__generic-table-example--1.html
 //
-// Styleguide 11.4
+// Styleguide table.4
 
 
 
@@ -58,18 +25,18 @@
 //
 // Is used to allow fixed px with on table cell.
 //
-// styleguide 11.3
+// styleguide table.3
 
 .table--fixed {
   table-layout: fixed;
 }
 
 
-// General table setup
+// Generic table setup
 //
 // Markup: generic/kss-template__generic-table-setup.html
 //
-// Styleguide 11.2
+// Styleguide table.2
 
 
 // general
@@ -96,29 +63,61 @@
 }
 
 
+// Rows
+//
+// .table__row--red - Description
+// .table__row--grey - Description
+// .table__row--blue - Description
+//
+// Markup:
+// <table class="table--standard">
+// <tbbody>
+// <tr class="table__row {{modifier_class}}">
+//   <td class="table__cell--tight">
+//     Lorem
+//   </td>
+//   <td class="table__cell--tight">
+//     Ipsum
+//   </td>
+//   <td class="table__cell--tight">
+//     Dolar
+//   </td>
+//   <td class="table__cell--tight">
+//     Sit
+//   </td>
+// </tr>
+// </tbody>
+// </table>
+//
+// Styleguide table.8
+
 .table__row {
   border-bottom: 1px solid $color-border-light;
 }
 
 .table__row--red {
+  border-left: 3px solid $color-ember;
   background-color: $color-ember-highlight;
 }
 
 tr.is-active,
 .table__row--grey {
-  background: $color-grey-lightest;
+  background: $color-grey-lighter;
 }
 
-.table__row--red {
-  background-color: $color-ember-highlight;
-  color: $color-ember-dark;
-}
 .table__row--blue {
-  background-color: $color-azure-highlight;
-  color: $color-azure-dark;
+  border-left: 3px solid $color-azure;
 }
 
 
+
+
+
+// Table controls
+//
+// Markup: generic/kss-template__generic-table-controls.html
+//
+// Styleguide table.5
 
 // specific
 .table__cell-control {
@@ -178,15 +177,35 @@ tr.is-active,
   }
 }
 
-.table__cell--browser,
-.table__cell--platform {
-  width: 240px;
-  @include screen-min {
-    width: 160px;
-  }
+
+
+// Cell size and spacing
+//
+// .table__cell--standard - Normal spacing
+// .table__cell--tight - Tight spacing
+// .table__cell--tightest - Even tighter spacing
+// .table__cell--standard .apikey.hide - ???
+// .table__cell--checkbox - width and padding for stand alone checkboxes.
+// .table__cell--button - width and padding for buttons.
+// .table__cell--message - Adds the padding to the child link instead of the cell itself.
+//
+// Styleguide table.7
+
+
+.table__cell--standard {
+  padding: 6px 12px;
+  height: 40px;
 }
 
-// Table cell spacings
+.table__cell--tight {
+  padding: 4px 8px;
+  height: 36px;
+}
+
+.table__cell--tightest {
+  padding: 2px 8px;
+  height: 32px;
+}
 
 .table__cell--standard .apikey.hide {
   margin: 8px 0 0;
@@ -197,37 +216,54 @@ tr.is-active,
   padding-right: 8px;
 }
 
-/* .table__cell-avatar {
-  padding: 8px 0;
-} */
-
-.table__cell--tight {
-  padding: 8px;
-}
-
-.table__cell--tightest {
-  padding: 4px 8px;
-}
-
-.table__cell--standard {
-  padding: 12px;
+.table__cell--button {
+  width: 140px;
+  padding: 4px 0;
+  white-space: nowrap;
+  text-align: right;
 }
 
 // padding on A rather than table__cell
 .table__cell--message {
   a {
-    padding: 12px;
+    padding: 0 12px;
     line-height: 16px;
   }
 }
 
 
-// CUSTOM TABLE CELLS
 
-// Add to style guide;
-.table__cell--text-input { // Todo: replace with .table__cell--220
-  min-width: 220px;
-}
+// Cell widths
+//
+// .table__cell--gutter - Gutter is the first and last cell. Not meant to have any content.
+// .table__cell--avatar - Deprecated? Use .table__cell-32 instsead?
+// .table__cell--browser - Deprecated?
+// .table__cell--platform - Deprecated?
+// .table__cell--text-input - Deprecated. Use .table__cell-220 instead.
+// .table__cell-16 - 16px width
+// .table__cell-24 - 24px width
+// .table__cell-32 - 32px width
+// .table__cell-40 - 40px width
+// .table__cell-48 - 48px width
+// .table__cell-56 - 56px width
+// .table__cell-64 - 64px width
+// .table__cell-60 - 60px width
+// .table__cell-80 - 80px width
+// .table__cell-100 - 100px width
+// .table__cell-120 - 120px width
+// .table__cell-140 - 140px width
+// .table__cell-150 - 150px width
+// .table__cell-160 - 160px width
+// .table__cell-180 - 180px width
+// .table__cell-200 - 200px width
+// .table__cell-220 - 220px width
+// .table__cell-240 - 240px width
+// .table__cell-300 - 300px width
+// .table__cell-400 - 400px width
+// .table__cell-500 - 500px width
+//
+// Styleguide table.6
+
 
 .table__cell--gutter{
   width: 24px;
@@ -235,8 +271,26 @@ tr.is-active,
   @media screen and (max-width:$screen-min) {
     width: 16px;
   }
-
 }
+
+.table__cell--avatar {
+  width: 32px;
+}
+
+.table__cell--browser,
+.table__cell--platform {
+  width: 240px;
+  @include screen-min {
+    width: 160px;
+  }
+}
+
+// Add to style guide;
+.table__cell--text-input { // Todo: replace with .table__cell--220
+  min-width: 220px;
+}
+
+
 
 $table-widths: 16 24 32 40 48 56 64 60 80 100 120 140 150 160 180 200 220 240 300 400 500;
 
@@ -247,13 +301,13 @@ $table-widths: 16 24 32 40 48 56 64 60 80 100 120 140 150 160 180 200 220 240 30
   }
 }
 
-.table__cell--button {
-  width: 140px;
-  padding: 4px 0;
-  white-space: nowrap;
-  text-align: right;
-}
-
+// Cell positioning
+//
+// .table__cell--left - aligns it's content to the left
+// .table__cell--right - aligns it's content to the right
+// .table__cell--center - center aligns it's content
+//
+// Styleguide table.10
 
 .table__cell--left {
   text-align: left;
@@ -278,9 +332,16 @@ $table-widths: 16 24 32 40 48 56 64 60 80 100 120 140 150 160 180 200 220 240 30
 }
 
 // Gives date cells enough room to display DD MMM YYYY format dates
-td.table__cell--date { // Todo: use table__cell-120?
+td.table__cell--date {
   min-width: 120px;
 }
+
+
+// Mobile responsiveness
+//
+// Markup: generic/kss-template__generic-table-mobile.html
+//
+// Styleguide table.9
 
 @include screen-mob {
   .table--responsive {
